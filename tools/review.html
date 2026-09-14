@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Titan 첨삭</title>
+<style>
+:root{
+  --bg:#12100e; --panel:#1a1714; --line:#2e2924; --line2:#3d372f;
+  --fg:#e8e2d8; --dim:#9a9086; --accent:#c87a3c; --accent2:#7aa8c8;
+  --del:#5a2b2b; --ins:#2b4a30; --warn:#c85c5c;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  background:var(--bg); color:var(--fg);
+  font:16px/1.85 "Pretendard","Malgun Gothic","맑은 고딕",-apple-system,sans-serif;
+}
+header{
+  position:sticky; top:0; z-index:20; background:var(--panel);
+  border-bottom:1px solid var(--line); padding:10px 16px;
+  display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+}
+select,button{
+  font:inherit; font-size:14px; background:#231f1b; color:var(--fg);
+  border:1px solid var(--line2); border-radius:6px; padding:6px 12px; cursor:pointer;
+}
+select{max-width:min(46vw,520px)}
+button:hover{border-color:var(--accent)}
+button.primary{background:var(--accent); color:#151210; border-color:var(--accent); font-weight:600}
+button.on{background:var(--accent2); color:#101418; border-color:var(--accent2)}
+.stat{color:var(--dim); font-size:13px; margin-left:auto; display:flex; gap:14px; align-items:center}
+.stat b{color:var(--fg); font-weight:600}
+#s-file{
+  color:var(--accent2); font-weight:600; max-width:340px;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+#s-saved{padding:3px 10px; border-radius:12px; font-size:12px; font-weight:600}
+.saved-idle{background:#231f1b; color:var(--dim)}
+.saved-dirty{background:#3a2c18; color:#e0a860}
+.saved-ok{background:#1e3320; color:#8fd39a}
+main{max-width:1400px; margin:0 auto; padding:20px 16px 140px}
+.doc-head{
+  color:var(--dim); font-size:13px; white-space:pre-wrap;
+  border-left:2px solid var(--line2); padding:8px 14px; margin-bottom:24px;
+}
+.para{display:grid; grid-template-columns:44px 1fr; gap:10px; margin:0 0 6px}
+.para.side{grid-template-columns:44px 1fr 1fr}
+.num{
+  color:var(--dim); font-size:12px; text-align:right; padding-top:9px;
+  user-select:none; font-variant-numeric:tabular-nums;
+}
+.para.mod .num{color:var(--accent); font-weight:700}
+.para.mod .num::after{content:"●"; display:block; font-size:8px; line-height:1}
+.txt{
+  padding:8px 12px; border:1px solid transparent; border-radius:8px;
+  white-space:pre-wrap; word-break:break-word; outline:none; min-height:1.85em;
+}
+.txt:hover{border-color:var(--line)}
+.txt:focus{border-color:var(--accent); background:#1c1815}
+.orig{
+  padding:8px 12px; color:var(--dim); white-space:pre-wrap;
+  border-radius:8px; background:#171410; font-size:15px;
+}
+.orig del{background:var(--del); color:#f0c9c9; text-decoration:none; border-radius:3px}
+.txt ins,.diffbox ins{background:var(--ins); color:#c6ecc9; text-decoration:none; border-radius:3px}
+.diffbox{padding:8px 12px; white-space:pre-wrap; border-radius:8px; background:#171410}
+.diffbox del{background:var(--del); color:#f0c9c9; text-decoration:line-through; border-radius:3px}
+mark.cm{background:rgba(200,122,60,.28); border-bottom:2px solid var(--accent); border-radius:2px; cursor:pointer}
+.cmlist{grid-column:2/-1; margin:2px 0 10px; display:flex; flex-direction:column; gap:6px}
+.cm-item{
+  background:#1e1a16; border-left:3px solid var(--accent); border-radius:0 6px 6px 0;
+  padding:8px 12px; font-size:14px;
+}
+.cm-q{color:var(--accent); font-size:13px; margin-bottom:4px}
+.cm-q::before{content:"“"} .cm-q::after{content:"”"}
+.cm-t{white-space:pre-wrap}
+.cm-item .x{float:right; color:var(--dim); cursor:pointer; padding:0 4px}
+.cm-item .x:hover{color:var(--warn)}
+#pop{
+  position:absolute; z-index:60; display:none; background:var(--panel);
+  border:1px solid var(--accent); border-radius:10px; padding:10px; width:340px;
+  box-shadow:0 12px 32px rgba(0,0,0,.6);
+}
+#pop textarea{
+  width:100%; height:76px; resize:vertical; background:#231f1b; color:var(--fg);
+  border:1px solid var(--line2); border-radius:6px; padding:8px; font:inherit; font-size:14px;
+}
+#pop .q{color:var(--accent); font-size:12px; margin-bottom:6px; max-height:44px; overflow:hidden}
+#pop .row{display:flex; gap:8px; margin-top:8px; justify-content:flex-end}
+#selbtn{
+  position:absolute; z-index:55; display:none; padding:5px 12px; font-size:13px;
+  background:var(--accent); color:#151210; border:none; border-radius:16px;
+  font-weight:600; box-shadow:0 4px 14px rgba(0,0,0,.5); cursor:pointer;
+}
+.overall{
+  margin:40px 0 0; border-top:1px solid var(--line); padding-top:20px;
+}
+.overall h2{font-size:15px; margin:0 0 10px; color:var(--accent); font-weight:600}
+.overall textarea{
+  width:100%; min-height:150px; resize:vertical; background:#1a1714; color:var(--fg);
+  border:1px solid var(--line2); border-radius:8px; padding:12px;
+  font:inherit; font-size:15px; line-height:1.8;
+}
+.overall textarea:focus{border-color:var(--accent); outline:none}
+#toast{
+  position:fixed; left:50%; bottom:24px; transform:translateX(-50%);
+  background:var(--panel); border:1px solid var(--accent); border-radius:8px;
+  padding:10px 18px; display:none; z-index:80; font-size:14px;
+}
+.hint{color:var(--dim); font-size:13px; margin:0 0 18px}
+.err{
+  display:none; background:#2a1614; border:1px solid var(--warn); border-radius:8px;
+  padding:16px 18px; margin:0 0 20px; font-size:14px; line-height:1.7;
+}
+.err b{color:var(--warn); display:block; margin-bottom:6px; font-size:15px}
+.err code{background:#1a1714; padding:2px 7px; border-radius:4px; font-size:13px}
+kbd{background:#231f1b; border:1px solid var(--line2); border-radius:4px; padding:1px 6px; font-size:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <select id="docsel"></select>
+  <button id="btn-side">나란히 비교</button>
+  <button id="btn-diff">변경만 보기</button>
+  <button id="btn-revert">문단 되돌리기</button>
+  <button id="btn-reload" title="서버에서 목록과 원고를 다시 읽는다">다시 불러오기</button>
+  <button id="btn-save" class="primary">저장</button>
+  <div class="stat">
+    <span id="s-file" title="현재 열려 있는 파일"></span>
+    <span>문단 <b id="s-total">0</b></span>
+    <span>수정 <b id="s-mod">0</b></span>
+    <span>코멘트 <b id="s-cm">0</b></span>
+    <span id="s-saved" class="saved-idle">저장 안 함</span>
+  </div>
+</header>
+
+<main>
+  <p class="hint">문단을 클릭하면 바로 고칠 수 있습니다. 문장을 드래그하면 코멘트를 달 수 있습니다. <kbd>Ctrl</kbd>+<kbd>S</kbd> 저장.</p>
+  <div id="err" class="err"></div>
+  <div class="doc-head" id="head"></div>
+  <div id="paras"></div>
+  <div class="overall">
+    <h2>전체 코멘트</h2>
+    <textarea id="overall" placeholder="원고 전반에 대한 지적을 적으세요. 특정 문단에 매이지 않는 이야기 — 반복되는 표현, 전체 리듬, 인물 톤 같은 것."></textarea>
+  </div>
+</main>
+
+<button id="selbtn">＋ 코멘트</button>
+
+<div id="pop">
+  <div class="q" id="pop-q"></div>
+  <textarea id="pop-t" placeholder="여기에 지적을 적으세요"></textarea>
+  <div class="row">
+    <button id="pop-cancel">취소</button>
+    <button id="pop-ok" class="primary">달기</button>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+let DOC = { rel:"", head:"", originals:[], paragraphs:[], comments:[] };
+let sideMode = false, diffOnly = false, lastFocus = -1, pending = null;
+let rendering = false;   // 재렌더 중 blur가 다시 render를 부르는 것을 막는다
+
+/* ---------- 낱말 단위 diff (LCS) ---------- */
+function tokenize(s){ return s.match(/[^\s]+|\s+/g) || []; }
+function diff(a, b){
+  const A = tokenize(a), B = tokenize(b);
+  const n = A.length, m = B.length;
+  const dp = Array.from({length:n+1}, () => new Uint32Array(m+1));
+  for(let i=n-1;i>=0;i--)
+    for(let j=m-1;j>=0;j--)
+      dp[i][j] = A[i]===B[j] ? dp[i+1][j+1]+1 : Math.max(dp[i+1][j], dp[i][j+1]);
+  const out = [];
+  let i=0, j=0;
+  while(i<n && j<m){
+    if(A[i]===B[j]){ out.push(["=",A[i]]); i++; j++; }
+    else if(dp[i+1][j] >= dp[i][j+1]){ out.push(["-",A[i]]); i++; }
+    else { out.push(["+",B[j]]); j++; }
+  }
+  while(i<n) out.push(["-",A[i++]]);
+  while(j<m) out.push(["+",B[j++]]);
+  return out;
+}
+const esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function renderDiff(a, b){
+  return diff(a,b).map(([op,t]) =>
+    op==="=" ? esc(t) : op==="-" ? "<del>"+esc(t)+"</del>" : "<ins>"+esc(t)+"</ins>"
+  ).join("");
+}
+
+/* ---------- 코멘트 하이라이트 ---------- */
+function withMarks(text, idx){
+  const qs = DOC.comments.filter(c => c.n === idx+1).map(c => c.quote);
+  if(!qs.length) return esc(text);
+  let html = esc(text);
+  qs.sort((x,y) => y.length - x.length);
+  for(const q of qs){
+    const e = esc(q);
+    if(!e) continue;
+    const at = html.indexOf(e);
+    if(at < 0) continue;
+    if(html.slice(0, at).includes("<mark")) continue;
+    html = html.slice(0,at) + "<mark class='cm'>" + e + "</mark>" + html.slice(at+e.length);
+  }
+  return html;
+}
+
+/* ---------- 렌더 ---------- */
+function render(){
+  rendering = true;
+  const wrap = $("#paras");
+  wrap.innerHTML = "";
+  DOC.paragraphs.forEach((p, i) => {
+    const o = DOC.originals[i] ?? "";
+    const mod = p.trim() !== o.trim();
+    const cms = DOC.comments.filter(c => c.n === i+1);
+    if(diffOnly && !mod && !cms.length) return;
+
+    const row = document.createElement("div");
+    row.className = "para" + (mod ? " mod" : "") + (sideMode ? " side" : "");
+
+    const num = document.createElement("div");
+    num.className = "num";
+    num.textContent = i + 1;
+    row.appendChild(num);
+
+    if(sideMode){
+      const left = document.createElement("div");
+      left.className = "orig";
+      left.innerHTML = mod ? renderDiff(o, p).replace(/<ins>.*?<\/ins>/g, "") : esc(o);
+      row.appendChild(left);
+    }
+
+    const ed = document.createElement("div");
+    ed.className = "txt";
+    ed.contentEditable = "true";
+    ed.spellcheck = false;
+    ed.dataset.i = i;
+    ed.innerHTML = withMarks(p, i);
+    ed.addEventListener("focus", () => { lastFocus = i; });
+    ed.addEventListener("blur", () => {
+      if(rendering) return;
+      const t = ed.innerText.replace(/ /g," ").replace(/\n+$/,"");
+      if(t !== DOC.paragraphs[i]){ DOC.paragraphs[i] = t; render(); }
+    });
+    row.appendChild(ed);
+    wrap.appendChild(row);
+
+    if(cms.length){
+      const list = document.createElement("div");
+      list.className = "cmlist";
+      cms.forEach(c => {
+        const d = document.createElement("div");
+        d.className = "cm-item";
+        d.innerHTML = "<span class='x' title='삭제'>✕</span>"
+          + "<div class='cm-q'>" + esc(c.quote) + "</div>"
+          + "<div class='cm-t'>" + esc(c.comment) + "</div>";
+        d.querySelector(".x").onclick = () => {
+          DOC.comments = DOC.comments.filter(x => x !== c);
+          render();
+        };
+        list.appendChild(d);
+      });
+      wrap.appendChild(list);
+    }
+
+    if(sideMode && mod){
+      const dv = document.createElement("div");
+      dv.className = "para side";
+      dv.innerHTML = "<div class='num'></div><div class='num'></div>"
+        + "<div class='diffbox'>" + renderDiff(o, p) + "</div>";
+      wrap.appendChild(dv);
+    }
+  });
+  rendering = false;
+  updateStats();
+}
+
+let lastSaved = null;   // 마지막 저장 시각 문자열
+
+function updateStats(){
+  const mod = DOC.paragraphs.filter((p,i) => p.trim() !== (DOC.originals[i]??"").trim()).length;
+  $("#s-total").textContent = DOC.paragraphs.length;
+  $("#s-mod").textContent = mod;
+  $("#s-cm").textContent = DOC.comments.length;
+  updateSavedBadge();
+}
+
+function updateSavedBadge(){
+  const b = $("#s-saved");
+  if(hasUnsaved() && !justSaved()){
+    b.className = "saved-dirty";
+    b.textContent = lastSaved ? "미저장 (마지막 " + lastSaved + ")" : "미저장";
+  }else if(lastSaved){
+    b.className = "saved-ok";
+    b.textContent = "저장됨 " + lastSaved;
+  }else{
+    b.className = "saved-idle";
+    b.textContent = "변경 없음";
+  }
+}
+
+// 저장 직후 상태인지 — 저장 시점의 스냅샷과 현재가 같으면 참
+let savedSnapshot = null;
+function snapshot(){
+  return JSON.stringify([DOC.rel, DOC.paragraphs, DOC.comments, $("#overall").value]);
+}
+function justSaved(){ return savedSnapshot !== null && savedSnapshot === snapshot(); }
+
+/* ---------- 선택 → [코멘트] 버튼 → 입력창 ----------
+   선택만으로 입력창을 띄우면 지우기·복사 같은 편집을 막는다.
+   버튼을 한 번 거쳐야 입력창이 열린다. */
+function hideSelBtn(){ $("#selbtn").style.display = "none"; }
+
+document.addEventListener("mouseup", e => {
+  if($("#pop").contains(e.target) || e.target.id === "selbtn") return;
+  const sel = window.getSelection();
+  const q = sel.toString().trim();
+  if(!q){ hideSelBtn(); return; }
+  let node = sel.anchorNode;
+  while(node && !(node.classList && node.classList.contains("txt"))) node = node.parentElement;
+  if(!node){ hideSelBtn(); return; }
+  pending = { n: parseInt(node.dataset.i, 10) + 1, quote: q };
+  const r = sel.getRangeAt(0).getBoundingClientRect();
+  const b = $("#selbtn");
+  b.style.display = "block";
+  b.style.left = Math.min(r.left + window.scrollX, window.innerWidth - 120) + "px";
+  b.style.top = (r.bottom + window.scrollY + 6) + "px";
+});
+
+// 버튼을 누를 때 선택이 풀리지 않게 한다
+$("#selbtn").addEventListener("mousedown", e => e.preventDefault());
+$("#selbtn").onclick = () => {
+  if(!pending) return;
+  hideSelBtn();
+  const q = pending.quote;
+  $("#pop-q").textContent = q.length > 90 ? q.slice(0,90) + "…" : q;
+  $("#pop-t").value = "";
+  const b = $("#selbtn");
+  const p = $("#pop");
+  p.style.display = "block";
+  p.style.left = Math.min(parseInt(b.style.left), window.innerWidth - 360) + "px";
+  p.style.top = b.style.top;
+  $("#pop-t").focus();
+};
+
+document.addEventListener("keydown", e => { if(e.key === "Escape") hideSelBtn(); });
+$("#pop-cancel").onclick = () => { $("#pop").style.display = "none"; };
+$("#pop-ok").onclick = () => {
+  const t = $("#pop-t").value.trim();
+  if(t && pending){ DOC.comments.push({ ...pending, comment: t }); render(); }
+  $("#pop").style.display = "none";
+};
+$("#pop-t").addEventListener("keydown", e => {
+  if(e.key === "Enter" && (e.ctrlKey || e.metaKey)) $("#pop-ok").click();
+  if(e.key === "Escape") $("#pop-cancel").click();
+});
+
+/* ---------- 툴바 ---------- */
+$("#btn-side").onclick = e => { sideMode = !sideMode; e.target.classList.toggle("on", sideMode); render(); };
+$("#btn-diff").onclick = e => { diffOnly = !diffOnly; e.target.classList.toggle("on", diffOnly); render(); };
+$("#btn-revert").onclick = () => {
+  if(lastFocus < 0) return toast("되돌릴 문단을 먼저 클릭하세요");
+  DOC.paragraphs[lastFocus] = DOC.originals[lastFocus];
+  render();
+  toast((lastFocus+1) + "번 문단을 원문으로 되돌렸습니다");
+};
+$("#btn-save").onclick = save;
+document.addEventListener("keydown", e => {
+  if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s"){ e.preventDefault(); save(); }
+});
+
+function toast(msg){
+  const t = $("#toast");
+  t.textContent = msg;
+  t.style.display = "block";
+  clearTimeout(t._h);
+  t._h = setTimeout(() => t.style.display = "none", 3200);
+}
+
+async function save(){
+  if(!DOC.rel) return toast("열려 있는 문서가 없습니다");
+  document.activeElement && document.activeElement.blur();
+  let j;
+  try{
+    const r = await fetch("/api/save", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        rel: DOC.rel, head: DOC.head,
+        paragraphs: DOC.paragraphs, originals: DOC.originals,
+        comments: DOC.comments, overall: $("#overall").value.trim(),
+      }),
+    });
+    j = await r.json();
+  }catch(err){
+    showError("저장하지 못했습니다. 서버 연결이 끊겼습니다. (" + err.message + ")<br><br>"
+      + "<b style='display:inline'>이 창을 닫지 마세요.</b> 첨삭 내용은 화면에 그대로 있습니다. "
+      + "<code>python tools/review_server.py</code> 로 서버를 다시 켠 뒤 <code>Ctrl+S</code> 를 누르면 저장됩니다.");
+    updateSavedBadge();
+    return;
+  }
+  if(j.error){
+    showError("저장하지 못했습니다: " + j.error);
+    return;
+  }
+  clearError();
+  savedSnapshot = snapshot();
+  lastSaved = new Date().toTimeString().slice(0,8);
+  updateSavedBadge();
+  toast("저장 완료 — 수정 " + j.changed + "문단, 코멘트 " + j.comments + "건"
+        + (j.overall ? ", 전체 코멘트 있음" : "") + " → " + j.output);
+}
+
+/* ---------- 로드 ---------- */
+async function loadDoc(rel){
+  let j;
+  try{
+    const r = await fetch("/api/doc?rel=" + encodeURIComponent(rel), { cache: "no-store" });
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    j = await r.json();
+  }catch(err){
+    showError("원고를 읽지 못했습니다. (" + err.message + ")");
+    return;
+  }
+  if(j.error) return toast(j.error);
+  clearError();
+  DOC.rel = j.rel;
+  DOC.head = j.head;
+  DOC.originals = j.paragraphs.slice();
+  DOC.paragraphs = j.paragraphs.slice();
+  DOC.comments = [];
+  // 이전 첨삭 복원
+  const m = j.memo || {};
+  (m.changed || []).forEach(c => {
+    if(c.n-1 < DOC.paragraphs.length && DOC.originals[c.n-1] === c.original)
+      DOC.paragraphs[c.n-1] = c.edited;
+  });
+  DOC.comments = (m.comments || []).slice();
+  $("#overall").value = m.overall || "";
+  $("#head").textContent = j.head;
+  $("#s-file").textContent = j.rel.split("/").pop();
+  $("#docsel").value = j.rel;
+  lastFocus = -1;
+  savedSnapshot = null;
+  lastSaved = m.saved_at ? m.saved_at.slice(11) : null;
+  hideSelBtn();
+  $("#pop").style.display = "none";
+  render();
+  if(m.saved_at) savedSnapshot = snapshot();
+  window.scrollTo(0, 0);
+  toast(m.saved_at
+    ? "불러옴 — 이전 첨삭 포함 (" + m.saved_at + ")"
+    : "불러옴 — " + j.rel.split("/").pop());
+}
+
+function hasUnsaved(){
+  if(DOC.comments.length) return true;
+  return DOC.paragraphs.some((p,i) => p.trim() !== (DOC.originals[i] ?? "").trim());
+}
+
+function showError(msg){
+  const e = $("#err");
+  e.style.display = "block";
+  e.innerHTML = "<b>서버에 연결하지 못했습니다</b>" + msg
+    + "<br><br>서버를 켠 뒤 <b style='display:inline'>다시 불러오기</b>를 누르거나 이 페이지를 새로고침하세요.";
+}
+function clearError(){ $("#err").style.display = "none"; }
+
+async function boot(){
+  const sel = $("#docsel");
+  let docs;
+  try{
+    const r = await fetch("/api/docs", { cache: "no-store" });
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    docs = await r.json();
+  }catch(err){
+    showError("서버가 꺼져 있거나 다른 포트에서 돌고 있습니다. (" + err.message + ")<br><br>"
+      + "프로젝트 폴더에서 <code>python tools/review_server.py</code> 를 실행하세요.");
+    return;
+  }
+  clearError();
+  if(!docs.length){ showError("첨삭할 원고를 찾지 못했습니다."); return; }
+
+  const keep = DOC.rel;   // 다시 불러오기일 때 보던 문서를 유지한다
+  sel.innerHTML = "";
+  docs.forEach(d => {
+    const o = document.createElement("option");
+    o.value = d.rel;
+    o.textContent = d.dir + " / " + d.name;
+    sel.appendChild(o);
+  });
+  const target = docs.some(d => d.rel === keep) ? keep : docs[0].rel;
+  await loadDoc(target);
+}
+
+$("#btn-reload").onclick = () => boot();
+
+/* 새 원고가 생겼는지 20초마다 확인해 드롭다운만 갱신한다.
+   보고 있는 문서와 첨삭 내용은 건드리지 않는다. */
+setInterval(async () => {
+  try{
+    const r = await fetch("/api/docs", { cache: "no-store" });
+    if(!r.ok) return;
+    const docs = await r.json();
+    const sel = $("#docsel");
+    const have = new Set([...sel.options].map(o => o.value));
+    const fresh = docs.filter(d => !have.has(d.rel));
+    if(!fresh.length) return;
+    sel.innerHTML = "";
+    docs.forEach(d => {
+      const o = document.createElement("option");
+      o.value = d.rel;
+      o.textContent = d.dir + " / " + d.name;
+      sel.appendChild(o);
+    });
+    sel.value = DOC.rel;
+    toast("새 원고 " + fresh.length + "건이 목록에 추가됐습니다");
+  }catch(e){ /* 서버가 잠시 꺼진 것뿐일 수 있다 */ }
+}, 20000);
+
+(async () => {
+  const sel = $("#docsel");
+  sel.addEventListener("change", () => {
+    const next = sel.value;
+    if(next === DOC.rel) return;
+    if(hasUnsaved() && !confirm("저장하지 않은 첨삭이 있습니다. 그대로 다른 문서를 여시겠습니까?")){
+      sel.value = DOC.rel;   // 선택을 되돌린다
+      return;
+    }
+    loadDoc(next);
+  });
+  await boot();
+})();
+</script>
+</body>
+</html>

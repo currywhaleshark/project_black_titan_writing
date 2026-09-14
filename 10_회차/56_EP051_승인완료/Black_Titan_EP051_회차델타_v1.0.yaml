@@ -1,0 +1,128 @@
+schema_version: 2
+chapter: 51
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-13"
+  approval_note: "브리프 v0.1 → 정정 3건 → v0.2 GATE_C_PASS → Level 6 → 초고 → 첨삭 3건(EP7 회상·`봄에 알았고`·`어이, 조수`) → `좋아 승인`. **S9 1/12.**"
+based_on_snapshot: "SNAP-050 v1.0"
+produces_snapshot: "SNAP-051 v1.0"
+changes:
+  - category: "situational"
+    field_path: "assets.youngjin_repair_shop"
+    operation: "advance"
+    after:
+      - "**조달 1차 집행(6/19 일):** 구래항 인양장에서 **작은 것들 수령·적재 완료** — 사슬 뭉치·강재 토막·도르래·용접봉 상자. 앞마당에 부려 놓음(용접봉만 처마 밑)"
+      - "**장부 처리:** 목록에서 실어 온 항목에 줄, **안 실린 항목 옆에는 날짜(목요일)**. 조달이 실무 일정으로 바뀜"
+      - "**구명줄 발사기 확보 예정:** 작년에 올린 배에서 나온 것 1대. **줄 감기가 안 돎** → 영진 `돌게 만들면 된다` → **고철값으로 거래 성립**"
+      - "**미수령(목요일 대형 트럭):** 안 나가는 고철 더미 전체 — 체인 뭉텅이·휜 형강 몇 개·드럼통·도르래(크기별)·**닻 하나.** 기태가 **더미째 값을 안 받음**"
+    evidence:
+      scene: [3, 4, 5, 6]
+
+  - category: "relational"
+    field_path: "relations.dana_gitae"
+    operation: "advance"
+    after:
+      - "**첫 동석 노동.** 단아가 인양장에서 오전 내내 기태 옆에서 일함"
+      - "**무서움은 그대로다** — 완화·해소 0. `웃는데도 무서웠다` / `무서운 얼굴로 그렇게 말했다`. 달라진 것은 상황뿐: **`오늘은 피할 데가 없었다`**(EP7의 `안쪽 방으로 피하면 됐다`가 막힘)"
+      - "**챙김의 새 형태:** 싣는 순서를 실무처럼 정해 주는데, 그대로 하면 **단아가 드는 건 계속 가벼운 것들만 남는다.** 단아는 중간에 알아채고 아무 말도 못 함 — `고맙다고 하면 아닌데 왜 그러냐고 할 것 같았다`"
+      - "**호칭 계승:** **`어이, 조수`**(EP33 계보). 단아가 그 말버릇의 구조를 알아챔 — `하지 마라, 그러다 어떻게 된다. 문장이 늘 그 순서였다` / `조수라고 부르는 것도 그때부터였다`"
+      - "**미해결 유지:** 무섭게 구는 것과 챙기는 것이 한 사람 안에 있는 모순은 봄부터 **아직 안 풀렸다**"
+    evidence:
+      scene: [2, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**조달 실무의 문법:** 고철은 무게로 나가고 끝인데 **장비는 출처가 장부에 남는다.** `남는 게 왜 문제인지까지는 몰랐다. 다만 그게 문제라는 건 두 사람 다 아는 것 같았다`"
+      - "**안 묻는 것이 이 집만의 일이 아니다:** `이 집 안에서만 그런 줄 알았는데 밖에서도 그랬다` / `무엇에 쓰는지는 끝까지 안 나왔다. 안 나왔는데도 거래가 끝났다`"
+      - "**준비가 사건보다 먼저 움직인다는 어긋남:** `바다에 뭐가 하나 떠 있는데 우리는 항구에 짐을 실으러 간다. 순서가 이상한 것 같은데 어디가 이상한지는 짚이지 않았다`"
+      - "**사람 몸의 척도(52m와 분리):** 드는 것과 못 드는 것 / `어느 쪽으로도 안 되는 물건` / **다시 드는 게 계속 들고 있는 것보다 힘들다**"
+      - "※ **EP50 회수(자각 0):** 팔을 오래 들고 있는 일이 처음으로 쓸모를 보임. `자기가 그걸 얼마나 들고 있었는지는 세지 않았다` — 훈련과의 연결은 문면에 없음"
+    evidence:
+      scene: [1, 3, 5]
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "**관측 표 첫 실전 기입:** 6/18 밤 시각 + 부표 번호. **정체 칸은 공란 유지**"
+      - "**빈칸 원칙 확장(EP49 계보):** `모르는 걸 적으면 나중에 지워야 하잖아` — 지운 자리는 지웠다는 게 남는다"
+      - "개체 표의 예약 빈 칸(EP50)은 **여전히 비어 있음**"
+    evidence:
+      scene: 6
+
+  - category: "situational"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "**외해 신호 지속·접근:** 6/18 밤 부표 **7번** → 6/19 밤 **5번.** 하루 종일 사라지지도 커지지도 않음. 파형은 어제와 같은 모양(넓고 완만·급할 것 없음)"
+      - "영진이 한참 봄. **발화 0**"
+    evidence:
+      scene: 6
+
+  - category: "situational"
+    field_path: "living_conditions.neighborhood"
+    operation: "advance"
+    after:
+      - "**구래항 인양장 지면 개시(신규 장소):** 물에서 건져 낸 것들이 마당에 쌓인 곳. 녹·물때·굴 껍데기·삭은 도색. **소리가 큰 장소** — 크레인 와이어·그라인더·소리를 질러 말하는 사람들. 바닥 = 흘린 기름·굳은 진흙·잘린 와이어 토막. **넓은데 발 디딜 데는 좁다**"
+      - "**방재벽·수문 한 컷**(항구→구래동 귀로). 수문 앞 노란 줄·점검하는 사람 둘. 단아 인식 = `있는 게 당연한 것은 볼 일이 없다`"
+    evidence:
+      scene: [2, 6]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 50
+        after: 51
+    note: "**외해의 그것이 안쪽으로 이동**(7번 → 5번). 형체·명명·해석 0. 다음 = EP52 접촉"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "**작가용 봉인 유지.** 닻은 더미 중 한 단어로 지나갔고, 앞마당 반입구도 열지 않았다"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 50
+        after: 51
+    note: "관측 표 첫 실전 기입 + **빈칸 원칙 명문화**(`모르는 걸 적으면 나중에 지워야 하잖아`). 증명 0"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+  - id: "FS-C5-WHITE-SENTINEL"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "새 증상 0. 손바닥·어깨의 피로는 노동 후 근육"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "앵커 명명·설계·모드 0 / 클로 언급 0 / 배양·소재·현서 장비 0 / 표면 질감 암시 0 / 앞마당 반입구 0 / 센티널 0 / 우편물 0 / 혜정 0 / 전투 0"
+
+canon_additions:
+  - "시간: EP51 = 6/19(일) 하루. 아침 8시 출발 ~ 저녁"
+  - "**★ 첫 지면 등장 ≠ 첫 만남:** 생활권 조연은 전부 봄 이전부터 알던 사람들이다. `봄에 알았고`·`봄부터 그랬다`(오래된 사물·습관에) **금지.** 인양장·수산시장·항구는 **등하굣길의 풍경**(EP7 `늘 담장 밖에서 구경만 했다 … 등하굣길의 오랜 놀이`)"
+  - "**호칭은 재사용 대상이다.** `문장 재사용 0`을 호칭까지 적용하지 않는다. **`어이, 조수`(기태→단아)는 말버릇이므로 반복된다.** 반복을 숨기지 말고 인물이 알아채게 하면 계보가 된다"
+  - "**구래항 인양장 정본:** 건져 낸 것들의 마당·소리가 큰 장소·넓은데 발 디딜 데는 좁음"
+  - "**조달 실무 정본:** 고철 = 무게로 나가고 끝 / **장비 = 출처가 장부에 남는다.** 안 도는 장비는 고철값"
+  - "**앞마당 = 옛 차량기지 자재 반입구**(LOC-02 §2.2-B·LOC-05 신설). 아래에 격납고의 옛 대형 크레인. **영진이 이 자리에 터를 잡은 이유 — 집이 먼저가 아니라 아래가 먼저였다.** ※ 지면 노출 0"
+  - "격언 계보: `있는 게 당연한 것은 볼 일이 없다` / `모르는 걸 적으면 나중에 지워야 하잖아` / `다시 드는 게 계속 들고 있는 것보다 힘들다` / `하지 마라, 그러다 어떻게 된다. 문장이 늘 그 순서였다`"
+provenance:
+  chapter_text: "Black_Titan_EP051_51화_인양장_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP051_회차브리프_v0.2.md"
+  content_lock: "Black_Titan_EP051_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP051_Gate-D_검증서_v1.0.md"
+  arc_outline: "02_여름편_기획/Black_Titan_S9_EP051-062_화별개요_v1.0_승인.md"
+notes:
+  - "**S9 「고철의 재간」 1/12 완료.** 다음 = **EP52 「밀려오는 것」 — 투구게형 전투(진입).** 맨손 한계 사다리 2연타(지지)"
+  - "EP52 전장(S9 개요 고정): **간척 방조제 안쪽 얕은 물** — 수심 무릎 아래·바닥은 갯벌 아닌 콘크리트 슬래브·**뒤에 수문**(밀리면 도시가 젖는다). Level 6에서 전장 구조 6항목 선확정"
+  - "목요일(6/23) = 대형 트럭 도착 예정일. **닻을 포함한 큰 것들이 오는 날** — 지면에서는 여전히 특정하지 않는다"

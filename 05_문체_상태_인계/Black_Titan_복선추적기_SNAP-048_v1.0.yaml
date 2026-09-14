@@ -1,0 +1,183 @@
+schema_version: 1
+as_of_episode: 48
+last_updated_by: "EP048 「꺾이지 않는 방향」 v1.0 Gate D 승인·상태 반영 (S8 8/10 — 첫 육탄전·정밀한 구속·유년의 격투 근원·EP49 선등재)"
+active:
+  FS-C5-WHITE-SENTINEL:
+    name: "먼 데서 준비되는 것"
+    line: "C5"
+    secret_layer: 4
+    planted_at: 46
+    surface_reading: "무관해 보이는 해외 단신 — 부두 하나가 사흘째 통제"
+    truth: "화이트 센티널의 이송·준비(작가용)"
+    reveal_window: "사다리 = S8 한 줄 → S9~S10 누적 → 관통상 회차 데뷔(그레이트 마징가 결)"
+    allowed_reveal_now: "**한 줄 암시까지**(제목 + 두어 문장·목록 구석·주목 0)"
+    prohibited_reveal_now: "이름, 사진, 기체 묘사, 국가 특정, 소속, 등장인물의 해석, 루시"
+    last_progressed: 46
+    next_window: "S9 누적"
+    status: "SEEDED"
+    related_character_ids: []
+  FS-001-DANA-VISION:
+    name: "시력 저하·VR·두통·손끝 둔함"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "이력 1회가 기록된 장부"
+    truth: "1차 신경계통과 2차 거체 접속 부담"
+    reveal_window: "봄 = 부인 가능 수준, 재검 6월, **여름 중반 = 출격 불가(자신감 궤적 꺾임 창구)**"
+    allowed_reveal_now: "**재검 지불(41): 이상 없음 — 안심 확정**(기원 = EP18·4월 정본). S8~S9 = 새 증상 0 구간"
+    prohibited_reveal_now: "새 증상, 진단, 저림·흐림(해금 = S10 국면 결정), 반복 사용"
+    last_progressed: 41
+    next_window: "S10 몸살 전조 → S11 꺾임"
+    status: "SIMMERING_DENIABLE"
+    related_character_ids: ["dana", "youngjin", "sua"]
+  FS-C2-TITAN-ORIGIN:
+    name: "거인의 기원과 부녀의 준비"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "가족 내부: 시제기 반출+부녀 개수. 외부: 무등록 검은 거인"
+    truth: "현서·영진이 배양한 2차 거체와 두 자매의 신경기원"
+    reveal_window: "후반 봄까지 확정 폭로 금지·진실은 가을"
+    allowed_reveal_now: "위장 유지 상시"
+    prohibited_reveal_now: "생체·배양·우회동조·VR 실목적·현서의 현재"
+    last_progressed: 18
+    next_window: "가을"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin", "hyunseo"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "그것들의 실제 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "봄의 위협 종결 — 일곱 밤이 남긴 물음표들(정체·이유 미공개)"
+    truth: "고지 지정자+저지 운반자의 역할 협동(작가용) — **최종 회수 프로토콜 실패 → 재분류 심의 개시(상쇄 방해원 = 제거 대상 전환 검토)**"
+    reveal_window: "**여름 기획 게이트에서 재설계**"
+    allowed_reveal_now: "**EP44 이행 완료:** 원거리 사격·연사·거리 유지, 개수 흔적(재정렬·두터운 기부·작살형 끝), 첫 피격(관통 0·밀림 다수 — **버팀의 불안 구조 유지·무효 확정 0**), **의도의 공포**(`저건 나를 부수려고 왔다`), 맨손 한계, 훅 = `간격이 있다`. **EP45 잠금:** 간격을 셈에 넣은 재접근 성공 → 손에 닿는 대로 가시 부러뜨리기 → 몸통 노출 → **부서질 때까지 내려치기**(정권 아님) → 귀환 후 `봄에 그놈이에요. 근데 가시가 달라요` → 수아 대조 결론"
+    prohibited_reveal_now: "재분류 확정·전투형 해설, 속도형 형상·공격·세 자릿수, 아이언 앵커, 작가용 명칭"
+    last_progressed: 48
+    next_window: "EP49~50 후처리·앵커 씨앗 3단·투구게 예고"
+    status: "ACTIVE"
+    related_character_ids: ["youngjin", "myeongjun"]
+    author_notes:
+      - "**보류함(여름 기획 자료):** 속도형 등각류·세 자릿수 속도·아이언 앵커 필요성·재분류 심의 — 개요 초여름 예고 전부 미노출 상태로 이월"
+      - "봄 전적(작가용): S1~S7 회수 시도 전부 실패·수거물 0. 잔존물 = 폐건물 1·전도 크레인 1(안전점검 대상)"
+  FS-003-BIO-SEEP:
+    name: "닦이지 않는 흔적"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: "세척해도 남는 것들"
+    truth: "기체 생체 순환액(본체) / 개체 점액의 생체 조직성(인접)"
+    reveal_window: "확정은 가을"
+    allowed_reveal_now: "사실 관찰만·본체 연결 금지 유지. EP40 후처리 = 용해 2건(재접속 후보)"
+    prohibited_reveal_now: "출처 암시 어휘, 명명·해설, 생체기원 증거화"
+    last_progressed: 33
+    next_window: "S7 후처리"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["youngjin", "sua"]
+  C3-MYEONGJUN-YOUNGJIN:
+    name: "서랍 속 동반 사진 + 어머니의 부재"
+    line: "C3"
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: "공개되는 통지들"
+    truth: "군 실험장 인연·현서의 미국행과 거래(전면 봉인)"
+    reveal_window: "서랍 사진 = 별도 결정, 전모는 여름 말~가을"
+    allowed_reveal_now: "여운 동결·간접 지원 현재형"
+    prohibited_reveal_now: "현서 정보 일체, 구판 소품, 영진 설명, 질문 재개"
+    last_progressed: 33
+    next_window: "별도 결정"
+    status: "SIMMERING"
+    related_character_ids: ["myeongjun", "youngjin", "hyunseo", "dana", "sua"]
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 유예와 부채"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "세 자리를 다 지킨 절친이자 짝(연락·건강·귀환)"
+    truth: "오독 위의 부채 — 짐작 목록은 캐지 않은 채 보관"
+    reveal_window: "여름 = 명백한 증상·학교 피해 뒤 보호 목적 추적·물증(기획 시)"
+    allowed_reveal_now: "**반의식 1눈금 집행(43 — 통제 실무 즉시 정리〔자문 0〕·규칙 재가동 문자).** 곡선: S8 반의식 → S9 누적(짐작 목록 증가·캐지 않음) → S10 명명(v2.2 §5-2 — 집 방문·미행·기자재 목격)"
+    prohibited_reveal_now: "패턴의 명시적 인지·발화(S10 예약), 추궁·미행·물증(S10~11 몫), 혜정 심리 해설(반의식 구간)"
+    last_progressed: 47
+    next_window: "S9 누적 → S10 명명"
+    status: "WARM_STEADY"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+    author_notes:
+      - "미회수: 동그라미(EP42 후보). 신규 소약속: 수박(발표회 날)"
+  B4-SEONGHO-SCHOOL:
+    name: "성호의 숭배와 교실의 검은 거인"
+    line: "B4"
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: "54 대 54 — 동점으로 봄을 닫은 앙숙"
+    truth: "숭배 대상이 옆자리(비대칭 유지)"
+    reveal_window: "여름 학교 파손·스케일업(기획 시)"
+    allowed_reveal_now: "**봄 완결(40):** 마지막 타 14미터·동점·쌍방 앙숙 완전 복귀. 미지불 = **재대결의 재대결(+달리기 — 성호 완쾌 후)**"
+    prohibited_reveal_now: "전력질주, 정체 단서, 연애 계열 전면(상시)"
+    last_progressed: 47
+    next_window: "학교 파손(톡토기형·S10)"
+    status: "RESOLVED_SPRING_DORMANT"
+    related_character_ids: ["seongho", "dana"]
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "봄 내내 쌓은 기록 습관으로 승패를 바꾼 확인자"
+    truth: "수아의 2차 계통과 약한 우회 필터"
+    reveal_window: "파일럿 계열 재개 = 여름 별도 창구"
+    allowed_reveal_now: "**결정적 관찰 지불 완료(38 — `언니, 큰 건 눈이 없어. 꽃이 눈이야.` 한 문장·이후 침묵).** EP39~40 = 추가 조언 0(개요 고정). EP40 durable change = 승패 바꾼 관찰 제공·**파일럿 가능성 증명 0**"
+    prohibited_reveal_now: "추가 지시, 적합성·동조·원격감각·미래 출격 증명, 채널 상주"
+    last_progressed: 45
+    next_window: "S11 첫 대체출격"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana"]
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전의 공포 상상"
+    truth: "여름 마지막 전투와 공명"
+    reveal_window: "여름 마지막 전투"
+    allowed_reveal_now: "**재점화(44): 작살형 끝의 인지** — `갈라진 것은 박히면 안 빠지라고 있는 것`·콘크리트를 무는 장면. 몸의 관통 상상은 금지(현상 관찰까지). 반복 사용 금지"
+    prohibited_reveal_now: "실제 부상 예고화"
+    last_progressed: 44
+    next_window: "여름 마지막 전투(갯민숭달팽이형 관통상)"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4 격파·용해"
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: "첫 침공 소아크"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: "구래항 봉쇄 소아크"
+    resolution: "EP10 격퇴, EP12 마감"
+    resolved_at: 10
+  A-S3-HIGHGROUND:
+    name: "고지선점 소아크"
+    resolution: "EP16 격퇴·용해, EP18 마감"
+    resolved_at: 18
+  A-S4-BINDING:
+    name: "포박 소아크"
+    resolution: "EP23 기능 정지, EP24 마감"
+    resolved_at: 24
+  A-S5-QUIET-DAYS:
+    name: "괴수 없는 날들 소아크"
+    resolution: "EP29 아크 마감"
+    resolved_at: 29
+  A-S6-STILL-SEA:
+    name: "멈춰야 사는 바다 소아크"
+    resolution: "EP35 아크 마감"
+    resolved_at: 35
+  A-S7-LAST-RETRIEVAL:
+    name: "봄의 마지막 회수 소아크"
+    resolution: "**EP40 결착 2호·용해 2건·봄 시즌 마감**(기능정지 1호 = EP39)"
+    resolved_at: 40
+retired: {}

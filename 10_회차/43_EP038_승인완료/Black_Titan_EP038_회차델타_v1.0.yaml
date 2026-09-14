@@ -1,0 +1,120 @@
+schema_version: 2
+chapter: 38
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-11"
+  approval_note: "v0.1 → 구조 지시 2건(v0.2 차폐 인과 강화·v0.3 답 은닉) → `좋아`. S7 3/5 — 협동 압박/수아의 단 한 번 관찰."
+based_on_snapshot: "SNAP-037 v1.0"
+produces_snapshot: "SNAP-038 v1.0"
+changes:
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "**결정적 관찰 수행·발화(처음이자 마지막 전투채널 개입):** 두 장 대비(폐건물 = 꽃이 추적·군부형 예측 요격 / 기둥+벽 = 꽃 방향 상실·군부형 정지) → **`언니, 큰 건 눈이 없어. 꽃이 눈이야.`** 이후 침묵(추가 지시 0)"
+    evidence:
+      scene: [4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**획득(수아 경유):** 큰 놈 = 눈 없음·꽃이 눈 — 숨을 상대는 꽃. 오판 해소(`납작한 걸 뒤집으면 끝` 폐기), 싸움 재정의 = `본다→간다` 회로 끊기(술래 눈 가리기)"
+      - "**경유한 오답:** 투시 가설(`벽 너머를 보는 건가`) — 기둥+벽 정지로 자체 붕괴"
+      - "구조물 선택 = 크레인 기초(무너지지 않는 것 — 방패는 넓이가 아니라 안 무너지는 걸로)"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "emotional"
+    field_path: "characters.dana.emotional"
+    operation: "advance"
+    after:
+      - "오판의 값 완납(재포박 2회·방패 상실·투시 공포) — 바닥 0: 수아 문장 수신 후 분함 대신 **`든든함보다 조금 더 뜨거운 것`**. 자신감 = 재해석·선택 주도로 회복 개시"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "situational"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**협동 압박 실연:** 은닉 이동 예측 요격(폐건물 정면 돌파 — 부수 피해)·재포박 1회·진짜 차폐 정지 재확인"
+      - "**훅 국면:** 단아 = 크레인 기초 사각 진입 완료 / 꽃 = 시야 상실 / **군부형 = 마지막 지시 방향으로 코앞까지 진입 후 무명령 정지(정면 대치)** — 다음 지정 갱신 대기"
+    evidence:
+      scene: [1, 2, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_sua"
+    operation: "advance"
+    after:
+      - "**전투 첫 협업 성립(단 한 번):** 관찰(수아)→전술 확장(단아) 분업 — 파일럿 가능성 증명 0(개요 고정)"
+    evidence:
+      scene: 5
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "혜정 = **두 번째 메시지(`아직이지`) 썼다 지움·전송 0**(재촉하지 않는 선택 — `재촉은 걱정을 밖으로 내다 버리는 일`). 발신 예약 상태 지속"
+    evidence:
+      scene: 4
+
+foreshadow_updates:
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 36
+        after: 38
+    note: "**결정적 관찰 지불 완료(문면 그대로·한 문장·이후 침묵).** 적합성·원격감각 증명 0 이행. 다음: 여름(파일럿 계열 재개 창구는 별도)"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 37
+        after: 38
+    note: "시야선 규칙 장면 증명 완료(진짜/가짜 차폐 대비+예측 요격+무명령 정지). 다음: **EP39 오지정·고지 기능정지 → EP40 결착·재분류 심의(작가용)**"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 37
+        after: 38
+    note: "썼다 지움 이행(전송 0). 다음: **EP40 실전 발신(`끝났어`) + 혜정 답 문면(개요: 필기 사진·`내일 와. 성호가 마지막 한 판…`)**. 학교 비트(귀가 준비 계열)는 재배치로 소멸 — 봄 결산 보강분에서 대체 검토"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "증상 0 이행. EP40 = 봄 증상선(저림 재발 0·후보 열어 두기 — 개요)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "EP40 = 마지막 타석 회수 창구(개요 B4 — 단 `표적 던지기` 원문은 티볼 정정 필요)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "수아 추가 지시 0, C1 증상 0, 협동 확정 서술 0(행동 연쇄까지), 사격·앵커 0"
+  - "군부형 새 공격기관 0(돌파 = 부수 피해), 혜정 전송 0, 작가용 명칭 0"
+
+canon_additions:
+  - "시간: EP38 = 5/17 화 밤 연속(시간 경과 0). **전투 미종결 — EP39 = 시간 경과 0 진입(위기 지속 4호)**"
+  - "**수아 문면 정본:** `언니, 큰 건 눈이 없어. 꽃이 눈이야.`(전투채널 처음이자 마지막 개입)"
+  - "**차폐 정본(사용자 구조 지시):** 폐건물 = 낮은 각도만 차폐 → 꽃이 이동 중계 → **예측 요격**(가려는 쪽 벽 붕괴) / 진짜 차폐 = 원반까지 가려진 순간만 / **무명령 정지 = 코앞 정면 대치도 가능**(눈 없음의 증명)"
+  - "**독자 설계 정본:** S2 힌트 은닉 — 투시 오답 경유 후 S4 두 장 대비로 정답 공개"
+  - "혜정 문면: `아직이지`(썼다 지움 — 미전송 정본)"
+  - "격언 계보: `재촉은 걱정을 밖으로 내다 버리는 일`(혜정) / `방패는 넓이가 아니라 안 무너지는 걸로`(단아)"
+provenance:
+  chapter_text: "Black_Titan_EP038_38화_꽃이눈이야_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP038_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP038_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP038_Gate-D_검증서_v1.0.md"
+notes:
+  - "S7 3/5 완료. 다음 **EP39 「본다, 간다」(중요 화 — 선택/협동 절단/첫 결착. 시간 경과 0 진입).**"
+  - "EP39 고정선(개요 v1.2): **잘못 닿은 지정**(꽃 재개화·원반 회전 → 단아 마지막 순간 기초 뒤 완전 은신 → **젖은 기초 표면에 짧은 광택** → 꽃잎 재정렬 접힘) → **움직이지 않는 것을 덮다**(군부형 = 단아 아닌 **크레인 기초로** 미끄러짐·넓게 붙이고 운반막 폐합·외해 끌기 → 지반 박힌 구조물 안 움직임 → **자기 흡착발·갑판으로 묶임**) → **갱신 공백의 등반**(기초+군부형 등판 발판 → 상부 구조 → 꽃 펴지기 전 접근 — 경로·시점 = 단아) → **보는 쪽의 기능정지**(도망·반격 0 — 꽃잎 다발 모아 쥐고 **중앙 원반 반대 방향 비틀기** → 배열 붕괴·탐색/지정 정지) → C4: 새 지시 없는 군부형 = 기초 잡은 채 마지막 운반동작 반복(**아직 기능함 — EP40 결착 보존**)"
+  - "EP39 훅(개요): 꽃 팔이 힘없이 접힌 뒤에도 부두가 한 번씩 울림 — 군부형이 기초 끌 때마다 뒤쪽 갑판 한 장 들었다 붙임 — 단아, 찌그러진 원반에서 손 놓고 아래를 내려다봄"
+  - "EP39 금지(개요): 수아 추가 조언 0, 바다나리형 직접 공격 0(기능정지만), 군부형 기능정지 0(EP40 보존), 앵커·사슬·케이블·군 공격 0"
+  - "EP40 예고 메모: B4 원문 `표적 던지기` = **티볼 마지막 타석으로 정정 필요**(EP36 정본). B1 문면(`끝났어`·`내일 와…`)·C1 봄 증상선·재분류 심의(작가용·해설 0)·초여름 훅(세 자릿수 속도) = 브리프에서 잠금"

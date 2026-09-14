@@ -1,0 +1,20 @@
+schema_version: 1
+as_of_episode: 0
+last_updated_by: ""
+active:
+  FS-000:
+    name: ""
+    line: "B"
+    secret_layer: null
+    planted_at: null
+    surface_reading: ""
+    truth: ""
+    reveal_window: ""
+    allowed_reveal_now: ""
+    prohibited_reveal_now: ""
+    last_progressed: null
+    next_window: ""
+    status: "ACTIVE"
+    related_character_ids: []
+resolved: {}
+retired: {}

@@ -1,0 +1,125 @@
+schema_version: 2
+chapter: 22
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-05"
+  approval_note: "v0.1 → 첨삭 2건 v0.2 → 문장 수정 4건 v0.3 → `이렇게 정리하고` 확정. S4 회복·전환 화(중요 화)."
+based_on_snapshot: "SNAP-021 v1.0"
+produces_snapshot: "SNAP-022 v1.0"
+changes:
+  - category: "combat"
+    field_path: "characters.dana.state"
+    operation: "advance"
+    after:
+      - "**셈의 교체와 1차 생환:** 소리 비대칭의 의미 해독(놓는 순간이 있다) → 장력 교대 3회 확증 → 조건 둘(놓는 소리+닿는 발) → 당김 안으로 전력 돌진 → 기부 파고들기·몸통 들이받기 → **기립**(견인 각 붕괴·발이 바닥·키로 이김)"
+      - "머리+한쪽 팔 수면 위, 화면 일부 복귀 — **전장 이탈이지 승리 아님**(다리·허리 잔존 포박, 진흙 바닥)"
+      - "훅 시점: 팔이 다시 허리를 감음(재포박 재개)"
+    evidence:
+      scene: [1, 2, 3, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**당김을 따라가면 포박 안쪽이 열린다(획득한 해법)** — 견인은 늘 셋과 하나(동시 넷 없음)"
+      - "눕혀 끌리고 있었다는 사실(EP21 감각 모순의 답)"
+      - "`놓치지 않으려는 잡음`의 결 인지(의미는 셈 밖 — EP23 추정 창구)"
+      - "**학교 부상자 인지(무명):** `청해남초 대피 중 학생 1명 이송` — 자기 학교와 자기 전투가 `겹쳤다`까지(신원 0·인과 확정 0)"
+      - "교각군·침수도로 사면 = 대피 완료 구역(공개 정보)"
+    evidence:
+      scene: [1, 2, 4]
+
+  - category: "emotional"
+    field_path: "characters.dana.state"
+    operation: "merge"
+    after:
+      - "뜨는 데 없는 무게(문구의 무게 — `이송이면 병원이다. 병원이면 치료다.` 세 문장 밟기), 무전 무응답 상태로 훅 진입"
+    evidence:
+      scene: [4, 5]
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "단아의 계획 통보 수신(`버티는 거 그만할 거야` — 만류 없이 수용), 생환 확인"
+      - "같은 문구 목격 — **말하지 않기로 함**(스위치에서 내려온 손)"
+    evidence:
+      scene: [2, 4]
+
+  - category: "living_condition"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "**B2 공개:** 폐쇄 고가도로 교각군·침수도로 사면 = 대피 완료, 접근금지선 유지, 구조물 노후 주의(사실 나열만 — 명령 0)"
+      - "공개 재난망 문구 갱신: `청해남초 대피 중 학생 1명 이송`(무명)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "characters.sua.state"
+    operation: "merge"
+    after:
+      - "화면 복귀 목격(`언니의 눈이 돌아왔다` — 소리 내지 않은 문장), 밀봉재 뚜껑·수건 간격 정돈(발화 0 유지)"
+    evidence:
+      scene: 4
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 21
+        after: 22
+    note: "교대 흡착 틈 공개+생환(EP22 상한 이행). `놓치지 않으려는 잡음` 결 등재. 다음 EP23 추정 도달(`죽이려는 게 아니라 끌고 가려 했다`)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 20
+        after: 22
+    note: "무명 문구 이행 — 단아 인지 개시(`겹쳤다` 상한 준수). 다음 EP23 말 신원(`이성호 학생 보호자 인계 완료`)"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 21
+        after: 22
+    note: "관찰·준비 지속(발화 0) — 상한 완전 준수"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "시야 복귀·상실 전부 물리 서술(잠금 이행)"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+    note: "관통·꿰뚫 0(감시 이행)"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "혜정 미등장"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "군은 방송 문면만(고명준 발화 장면 없음)"
+
+no_change_checks:
+  - "성호 지면 명명 0(무명 문구만), 신원 단서 0"
+  - "`데려가려 한다` 0(EP23 창구), C4 금지 문구 0"
+  - "부력·떠오름 서술 0(기립 물리), 수중 신경손상 0"
+  - "수아 조언 0, 군 교전 지휘 0, 내부 고유명 0"
+
+canon_additions:
+  - "견인 구조 정사: 넷 동시 유지 없음 — 늘 셋과 하나(교대 순간 전체 당김 한 박자 얕아짐)"
+  - "교각군 = 잠기기 전 버스로 지나던 폐쇄 고가도로, 상판 걷힌 기둥 열(단아의 기억 정보)"
+  - "진흙 바닥 물성: 버티는 발은 못 잡고 차고 나가는 발은 받아 줌"
+  - "재난망 띠 문면: 대피 완료 구역·접근금지선·`청해남초 대피 중 학생 1명 이송`"
+
+provenance:
+  chapter_text: "Black_Titan_EP022_22화_끌리는쪽_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP022_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP022_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP022_Gate-D_검증서_v1.0.md"
+notes:
+  - "S4 4단계(회복·전환) 완료. 다음 EP23 「끌려가지 않는 법」 — 중요 화(해결 — 견인선 교차·기능 정지·성호 신원 훅)."
+  - "EP23 진입: 허리 재포박 직후 연속 — 얕게 감기게 두고 교각 사이를 비스듬히 지나는 것부터."

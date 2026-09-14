@@ -1,0 +1,154 @@
+request:
+  id: G0-007
+  title: 블랙 타이탄 지하 출격 노선과 수몰역 상륙 절차 신설
+  revision: 1.0
+  status: APPROVED
+  approved_by: user
+  approved_at: 2026-08-02
+  note: 미결 항목 OD-1~OD-4는 2026-08-02 사용자 선택으로 확정됐고, 같은 날 요청서 전체가 승인됐다.
+  authority: current_user_correction
+  change_type: sortie_procedure_addition
+  origin: 2026-08-02 사용자 지시 — EP3 초고 검토 중 "첫 출격인데 출격 방식을 생략하면 안 되겠다"
+
+change_summary:
+  before:
+    - 통합설정집 v2.3은 격납고가 수몰지구 차량기지를 개조한 공간이고 영진의 수리점 지하 방폭문·낡은 군용 통로로 이어진다는 것까지만 규정한다.
+    - 격납고에서 지상 전장까지의 이동 방법은 어느 승인 문서에도 없다.
+    - EP3 회차 브리프 v1.0과 Level 6 v1.0은 이 공백을 "정확한 격납고 출구 구조는 새로 설정하지 않는다", "출구 형상과 이동 경로는 흐리게 처리한다"로 회피했다.
+    - 그 결과 초고 v0.1·v0.2에서 블랙 타이탄은 격납고에서 곧바로 지상 통제선으로 걸어 나오며, 첫 출격의 절차가 통째로 생략됐다.
+  after:
+    - 격납고가 개조한 차량기지에서 뻗어 나간 대수몰 이전 지하철 노선을 블랙 타이탄의 출격 이동로로 확정한다.
+    - 출격은 자력 보행이 아니라 이 노선을 이용한 지하 운반으로 이루어진다.
+    - 목표 지점에 가장 가까운 역까지 지하로 이동한 뒤 정지한다.
+    - 해당 역은 대수몰로 침수되어 현재 해수면 아래에 있다.
+    - 역의 수밀격벽을 열고 해수 속에서 블랙 타이탄이 몸을 일으킨다.
+    - 해면을 뚫고 상륙해 지상 전장에 진입한다.
+
+canon_status:
+  setting_change: true
+  scope: 하위 절차 신설. 상위 세계관·지리·기체 사양은 변경하지 않는다.
+  consistency_check:
+    - 통합설정집 v2.3 "지하에는 방폭문과 낡은 군용 통로가 있고, 수몰지구 차량기지를 개조한 블랙 타이탄 격납고로 이어진다" — 신설 노선의 출발점과 일치한다.
+    - 통합설정집 v2.3 "격납고는 매끈한 비밀기지가 아니라 녹, 물때, 옛 레일, 크레인, 임시 발판, 최신 제어장치와 범용 공구가 공존하는 공간이다" — 옛 레일과 크레인이 이미 정사이므로 레일 운반 설비는 신규 발명이 아니다.
+    - 통합설정집 v2.3 "대수몰로 해수면이 1년 사이 약 40m 상승", "바다 너머에는 구도심의 수몰 폐허가 솟아 있다" — 구도심 역사가 해수면 아래라는 전제와 일치한다.
+    - EP002 승인 본문 "새로 붙인 전선과 낡은 차량기지 표지판이 같은 벽에 겹쳐 있었다" — 이미 심어 둔 복선을 회수한다.
+    - 영진이 위장조종 시스템·수면학습·격납고·보급망을 홀로 완성했다는 설정과 충돌하지 않는다. 노선 정비도 같은 은닉 작업의 일부로 귀속한다.
+
+hard_constraints:
+  - id: HC-1
+    rule: 첫 집게 교환이 시작되기 전에 상륙이 완료되어야 한다.
+    reason: EP001 승인 본문의 콜드 오픈이 "화면 아래의 아스팔트가 옆으로 밀려났다. 검은 발이 노면을 긁어 두 줄의 자국을 남겼다"로 확정되어 있다. 첫 교전은 수중이 아니라 노면 위다.
+  - id: HC-2
+    rule: 이 노선과 상륙 절차는 군·시민에게 공개하지 않는다.
+    reason: S1 화별개요 v3.7 EP003 공개표에서 고명준·군이 알아서는 안 되는 항목에 "기지"가 포함된다. 군은 물에서 솟아오른 거인을 볼 뿐 어디서 왔는지 알 수 없다.
+  - id: HC-3
+    rule: 노선·역·수밀격벽의 존재가 영진의 군 시제기 설명을 사실로 인증하지 않는다.
+    reason: 영진의 설명은 가족용 위장 설명이며 서술자 정답이 아니다.
+  - id: HC-4
+    rule: 상륙 자체가 시가지·방재벽·항만 시설에 새 대규모 피해를 만들지 않는다.
+    reason: 봄에는 학교 건물 파손과 구래동 대규모 파괴를 추가하지 않는다.
+  - id: HC-5
+    rule: 수중 구간에서 통증성 피드백·시야 이상·신경증상을 발생시키지 않는다.
+    reason: 정상 감쇠 포스 피드백만 사용한다. 수압·부력·저항은 감쇠된 압력과 부하로만 환류한다.
+
+decisions_locked:
+  decided_at: 2026-08-02
+  decided_by: user
+  - id: OD-1
+    question: 목표 역과 노선에 고유명을 부여할 것인가?
+    decision: 무명 유지
+    detail: "`가장 가까운 역`, `옛 노선`으로만 지칭한다. 역명·노선명·절대 방위·현행 지도 좌표를 확정하지 않는다."
+  - id: OD-2
+    question: 지하 운반 수단을 무엇으로 확정할 것인가?
+    decision: 레일 운반대차
+    detail: 격납고의 옛 레일과 크레인을 이용한다. 블랙 타이탄은 단아가 좌석에 고정된 채로 눕거나 기댄 자세로 대차에 실려 이동하며, 이동 중에는 스스로 걷지 않는다. 설비의 세부 구조는 흐리게 처리하되 운반이라는 사실 자체는 본문에서 분명히 한다.
+  - id: OD-3
+    question: 이 노선의 존재를 단아가 사전에 아는가?
+    decision: 모른다
+    detail: 단아는 실려 가는 동안 처음 본다. 수면학습의 범위를 노선·출격 경로로 넓히지 않는다. 수면학습은 계속 기동·방어 동작 절차에 한정한다.
+    note: 미제기 항목이라 보수적 기본값으로 정했다. 뒤집으려면 Gate 0 재검토가 필요하다.
+  - id: OD-4
+    question: 고명준이 고혜정의 삼촌이라는 사실을 EP3에서 흘릴 것인가?
+    decision: 흘리지 않는다
+    detail: 남해방위사령부 사령관 고명준 준장이라는 직책·계급·현장 위치까지만 제시한다. 친족 관계와 영진과의 과거는 계속 봉인한다.
+
+narrative_direction:
+  origin: 동일 지시에서 함께 제시된 감정·시점 방향. Gate C 브리프 v1.1과 Level 6 v1.1에 반영한다.
+  - id: ND-1
+    target: 단아
+    direction: 감정이 과도하게 절제되어 감정이입이 되지 않는다. 열세 살이 방금 조부의 거짓말을 알고 혼자 좌석에 묶인 채 전장으로 실려 가는 상황의 공포·비현실감·분노를 드러낸다.
+    method: 신설된 지하 운반 구간이 아무것도 할 수 없는 대기 시간을 만든다. 이 구간을 감정의 자리로 사용하고, 전투 중에는 다시 행동으로 수렴한다.
+    guard: 문체 카드 §2-4 — 감정을 직접 명명하려면 그 감정이 다음 행동의 발판이어야 한다. 과잉 서정이나 각오 선언으로 흐르지 않는다.
+  - id: ND-2
+    target: 고명준과 남방사
+    direction: 사상 초유의 괴수 상륙에 정체불명 거인이 겹친 상황인데 반응이 보고·명령으로만 처리되어 온도가 없다.
+    method: 화력이 통하지 않는다는 사실 앞의 무력감과, 물에서 솟아오른 거인을 본 순간의 충격을 짧게 허용한다. 부하들의 반응도 한 번 들어온다.
+    guard: 브리프의 "별도 군사극으로 팽창하지 않는다"와 분량 상한은 유지한다. 영웅 찬사·추적 지시·비밀기관 호출은 계속 금지한다.
+  - id: ND-3
+    target: 고명준
+    direction: 첫 등장인데 그가 누구인지 알 수 있는 서술이 없다.
+    method: 남해방위사령부 사령관 고명준 준장이라는 직책·계급·현장 위치를 본문에서 확인 가능하게 제시한다.
+    guard: 영진과의 과거 인연은 가을 공개 항목이므로 계속 봉인한다. 고혜정과의 친족 관계 노출 여부는 미정(OD-4).
+  - id: ND-4
+    target: 조종 지연
+    direction: 약 0.5초 지연이 급박한 국면에서 위기를 만드는 것은 유지하되, 기본 체감은 둔함과 위화감이어야 한다.
+    method: "늦었다"는 판정을 반복하지 않고, 무겁고 굼뜬 신체감으로 서술한다. 수중 구간의 저항·부력이 이 감각과 겹쳐 자연스럽게 도입된다.
+    note: 사용자가 "무겁다"는 표현을 긍정 평가했다.
+    guard: 브리프 §6 전투 인과 잠금(반응 후 입력으로는 따라갈 수 없음 → 선행 입력 학습)은 변경하지 않는다.
+  - id: ND-5
+    target: 회차 분량
+    direction: 목표 분량을 약 5,500자에서 약 7,000자로 상향한다.
+    reason: 출격 시퀀스를 넣으면서 전투 두 씬을 압축하면 전투 가독성이 무너진다. EP3를 두 화로 분할하지 않고 한 화로 유지하기로 했다.
+    guard: S1 화별개요 v3.7의 EP003·EP004 경계는 변경하지 않는다. Gate B 재승인 불필요.
+
+affected_artifacts:
+  - artifact: Project_Black_Titan_통합설정집_v2.3.docx
+    action: REVISE
+    replacement: Project_Black_Titan_통합설정집_v2.4.docx
+    reason: 격납고 항목에 출격 노선·수몰역·수밀격벽 상륙 절차를 추가한다.
+    note: 정사 원문 개정이므로 사용자 승인과 별도 작업이 필요하다. 승인 전까지 v2.3이 현행 정사로 남는다.
+  - artifact: Project Black Titan 전체 플롯 v2.2.docx
+    action: KEEP
+    reason: 계절·아크·공개선에 영향이 없다.
+  - artifact: Black_Titan_S1_EP001-006_화별개요_v3.7_GateB승인.md
+    action: KEEP
+    reason: EP003 항목은 "블랙 타이탄이 처음 지상에 모습을 드러낸다"까지만 규정하며 출격 방식을 정하지 않는다. Gate B 재승인 불필요.
+  - artifact: Black_Titan_EP001_1화_벚꽃과사이렌_v1.0_GateD승인.md
+    action: KEEP
+    reason: 콜드 오픈이 노면 위 교전이므로 상륙 후 시점과 모순되지 않는다. HC-1의 근거 문서.
+  - artifact: Black_Titan_EP002_2화_격납고_v1.0_GateD승인.md
+    action: KEEP
+    reason: 차량기지 표지판 묘사가 이번 신설의 복선으로 그대로 작동한다.
+  - artifact: Black_Titan_EP003_회차브리프_v1.0_GateC승인.md
+    action: REVISE
+    replacement: Black_Titan_EP003_회차브리프_v1.1_GateC후보.md
+    reason: Scene 1을 출격 시퀀스로 재구성하고, 진입 상태·필수 사건 순서·씬 맵·분량 배분·인물 시점 점검을 갱신한다. ND-1~ND-4를 반영한다.
+  - artifact: Black_Titan_EP003_Level6_내용잠금-문체검색_v1.0_APPROVED.md
+    action: RETIRE
+    replacement: Black_Titan_EP003_Level6_내용잠금-문체검색_v1.1.md
+    reason: Scene 1 문단 비트와 공간·접촉점 잠금이 출격 노선 신설로 무효가 된다.
+  - artifact: Black_Titan_EP003_3화_52미터_초고_v0.1_NONCANON.md
+    action: RETIRE
+    reason: 출격 절차 생략을 전제로 작성됐다. NONCANON이므로 정사 영향 없음.
+  - artifact: Black_Titan_EP003_3화_52미터_초고_v0.2_NONCANON.md
+    action: RETIRE
+    reason: 동일. 문체 개선분은 v1.1 브리프 확정 뒤 v0.3에 이월한다.
+  - artifact: Black_Titan_EP003_Level7_초고검증서_v0.1.md
+    action: RETIRE
+    reason: 폐기된 초고를 대상으로 한 검증서다.
+  - artifact: Black_Titan_EP003_Gate-C_심사서_v1.0_PASS.md
+    action: KEEP
+    reason: 브리프 v1.0에 대한 심사 이력으로 보존한다. v1.1은 새 심사서를 만든다.
+  - artifact: Black_Titan_SNAP-002_EP002후_v1.0.yaml
+    action: KEEP
+    reason: EP3는 미승인이므로 공식 현재상태는 SNAP-002 그대로다.
+  - artifact: Black_Titan_복선추적기_SNAP-002_v1.0.yaml
+    action: KEEP
+    reason: 복선 상태 변화 없음.
+
+decision:
+  status: APPLIED
+  decided_at: 2026-08-02
+  downstream_gate:
+    EP3_brief: GATE_C_CANDIDATE
+    user_approval_required_before_level_6: true

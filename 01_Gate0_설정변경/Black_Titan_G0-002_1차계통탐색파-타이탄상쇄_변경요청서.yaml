@@ -1,0 +1,91 @@
+request:
+  id: G0-002
+  title: 1차 거체 계통 탐색파와 블랙 타이탄 상쇄
+  status: APPROVED
+  approved_by: user
+  approved_at: 2026-07-30
+  authority: current_user_correction
+
+change_summary:
+  before:
+    - 괴수의 탐색파가 단아에게 반응하지만 수아의 무반응 원리가 잠기지 않았다.
+    - 인큐베이터가 블랙 타이탄을 회수 대상 계통으로 인식하는 듯한 표현이 남아 있었다.
+    - 거미게형은 블랙 타이탄 위쪽에서 근접 반응을 측정하는 행동으로 설계됐다.
+  after:
+    - 인큐베이터는 과거 확보한 1차 거체의 신경·역장 서명에 맞춘 탐색파를 사용한다.
+    - 1차 거체 계통인 단아만 기체 밖에서 탐색파에 공명한다.
+    - 2차 거체 계통인 수아와 블랙 타이탄은 탐색파에 공명하지 않는다.
+    - 단아가 블랙 타이탄에 탑승하면 타이탄의 2차 계통장이 탐색파를 상쇄해 단아의 반응도 사라진다.
+    - 괴수들은 블랙 타이탄을 동족이나 회수 대상으로 알지 못하고, 1차 거체 탐색을 방해하는 이동식 상쇄원으로 기록한다.
+    - 거미게형은 블랙 타이탄의 상쇄권을 벗어나 탐색을 계속하려 더 높고 깨끗한 탐색 지점으로 이동한다.
+
+canon_facts:
+  CANON-SEARCH-LINEAGE:
+    target: presumed_surviving_first_giant
+    search_key: first_giant_neural_field_signature
+    actual_source: human_form_dana
+    incubator_knows_actual_source: false
+  CANON-RESONANCE-HOLDERS:
+    dana_outside_titan: resonates
+    sua: does_not_resonate_second_lineage
+    black_titan: does_not_resonate_second_lineage
+  CANON-TITAN-CANCELLATION:
+    dana_inside_titan: search_wave_cancelled
+    scan_related_symptoms_inside_titan: prohibited
+    possible_onboard_symptoms: cross_lineage_piloting_or_connection_strain_only
+  CANON-INCUBATOR-MISREAD:
+    black_titan_classification: mobile_surface_obstruction_and_cancellation_source
+    black_titan_classified_as_kin: false
+    black_titan_classified_as_retrieval_target: false
+  CANON-SPRING-PROTOCOL:
+    purpose: search_for_and_recover_first_lineage_target
+    binding_transport_use:
+      - recover_true_target_if_found
+      - restrain_or_relocate_mobile_obstruction_so_search_can_continue
+    elimination_reclassification_before_summer: prohibited
+
+downstream_rules:
+  S1:
+    - EP1 탐색파는 1차 계통 전용이며 기체 밖 단아에게만 공명한다.
+    - EP4 블랙 타이탄 출현과 동시에 1차 계통 반응이 사라져 인큐베이터는 이동식 상쇄원을 기록한다.
+  S2:
+    - 성게형은 1차 계통 잔류반응을 수동 청취하며 강한 능동 탐색파를 쓰지 않는다.
+    - 블랙 타이탄 출현은 목표 확인이 아니라 탐색 방해의 재출현이다.
+  S3:
+    - 단아의 탐색파 공명은 탑승 전 좁은 탐색빔이 지나갈 때만 허용한다.
+    - 탑승 뒤 탐색파 증상은 멈춘다.
+    - 거미게형은 상쇄권을 피해 더 높고 먼 고지로 이동한다.
+    - 해결법은 블랙 타이탄을 이동식 재머 겸 몰이벽으로 사용해 안전한 종착 고지로 몰아넣는 방식이다.
+  S4_TO_S7:
+    - 포박·운반형은 블랙 타이탄을 동족으로 회수하지 않는다.
+    - 블랙 타이탄을 탐색 방해물로 묶거나 이동시키거나, 실제 1차 계통 목표 발견 시 회수한다.
+
+affected_artifacts:
+  - artifact: Project_Black_Titan_통합설정집_v2.2.1.docx
+    disposition: REVISE
+  - artifact: Project Black Titan 전체 플롯 v2.1
+    disposition: REVISE
+  - artifact: 봄편 Level 3 v3
+    disposition: REVISE
+    next_version: v3.1
+  - artifact: S1 EP001-006 Gate B v3.2
+    disposition: REVISE
+    next_version: v3.3
+  - artifact: S2 EP007-012 Gate B v3.1
+    disposition: REVISE
+    next_version: v3.2
+  - artifact: S3 EP013-018 Gate B 후보 v3
+    disposition: REBUILD
+    next_version: v3.1
+  - artifact: S4-S7 future outlines
+    disposition: REVISE
+  - artifact: narration_and_voice_style_cards
+    disposition: KEEP
+  - artifact: approved_serial_state
+    disposition: KEEP
+    note: no revised-serial prose or chapter delta exists
+
+implementation:
+  override_rule: G0-002 overrides conflicting wording in older setting, plot, and planning artifacts until their revised versions are approved.
+  prose_status: no_prose_affected
+  next_gate: S3 Gate B

@@ -1,0 +1,164 @@
+schema_version: 1
+as_of_episode: 36
+last_updated_by: "EP036 「깁스를 벗은 날」 v1.0 Gate D 승인·상태 반영 (S7 1/5 — B4 첫 줄 회수·B1 3호 씨앗·C4 두 갈래)"
+active:
+  FS-001-DANA-VISION:
+    name: "시력 저하·VR·두통·손끝 둔함"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "이력 1회가 기록된 장부"
+    truth: "1차 신경계통과 2차 거체 접속 부담"
+    reveal_window: "봄 = 부인 가능 수준 유지, 재검 6월, 여름 악화"
+    allowed_reveal_now: "**EP37 = 증상 0 화(개요 명시: 탑승 중 탐색파 공명 증상 만들지 않음).** 과용 금지"
+    prohibited_reveal_now: "새 증상, 진단, 반복 사용"
+    last_progressed: 35
+    next_window: "재검 6월"
+    status: "SIMMERING_DENIABLE"
+    related_character_ids: ["dana", "youngjin", "sua"]
+  FS-C2-TITAN-ORIGIN:
+    name: "거인의 기원과 부녀의 준비"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "가족 내부: 시제기 반출+부녀 개수. 외부: 무등록 검은 거인"
+    truth: "현서·영진이 배양한 2차 거체와 두 자매의 신경기원"
+    reveal_window: "후반 봄까지 확정 폭로 금지·진실은 가을"
+    allowed_reveal_now: "위장 유지 상시"
+    prohibited_reveal_now: "생체·배양·우회동조·VR 실목적·현서의 현재"
+    last_progressed: 18
+    next_window: "가을"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin", "hyunseo"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "그것들의 실제 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "밑으로 간 것과 위로 올라간 것 — 크레인 꼭대기의 접힌 덩어리"
+    truth: "고지 지정자+저지 운반자의 역할 협동(작가용 — `바다나리형은 본다. 군부형은 간다`)"
+    reveal_window: "EP37 동시 접촉 → EP38 관찰 → EP39~40 결착"
+    allowed_reveal_now: "**EP37 잠금(개요):** 진입 → 꽃 개화(꽃잎 팔·떨림·일제 눕기·원반 회전) → **젖은 장갑의 짧은 기름막 광택** → 한 박자 뒤 바닥 전체 선회(군부형 — 갑판 말아 올림·운반막으로 허리+팔 하나·절단 0·외해로 끌기) → **오판 `저 납작한 걸 뒤집으면 끝이야`**(이음매 두들겨 1회 탈출·넓은 몸 집중) → 첫 재지정(`꽃→광택→지연 선회` 순서 첫 제시) → **훅: 크레인 기둥 뒤 은신 → 군부형 멈칫 → 원반과 기체 사이 굵은 철골**(시야선 단서 1호)"
+    prohibited_reveal_now: "계통·상쇄 이유, 협동 확정, 바다나리형 공격 기능(광선·투사체·찌르기·촉수 0), 작가용 명칭"
+    last_progressed: 36
+    next_window: "EP37"
+    status: "CRITICAL"
+    related_character_ids: ["dana", "youngjin", "myeongjun"]
+    author_notes:
+      - "지정선 공개 물성(§3-2): 꽃잎 눕기·짧은 광택·지연 선회 — 행동까지만. 시야선 규칙 = EP38 장면 증명 예정"
+  FS-003-BIO-SEEP:
+    name: "닦이지 않는 흔적"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: "세척해도 남는 것들"
+    truth: "기체 생체 순환액(본체) / 개체 점액의 생체 조직성(인접)"
+    reveal_window: "확정은 가을"
+    allowed_reveal_now: "사실 관찰만·본체 연결 금지 유지"
+    prohibited_reveal_now: "출처 암시 어휘, 명명·해설, 생체기원 증거화"
+    last_progressed: 33
+    next_window: "S7 후처리"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["youngjin", "sua"]
+  C3-MYEONGJUN-YOUNGJIN:
+    name: "서랍 속 동반 사진 + 어머니의 부재"
+    line: "C3"
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: "공개되는 통지들"
+    truth: "군 실험장 인연·현서의 미국행과 거래(전면 봉인)"
+    reveal_window: "서랍 사진 = 별도 결정, 전모는 여름 말~가을"
+    allowed_reveal_now: "여운 동결·간접 지원 현재형"
+    prohibited_reveal_now: "현서 정보 일체, 구판 소품, 영진 설명, 질문 재개"
+    last_progressed: 33
+    next_window: "별도 결정"
+    status: "SIMMERING"
+    related_character_ids: ["myeongjun", "youngjin", "hyunseo", "dana", "sua"]
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 유예와 부채"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "세 자리를 만들어 준 절친(연락·건강·귀환)"
+    truth: "오독 위의 부채"
+    reveal_window: "S7 후반 실전·봄 결산, 물증은 여름"
+    allowed_reveal_now: "**규칙 3호 성립(36 — `대신 끝나면 끝났다고 보내`).** S7 후반 = 실전 발신 + 봄 결산(**개요 승인 노트: `보내지 않은 메시지` 장면 보강분 — 해당 화 개요 정독 필요**)"
+    prohibited_reveal_now: "추궁·미행·수리점 방문·물증"
+    last_progressed: 36
+    next_window: "S7 후반"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+    author_notes:
+      - "미회수: 동그라미(여름)·컵볶이. 수다 가드 상시"
+  B4-SEONGHO-SCHOOL:
+    name: "성호의 숭배와 교실의 검은 거인"
+    line: "B4"
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: "마지막 타석을 저금한 앙숙"
+    truth: "숭배 대상이 옆자리(비대칭 유지)"
+    reveal_window: "마지막 타석(S7 체육 창구), 여름 스케일업"
+    allowed_reveal_now: "**첫 줄 회수 완료(36).** 재대결 진행형(54 vs 40+1 — 15미터 이상이면 역전). 마지막 타석 = S7 내 생활 반 컷 창구"
+    prohibited_reveal_now: "전력질주, 정체 단서, 연애 계열 전면(상시)"
+    last_progressed: 36
+    next_window: "S7 체육 창구"
+    status: "WARM_STEADY"
+    related_character_ids: ["seongho", "dana"]
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "세 기록을 한 화면에 겹친 확인자"
+    truth: "수아의 2차 계통과 약한 우회 필터"
+    reveal_window: "**S7 결정적 관찰 — EP38 「꽃이 눈이야」(제목상 유력. 개요 정독 후 확정)**"
+    allowed_reveal_now: "기록 겹치기까지(36 이행 — 사실만). **EP37 = 조언 0(개요 명시).** 선점 금지 지속"
+    prohibited_reveal_now: "해석·전술, 관찰 선점, 채널·조종석"
+    last_progressed: 36
+    next_window: "EP38"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana"]
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전의 공포 상상"
+    truth: "여름 마지막 전투와 공명"
+    reveal_window: "여름 마지막 전투"
+    allowed_reveal_now: "반복 사용 금지"
+    prohibited_reveal_now: "실제 부상 예고화"
+    last_progressed: 4
+    next_window: "여름"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4 격파·용해"
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: "첫 침공 소아크"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: "구래항 봉쇄 소아크"
+    resolution: "EP10 격퇴, EP12 마감"
+    resolved_at: 10
+  A-S3-HIGHGROUND:
+    name: "고지선점 소아크"
+    resolution: "EP16 격퇴·용해, EP18 마감"
+    resolved_at: 18
+  A-S4-BINDING:
+    name: "포박 소아크"
+    resolution: "EP23 기능 정지, EP24 마감"
+    resolved_at: 24
+  A-S5-QUIET-DAYS:
+    name: "괴수 없는 날들 소아크"
+    resolution: "EP29 아크 마감"
+    resolved_at: 29
+  A-S6-STILL-SEA:
+    name: "멈춰야 사는 바다 소아크"
+    resolution: "EP35 아크 마감"
+    resolved_at: 35
+retired: {}

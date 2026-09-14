@@ -1,0 +1,136 @@
+request:
+  id: G0-003
+  title: 블랙 타이탄 명칭 지식 비대칭과 외부 별칭
+  status: APPROVED
+  approved_by: user
+  approved_at: 2026-07-30
+  authority: current_user_correction
+
+change_summary:
+  before:
+    - 성호·시민·군의 말과 인식표에 블랙 타이탄 또는 타이탄이라는 내부 고유명이 섞여 있었다.
+    - 가족 내부 명칭과 외부 관찰 명칭의 경계가 명시적으로 잠기지 않았다.
+  after:
+    - 블랙 타이탄과 타이탄은 현재 가족 비밀 보유자와 작가용 문서만 사용하는 내부 고유명이다.
+    - 성호를 포함한 학교 인물·시민·군은 명칭 공개 사건 전까지 이 고유명을 알 수 없다.
+    - 외부 인물은 검은 거인·검은 로봇·우리 동네 거인 또는 군의 임시 식별어를 사용한다.
+    - 외부 인물의 대사·내적 독백·보고서·그 인물에게 귀속된 지식표에서 내부 고유명 사용을 금지한다.
+
+canon_facts:
+  CANON-INTERNAL-NAME:
+    names:
+      - 블랙 타이탄
+      - 타이탄
+    current_holders:
+      - 단아
+      - 수아
+      - 영진
+    future_holder_rule: 작품 안에서 이름을 전달받는 사건이 명시된 뒤에만 추가한다.
+  CANON-OUTSIDER-NAME-BLOCK:
+    applies_to:
+      - 성호
+      - 혜정
+      - 예진
+      - 주호
+      - 학교 인물
+      - 시민
+      - 군
+    prohibited_surfaces:
+      - 대사
+      - 내적 독백
+      - 보고서와 기록
+      - 해당 인물에게 귀속된 지식·공개정보 표
+  CANON-PUBLIC-LEXICON:
+    allowed_examples:
+      - 검은 거인
+      - 검은 로봇
+      - 검은 수호자
+      - 그 거인
+      - 우리 동네 거인
+    note: 하나의 공식 명칭으로 조기 통일하지 않고 인물과 장소에 따라 달리 부를 수 있다.
+  CANON-MILITARY-LEXICON:
+    allowed_examples:
+      - 미식별 검은 거인
+      - 미식별 거대 개체
+      - 소속 불명 거대 개체
+      - 소속 불명 전략무력
+    note: 현장 임시 식별어이며 실제 고유명을 안다는 뜻이 아니다.
+  CANON-NARRATION-LEXICON:
+    author_metadata: 블랙 타이탄 또는 타이탄 사용 가능
+    family_pov: 블랙 타이탄 또는 타이탄 사용 가능
+    outsider_close_pov: 해당 인물이 아는 외부 별칭만 사용
+    neutral_narration: 독자에게 이미 제시된 고유명 사용 가능하나 발화자·기록 보유자의 지식으로 오인되게 쓰지 않는다.
+
+character_specific_rules:
+  seongho:
+    allowed_topics:
+      - 검은 거인
+      - 검은 로봇
+      - 우리 동네 거인
+      - 자신이 만든 기술명
+      - 성인 왼손잡이 에이스라는 가상 파일럿 설정
+    prohibited_terms:
+      - 블랙 타이탄
+      - 타이탄
+    voice_preservation: 수치·비교급·자작 고유명사를 쏟는 말버릇은 유지하되 실제 내부 기체명만 차단한다.
+  military:
+    report_rule: 고유명 대신 임시 식별어와 행동 분류를 기록한다.
+    example: 미식별 검은 거인 — 소속 불명, 현재 방어행동 반복
+
+downstream_rules:
+  LEVEL3:
+    - 도시가 아는 것은 괴수와 정체불명 검은 거인의 존재다.
+    - 군·고명준 라인은 미식별 검은 거인의 출격 패턴을 기록한다.
+    - 성호는 검은 거인을 지지한다.
+  S1:
+    - EP6 성호의 팬 활동과 도시·군 종료 장부에서 외부 고유명 선취를 제거한다.
+  S2:
+    - 성호의 왼손잡이설은 검은 거인의 영상에서 출발한다.
+    - 구래항 주민은 검은 거인을 우리 동네 거인으로 부른다.
+    - 군 기록에는 미식별 검은 거인 또는 소속 불명 전략무력만 남는다.
+  S3:
+    - 성호의 응원 구호·옹호 발화는 검은 거인을 사용한다.
+    - 고명준과 군의 인식·보고에는 미식별 검은 거인을 사용한다.
+  GATE_D:
+    - 외부 인물의 대사·내적 독백·보고서에 블랙 타이탄 또는 타이탄이 있으면 지식 비대칭 경고로 표시한다.
+    - 기계 검출은 문맥을 판정하지 못하므로 경고 뒤 화자·시점·기록 보유자를 사람이 다시 확인한다.
+
+affected_artifacts:
+  - artifact: 봄편 Level 3 v3.1
+    disposition: REVISE
+    next_version: v3.2
+  - artifact: S1 EP001-006 Gate B v3.3
+    disposition: REVISE
+    next_version: v3.4
+  - artifact: S1 Gate B 심사서 v1.3
+    disposition: REVISE
+    next_version: v1.4
+  - artifact: S2 EP007-012 Gate B v3.3
+    disposition: REVISE
+    next_version: v3.4
+  - artifact: S2 Gate B 심사서 v1.3
+    disposition: REVISE
+    next_version: v1.4
+  - artifact: S3 EP013-018 Gate B 후보 v3.2
+    disposition: REVISE
+    next_version: v3.3
+  - artifact: S3 Gate B 심사서 v1.2
+    disposition: REVISE
+    next_version: v1.3
+  - artifact: 봄편 말투카드 v0.2
+    disposition: REVISE
+    next_version: v0.3
+  - artifact: 서술규칙 문체카드 v0.2
+    disposition: REVISE
+    next_version: v0.3
+  - artifact: approved_style_anchor
+    disposition: REVISE_STYLE_ONLY
+    note: 성호가 말한 내부 고유명만 검은 거인으로 바꾸며 문체 기능은 유지한다.
+  - artifact: approved_serial_state
+    disposition: KEEP
+    note: 승인된 본문과 회차 델타가 아직 없어 상태 소급은 필요하지 않다.
+
+implementation:
+  override_rule: G0-003은 명칭 지식 범위에서 이전 설정·플롯·개요·예문과 충돌하는 표현을 즉시 대체한다.
+  prose_status: no_approved_prose_affected
+  next_gate: S3 Gate B

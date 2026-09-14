@@ -1,0 +1,135 @@
+schema_version: 2
+chapter: 8
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-03"
+  approval_note: "초고 v0.1 → 첨삭(수정 5·코멘트 1) → v0.2(대사 명료화, 사용자 1자 수정) → `좋아, 승인`."
+based_on_snapshot: "SNAP-007 v1.0"
+produces_snapshot: "SNAP-008 v1.0"
+changes:
+  - category: "external"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "항만 통제 공식화 — 전 항로 통제·출항 금지·기간 미정(공고)"
+      - "성게형 개체 시각 확인(G0-012) — 관측함 망원: 반구형 흑색 몸체(노출부 40미터), 가시 최장 30미터, 따개비·해조 부착, 함몰부 다수의 녹색 점광. 이동 없음, 가시 방향만 미세 변경"
+      - "민간 망원 영상이 게시판→뉴스로 확산 — 시민이 개체의 존재를 시각적으로 인지"
+    evidence:
+      scenes: [1, 2, 3]
+
+  - category: "external"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "시험 사격(개체 주변 수역 3발) — 전탄 목표 수역 밖으로 밀림. 타 수역 정상 탄착 대조로 장비 이상 배제. 원인 분석 불가"
+      - "지시: 민간선박 통제 유지, 구조함 대기, 해저지형도·조석표·간조 시각 확보(항만청)"
+      - "개체 위치 불변 기록(첫 관측 후 1미터 미만). 검은 거인 대응은 `나타나면 그때` 보류"
+      - "소나망 절반 상실이 첫 침공 피해임을 지휘부가 재확인"
+    evidence:
+      scene: 2
+
+  - category: "living_condition"
+    field_path: "living_conditions"
+    operation: "merge"
+    after:
+      neighborhood:
+        - "어민회 피해 접수 개시(미란 주관 — 볼펜 쥔 손), 보상 절차 시작"
+        - "빈 좌판 증가, 냉동 위주 전환, 갈 곳 잃은 얼음"
+      school:
+        - "괴수 화제 재점화 — 캡처 비교·가시 세기·격퇴 내기. `검은 거인은 언제 나오나`가 교실의 진짜 질문이 됨"
+        - "명명은 `성게 같다` 비유 수준에서 미정착"
+    evidence:
+      scenes: [1, 3]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "성게형의 시각 정보(영상 매개)와 부동성 — `있는 것만으로 항구가 묶인다`"
+        - "군 포격 무효 사실(뉴스·영진 경유)"
+        - "철거 작전의 골자 — 주말 최간조, 맨손, 잡을 데 고르기"
+      emotional_note:
+        - "세 번째 결심의 온도 — 절박(EP2)도 공포(EP4)도 아닌, 생활을 되돌리는 실무"
+        - "교실 기대 여론의 부담이 `아주 싫지만은 않은` 자각"
+    evidence:
+      scenes: [3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "merge"
+    after:
+      - "판단 확정 발화 — `이건 싸움이 아니다. 철거다.`"
+      - "추정 상한 발화 — `무언가를 찾는 중인지도 모른다`(C4 개요 잠금 내)"
+      - "자체 물때 계획 — 어민용 달력, 주말 최간조(겹친 동그라미) 지정. 군 자료와 무관"
+      - "출격 준비 점검 완료(관절·밀폐·응답), 무장 없음 유지"
+    evidence:
+      scenes: [4, 5]
+
+  - category: "informational"
+    field_path: "characters.myeongjun.state"
+    operation: "merge"
+    after:
+      - "관측 지휘·시험 사격·자료 확보의 실무 대응 — 결정타 수단 부재 자인(`뽑는 건 우리 일이 아닌 모양이고`)"
+      - "부하 질책 화법 1회(`변명이 길다`) — 냉정하되 현장 보호 우선 기조 유지"
+    evidence:
+      scene: 2
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "advance"
+    after:
+      chapter: 8
+      advanced:
+        - "A-S2-HARBOR-BLOCKADE(개체 확인·철거 방침)"
+        - "B2-MILITARY(관측·시험·자료 확보)"
+        - "B4-SEONGHO-SCHOOL(재점화·기대 여론)"
+        - "C4-ENEMY-PURPOSE(시각 공개·부동 행동)"
+    evidence:
+      scenes: [2, 3, 5]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 7
+        after: 8
+    note: "개체 시각 공개(G0-012)·부동성·포격 무효까지. 원인·목적·수중 구조는 봉인 유지"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 7
+        after: 8
+    note: "재점화 — 격퇴 내기·기대 여론. 왼손잡이설은 EP10 훅 대기"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "배경 일상 1왕복만(가시 세기 문답) — 걱정·관찰 서술 0"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "발화 1회(부동 확인 질문) — 분석 아님"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "출격·접촉 0 — 준비와 판단까지만"
+  - "역장·상쇄·계통·회수 어휘 0, 카운터 해석 0"
+  - "성게형 소리 0(무음), 수중 구조 직접 묘사 0"
+  - "왼손잡이 0, 새 별명 0, 우리 동네 거인 0"
+  - "단아 신경 신호 0, 군의 거인 추적 확대 0"
+
+provenance:
+  chapter_text: "Black_Titan_EP008_8화_방파제의가시_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP008_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP008_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP008_Gate-D_검증서_v1.0.md"
+notes:
+  - "G0-012(성게형 외형)가 이 화로 지면 확정됨."
+  - "EP9 시점 예고 성립 — 주말 최간조(달력 겹친 동그라미), D-3."
+  - "군의 해저도·간조 자료가 EP10 협업 복선으로 심김."

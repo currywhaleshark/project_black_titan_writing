@@ -1,0 +1,193 @@
+schema_version: 2
+chapter: 4
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-03"
+  approval_note: "초고 v0.1 첨삭 15건과 v0.2(등반 기제 재설계) 첨삭을 거쳐 사용자가 `좋아 승인`으로 확정. v0.2 본문을 v1.0 정사로 잠금."
+based_on_snapshot: "SNAP-003 v1.0"
+produces_snapshot: "SNAP-004 v1.0"
+changes:
+  - category: "action"
+    field_path: "characters.dana.actions"
+    operation: "append"
+    after:
+      - "주민 지식으로 방재벽의 강한 지점만 딛고 괴수보다 먼저 기어올라 굵은 집게를 벌려 떼어냄"
+      - "물가 몸싸움에서 도망 충동을 이기고 선행 입력으로 괴수를 바다 쪽으로 넘겨 격파함"
+      - "괴수 사체가 물에서 붉게 녹는 것을 목격함"
+      - "목격을 의식해 지체 없이 잠수 이탈, 노선으로 귀환함"
+      - "혜정에게 처음으로 거짓말함 — 할아버지 가게 일을 도왔다"
+      - "잠들기 전 예진에게 문자를 보냄"
+    evidence:
+      scenes: [1, 2, 3, 4]
+      source_text_anchors:
+        - "먼저 올라간다."
+        - "안 비켜."
+        - "가게. …… 할아버지 가게에 있었어."
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "자신이 괴수를 이길 수 있다는 사실과 승리의 강한 고양감"
+        - "죽은 괴수가 물에 닿으면 붉게 녹아 사라진다는 관측(의미는 모름)"
+        - "방재벽의 구조 지식이 전투에 쓸모 있다는 경험"
+      misunderstands:
+        - "혜정에게 거짓말이 통했다고 믿음 — 실제로는 짐작당하고 유예받음"
+    evidence:
+      scenes: [2, 4]
+      source_text_anchors:
+        - "이겼어! 내가! 막았어!"
+        - "……그래."
+
+  - category: "emotional"
+    field_path: "characters.dana.emotional"
+    operation: "merge"
+    after:
+      pressures:
+        - "승리 고양감과 첫 거짓말의 찝찝함이 같은 저녁에 공존"
+        - "격투 중 자기 몸의 위험을 처음 구체적으로 상상함 — `가슴을 꿰뚫린다면`"
+      condition_note: "부인 가능한 탈진 — 첫 실전 후 정상 피로 프레임 유지. 통증·시야 이상 없음"
+    evidence:
+      scenes: [2, 3, 4]
+
+  - category: "informational"
+    field_path: "characters.hyejeong.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "재난 반나절 동안 단아·수아 모두 연락 두절이었음"
+        - "단아의 가게 설명이 거짓말이라는 짐작 — 말투 버릇과 내용의 허술함"
+      suspects:
+        - "단아에게 말 못 할 사정이 있음(나쁜 일은 아닐 것)"
+    evidence:
+      scene: 4
+      source_text_anchor: "혜정이 무슨 말을 시작하려는 숨소리가 들렸다. 들리다가, 그대로 멎었다."
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "merge"
+    after:
+      stage: "STABLE_LONGTIME_FRIENDS"
+      trust_level: 5
+      current_issue: "혜정이 첫 거짓말을 짐작하고 처음이라 넘어가 줌 — 접어 둔 질문이 부채로 남음"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "merge"
+    after:
+      - "격납고에서 언니의 첫 전투를 지켜보느라 혜정의 연락을 받지 못함"
+      - "귀환한 단아를 소매 끝을 잡는 것으로 맞이함"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "merge"
+    after:
+      - "귀환한 단아의 상태를 점검하고 기체 어깨의 긁힌 손상을 확인함"
+      - "`내일 전부 들을 거야`라는 예고에 `그래`로 응답 — 설명 의무가 EP5로 확정됨"
+    evidence:
+      scene: 3
+
+  - category: "asset"
+    field_path: "assets.black_titan.status"
+    operation: "replace"
+    before: "첫 출격 완료. 수몰지구 드러난 고지대에서 첫 교전 수행, 손상 없음, 방재벽 인접 위치에서 전투 계속 중"
+    after: "격납고 복귀. 첫 실전 완료. 어깨 장갑에 긴 긁힘(가는 집게), 팔 장갑 마모 — 경미 손상, 기능 정상, 정비 수요 발생"
+    evidence:
+      scene: 3
+      source_text_anchor: "어깨 장갑에 길게 긁힌 자국이 작업등 아래 드러나 있었다."
+
+  - category: "external"
+    field_path: "external_conditions.enemy"
+    operation: "replace"
+    before:
+      - "괴수가 방재벽을 오르는 중"
+    after:
+      - "바닷가재형 회수개체 격파·사망. 사체는 물에 닿아 붉게 용해되어 잔해가 남지 않음"
+      - "작가용: 인큐베이터 측의 신호 소실 처리와 후속 판단은 미노출(EP12 제한 기록까지 봉인)"
+    evidence:
+      scene: 2
+
+  - category: "external"
+    field_path: "external_conditions.public"
+    operation: "advance"
+    after:
+      - "시민 다수가 검은 거인의 승리와 사체의 붉은 용해를 목격함"
+      - "청해 인트라넷에 흐릿한 사진 게시 — `검은 거인을 봤다`. 목격담 확산 시작"
+      - "검은 거인은 `괴수를 막고 사라진 정체불명 존재`로 인식됨"
+    evidence:
+      scene: 4
+      source_text_anchor: "「검은 거인을 봤다」"
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "advance"
+    after:
+      chapter: 4
+      advanced:
+        - "A-S1-FIRST-INVASION"
+        - "B1-HYEJEONG-CONCERN"
+        - "C4-ENEMY-PURPOSE"
+      introduced:
+        - "FS-004-PIERCING-FEAR"
+    evidence:
+      scenes: [2, 4]
+
+foreshadow_updates:
+  - id: "A-S1-FIRST-INVASION"
+    operation: "ADVANCE"
+    note: "첫 전투 종결(격파). 아크의 여파(생활비용·설명·목격담)는 EP5~6이 담당. urgency IMMEDIATE→LOW"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 1
+        after: 4
+      - field: "allowed_reveal_now"
+        before: "EP1에서는 단순한 친구의 걱정"
+        after: "첫 거짓말 성립. 혜정은 거짓말임을 짐작하되 사정이 있어 보여 유예. 접어 둔 질문이 부채로 축적"
+    next_window: "EP6"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 3
+        after: 4
+      - field: "allowed_reveal_now"
+        before: "방향 집착 행동"
+        after: "개체 사망과 붉은 용해 관측까지. 회수 목적·인큐베이터·용해 원인은 계속 봉인"
+    next_window: "EP12 제한 기록"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "EP4 탈진은 첫 실전의 정상 피로 프레임. 새 시각 증상 없음 — EP5 몸살 기준선의 전제"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "INTRODUCE"
+    note: "단아가 밀리는 국면에서 처음 떠올린 구체적 신체 위험 — `블랙 타이탄이 부서진다면. 가슴을 꿰뚫린다면.` 여름 마지막 전투의 관통 사고와 공명하는 사용자 지정 복선"
+    allowed_reveal_after: "공포의 상상으로만. 실제 관통·부상 예고로 승격 금지"
+    next_window: "여름 마지막 전투에서 회수"
+
+no_change_checks:
+  - "방재벽 파손 없음 — 긁힘 자국뿐"
+  - "학교·구래동 직접 피해, 민간인 사상 없음"
+  - "역장·용해 원인·맨손이 통한 이유는 서술되지 않음"
+  - "출격 경로·기지·파일럿은 계속 비공개. 내부 고유명은 가족 3인만"
+  - "수아의 전투 개입·전술 조언 없음"
+  - "`전부 말해` 약속은 미이행 — 내일(EP5)로 예고만 됨"
+  - "단아의 피로는 부인 가능 수준. 통증성 피드백·신경증상 없음"
+
+provenance:
+  chapter_text: "Black_Titan_EP004_4화_첫승리_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP004_회차브리프_v0.3_GateC승인.md"
+  content_lock: "Black_Titan_EP004_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP004_Gate-D_검증서_v1.0.md"
+notes:
+  - "S1 첫 침공 아크의 전투가 종결됐다. EP5는 여파(생활비용·영진의 설명·군 기록), EP6은 아크 마감."
+  - "괴수 격파는 개요의 `격퇴`를 사용자 지시로 상향한 것이며 사체 용해(G0-011)가 군의 분석 축을 차단한다."
+  - "혜정의 유예는 단아 몰래 성립했다 — 단아는 거짓말이 통했다고 믿는다."

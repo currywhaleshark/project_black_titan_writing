@@ -1,0 +1,116 @@
+schema_version: 2
+chapter: 24
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-09"
+  approval_note: "무첨삭 승인(`좋아`). S4 아크 마감 화. 브리프·L6 단계 정정 2건(음험 시비·과녁=결정전)."
+based_on_snapshot: "SNAP-023 v1.0"
+produces_snapshot: "SNAP-024 v1.0"
+changes:
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "**앙숙 리듬 복귀(아크 마감):** 가방 몰래 치우기 → 음험 시비(마지막 주자 결정전 소급 의심) → 억울 반사 → 도릴라·티키타카 — 성호의 선제 시비가 관계를 되살림"
+      - "**`깁스 풀리면 다시 붙자` / `목발부터 떼고 큰소리쳐`** — 계주 재대결 4차 유예(S5 이월)"
+      - "비대칭 유지: 성호는 단아의 정체·인과 모름(가방 사건도 음험함으로만 해석), 단아의 죄책감은 행동으로만 존재"
+    evidence:
+      scene: [3, 5]
+
+  - category: "emotional"
+    field_path: "characters.dana.state"
+    operation: "advance"
+    after:
+      - "**영웅관 전환 완성: `이기면 된다` → `누가 안 다쳤는지 끝까지 세는 것까지가 싸움`**(셈에서 빠진 항의 자각)"
+      - "새 시간표의 첫 줄(비공개): 싸움 전에 대피계단부터 — 다음 싸움의 사전 셈 결심"
+      - "이름의 무게 처리: 잠 설침 → 교실 복귀로 완화(`구분이 안 가는 채로, 나쁘지 않았다`)"
+      - "오독 형성: `더 조심하면 모두 지킬 수 있을 수 있음`(개요 잠금 — 여름 반증 예정)"
+    evidence:
+      scene: [1, 3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.seongho.state"
+    operation: "advance"
+    after:
+      - "**깁스·목발 등교(전치 몇 주·염좌+인대).** 영웅-대가 병렬 첫 발화: `그래도 우리를 지켰다`(발표체가 깨지는 반 박자)"
+      - "깁스 첫 줄 발표 예고(미정 — 소품 창구), 마지막 주자 결정전 소급 의심(당시 쿨함 자기 전복)"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "창백함 지적(추궁 질문들의 줄을 전부 지나침) + **재편성표에 두 이름 보존**(기다린다는 대답)"
+      - "단아의 자각: 갚아야 할 목록이 길어지는 감각(갚는 법은 모름 — 여름 창구)"
+    evidence:
+      scene: 4
+
+  - category: "living_condition"
+    field_path: "living_conditions.school"
+    operation: "advance"
+    after:
+      - "일상 복귀(5/2 월). 성호 자리 재배치(뒷문 쪽·목발 반경), 체육대회 재편성표 게시(계주 명단 보존 — 날짜 미정 = 대기)"
+      - "소문 신화 4차 갱신(끌려갔다 이긴 검은 거인 — 거리 인플레), 라디오 `수거물 없음` 4차"
+    evidence:
+      scene: [1, 2, 4]
+
+foreshadow_updates:
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 23
+        after: 24
+    note: "**S4 목표 완주** — 부상·복귀·`그래도 우리를 지켰다`·앙숙 복귀·4차 유예. S5 = 티격태격 기본값 유지, 여름 = 학교 파손 스케일업"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 20
+        after: 24
+    note: "창백함·재편성표 이행(추궁 0 완주). S5 = 일상 관계 회복(EP25 훅 = 혜정 약속 메시지), 물증은 여름"
+  - id: "FS-001-DANA-VISION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 18
+        after: 24
+    note: "휴지 명시 이행(칠판·생활 문장 — 신경 어휘 0). S6 전까지 침묵"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "현관 1컷(관찰의 손). S5 = 생활 역할 인정(EP25 접수표)·호기심"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "NO_CHANGE"
+    note: "SIMMERING 유지 — 소문·라디오 배경만. S6 회수형 2연전 창구"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "군 미등장 — 인지 1컷 창구 유지(S4 후처리~S5)"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "성호에게 정체·고유명 단서 0, 인과 고백 0, `미안` 발화 0"
+  - "연애 코드 0(다정 간호 0 — 몰래·퉁명만), 깁스 사인 농담 = 예고 개그로만"
+  - "혜정 추궁 0, 학교 파손 0, C1 신규 신호 0, 군 등장 0"
+
+canon_additions:
+  - "체육대회 재편성표: 계주 명단 보존·날짜 공란(대기의 문법)"
+  - "성호 진단: 염좌+인대, 전치 몇 주(깁스 첫 줄 = 미정 소품)"
+  - "단아 새 시간표 첫 줄(비공개): 싸움 전에 대피계단부터"
+  - "**S4 「포박」 아크 마감** — 종료장부 대조서·아크캡슐 S4 별첨"
+
+provenance:
+  chapter_text: "Black_Titan_EP024_24화_깁스_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP024_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP024_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP024_Gate-D_검증서_v1.0.md"
+  arc_close: "Black_Titan_S4_종료장부_대조서_v1.0.md / Black_Titan_아크캡슐_S4_v1.0.md"
+notes:
+  - "S4 「포박」 완결(EP19~24). 다음 = S5 「괴수 없는 날들」 EP25 「어린이날」(표준 화 — 5/5 목)."
+  - "EP25 진입: 며칠째 경보 없음, 초여름 더위 — 냉방기 수리 대목·늦은 어린이날."

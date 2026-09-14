@@ -1,0 +1,26 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "review",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "tools/review_server.py"
+      ],
+      "autoPort": true,
+      "port": 8787
+    },
+    {
+      "name": "mobile",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8788",
+        "--directory",
+        "tools"
+      ],
+      "port": 8788
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+schema_version: 2
+chapter: 15
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-04"
+  approval_note: "초고 v0.1 → 로컬 첨삭툴 4건 → `좋아, 승인`. S3 중요 화 — 첫 실패·받치기 선택."
+based_on_snapshot: "SNAP-014 v1.0"
+produces_snapshot: "SNAP-015 v1.0"
+changes:
+  - category: "action"
+    field_path: "characters.dana.state"
+    operation: "merge"
+    after:
+      - "**첫 접근 실패(올바른 실패):** 회피 상승 2회 + 당기기 실패(볼트·배관이 먼저) + 보행지 밀어내기 → 추락 회피 → 열교환탑 상부 기울기"
+      - "**받치기 선택:** 추격을 버리고 땅을 딛고 서서 기우는 탑을 양팔로 받침 — 기술진 차단 완료까지 유지"
+      - "학습: 직접 추격은 괴수보다 도시 구조물을 먼저 위험하게 만든다 / 개체는 가까이 가면 버리고 더 높은 데로 간다(이유 불명)"
+      - "받치기 내면 = 셈(하중 40퍼센트·구획·부하·시간) — 수몰역 훈련의 반 뼘 요령 회수"
+    evidence:
+      scene: [2, 3]
+
+  - category: "informational"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**회피 패턴 공개:** 타이탄이 일정 거리 안에 들어올 때만 다리를 접고(바깥쪽부터), 더 높고 먼 지지점으로 옮겨 재전개 — 3회 반복 확인"
+      - "밀어내기 1회 — 공격 아닌 경로 배제(치명타 시도 0)"
+      - "종착: **마지막 가동 변전탑** 점거. 훅 — 처음으로 여덟 다리를 한꺼번에 도시 쪽으로 전개, 마지막 가동구획 경보"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "physical"
+    field_path: "city.research_complex"
+    operation: "merge"
+    after:
+      - "열교환 2호탑 상부 변형(단아가 만든 손상 — 붙잡은 자리부터 기움). 받침 + 원격 지지대로 붕괴 저지, 차단 전 구획 완료"
+      - "낙하 예상 구역 무인 유지 — 민간·시설 피해 0"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "merge"
+    after:
+      - "**B3 첫 관찰(비전투·발화 0):** 소리 없는 화면에서 회피 반복을 봄 — 거리 눈금 어림, 접는 순서 정리(바깥쪽부터)"
+      - "바이올린 공책에 이동 시각만 기록: 0시 47분 / 0시 58분 / 1시 11분. 이유는 적지 않음(모르는 것은 적지 않는 방식)"
+      - "`달아나는 것도 싸우는 것도 아니면 무엇인지` — 낱말을 아직 갖지 못한 상태로 보존"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.myeongjun.state"
+    operation: "merge"
+    after:
+      - "기록 2줄: 미식별 검은 거인, 추격 중단·붕괴 위험 구조물 지지 / 민간·시설 피해 없음"
+      - "**`방어 협조 관측` 항목 신설**(상황실 실무 문답) — 협조 명시가 아닌 분류의 탄생"
+      - "낙하구역 무인 유지 지시(`저 밑에 아무도 넣지 마라`)"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "military.broadcast"
+    operation: "advance"
+    after:
+      - "**EP14 송출의 회수:** 단아가 공개주파수 하중 방송을 수신·암기(40퍼센트·300미터), 오르기 경로와 받치기 셈에 사용 — `듣는 쪽`의 첫 실증(양측 모두 협조 명시 0)"
+    evidence:
+      scene: [1, 3]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 14
+        after: 15
+    note: "회피 패턴 지면 공개(거리 조건·접는 순서·상승 이동). 이유·탐색 대상·계통은 미공개 유지. 다음 EP16 행동 역이용(오를 곳을 없애는 법)"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 13
+        after: 15
+    note: "**첫 패턴 관찰 완료** — 시각 기록 3건, 발화 0, 분석 차단(낱말 없음). 다음 의미 진전 S5, 결정적 조언 S7. 공책 = 바이올린 공책(EP13 생활세계와 물리적으로 겹침)"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "전투 중 완전 침묵 달성(잠금 준수). 다음 EP17 칠판 → EP18 도수"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+    note: "추락 위기에서 문구 재사용 0 — 가드 유지 확인"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "학교 인물 미등장 화"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "고명준 ◐(무전 음성만) — 사진 관련 0"
+
+no_change_checks:
+  - "케이블·체인·아이언 앵커 0 — 맨손과 지형만"
+  - "역장 0(현상만), 계통·상쇄 0, 회피 이유 확정 0"
+  - "수아 전술 발화 0(구판 `다리부터 움직여` 미사용)"
+  - "군 지휘·결정타 0, 협조 명시 0"
+  - "시야 이상·실신 0, 통증 누출 0(부하는 무게 감각)"
+
+provenance:
+  chapter_text: "Black_Titan_EP015_15화_수직의싸움_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP015_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP015_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP015_Gate-D_검증서_v1.0.md"
+notes:
+  - "S3 3단계(첫 실패) 완료. 다음 EP16 「오를 곳을 없애는 법」 — 중요 화, 유도전·맨손 제압."
+  - "EP16 진입: 같은 밤 연속 — 받침 인계 직후, 개체는 변전탑 위 여덟 다리 도시 쪽, 경보 중."

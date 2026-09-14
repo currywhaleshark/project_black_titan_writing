@@ -1,0 +1,396 @@
+schema_version: 2
+snapshot_id: "SNAP-019"
+status: "APPROVED_CURRENT_STATE"
+approved_by_user: "2026-08-05"
+approval_note: "EP019 「운동장의 선」 v1.0 Gate D 승인·델타 적용. S4 도입 — 체육대회 중단, 앙숙 복구, 한결 초출, 사이렌·역류."
+canon_version: "통합설정집 v2.3(+v2.4 증보) / 전체 플롯 v2.2 / 봄 Level 3 v3.2 / S4 화별 개요 v3.5"
+through_chapter: 19
+arc_note: "**S4 「포박」 진행 중(EP19~24, 1/6).** 다음 = EP20 「여덟 개의 팔」(중요 화 — 포박 개시·성호 부상)"
+story_time:
+  date: "2050년 4월 27일 수요일 — 체육대회 중단 직후 오후"
+  time_of_day: "오후 — 대피 개시, 단아 이탈 판단 완료(실행 전)"
+  elapsed_since_previous_chapter: "EP18(월 4/25 저녁)로부터 이틀"
+  author_note: "연도 2050년. 같은 오후가 EP20으로 연속된다"
+
+characters:
+  dana:
+    display_name: "도단아"
+    location: "청해남초 운동장 — 대피 줄 맨 뒤"
+    physical:
+      condition: "하루 종일 경기한 정상 피로. 새 렌즈 적응 완료(전투·이상 증상 0)"
+      symptoms: ["시력 저하·둥근 안경(새 렌즈, 기준선)"]
+      injuries: []
+      treatment: ["재검 6월 대기"]
+    emotional:
+      baseline: "밝고 활달하며 경쟁심이 강하고 생각보다 행동이 앞섬"
+      pressure_level: 3
+      pressures:
+        - "**방학 같던 하루가 끊긴 직후** — 셈 전환(행렬 방향·수리점 길·모퉁이)"
+        - "혜정에게 둘러댈 이탈 사유 필요(EP20 실행)"
+    relationships:
+      sua: "보호하려는 마음 — 대피소 방향이 같다는 것만 확인한 상태"
+      youngjin: "출격 합류 예정(연락 전)"
+      hyejeong: "명단의 대답·물통·`이겨` — 수용 국면의 행사 버전"
+      seongho: "앙숙 리듬 완전 복구 — 계주 승부 3차 유예 중"
+    knowledge:
+      knows:
+        - "SNAP-018의 지식 전체"
+        - "배수로 역류 목격(`방향이 틀린 물` — 다른 종류의 선)"
+        - "성호의 그물 자원(거울 인지 — 서로만 알아보는 챙김)"
+      suspects: []
+      misunderstands:
+        - "확장 위장 설명을 사실로 믿음"
+      hides:
+        - "탑승 사실(가족 외 전원)"
+        - "대피 줄에서 빠져나갈 계획"
+    commitments:
+      - "이탈 → 수리점 → 출격(EP20)"
+      - "계주 재대결(유예 중)"
+    state_notes:
+      - "시각 숫자 없는 하루를 보냄 — EP13 시계 강박의 반전 달성"
+
+  sua:
+    display_name: "도수아"
+    location: "3학년 대피 줄(선발 이동 — 추정)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "말수가 적고 사려 깊음", pressure_level: 2, pressures: ["대피 상황"] }
+    relationships:
+      dana: "대피소 방향이 같다는 것만 서로 아는 상태"
+      harang: "다른 반 — 각자 반 줄"
+    knowledge:
+      knows: ["SNAP-018의 지식 전체", "대피 절차(훈련 숙달)"]
+      suspects: []
+      misunderstands: ["확장 위장 설명을 사실로 믿음"]
+      hides: ["공책 기록(비공개 유지)"]
+    commitments: ["대피 후 정비실 합류 예정(S4 비전투 지원 — 작가용)"]
+    state_notes: ["EP19는 ○(천막·줄 추정 언급만)"]
+
+  youngjin:
+    display_name: "도영진"
+    location: "구래동 수리점(추정 — 미등장)"
+    physical: { condition: "고령이지만 작업능력 유지", symptoms: [], injuries: ["왼팔 결손"], treatment: [] }
+    emotional:
+      baseline: "최악을 먼저 상정하고 대비하는 보호자"
+      pressure_level: 4
+      pressures: ["사이렌 발령 — 출격 준비 국면"]
+    relationships: { dana: "합류 대기", sua: "대피 확인 필요" }
+    knowledge:
+      knows: ["SNAP-018의 지식 전체", "포박형 예고(배양낭 팔 — EP18 작가용 인지 아님·독자용)"]
+      suspects: ["다음 개체가 타이탄을 붙잡으려 한다는 동작 예고(EP18 훅은 독자 전용 — 영진의 지식은 사이렌·역류 수준)"]
+      misunderstands: []
+      hides:
+        - "생체 기원·신경기원·VR 인과·현서 관련 일체"
+        - "출격 노선(가족 외)"
+        - "균열 안쪽 액체의 목격 사실(FS-003)"
+    commitments: ["출격 준비(EP20)"]
+    state_notes: ["EP19 미등장"]
+
+  hyunseo:
+    display_name: "도현서"
+    location: "불명 — `오래전에 떠남`"
+    physical: { condition: "회상 한정", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "회상 한정", pressure_level: 0, pressures: [] }
+    relationships:
+      youngjin: "18년 전 방문·공동 개수(위장 프레임)"
+      dana: "얼굴이 기억나지 않는 어머니"
+      sua: "동일"
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+    state_notes: ["본편 미등장 유지"]
+
+  myeongjun:
+    display_name: "고명준"
+    location: "남해방위사령부"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "공적 언어의 지휘관", pressure_level: 4, pressures: ["해안 이상 — 대피 발령 국면"] }
+    relationships: {}
+    knowledge:
+      knows: ["SNAP-018의 지식 전체", "해안 수로 역류·이상 관측(발령 근거)"]
+      suspects: []
+      misunderstands: []
+      hides: ["서랍 속 동반 사진"]
+    commitments: ["학생·시민 대피 우선, 해안도로·수몰 구도심 외곽 통제(EP20)"]
+    state_notes: ["EP19 미등장(사이렌·방송 배경)"]
+
+  seojin:
+    display_name: "윤서진"
+    location: "남해방위사령부"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "건조한 실무자", pressure_level: 3, pressures: [] }
+    relationships: { myeongjun: "전속부관" }
+    knowledge: { knows: ["군 보유 정보와 동일"], suspects: [], misunderstands: [], hides: [] }
+    commitments: ["기록·송출 실무"]
+    state_notes: ["EP19 미등장"]
+
+  hyejeong:
+    display_name: "고혜정"
+    location: "청해남초 — 대피 줄"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "직선적이고 의리 강함"
+      pressure_level: 3
+      pressures: ["대피 상황 + 단아의 위치(줄 뒤)"]
+    relationships:
+      dana: "명단·물통·`이겨` — 행사 내내 곁. 이탈은 아직 모름"
+      yejin: "함께 다니는 친구"
+    knowledge:
+      knows: ["SNAP-018의 지식 전체", "단아가 오늘 끝까지 남았다는 것(약속 이행 목격)"]
+      suspects: ["기존 오독 유지"]
+      misunderstands: ["단아가 시간에 쫓기는 실제 이유"]
+      hides: ["짐작과 목록"]
+    commitments: ["대피 — EP20에서 단아의 둘러대기 수신 예정"]
+
+  yejin:
+    display_name: "하예진"
+    location: "청해남초 — 대피 줄"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "완충재형 다정함", pressure_level: 2, pressures: [] }
+    relationships: { dana: "절친", hyejeong: "함께 다니는 친구" }
+    knowledge: { knows: ["`오늘 세 번째예요` — 시비 관찰 전문"], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  seongho:
+    display_name: "이성호"
+    location: "청해남초 — 대피 줄(후미 이동 예정 — EP20)"
+    physical: { condition: "건강 — **부상 직전 상태(EP20 예약)**", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "경쟁심과 과장 — 분석 발표체"
+      pressure_level: 2
+      pressures: ["중단된 계주(승부 미결)"]
+    relationships: { dana: "앙숙 리듬 복구 — 동점·유예·`어. 정확해.`" }
+    knowledge:
+      knows: ["그물 구간의 관중 반응(자칭)", "검은 거인 장애물경주 실격론"]
+      suspects: []
+      misunderstands: ["파일럿 = 성인 특수요원"]
+      hides: ["그물 자원의 실제 이유(본인도 명명 안 함)"]
+    commitments: ["계주 재대결(유예)"]
+    state_notes: ["**미부상 — EP20에서 대피 후미·발목**"]
+
+  juho:
+    display_name: "김주호"
+    location: "청해남초 — 대피 인솔"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "담백한 현실형 담임교사", pressure_level: 3, pressures: ["실전 대피 인솔"] }
+    relationships: { dana: "담임과 학생" }
+    knowledge: { knows: ["대피 절차·인원"], suspects: [], misunderstands: [], hides: [] }
+    commitments: ["**현장형 인솔(EP20)** — 걷은 소매로 저학년을 앞 교사에게 넘기는 행동"]
+
+  hangyeol:
+    display_name: "강한결"
+    location: "청해남초 — 대피 줄"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "규칙·기록·행동으로 조용히 정리", pressure_level: 2, pressures: [] }
+    relationships: { dana: "같은 반(반장) — 동점 판정의 집행자", seongho: "동일" }
+    knowledge:
+      knows: ["집계·편성의 전 기록(본인 관리)"]
+      suspects: []
+      misunderstands: []
+      hides: ["마지막 아웃을 어느 칸에 넣었는지(의도적 비복원 표기)"]
+    commitments: ["기록 담당 지속"]
+    state_notes:
+      - "**EP19 첫 지면 등장(EP6 언급 후 13화 만).** 확립 기능: 말 대신 종이(열 걸음과 한 단어)"
+
+  harang:
+    display_name: "이하랑"
+    location: "3학년 대피 줄(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "밝고 평범한 9세", pressure_level: 1, pressures: [] }
+    relationships: { sua: "방과후 친구" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  gitae:
+    display_name: "박기태"
+    location: "구래항 인양장(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "퉁명한 말, 보호하는 행동", pressure_level: 2, pressures: ["사이렌 — 인양 중단"] }
+    relationships: { youngjin: "조달 관계" }
+    knowledge: { knows: [], suspects: [], misunderstands: ["산업기계 위장 수용"], hides: [] }
+    commitments: []
+
+  miran:
+    display_name: "오미란"
+    location: "구래수산시장(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "실무자", pressure_level: 2, pressures: ["사이렌 — 시장 대피"] }
+    relationships: { youngjin: "수리 거래처" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  jeongho:
+    display_name: "배정호"
+    location: "구래항(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "말수 적음", pressure_level: 2, pressures: [] }
+    relationships: { youngjin: "수리 거래처" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+assets:
+  black_titan:
+    location: "지하 격납고"
+    status: "완전 가동 — 출격 대기 국면"
+    equipment:
+      - "세미다이렉트모션 조종계"
+      - "감쇠 포스 피드백"
+      - "단아 반응값 보정"
+      - "조종석 상시 기록(블랙박스)"
+    damage: []
+    repair_needs: ["조달품 가공 잔량(이월)"]
+    maintenance_log:
+      - "EP18: 특이사항 없음"
+  sortie_line:
+    location: "격납고 → 옛 노선 → 수몰역(무명)"
+    status: "정상. 비공개 유지"
+    equipment: ["레일 운반대차", "수밀격벽"]
+    damage: []
+    repair_needs: []
+  youngjin_repair_shop:
+    location: "구래동 언덕길"
+    status: "사이렌 국면 — 셔터 예상"
+    equipment: ["수리 공구·부품", "지하 연결통로", "발전기"]
+    damage: []
+    repair_needs: []
+    stored_items:
+      - "동진호 어탐(보관 중)"
+      - "성게형 가시 조각(선반 아래 통)"
+      - "조달 1차 물량(가공 대기 잔량)"
+
+inventory:
+  black_titan_weapons: { status: "없음", note: "봄에는 맨손. 아이언 앵커 금지." }
+  dana_notebook: { status: "보유", note: "네 칸 시간표(학교/가게/집안일/재검 6월)" }
+  sua_notebook: { status: "보유", note: "시각 기록 3건 비공개" }
+
+living_conditions:
+  family:
+    - "대피 국면 — 단아 이탈 실행 전, 수아 학년 줄, 영진 수리점"
+  school:
+    - "**체육대회 중단**(마지막 계주 미실시 — 재편성 추후). 피구 동점·장애물경주 기록 잔존"
+    - "대피 개시 — 학년별 줄, 지정 대피소 이동 중"
+  neighborhood:
+    - "해안 대피 사이렌 발령권"
+  city:
+    - "**배수로 역류 관측**(바다→내륙 방향) — 침수구역 이상의 전조"
+
+external_conditions:
+  network:
+    - "**인터넷 소실 — 청해 내부망만.** 서술·대사 `인터넷` 금지"
+  public:
+    - "대피 방송 가동(훈련 문장·실전 속도)"
+  sea:
+    - "해안 수로 역류 — 원인 미공개"
+  military:
+    - "해안 대피 사이렌 발령. 학생·시민 대피 우선(EP20 통제 전개)"
+  enemy:
+    - "**문어형 접근 중(작가용)** — 침수구역 진입 전조(역류). 형체 미노출, 학교·타이탄 위치 미특정"
+    - "포박형 예고(EP18 훅)는 독자 전용 지식 유지"
+
+active_threads:
+  - id: "FS-001-DANA-VISION"
+    question: "시력·VR·두통은 어떻게 이어지는가"
+    introduced_chapter: 0
+    last_advanced_chapter: 18
+    current_holder: ["단아", "영진"]
+    urgency: "SIMMERING_DENIABLE"
+    expected_window: "S4 침묵(잠금 — EP21 시야 상실은 물리적 차단). 재검 6월, 명시 진전 S6"
+    allowed_interpretations: ["렌즈 적응 완료 — 기준선"]
+  - id: "B1-HYEJEONG-CONCERN"
+    question: "혜정은 걱정의 장부를 어디까지 쌓는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 19
+    current_holder: ["단아", "혜정", "예진"]
+    urgency: "WARM_STEADY"
+    expected_window: "EP20 이탈 둘러대기 수신 → EP24 창백함 걱정(추궁 0)"
+    allowed_interpretations: ["수용 국면. 미회수: 동그라미"]
+  - id: "B4-SEONGHO-SCHOOL"
+    question: "학교·도시의 검은 거인 신화와 단아의 정체는 어떻게 스치는가"
+    introduced_chapter: 6
+    last_advanced_chapter: 19
+    current_holder: ["성호", "학교", "단아"]
+    urgency: "ACTIVE_LOADED"
+    expected_window: "**EP20 부상(대피 후미·젖은 계단·발목)** → EP24 깁스 등교·앙숙 복귀"
+    allowed_interpretations:
+      - "거울 챙김 장전 완료 — 성호도 같은 상황에서 같은 선택을 할 아이(죄책감 증폭 장치)"
+  - id: "C2-TITAN-ORIGIN"
+    question: "거인은 무엇이며 누가 왜 만들었는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 18
+    current_holder: ["영진"]
+    urgency: "HIDDEN"
+    expected_window: "후반 봄 직접 진전, 진실은 가을"
+    allowed_interpretations: ["위장 유지"]
+  - id: "C4-ENEMY-PURPOSE"
+    question: "그것들은 무엇을 하러 오는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 19
+    current_holder: ["인큐베이터"]
+    urgency: "ACTIVE_TICKING"
+    expected_window: "**EP20 포박 개시**(네 팔 신체·네 팔 견인) → EP21 운반 → EP23 추정 도달(`죽이려는 게 아니라 데려가려 한다`)"
+    allowed_interpretations:
+      - "공개 상한 = 역류·사이렌. `회수 대상`·`상쇄 방해개체`·`운반 실패` 문구 전면 금지"
+  - id: "B3-SUA-POSITION"
+    question: "왜 현재는 단아만 조종자인가"
+    introduced_chapter: 2
+    last_advanced_chapter: 17
+    current_holder: ["수아", "영진"]
+    urgency: "LOW_HIDDEN"
+    expected_window: "S4 비전투 지원만(정비실·재난방송·예비전원·밀봉재). 결정적 조언 S7"
+    allowed_interpretations: ["교각·궤적·승리법 무전 금지(개요 잠금)"]
+  - id: "FS-004-PIERCING-FEAR"
+    question: "조종석의 아이는 몸의 위험을 어떻게 상상하는가"
+    introduced_chapter: 4
+    last_advanced_chapter: 4
+    current_holder: ["단아"]
+    urgency: "DORMANT"
+    expected_window: "여름 마지막 전투 회수 — **S4 포박전(붙잡히는 전투)에서 문구 재사용 특별 금지**"
+    allowed_interpretations: ["반복 사용 금지"]
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    question: "고명준과 영진은 어떤 과거로 묶여 있는가"
+    introduced_chapter: 12
+    last_advanced_chapter: 12
+    current_holder: ["고명준"]
+    urgency: "HIDDEN"
+    expected_window: "봄 후반 인지 1컷, 전모는 가을"
+    allowed_interpretations: ["동반 사진 한 장 — 사실만"]
+
+resolved_threads:
+  - id: "A-S1-FIRST-INVASION"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  - id: "A-S2-HARBOR-BLOCKADE"
+    resolution: "EP10 격퇴·항로 재개"
+    resolved_at: 10
+  - id: "A-S3-HIGHGROUND"
+    resolution: "EP16 격퇴·용해, EP18 아크 마감"
+    resolved_at: 18
+
+relations:
+  dana_sua: { pair: ["dana","sua"], stage: "STABLE_FAMILY", trust_level: 5, current_issue: "대피 분산 — 방향만 아는 상태" }
+  dana_youngjin:
+    pair: ["dana","youngjin"]
+    stage: "STRAINED_BY_REVEALED_DECEPTION"
+    trust_level: 3
+    current_issue: "표면 해빙 유지 — 실전 합류 임박"
+  dana_hyejeong:
+    pair: ["dana","hyejeong"]
+    stage: "STABLE_LONGTIME_FRIENDS"
+    trust_level: 5
+    current_issue: "약속 이행 목격(끝까지 남음) — 직후 이탈의 아이러니 대기"
+  dana_yejin: { pair: ["dana","yejin"], stage: "STABLE_FRIENDS", trust_level: 4, current_issue: "없음" }
+  dana_seongho:
+    pair: ["dana","seongho"]
+    stage: "RECIPROCAL_RIVALRY"
+    trust_level: 3
+    current_issue: "**앙숙 리듬 정점** — 동점·유예·거울 챙김. EP20부터 죄책감 국면 진입"
+  sua_harang: { pair: ["sua","harang"], stage: "GROWING_FRIENDS", trust_level: 3, current_issue: "없음" }
+
+relation_scale:
+  trust_level: "0=신뢰 없음, 5=매우 높은 개인적 신뢰. 호감·연애 수치가 아님."
+
+last_approved_delta: "Black_Titan_EP019_회차델타_v1.0.yaml"
+provenance:
+  - "SNAP-018 v1.0의 provenance 전체"
+  - "EP019 회차브리프 v0.1 GATE_C_PASS(피구 정정)"
+  - "EP019 Level 6 v1.0 LEVEL6_APPROVED"
+  - "EP019 운동장의 선 v1.0 GATE_D_PASS 2026-08-05(장애물경주 정정)"
+  - "EP019 회차델타 v1.0"

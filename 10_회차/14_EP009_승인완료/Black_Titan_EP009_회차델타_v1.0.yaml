@@ -1,0 +1,141 @@
+schema_version: 2
+chapter: 9
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-03"
+  approval_note: "초고 v0.1 → 첨삭(수정 1·코멘트 2·전체 1) → v0.2(1승1패·클램프+체인블록·S5 위장) → `좋아, 승인`."
+based_on_snapshot: "SNAP-008 v1.0"
+produces_snapshot: "SNAP-009 v1.0"
+changes:
+  - category: "action"
+    field_path: "events.first_removal_attempt"
+    operation: "record"
+    after:
+      - "주말 최간조, 두 번째 출격 — 성게형 정면 뽑기 시도와 실패"
+      - "접근거부 현상 체감: 몸체는 잡히기 직전에 자리가 어긋남(원인 미상), 가시는 잡힘"
+      - "성게형 첫 발성(쇠 긁는 소리 1회), 가시 곤두섬 후 무심한 복원"
+      - "당김의 힘이 방파제·해저로 전달 — 팔을 타고 오는 구조물 진동, 뿌옇게 번지는 물, 밀물 개시"
+      - "단아의 판단 철수 — 항구 보호의 영웅적 중단. 결과: 부서진 것 없음(경미한 선착장 균열 제외)"
+    evidence:
+      scenes: [2, 3]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "정면 당김은 배제 — 이 개체는 몸통이 바닥이며, 당기는 힘은 항구가 받는다"
+        - "몸체 접촉이 원인 미상으로 어긋난다는 체험(오독 상태: 물때·물살·기계 아님까지 소거)"
+        - "선착장 균열이 자신의 당김에서 왔다는 자각(뉴스 사후 확인)"
+      emotional_note:
+        - "1승 1패 — 분함과 안도의 병존(둘 다 오늘 몫)"
+        - "묻지 않는 수아를 보며 `묻지 않는 데에도 힘이 든다`를 처음 생각함"
+    evidence:
+      scenes: [3, 4]
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "merge"
+    after:
+      - "철수 인정 — `항구 부수고 이기는 건 지는 거다. 오늘은 잘 멈췄다` / `부서진 게 없다`"
+      - "심야 단독 정비 — 팔 장갑 균열·박힌 가시 조각(클램프+체인블록으로 제거), 체액 세척"
+      - "**C2(영진만): 닦은 이음매가 다시 검붉어지는 것을 목격, 무심히 재세척 후 걸레 소각.** 자매·독자에게 해설 0"
+      - "부품 비축 재고 감소 확인·장부 셈(장갑재·밀봉재·연마 소모품) — 조달 필요의 인지 시작"
+    evidence:
+      scenes: [4, 5]
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "merge"
+    after:
+      - "귀환 보조 수행(세척·수건·물병) — 대사 0, 묻지 않는 기다림. 그물 조각을 개켜 두는 손"
+    evidence:
+      scene: 4
+
+  - category: "resource"
+    field_path: "assets.black_titan"
+    operation: "merge"
+    after:
+      damage:
+        - "오른팔 장갑 긁힘·이음매 균열(가시) — 보수 필요"
+        - "손등 장갑 긁힘 2줄(경미)"
+      stored:
+        - "부러진 성게형 가시 조각(어른 팔뚝 크기) — 격납고 선반 아래 통, 천 덮음"
+      note: "손상 목록 1장(EP4의 2장보다 짧음)"
+    evidence:
+      scene: 5
+
+  - category: "external"
+    field_path: "external_conditions"
+    operation: "advance"
+    after:
+      public:
+        - "방송국 드론이 시도 전 과정을 원거리 촬영(작가용: EP10 왼손잡이설 영상 소스). 지면에서는 존재만 서술"
+        - "뉴스 단신 — 선착장 균열 발견·보수 착수(원인 미보도)"
+      sea:
+        - "성게형 건재 — 위치·기능 변동 없음. 항만 통제 지속"
+    evidence:
+      scenes: [1, 4]
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "advance"
+    after:
+      chapter: 9
+      advanced:
+        - "A-S2-HARBOR-BLOCKADE(첫 시도 실패 — 방법 소거)"
+        - "C4-ENEMY-PURPOSE(접촉 반응 체감)"
+        - "C2-TITAN-ORIGIN(FS-003 심기)"
+    evidence:
+      scenes: [2, 3, 5]
+
+foreshadow_updates:
+  - id: "FS-003-BIO-SEEP"
+    operation: "PLANT"
+    note: "신규 등재 — 장갑 균열 이음매의 `덜 닦인` 검붉음(영진만 목격, 걸레 소각). 표면: 정비 중 얼룩/체액 잔여. 진실: 생체 순환액. 서술은 무심함만 — 출처 암시 어휘 금지 유지. 다음 직접 진전: 후반 봄"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 5
+        after: 9
+    note: "FS-003을 통한 간접 진전. 공개 수위 변동 없음(독자는 얼룩의 사실만 봄)"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 8
+        after: 9
+    note: "접촉 반응(어긋남·쇳소리·무심한 복원)까지 공개. 원인·목적 봉인 유지"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "귀환 보조는 가족 역할 내 — 전술·적합성 단서 0"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "학교 씬 없음. 드론 영상은 작가용 대기(EP10 훅 소스)"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "전투 후 피로는 통상 수위, 신경 신호 0"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+    note: "문구·상상 재사용 0 확인"
+
+no_change_checks:
+  - "역장·간섭·회수·탐색 어휘 0, 어긋남은 현상+오독만"
+  - "수아 전투보조 0, 케이블·아이언 앵커 0"
+  - "단아 신경손상·전투불능 서술 0"
+  - "군 개입 0(관측 실루엣만), 학교·B1 씬 0"
+  - "왼손 동작 2회는 무강조 — 작가용 기록: EP10 영상 분석의 소스"
+
+provenance:
+  chapter_text: "Black_Titan_EP009_9화_철거작업_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP009_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP009_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP009_Gate-D_검증서_v1.0.md"
+notes:
+  - "S5는 표면상 `꼼꼼한 다음 준비` 에피소드 — FS-003은 그 루틴에 묻혀 있음(사용자 설계)."
+  - "부품 감소 셈 = EP12 기태 조달 의뢰의 씨앗."
+  - "가시 조각(선반 아래 통)은 향후 소품 활용 가능 — 현재는 보관만."

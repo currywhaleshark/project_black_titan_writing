@@ -1,0 +1,107 @@
+schema_version: 2
+chapter: 41
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "v0.1 → 첨삭 9건+코멘트 1건(v0.2) → 장면 재배열 → `좋아`. 여름 시즌(S8) 개시 화."
+based_on_snapshot: "SNAP-040 v1.0"
+produces_snapshot: "SNAP-041 v1.0"
+changes:
+  - category: "physical"
+    field_path: "characters.dana.physical"
+    operation: "resolve"
+    after:
+      - "**재검(6월) 지불 완료 — 이상 없음:** 시력 0.6 유지(도수 그대로·내년 재측정)·손 반응/집기/악력 정상. 봄의 부인 가능 기록 2건은 장부 여백과 함께 존속(영진 무언)"
+    evidence:
+      scene: 2
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "떡볶이 청구권 지불 완료(어묵 세 개 낙착 — `중립도 먹어야지`). **혜정의 기다림 정본:** 4월부터 재검일을 알고도 안 묻다가 다음 날 지나가듯 확인 → 즉시 놀림 전환"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "잠잠 2주 인지(생활 층위 — `요즘 조용하다`). **지속의 바람:** `계속 이랬으면 좋겠다`(플래그)"
+    evidence:
+      scene: [1, 3]
+
+  - category: "situational"
+    field_path: "living_conditions.school"
+    operation: "advance"
+    after:
+      - "**발표 주간 정본:** 금요일 방과후 교실 발표회 — **수아·하랑 = 한 곡 반씩 나눠 켜기**(수아 사림 = 잘하고 싶음). 관람 예정: 단아·혜정·예진(박수 부대)"
+      - "성호 재활: 계단 두 칸·이번 달 달리기 허가 예상(재대결의 재대결 재청구 예고)"
+      - "**주호 무언 지원 1호:** 미리 적힌 조퇴 확인서(여름 수위 첫 집행)"
+    evidence:
+      scene: [1, 3, 4]
+
+  - category: "situational"
+    field_path: "assets.youngjin_repair_shop"
+    operation: "advance"
+    after:
+      - "**여름 장부 개시(6/7 밤):** 봄 장부 매조지 후 새 장부 첫 장 — 날짜+`이상 없음`(첫 기록 = 안심). `얇은 채로 끝나는 장부가 제일 좋은 장부`"
+    evidence:
+      scene: 5
+
+foreshadow_updates:
+  - id: "FS-001-DANA-VISION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 40
+        after: 41
+    note: "**재검 창구 지불(이상 없음 — 안심 확정).** 기원 정본 = EP18(4월). 다음 창구 = 여름 연전 국면의 악화 개시(S10 몸살 전조 — 새 증상은 그때까지 0)"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 40
+        after: 41
+    note: "떡볶이 청구권 소멸(지불). 기다림 정본 추가. 평온 유지(패턴 인지 = S10 예약)"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "NO_CHANGE"
+    note: "위협 신호 0 이행(DORMANT_SEASON_BREAK 유지). EP42 말 = 낯익은 결 신호 훅(성게형 재래 예고 — S8 개요)"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "발표회 세부 정본화(한 곡 반씩). EP42 = 발표 화(하랑 앵커 필수)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "재청구 예고 이행(허가 나오고 나서 말해). 지불 = S9~S10 창구"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "새 증상·진단 어휘 0, 위협 신호 0, 몸살 전조 0, 앵커 계열 0"
+  - "혜정 패턴 인지 0, 센티널·우편물 암시 0, 작가용 명칭 0"
+
+canon_additions:
+  - "시간: EP41 = 6/6(월) 재검·가족 저녁 → 6/7(화) 수금·새 장부. **여름 시즌 개시**"
+  - "**재검 기원 정본(첨삭 확정):** EP18 「도수」 = 4월(1월 아님) — 재검 대기 2개월"
+  - "**기후·복장 정본 집행 개시:** 온난화 세계·6월 = 한여름(`초여름` = 과거 대비 인용만 허용)·초등 사복. 격언: `여름은 오고 싶을 때 와서 갈 생각을 안 했다`"
+  - "**발표회 정본:** 금요일·수아+하랑 한 곡 반씩. **수박 = 발표회 날 구매(만장일치 — 신규 소약속)**"
+  - "**주호 수위 집행 1호:** 미리 적힌 조퇴 확인서(무언)"
+  - "여름 장부 정본: 매조지 후 개시(6/7)·첫 기록 = `이상 없음`"
+  - "격언 계보: `걱정의 크기와 결말의 길이는 비례하지 않았다` / `결과를 이미 아는 사람의 몫은 그릇을 채워 주는 것` / `계획은 세울 때가 제일 맛있었다`"
+provenance:
+  chapter_text: "Black_Titan_EP041_41화_재검_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP041_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP041_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP041_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 1/10 완료. 다음 **EP42 「발표 주간」(표준 화 — 수아 라인 생활 화).**"
+  - "EP42 고정선(S8 개요): **하랑 바이올린 발표(● — 앵커 필수·간격 16)** — 수아와 한 곡 반씩(EP41 정본). 관객석 가족+친구들·수박 약속 지불. 동그라미(가방 2호) 회수 배치. 성호 재활 진전 지속"
+  - "EP42 훅(개요): 외해 관측 — **낯익은 결의 신호 하나**(영진, 옛 기록을 꺼내 대조 시작 — 명언 0. 성게형 재래 예고)"
+  - "EP42 금지: 위협 실체 노출 0(신호 층위만), 새 증상 0, 수아 발표 = 사림 결(뾰족함 0·잘하고 싶음의 온도)"

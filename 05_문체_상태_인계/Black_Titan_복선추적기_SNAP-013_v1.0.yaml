@@ -1,0 +1,162 @@
+schema_version: 1
+as_of_episode: 13
+last_updated_by: "EP013 「사월의 시간표」 v1.0 Gate D 승인·상태 반영 (S3 도입 — B1 실무 전환, B3 생활세계 배치, C4 3회 점멸)"
+active:
+  FS-001-DANA-VISION:
+    name: "지난가을 시력 저하·5개월 전 VR·짧은 두통"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "성장기 시력 변화, 화면 피로"
+    truth: "1차 신경계통과 2차 거체 접속 부담, 탐색파 공명"
+    reveal_window: "단계적 누적, 원인 정답은 가을"
+    allowed_reveal_now: "기준선 유지 — **EP13은 완전 침묵**(시력·초점·두통·안경 어휘 0). 다음 노출은 EP14의 순간 초점 흐림 1회"
+    prohibited_reveal_now: "계통·탐색파·상쇄·생체 기원. EP14 증상의 선행 암시"
+    last_progressed: 2
+    next_window: "EP14 순간 초점 흐림(부인 가능), EP18 도수 변경"
+    status: "ACTIVE_BASELINE"
+    related_character_ids: ["dana", "youngjin"]
+    author_notes:
+      - "EP13에서 의도적으로 비웠다 — EP14 1회 발현의 대비를 위해 앞당기지 않음(개요 고정)"
+  FS-C2-TITAN-ORIGIN:
+    name: "거인의 기원과 부녀의 준비"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "가족 내부: 30년 전 군 시제기를 영진이 반출, 18년 전부터 도현서·도영진 부녀가 개수. 외부: 무등록 검은 거인"
+    truth: "현서·영진이 배양한 2차 거체와 두 자매의 신경기원"
+    reveal_window: "실제 기원은 가을"
+    allowed_reveal_now: "부녀가 준비했다는 사실, 18년 전 방문 회상, 닫힌 질문. FS-003의 사실 관찰(해석 없이)"
+    prohibited_reveal_now: "생체·배양·우회동조·연구 내용·현서의 현재. 얼룩의 명명·확정 해설"
+    last_progressed: 9
+    next_window: "후반 봄 직접 진전, 진실은 가을"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin", "hyunseo"]
+    author_notes:
+      - "EP13 rest — 조달 위장을 재설명하지 않는 것이 규칙의 생활화. 침묵이 곧 정착의 증거"
+  FS-C4-ENEMY-PURPOSE:
+    name: "그것들의 실제 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "원인 불명의 짧은 점멸 — 전기 계통의 사소한 이상처럼 보이는 것"
+    truth: "1차 거체 계통 신호의 탐색·회수. 고지선점형이 연구단지 구조물에 접근하며 생기는 간섭"
+    reveal_window: "EP14 행동 개시"
+    allowed_reveal_now: "**EP13 획득분: 같은 간격 3회 점멸(교실 조명 + 연구단지 항공등)까지.** 개체·장소·의도·원인 서술 0, 인물의 추정 0"
+    prohibited_reveal_now: "개체 존재 암시, `인큐베이터` 명명, 탐색 원리·1차 계통·상쇄, 정전과 괴수의 인과 선취"
+    last_progressed: 13
+    next_window: "EP14 고지선점 행동·구획정전"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin"]
+    author_notes:
+      - "점멸을 수아 시점에 둔 것은 단아의 신체 반응(C1)과 분리하기 위함 — 두 선이 같은 장면에서 만나지 않는다"
+  FS-003-BIO-SEEP:
+    name: "덜 닦인 얼룩"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: "정비 중 덜 닦인 괴수 체액 얼룩 — 꼼꼼한 영진의 뒷정리 루틴의 한 장면"
+    truth: "장갑 균열에서 새는 기체 자체의 생체 순환액"
+    reveal_window: "후반 봄 직접 진전, 확정은 가을"
+    allowed_reveal_now: "사실 관찰만 — 닦았는데 다시 검붉었고, 한 번 더 닦았고, 걸레는 소각됨"
+    prohibited_reveal_now: "출처 암시 어휘(배어남·스밈·안쪽), 명명·비교·해설, 영진의 심리 서술"
+    last_progressed: 9
+    next_window: "후반 봄"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["youngjin"]
+    author_notes:
+      - "위장: S5는 표면상 `아이들 재우고 다음을 준비하는 영진` 성격 에피소드(사용자 설계)"
+  C3-MYEONGJUN-YOUNGJIN:
+    name: "서랍 속 동반 사진"
+    line: "C3"
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: "지휘관의 서랍에 있는, 젊은 날 두 남자의 빛바랜 사진"
+    truth: "군 실험장 시절의 인연 — 사고·왼팔·생명의 빚(전면 봉인)"
+    reveal_window: "봄 짧은 인지 장면만, 전모는 가을"
+    allowed_reveal_now: "함께 찍힌 사진의 존재와 나란한 간격 — 오래 아는 사이라는 사실만"
+    prohibited_reveal_now: "촬영 장소·시기·복장, 사고·왼팔·빚, 현재 기체와의 연결, 고명준의 발화·회상"
+    last_progressed: 12
+    next_window: "봄 후반 인지 1컷"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["myeongjun", "youngjin"]
+    author_notes:
+      - "매장 문법: 서랍은 인주를 꺼내러 연다 — 사진은 보러 가는 대상이 아니라 눈에 들어오는 것(사용자 설계)"
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 유예와 부채"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "말 못 할 사정이 있는 친구의 빈자리를 조용히 메우는 절친"
+    truth: "오독 위의 부채 축적 — 지켜보기 결의(안 나으면 그때는 묻는다)"
+    reveal_window: "봄 누적, 본격 추궁은 여름"
+    allowed_reveal_now: "**질문 대신 행동만.** 준비물 따로 묶기(색 테이프 두 번·이름·가위 동봉), `어.` 한 글자의 수용, 서운함의 동작 표현. 직접 질문은 봄 내 0"
+    prohibited_reveal_now: "짐작의 언어화, 조사·미행, 물증 수집, 추가 직접 질문"
+    last_progressed: 13
+    next_window: "EP17 정전 교실 — 필기 공유·진료 권유"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+    author_notes:
+      - "예진의 인지 여부는 의도적 미확정 유지 — EP13의 `다 계획이 있는 애`는 관찰 진술이지 인지 확정이 아니다"
+      - "**미회수 소품: 두 번째 봉지의 동그라미** — 뜻을 묻지 못한 채 남음. 여름 회수 후보"
+  B4-SEONGHO-SCHOOL:
+    name: "성호의 숭배와 교실의 검은 거인"
+    line: "B4"
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: "성호의 파일럿 숭배와 자작 프로필 — 학교의 소문 생태계"
+    truth: "숭배 대상이 놀림 대상 바로 옆자리라는 독자 전용 아이러니"
+    reveal_window: "정체 접근은 금지 — 아이러니 반복 장치로만 운용"
+    allowed_reveal_now: "**EP13부터: 애칭의 구호 편입**(`이겨라 우리 반. 검은 거인처럼.`). 계주 마지막 주자 시비"
+    prohibited_reveal_now: "단아 연결 추론, 애칭 공식 승격, 습관 대조 실행, 새 프로필 설정 발명"
+    last_progressed: 13
+    next_window: "EP17 정전 책임 논쟁에서 거인 옹호"
+    status: "ACTIVE"
+    related_character_ids: ["seongho", "dana", "narae", "ujin"]
+    author_notes:
+      - "**미회수 약속: 계주 마지막 주자 시합**(다음 체육 시간). 회수하지 않아도 시간표 압박의 잔향으로 기능하지만, EP17 배경 1비트로 닫는 쪽이 깔끔"
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "언니를 돕고, 자기 생활도 생긴 조용한 동생"
+    truth: "수아의 2차 계통과 약한 우회 필터"
+    reveal_window: "S3 비전투 관찰, 적합성은 여름"
+    allowed_reveal_now: "**EP13: 생활세계 배치(바이올린·이하랑) + 조종석 응시 1컷.** 응시는 해설·심리 서술 없이 시선의 길이로만, 목격자 0"
+    prohibited_reveal_now: "계통·지연·동조·대체출격, 적합성 단서화, 응시의 이유 해설"
+    last_progressed: 13
+    next_window: "EP15 첫 짧은 패턴 관찰(비전투), 결정적 조언은 S7"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana", "harang"]
+    author_notes:
+      - "방과후 등록은 **영진의 편의 판단**(하교 시차 + 손 부족)이고 종목 선택만 수아 몫 — 능력 복선으로 읽히지 않게 하는 안전장치(사용자 설계)"
+      - "이하랑은 다른 반 — 수아의 생활이 언니와도 비밀과도 무관하다는 것을 구조로 보장"
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전에서 스친 공포의 상상"
+    truth: "여름 마지막 전투의 관통 사고와 공명"
+    reveal_window: "여름 마지막 전투"
+    allowed_reveal_now: "반복 사용 금지"
+    prohibited_reveal_now: "실제 부상 예고화"
+    last_progressed: 4
+    next_window: "여름 마지막 전투"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4 격파·용해로 종결"
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: "첫 침공 소아크 전체"
+    resolution: "EP6 아크 마감 — 소문의 일상화, 가족 규칙 명문화, 혜정의 질문 하나로 닫힘"
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: "구래항 봉쇄 소아크"
+    resolution: "EP10 굴리기 격퇴·항로 재개, EP12 네 기록으로 아크 마감"
+    resolved_at: 10
+retired: {}

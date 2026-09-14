@@ -1,0 +1,142 @@
+schema_version: 2
+chapter: 7
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-03"
+  approval_note: "초고 v0.1 → 첨삭(수정 4·코멘트 4·전체 1) → v0.2(어탐 재설계·양방향 구면·도 박사) → `좋아, 승인`으로 확정."
+based_on_snapshot: "SNAP-006 v1.0"
+produces_snapshot: "SNAP-007 v1.0"
+changes:
+  - category: "external"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "구래항 밖 특정 수역(등대 너머) 이상 발생 — 어구가 끌려가듯 매끈하게 절단, 선박이 파도 없이 옆으로 밀림, 어탐·음탐 화면이 해당 수역에서만 잡음화"
+      - "어선 조기 귀항 다수(단아 목격 네다섯 척), 조업 사실상 중단 시작"
+      - "무전 소문: 파도에도 가라앉지 않는 `가시 돋친 검은 바위`(태정호 목격담) — 전언 단계, 공식 확인 없음"
+      - "해경 대응 미착수(`와 봐야 안다` 수준). 어민 오독 왕복: 수몰 잔해·기뢰·해류"
+    evidence:
+      scenes: [3, 5]
+
+  - category: "living_condition"
+    field_path: "living_conditions"
+    operation: "merge"
+    after:
+      city:
+        - "생선 물가 요동(하루 두 번 가격 변동 소문), 학교 급식 생선 반찬 연속 대체"
+        - "경매장 반등(불 절반), 시장 온도 하강 시작"
+      family:
+        - "조업 중단이 길어지면 수리점 일감도 마른다는 연쇄 인지(영진 장부)"
+        - "동진호 어탐이 수리점에 보관됨(정상 판정 — 수역 이상의 무언 증거)"
+      school:
+        - "급식 대체 반찬 = 배양육 연속. **신규 확정 생활 설정(사용자 지시): 배양육이 급식·일상 단백질로 일상화된 근미래** — 아이들은 태어날 때부터 절반은 배양육을 먹고 자람"
+    evidence:
+      scenes: [1, 3, 4, 5]
+
+  - category: "character_intro"
+    field_path: "characters.gitae"
+    operation: "introduce"
+    after:
+      display_name: "박기태"
+      role: "29세 인양업자(G0-005 생활권 고정 조연). 첫 지면 등장"
+      state: "인양장 위험구역에서 단아를 밀어내며 등장 — 말은 퉁명, 행동은 보호. 단아·수아와는 수리점 왕래로 서로 얼굴을 아는 동네 안면(양방향 구면 — 사용자 확정). 아이들에게는 무서운 인상"
+      hidden: "영진과의 비공식 조달 관계는 미개시(EP12 첫 의뢰 예정)"
+    evidence:
+      scene: 2
+
+  - category: "character_intro"
+    field_path: "characters.miran"
+    operation: "introduce"
+    after:
+      display_name: "오미란"
+      role: "구래수산시장 생선가게 + 어민회 실무, 50대 중반(G0-005 배경 고정 조연). 첫 지면 등장"
+      state: "수리비를 고등어로 흥정하는 큰 목소리의 실무자. 수리점과 거래 왕래"
+    evidence:
+      scene: 1
+
+  - category: "character_intro"
+    field_path: "characters.jeongho"
+    operation: "introduce"
+    after:
+      display_name: "배정호"
+      role: "동진호 선장, 50대 후반(G0-005 배경 고정 조연). 첫 지면 등장"
+      state: "직접 본 것과 들은 것을 구분해 말하는 화법. 어구 절단·선박 밀림의 1차 증인. 어탐을 수리점에 맡김"
+    evidence:
+      scenes: [3, 5]
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "merge"
+    after:
+      - "동네 통칭 확정 — **`도 박사`**(설정집 기반, 지면 첫 사용): 무엇의 박사인지 아무도 모르고 묻지 않는 호칭"
+      - "수역 이상 정보 수집(위치·단면·척수) — 판단은 유보(EP8의 몫)"
+      - "동진호 어탐 점검 — 기계 정상 확인. 수역 자체의 이상 가능성을 무언으로 인지"
+    evidence:
+      scene: 5
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "바다 한 구역의 이상이 조업→시장→급식→수리점 일감으로 번지는 생활 연쇄"
+        - "잘린 어구의 물성(매끈한 단면 — 끊어진 것과 잘린 것의 차이)"
+      applied:
+        - "가족 규칙의 뒷면 실천 — 밖에서는 침묵, 가족 안에서는 보고"
+    evidence:
+      scenes: [3, 4, 5]
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "open"
+    after:
+      id: "A-S2-HARBOR-BLOCKADE"
+      question: "구래항 밖에 자리 잡은 것은 무엇이며 생활을 어떻게 되돌리는가"
+      introduced_chapter: 7
+    evidence:
+      scenes: [3, 5]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 5
+        after: 7
+    note: "접근거부 행동의 생활 흔적 첫 공개(절단·밀림·잡음·불침 바위 소문). 원인·목적·개체 시각 정보는 봉인 유지 — 개체 확인은 EP8, 내부 판단은 EP12"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 6
+        after: 7
+    note: "시장 명칭 수다(제각각 호칭)와 성호의 시들한 화제 유지 — 저강도 유지 진전. 왼손잡이설은 EP10 훅"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "몸 완전 회복 명시(`몸살은 다 나았고`). 신호 0 — S2 내내 진전 없음 잠금 준수"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "완전 휴지 — 관찰 서술조차 없음(직접 질문 소진 상태 유지)"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "출격·전투·괴수 직접 등장 0 — 성게형 시각 정보 미공개"
+  - "역장·상쇄·계통·회수 어휘 0"
+  - "기태-영진 조달 관계 미개시, 새 별명·우리 동네 거인 0"
+  - "군·고명준 씬 없음, 해경은 소문 속 무대응으로만"
+  - "학교 인물 상태 무변동(성호 왼손잡이설 미발화, 혜정 휴지)"
+
+provenance:
+  chapter_text: "Black_Titan_EP007_7화_물이잘린아침_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP007_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP007_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP007_Gate-D_검증서_v1.0.md"
+notes:
+  - "사용자 첨삭 파생 신규 확정 2건: `도 박사` 동네 통칭(설정집 재확인), 배양육 급식 일상화."
+  - "동진호 어탐이 수리점에 남아 있음 — EP8 이후 활용 가능한 소품."

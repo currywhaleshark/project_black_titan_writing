@@ -1,0 +1,154 @@
+schema_version: 1
+as_of_episode: 17
+last_updated_by: "EP017 「불 꺼진 교실」 v1.0 Gate D 승인·상태 반영 (B1 수용 전환, C1 생활 신호 재개, B4 첫 정답)"
+active:
+  FS-001-DANA-VISION:
+    name: "지난가을 시력 저하·5개월 전 VR·짧은 두통"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "어두운 칠판을 찡그려 보다가, 불이 켜져도 안경을 밀어 올리는 아이 — 안경 도수가 안 맞나 보다"
+    truth: "1차 신경계통과 2차 거체 접속 부담(VR·반복 접속의 별도 위험선)"
+    reveal_window: "단계적 누적, 원인 정답은 가을"
+    allowed_reveal_now: "**EP17 공개분: 동작(찡그림·안경 밀어 올리기)·필기 우회·안내장 수령.** EP18 허용: 안과 진료·근시 진행 소견(성장기·피로·오래된 처방으로 설명 가능)·같은 테 새 렌즈·재검 일정·단아의 VR 농담·영진의 거짓 설명 내 사과"
+    prohibited_reveal_now: "객관적 신경손상 진단, 위험 병변, 전투·괴수 인과, 탐색파·계통, 수아 비교"
+    last_progressed: 17
+    next_window: "EP18 도수 변경·재검(소아크 마감)"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin", "hyejeong", "juho"]
+    author_notes:
+      - "EP14 순간 흐림(탐색파 공명)과 도수 변화(VR·반복 접속)는 작가용으로 별도 선 — EP18에서 병합 해석 금지"
+  FS-C2-TITAN-ORIGIN:
+    name: "거인의 기원과 부녀의 준비"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "가족 내부: 시제기 반출+부녀 개수. 외부: 무등록 검은 거인"
+    truth: "현서·영진이 배양한 2차 거체와 두 자매의 신경기원"
+    reveal_window: "실제 기원은 가을"
+    allowed_reveal_now: "위장 유지. EP18: 영진의 사과는 `조종계 보정 시험이 무리를 줬을 수 있다` — 자신이 만든 거짓 설명 안에서만"
+    prohibited_reveal_now: "생체·배양·우회동조·VR의 실제 목적(신호 누출)·현서의 현재"
+    last_progressed: 9
+    next_window: "후반 봄 직접 진전, 진실은 가을"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin", "hyunseo"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "그것들의 실제 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "세 번 왔고 세 번 실패했다 — 다음이 있으리라는 것만 확실"
+    truth: "1차 계통 탐색 실패 누적 → 상쇄 방해개체(타이탄) 포박·이동 방식 전환"
+    reveal_window: "EP18 훅 — 동작 예고만"
+    allowed_reveal_now: "**EP18 훅 한정: 심해 배양낭 안 유연한 팔들이 움직이는 검은 모형을 따라가 허리·팔다리를 한 번에 감싸는 동작.** 명명·시기·임무 이유 0"
+    prohibited_reveal_now: "포박 임무의 이유(회수/제거 구분), `문어형`·`인큐베이터` 명명, 계통·상쇄"
+    last_progressed: 16
+    next_window: "EP18 훅, 행동은 S4"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin"]
+  FS-003-BIO-SEEP:
+    name: "덜 닦인 얼룩"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: "정비 중 덜 닦인 얼룩"
+    truth: "기체 생체 순환액"
+    reveal_window: "후반 봄, 확정은 가을"
+    allowed_reveal_now: "사실 관찰만"
+    prohibited_reveal_now: "출처 암시 어휘, 명명·해설, 영진 심리"
+    last_progressed: 9
+    next_window: "후반 봄(S5 위장 에피소드)"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["youngjin"]
+  C3-MYEONGJUN-YOUNGJIN:
+    name: "서랍 속 동반 사진"
+    line: "C3"
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: "지휘관 서랍의 빛바랜 동반 사진"
+    truth: "군 실험장 인연(전면 봉인)"
+    reveal_window: "봄 인지 1컷, 전모는 가을"
+    allowed_reveal_now: "사진의 존재와 나란한 간격만"
+    prohibited_reveal_now: "장소·시기·사고·왼팔·빚·기체 연결·발화·회상. **EP18 과적재 금지(개요 명시 — 같은 화에 군 사진·고명준 과거 배치 금지)**"
+    last_progressed: 12
+    next_window: "봄 후반 인지 1컷(EP18 이후)"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["myeongjun", "youngjin"]
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 유예와 부채"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "4월 짝이 된 절친 — 필기를 밀어 주고, 병원을 권하고, 더 묻지 않는"
+    truth: "오독 위의 부채 축적 — 지켜보기 결의. 이제 도움이 받아들여지는 국면"
+    reveal_window: "봄 누적, 추궁은 여름"
+    allowed_reveal_now: "**수용 국면 확립(EP17).** EP18 허용: 새 렌즈 확인만(`이제 칠판 보여?`) → 답 들으면 체육대회 준비표로 전환. 직접 질문 예산 소진 유지"
+    prohibited_reveal_now: "짐작 언어화, 조사·미행, 물증, 추가 직접 질문"
+    last_progressed: 17
+    next_window: "EP18 확인 1교환, S4 결석·피로 걱정"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+    author_notes:
+      - "신규 사실: 혜정 = 4월 짝(사용자). 미회수: 두 번째 봉지의 동그라미(여름)"
+  B4-SEONGHO-SCHOOL:
+    name: "성호의 숭배와 교실의 검은 거인"
+    line: "B4"
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: "첫 정답을 말한 숭배자 — `거인 욕은 우리 반에서는 금지`"
+    truth: "숭배 대상이 옆자리라는 아이러니 — 옹호받는 쪽은 각주 때문에 밑줄을 못 긋는다"
+    reveal_window: "정체 접근 금지"
+    allowed_reveal_now: "대가 없는 옹호 완성 + 계주 협업(3주자-마지막 주자). 가을 재대결 예약"
+    prohibited_reveal_now: "단아 연결, 습관 대조, 부상(S4 예약 — 피난 중 부상·깁스)"
+    last_progressed: 17
+    next_window: "S4 첫 개인 대가"
+    status: "ACTIVE"
+    related_character_ids: ["seongho", "dana", "yejin"]
+    author_notes:
+      - "계주 시합 회수 완료(EP13 약속 → EP17 결정전). 체육대회 본편은 S4 배경"
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "답이 없는 숫자를 답이 생길 때까지 두는 동생"
+    truth: "수아의 2차 계통과 약한 우회 필터"
+    reveal_window: "S5 호기심, 결정적 조언 S7"
+    allowed_reveal_now: "기록 보존(옮겨 적기)·유예 문법까지. `물어본 사람이 아직 없었다` — 발견 장치 대기 상태"
+    prohibited_reveal_now: "계통·동조·적합성 단서화, 기록 제시"
+    last_progressed: 17
+    next_window: "S5"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana", "harang"]
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전의 공포 상상"
+    truth: "여름 마지막 전투와 공명"
+    reveal_window: "여름 마지막 전투"
+    allowed_reveal_now: "반복 사용 금지"
+    prohibited_reveal_now: "실제 부상 예고화"
+    last_progressed: 4
+    next_window: "여름 마지막 전투"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4 격파·용해"
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: "첫 침공 소아크"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: "구래항 봉쇄 소아크"
+    resolution: "EP10 격퇴, EP12 마감"
+    resolved_at: 10
+  A-S3-HIGHGROUND:
+    name: "고지선점 개체의 전투 국면"
+    resolution: "EP16 격퇴·용해, EP17 생활 여파 정산"
+    resolved_at: 16
+retired: {}

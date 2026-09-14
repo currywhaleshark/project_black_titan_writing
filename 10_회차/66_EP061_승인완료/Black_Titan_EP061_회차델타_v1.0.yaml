@@ -1,0 +1,180 @@
+schema_version: 2
+chapter: 61
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-14"
+  approval_note: "브리프 v0.3 → Level 6 v1.0 → 초고 → 첨삭 17건 + 코멘트 1건 → `좋아`. **★ S9 아크 마감(11/11).** 아크 캡슐 S9 + 종료 장부 대조서 동반"
+based_on_snapshot: "SNAP-060 v1.0"
+produces_snapshot: "SNAP-061 v1.0"
+arc_close:
+  arc: "S9 「고철의 재간」"
+  range: "EP51~EP61 (11화 · 6/19~6/28)"
+  capsule: "05_문체_상태_인계/Black_Titan_아크캡슐_S9_v1.0.md"
+  closing_ledger: "66_EP061_승인완료/Black_Titan_S9_종료장부_대조서_v1.0.md"
+  verdict: "종료 장부 전 항목 이행 · 재구성 3건은 사용자 확정 · 초과 이행 6건"
+changes:
+  - category: "situational"
+    field_path: "equipment.anchor_rig"
+    operation: "advance"
+    after:
+      - "**★ 이름이 붙었다 — `아이언 앵커`.** **가족 내부 명칭**이고 밖에 나가는 이름이 아니다. **단아가 휴대폰 사전에서 `쇠`와 `닻`을 쳐서** 붙였다"
+      - "**멋이 없다는 걸 다들 안다. 아무도 말 안 한다** — 영진은 원래 그런 걸 안 따지고, 수아는 언니가 정한 걸 그냥 적고, 단아는 알지만 다른 게 안 떠올랐다"
+      - "**정비:** 뻘이 제일 일(사슬 마디·감개 안쪽). 자국 셋 중 **어깨만 갈았다.** 푸는 데 **두 시간**"
+      - "**닻 끝의 콘크리트는 안 뗐다** — 오른쪽 벽에서 딸려 나온 것"
+    evidence:
+      scene: [1, 5]
+
+  - category: "situational"
+    field_path: "living_conditions.settlement"
+    operation: "create"
+    after:
+      - "**★ 고철값 결산 완료.** 돈으로 안 했다 — **영진이 기태네 권양기와 발전기를 봐 주기로**(다음 주). **종이에 무게와 날짜만 남았다**"
+      - "**★ 기태는 뭘 만들었는지 안 물었다** — `쓸 데가 있었으니까 썼지`에서 끝"
+      - "**마당의 고철 거의 소진.** 형강 몇 개와 드럼통 둘"
+      - "영진의 말이 봄과 같다 — **`돌게 만들면 되죠.`**(EP51 회수 · 주고받음이 뒤바뀐 채로)"
+    evidence:
+      scene: 3
+
+  - category: "situational"
+    field_path: "living_conditions.school"
+    operation: "advance"
+    after:
+      - "**★ 6/28 하루 결석.** 영진이 담임(김주호)에게 **아프다고 둘러댔다**"
+      - "**★ 혜정의 약속이 걸렸다**(EP32) — `아프면 아프다고 하기로 했잖아`"
+      - "**★ 비대칭:** 단아는 **약속을 안 어겼다**(안 아팠으니 먼저 말할 게 없었다). **혜정 쪽에서는 어긴 걸로 보이고 정정할 수 없다**"
+      - "**오해 3건:** 성호 = 겁 / 예진 = 집안일 / 혜정 = 약속 위반. **셋 다 틀렸고 셋 다 못 고친다**"
+      - "혜정의 답 = `그럼 됐어. 필기 다 해 놨으니까 걱정 말고` → **`화를 냈으면 차라리 나았을 것이다`**"
+      - "예진은 한 줄 — `푹 자.` **뭐가 아프냐고 안 물었다**"
+      - "**다음 주 청소 구역 = 창가**"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "**개체 표:** `길고 낮음. 다리 여럿.` / `밀어서 감. 도는 게 아님.` / `얕은 데로만 감.` / `멈추면 못 일어남.` **이름 0**"
+      - "**★ `남은 것` 칸이 처음으로 안 늘었다** — `폐허니까.`"
+      - "**★ 기체 표에 칸 신설**(봄부터 한 번도 안 늘렸던 표). 그 칸 때문에 이름이 필요해졌다"
+      - "**★ 적의 목적 변화를 표에서 알아챘다:** `봄에 온 것들은 다 타이탄을 잡아가려고 했는데 요즘은 전혀 안 그래` — 가시 → 팔 부러뜨리기 → 깔아뭉개기 → **상대도 안 해 줌.** **이유 0·대책 0**"
+      - "**★ 자리 = 격납고 화면 앞(상시).** 특별한 일이 없으면 늘 같이 본다"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**★ 이름을 붙였다** — 휴대폰 사전으로. **멋이 없다는 걸 안다**"
+      - "**★ 팔이 길어졌다는 감각이 남았다.** `놓을 생각을 안 했다`가 계속 걸린다. **아직 낯설고, 낯선 게 나쁜 건 아니라는 것도 안다**"
+      - "**★ 없어지면 그냥 팔이 된다** — `그게 좋은 건지는 잘 모르겠다`"
+      - "**만든 게 아니라 모은 것:** 인양장의 체인·도르래 / 금요일 큰 차의 통과 등판 / 마당의 닻 / 주말 밤"
+      - "**장부의 간격이 눈에 보인다** — 3월은 멀고 6월은 붙어 있다. **세다가 그만뒀다**"
+      - "**아픈 것과 쓴 것의 구분**(봄에 배운 것) — 팔이 뻐근하고 다리가 무거운 건 아픈 게 아니다"
+      - "※ **새 증상 0**"
+    evidence:
+      scene: [1, 2, 5, 6, 7]
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "**담임에게 아프다고 둘러댔다** — 뭐라고 했는지는 안 말했고 단아도 안 물었다"
+      - "**값을 노동으로 정했다.** `돌게 만들면 되죠.`"
+      - "**명명에 개입하지 않았다** — `이럴 때 뭐라고 하는 사람이 아니다. 좋다고도 안 하고 그게 뭐냐고도 안 한다`"
+      - "**밤에 장부를 폈는데 뭘 적으려고 편 게 아니었다**"
+    evidence:
+      scene: [2, 3, 5, 7]
+
+  - category: "relational"
+    field_path: "relations.dana_gitae"
+    operation: "advance"
+    after:
+      - "**간격 3 회수.** `어이, 조수` 유지 · `조수, 다음 주에 또 봐`"
+      - "**미세한 긴장 존속** — `던져 놓고 대답을 안 기다린다. 그러니까 매번 조금 긴장된다`"
+      - "**짚을 건 짚고 안 물을 건 안 묻는 사람**(EP51 `이건 고철이 아닌데요` 계보)"
+    evidence:
+      scene: 3
+
+foreshadow_updates:
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 60
+        after: 61
+    note: "**이름이 붙었다(`아이언 앵커`·가족 내부).** 단아가 사전에서 쇠와 닻을 쳐서. **재질·유래·제작 과정은 여전히 0** — 봉인 유지"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 58
+        after: 61
+    note: "**기체 표에 칸 신설 · `남은 것` 칸은 처음으로 안 늚.** 그리고 **적의 목적 변화를 표에서 먼저 알아챘다.** 대책 0"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 60
+        after: 61
+    note: "**인물이 처음으로 변화를 말로 했다.** 잡아가기 → 가시 → 팔 부러뜨리기 → 깔아뭉개기 → 상대도 안 해 줌. **이유 0·대책 0**(S10 이월)"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 54
+        after: 61
+    note: "**EP32의 약속이 걸렸다.** `아프면 아프다고 하기로 했잖아`. **안 어겼는데 어긴 걸로 보이고 정정할 수 없다.** 혜정의 답 = `그럼 됐어` — 화를 냈으면 차라리 나았을 것"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 58
+        after: 61
+    note: "미등장. **100미터 여전히 미결.** `내일 학교에 가면 또 날짜를 물을 것이고 그때도 대답을 못 할 것이다`"
+  - id: "FS-001-DANA-VISION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 60
+        after: 61
+    note: "**수용의 값.** `놓을 생각을 안 했다` / `없어지면 그냥 팔이 된다 — 그게 좋은 건지는 잘 모르겠다`. ※ 증상 계열 아님"
+  - id: "C4-OBSERVATION-GAP"
+    operation: "NO_CHANGE"
+    note: "대책 0 유지. **장부의 간격이 줄어드는 것**만 눈에 보인다"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-C5-WHITE-SENTINEL"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "`클로`·`로켓`·`추진`·`사출기`·`점화`·`노즐` 0 / 반입구 0 / 배양·소재·유래 0 / **현서 0** / 센티널 0 / 새 증상 0 / 작가용 개체 명칭 0 / **아크 요약 0** / 명명 거창함 0 / 공적 명칭화 0"
+
+canon_additions:
+  - "시간: EP61 = 6/28(화) 낮~밤. **격파한 그날 안에 다 담았다**"
+  - "**★ `아이언 앵커` = 가족 내부 명칭.** 단아가 휴대폰 사전으로 붙였다. 공적 명명 0"
+  - "**★ 이름은 필요해서 붙는다** — 표에 적을 칸이 생겼기 때문. **멋이 없는 걸 다들 아는데 아무도 말 안 한다**"
+  - "**★ 수아의 자리 = 격납고 화면 앞(상시).** EP58의 가게는 밤 시험이라 예외"
+  - "**★ 값을 치르는 방식:** 종이에 안 남는 쪽 — 노동으로 갚는다"
+  - "**★ `남은 것` 칸의 예외:** 고칠 사람이 없는 데에서는 안 는다"
+  - "**★ 적의 목적 변화가 처음으로 말이 됐다**(수아). 이유 0·대책 0"
+  - "**★ 혜정의 약속이 처음으로 걸렸다**(EP32) — 안 어겼는데 어긴 걸로 보인다"
+  - "격언: `뻘이 제일 일이었다` / `아픈 게 아니라 쓴 거다` / `화를 냈으면 차라리 나았을 것이다` / `짚을 건 짚고 안 물을 건 안 묻는 사람` / `폐허니까.` / `적혔으니까 그게 이름이 됐다` / `없어진 게 언제인지는 모른다. 어느 날부터 그냥 안 이상했다` / `만든 게 아니라 모은 거였다` / `세는 게 의미가 없었다`"
+provenance:
+  chapter_text: "Black_Titan_EP061_61화_고철의값_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP061_회차브리프_v0.3.md"
+  content_lock: "Black_Titan_EP061_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP061_Gate-D_검증서_v1.0.md"
+  arc_outline: "02_여름편_기획/Black_Titan_S9_EP051-061_화별개요_v1.12_승인.md"
+  arc_capsule: "05_문체_상태_인계/Black_Titan_아크캡슐_S9_v1.0.md"
+  closing_ledger: "Black_Titan_S9_종료장부_대조서_v1.0.md"
+notes:
+  - "**★ S9 종결.** 다음 = **S10 Level 4 수립**(여름 L3 골격 v1.1 §S10에서 출발)"
+  - "**S10 예고:** 톡토기형(다수 도약·물량)이 **학교까지 들어온다** / **여론이 비난으로 전환**(학교 파손 몫) / 혜정 반의식 눈금 재가동 여지"
+  - "**시계:** EP61 = 6/28(화). 방학식 = **7/22(금)** → **3주 반(24일)**"
+  - "**미수령 잔여:** 수아 공책 · 서랍 사진 · **성호 100미터**(3차 청구 미결) · 가위값 · **현서 라인**(봉투 겉면까지) · **센티널 2단** · **관측 공백 대책 0** · **적의 목적 변화**"

@@ -1,0 +1,183 @@
+schema_version: 2
+chapter: 6
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-03"
+  approval_note: "초고 v0.1 → 첨삭(수정 5·전체 코멘트 2) → v0.2(줄바꿈 통일·예진 열어두기) → `이대로 승인해도 좋겠다`로 확정."
+based_on_snapshot: "SNAP-005 v1.0"
+produces_snapshot: "SNAP-006 v1.0"
+changes:
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "공개 시 결과의 구체 순서 — 기체는 군이 가져가고, 영진은 잡혀가고, 자매는 보호를 이유로 다른 어른 손에 맡겨진다"
+        - "그 순서가 `셋이 같이 못 산다`로 접힌다는 것 — 규칙의 실감"
+        - "말 안 하는 게 지키는 것이라는 생활 규칙(내면화 완료)"
+      misunderstands:
+        - "혜정에게 여전히 거짓말이 통하고 있다고 믿음"
+    evidence:
+      scenes: [4, 5]
+      source_text_anchors:
+        - "……그러니까, 셋이 같이 못 산다는 거네."
+        - "말 안 하는 게 지키는 거라는 것."
+
+  - category: "emotional"
+    field_path: "characters.dana.emotional"
+    operation: "merge"
+    after:
+      pressures:
+        - "태연 연기의 상시화 — 소문 한복판에서 속으로만 채점"
+        - "자랑 욕구의 배출구 발견 — 만화 속 거인이 대신 자랑해 주는 것으로 정산"
+        - "정정 충동은 1회 새었고, 아차는 반 박자 늦게 옴"
+    evidence:
+      scenes: [1, 2, 4]
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "비밀 규칙이 자기 몫이기도 하다는 것 — 스스로 접어 결론냄"
+    evidence:
+      scene: 4
+      source_text_anchor: "……저도, 같은 거네요. 말하면 안 되는 거."
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "merge"
+    after:
+      - "공개 시 순서 경고를 이행 — 호통 없이 낮아지는 온도로, 확정 문구 그대로"
+      - "균형 유지 — 오늘 정정이 들켰다는 뜻이 아님을 명시(`그림 하나 고친 걸로 잡혀가는 사람은 없다`)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "merge"
+    after:
+      stage: "STABLE_LONGTIME_FRIENDS"
+      trust_level: 5
+      current_issue: "혜정의 유예가 관찰 축적을 거쳐 직접 질문 1회로 표면화(`너, 진짜 어디 아픈 거 아니지?`). 단아의 회피 대답을 받고 접었으나 풀리지 않음. 단아는 여전히 모름"
+    evidence:
+      scenes: [3, 5]
+
+  - category: "external"
+    field_path: "characters.seongho.state"
+    operation: "advance"
+    after:
+      - "검은 거인 숭배 개시(B4) — 분석 발표체, 성인 특수요원 파일럿 단정, 해외 요원·비밀 귀국 자작 설정"
+      - "단아 놀림(도릴라)과 파일럿 극찬의 병치 아이러니가 지면에서 성립"
+      - "정정 사건에서 판정패 — `운동 좀 한다고 아는 척` 프레임으로 소화"
+    evidence:
+      scenes: [1, 2]
+
+  - category: "character_intro"
+    field_path: "characters.narae"
+    operation: "introduce"
+    after:
+      display_name: "최나래"
+      role: "단아 반의 관찰형 여학생. 반의 유행이 공책을 거쳐 가는 만화 그리는 애(G0-005 배경 고정 조연). 첫 지면 등장"
+      state: "검은 거인 만화 연재 중 — 영상의 정확한 디테일과 상상이 섞임. 단아의 역학 정정을 채택(`이게 더 세 보여`), 이후 거인은 낮은 허리로 싸움"
+    evidence:
+      scene: 2
+
+  - category: "character_intro"
+    field_path: "characters.ujin"
+    operation: "introduce"
+    after:
+      display_name: "장우진"
+      role: "단아 반의 반응 큰 남학생(G0-005 배경 고정 조연). 첫 지면 등장 — `같은 반 친구 장우진` 소개"
+      state: "삼촌의 방재벽 목격 영상 유포자. 정정 논쟁에서 단아 쪽에 붙음"
+    evidence:
+      scenes: [1, 2]
+
+  - category: "informational"
+    field_path: "characters.hangyeol"
+    operation: "merge"
+    after:
+      - "강한결 = 반장 확정(사용자 첨삭, EP6 신규 사실). 지면 미등장 — 급식 언급만. 첫 지면 등장 시 §6-6 재소개 필요"
+    evidence:
+      scene: 5
+      source_text_anchor: "어제 반장 강한결은 진짜로 소시지를 남겼다."
+
+  - category: "living_condition"
+    field_path: "living_conditions"
+    operation: "merge"
+    after:
+      school:
+        - "검은 거인 소문 생태계 형성 — 목격담 인플레이션, 별명 다수 경쟁(미정착), 바다 귀환설 삼파전"
+        - "나래의 만화가 반의 공식 서사가 됨. 단아의 정정은 `운동 잘하는 애의 아는 척`으로 소화되어 위험 없이 지나감"
+        - "새 영상이 끊기며 소문은 이틀 만에 감쇠 시작"
+      family:
+        - "비밀 규칙이 저녁상에서 명문화됨 — 무용담 발화 금지의 생활화"
+      city:
+        - "복구 진행 — 등하교 시간 안내 게시, 방재벽 크레인 증가, 분식집 재개점 예고"
+    evidence:
+      scenes: [1, 2, 4, 5]
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "resolve"
+    after:
+      id: "A-S1-FIRST-INVASION"
+      resolution: "EP6 아크 마감 — 첫 침공은 학교의 소문·숭배·만화로 일상화되고, 가족은 비밀 규칙을 명문화하며, 혜정의 질문 하나가 다음 계절로 넘어간다. 마감 선언 없이 닫힘"
+    evidence:
+      scenes: [1, 4, 5]
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "advance"
+    after:
+      chapter: 6
+      advanced:
+        - "B1-HYEJEONG-CONCERN"
+        - "B4-SEONGHO-SCHOOL(개시)"
+    evidence:
+      scenes: [3, 5, 1, 2]
+
+foreshadow_updates:
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 4
+        after: 6
+      - field: "allowed_reveal_now"
+        before: "유예 지속. 단아가 `혜정답지 않다`를 스치듯 감지"
+        after: "직접 질문 1회 사용됨(`너, 진짜 어디 아픈 거 아니지?`) — 봄 안에서 같은 질문 반복 금지. 관찰(짧아지는 대꾸·웃음 크기 확인)은 축적 유지"
+    next_window: "S2 이상행동 관찰"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "OPEN"
+    note: "추적기 신규 등재 — 성호 숭배·특수요원 서사·병치 아이러니 개시, 나래 만화가 반의 공식 서사. 다음 진전 S2 영상 분석(개요 기준 EP10)"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "잔여 피로 스침 1회(부인 가능 수위, 이틀째 아침 소멸). 기준선 유지, 승격 없음"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "수아의 규칙 자기 몫 발화는 지식 확인이지 적합성 단서가 아님"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "정정은 역학까지만 — 조종 방식·기체 구조·내부 고유명 0회, 나래·성호의 기록·추론 없음, 왼손잡이 0회"
+  - "새 별명 발명 없음(구판 별명 포함 0회)"
+  - "신경 증상·통증성 신호 없음 — 몸살 여파는 이틀째 아침 해소"
+  - "군·고명준 씬 없음, 수사·추적 미개시"
+  - "학교 건물 무손상, 무장 없음 유지"
+
+provenance:
+  chapter_text: "Black_Titan_EP006_6화_교실의거인_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP006_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP006_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP006_Gate-D_검증서_v1.0.md"
+notes:
+  - "S1 아크 마감 화 — 마감 절차(종료 장부 대조·아크 캡슐)는 Gate E와 함께 수행."
+  - "예진의 인지 여부는 의도적으로 미확정(서술 확정 제거) — 여름에 어느 쪽으로도 회수 가능."
+  - "강한결 반장, §6-6 인물 첫 노출 규칙, §6-7 줄바꿈 규칙이 이 화의 첨삭에서 파생됨."

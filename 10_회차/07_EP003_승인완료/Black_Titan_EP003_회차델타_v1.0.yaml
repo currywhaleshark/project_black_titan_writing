@@ -1,0 +1,186 @@
+schema_version: 2
+chapter: 3
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-03"
+  approval_note: "초고 v0.3~v0.6 첨삭 4회를 거쳐 사용자가 `좋아 이정도에서 마무리하자`로 승인. v0.6 본문을 v1.0 정사로 잠금."
+based_on_snapshot: "SNAP-002 v1.0"
+produces_snapshot: "SNAP-003 v1.0"
+changes:
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    before:
+      knows:
+        - "기본동작은 운동의도 입력으로 조작되고 접촉·압력·관절 부하는 약한 감각으로 돌아오며 현재 별도 무장은 없음"
+    after:
+      knows:
+        - "격납고가 옛 지하철 노선과 이어져 있고 출격이 레일 운반과 수몰역 상륙으로 이루어짐"
+        - "운동의도 입력과 실제 기동 사이의 지연을 실전에서 체험함 — 무겁고 굼뜬 몸으로 체감"
+        - "수면학습이 기동·회피 절차의 순서를 의식보다 먼저 꺼내 주지만 전투 해법은 주지 않음"
+        - "집게 끝을 보고 반응하면 늦으며, 집게 뿌리·몸통 회전·여덟 다리의 체중 이동을 먼저 보고 입력해야 함"
+        - "정면 힘겨루기에서는 괴수의 질량에 밀리며, 전진력을 옆으로 흘려 진로를 바꿀 수 있음"
+        - "괴수가 파괴나 추격보다 특정 방향 이동을 우선하는 듯한 행동"
+        - "방재벽 바깥에서 본 청해의 공간 구조 — 벽 안쪽의 도시와 바깥의 수몰 폐허"
+      misunderstands:
+        - "괴수가 무작정 앞으로만 가는 것처럼 보인다고 이해함 — 실제 탐색·회수 목적은 모름"
+    evidence:
+      scenes: [1, 3, 4]
+      source_text_anchors:
+        - "터널이었다."
+        - "……거기부터네."
+        - "괴수는 무작정 앞으로만 가는 것처럼 보였다."
+
+  - category: "action"
+    field_path: "characters.dana.actions"
+    operation: "append"
+    after:
+      - "블랙 타이탄의 첫 출격을 수행함 — 지하 운반, 수중 기립, 해면 돌파, 고지대 상륙"
+      - "두 번째 집게를 각인된 긴급회피로 간신히 피하고 선행 입력 원리를 스스로 체득함"
+      - "학교로 이어지는 진행선을 선점하고 괴수의 전진력을 흘려 진로를 방재벽 쪽으로 한 번 꺾음"
+      - "방재벽을 오르는 괴수를 향해 이동을 시작했으나 거리가 미달함"
+    evidence:
+      scenes: [1, 3, 4]
+      source_text_anchors:
+        - "머리가 먼저 물 밖으로 나왔다."
+        - "이쪽으로 가라고."
+        - "야!"
+
+  - category: "asset"
+    field_path: "assets.black_titan.status"
+    operation: "replace"
+    before: "단아 탑승, 조종석 해치 폐쇄, 기동 스위치 상승, 첫 움직임·출격 직전"
+    after: "첫 출격 완료. 수몰지구 드러난 고지대에서 첫 교전 수행, 손상 없음, 방재벽 인접 위치에서 전투 계속 중"
+    evidence:
+      scenes: [1, 4]
+      source_text_anchor: "발이 바닥을 찾았다."
+
+  - category: "external"
+    field_path: "external_conditions.public"
+    operation: "advance"
+    before:
+      - "블랙 타이탄 관련 공개 지식 없음"
+    after:
+      - "소속 불명의 검은 거인이 바다에서 솟아올라 괴수의 진로를 가로막았다는 첫 목격이 발생함"
+      - "구래동 큰길 등에서 시민 다수가 목격·촬영함"
+      - "정체·파일럿·출현 경로는 공개되지 않음"
+    evidence:
+      scene: 2
+      source_text_anchor: "구래동 방면 신고 다수입니다."
+
+  - category: "external"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    before:
+      - "현 남방사는 블랙 타이탄의 현존·기지·파일럿을 모름"
+    after:
+      - "남방사가 미식별 검은 거인의 첫 출현을 관측함 — 식별신호·장비 목록 불일치만 확인"
+      - "관측 영상에서 괴수는 녹색, 검은 거인은 주황색 안광이라는 색차만 확인. 의미는 모름"
+      - "고명준이 첫 집게 교환을 관찰해 `가로막으려 한다`는 행동 판정을 얻고 사격 보류·대피·진로 통제를 명령함"
+      - "기지·파일럿·출현 지점은 계속 모름. 별도 추적·수사는 시작하지 않음"
+    evidence:
+      scene: 2
+      source_text_anchors:
+        - "신호 없습니다. 현 장비 목록에도 일치 항목이 없습니다."
+        - "저건 막고 있는 거다."
+
+  - category: "external"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    before:
+      - "바닷가재형 회수개체가 연구단지를 지나 청해남초·구래동을 위협할 수 있는 진로로 접근 중"
+    after:
+      - "괴수의 진로가 방재벽 안쪽 방향에서 구래동 쪽 방재벽으로 꺾임"
+      - "괴수는 바다 쪽에서 방재벽에 붙어 오르기 시작함 — 손상·기능상실 없음"
+      - "작가용: 회수개체는 상쇄로 잃은 반응의 재탐색 때문에 진로에 집착하며, 전투보다 이동을 우선한 행동만 노출됨"
+    evidence:
+      scene: 4
+      source_text_anchor: "걸린 집게 너머로 구래동의 낮은 지붕들이 한꺼번에 드러났다."
+
+  - category: "living_condition"
+    field_path: "living_conditions.family"
+    operation: "replace"
+    before:
+      - "단아는 블랙 타이탄 조종석 안, 수아와 영진은 닫힌 해치 바깥 정비 갑판에 있음"
+    after:
+      - "단아는 출격해 수몰지구 전장에 있음. 수아와 영진은 격납고에 남아 관제·대기 중"
+      - "영진은 스피커로 절차·안전 안내만 수행 — 설명·사과·화해 없음"
+      - "수아는 언니의 출격을 붙잡지 않고 배웅함"
+    evidence:
+      scenes: [1]
+      source_text_anchor: "붙잡지도 않았고, 잘 다녀오라고도 하지 않았다."
+
+  - category: "character_intro"
+    field_path: "characters.myeongjun"
+    operation: "introduce"
+    after:
+      display_name: "고명준"
+      role: "남해방위사령부 사령관, 준장. 첫 등장"
+      state: "미식별 검은 거인을 임시 관찰 대상으로 두고 괴수 대응·대피·진로 통제에 집중"
+      knowledge_limit: "검은 거인의 정체·소속·기지·파일럿·출현 지점을 모름. 안광 색차의 의미를 모름"
+    evidence:
+      scene: 2
+      source_text_anchor: "남해방위사령부 지휘소에는 창이 없었다."
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "advance"
+    before:
+      chapter: 2
+    after:
+      chapter: 3
+      advanced:
+        - "A-S1-FIRST-INVASION"
+        - "C2-TITAN-ORIGIN"
+        - "C4-ENEMY-PURPOSE"
+    evidence:
+      scenes: [1, 2, 3, 4]
+      source_text_anchor: "저건 막고 있는 거다."
+
+foreshadow_updates:
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 2
+        after: 3
+      - field: "allowed_reveal_now"
+        before: "블랙 타이탄의 전신·내부 고유명, 무장 없는 52미터 거인, 영진의 군 시제기·불법 반출 위장 설명"
+        after: "공개 목격된 검은 거인의 존재와 주황빛 안광. 군의 무등록 확인. 출격 노선·수몰역은 가족 외 비공개"
+    next_window: "S2 이후 생체성의 제한 복선, 실제 기원은 가을"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 2
+        after: 3
+      - field: "allowed_reveal_now"
+        before: "괴수가 연구단지에서 청해남초·구래동 생활권 쪽으로 이동할 수 있는 진로"
+        after: "괴수가 파괴·추격보다 특정 방향 이동을 우선하고, 진로가 막히자 방재벽을 직접 오르는 방향 집착 행동"
+    next_window: "EP4 전투 행동, EP12 제한 기록"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "이번 화 진전 없음. 새 시각 증상·직접 인과 없음 확인"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "수아 발화·전술 조언 없음 확인"
+
+no_change_checks:
+  - "단아에게 새 부상·통증성 피드백·급성 신경증상 없음"
+  - "괴수는 살아 있고 손상·기능상실 없음 — EP4의 첫 승리는 성립하지 않음"
+  - "역장 개념은 서술되지 않음 — 화력 무효는 결과로만 제시됨"
+  - "출격 노선·수몰역의 존재는 군·시민에게 비공개"
+  - "고명준과 영진의 과거, 고명준과 혜정의 친족 관계는 봉인"
+  - "수아의 조종 적합성·동조·미래 출격은 증명되지 않음"
+  - "학교 건물·구래동에 새 대규모 피해 없음"
+
+provenance:
+  chapter_text: "Black_Titan_EP003_3화_52미터_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP003_회차브리프_v1.5_GateC승인.md"
+  content_lock: "Black_Titan_EP003_Level6_내용잠금-문체검색_v1.1.md"
+  validation: "Black_Titan_EP003_Gate-D_검증서_v1.0.md"
+notes:
+  - "검은 거인의 첫 공개 목격이 발생했으나 `블랙 타이탄`이라는 내부 고유명은 계속 가족 3인만 안다."
+  - "단아의 진로 전환은 격퇴가 아니다. EP4가 맨손 첫 승리를 담당한다."
+  - "고명준의 행동 판정(가로막으려 한다)은 사격 우선순위 결정에만 쓰였고 감사·영웅 평가로 확장되지 않았다."

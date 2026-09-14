@@ -1,0 +1,94 @@
+schema_version: 1
+as_of_episode: 4
+last_updated_by: "EP004 「첫 승리」 v1.0 Gate D 승인·상태 반영"
+active:
+  FS-001-DANA-VISION:
+    name: "지난가을 시력 저하·5개월 전 VR·짧은 두통"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "성장기 시력 변화, 화면 피로, 첫 실전의 정상적인 탈진"
+    truth: "단아의 1차 신경계통과 2차 거체 접속 부담, 첫 계통 탐색파 공명"
+    reveal_window: "단계적 누적, 원인 정답은 가을"
+    allowed_reveal_now: "EP4의 탈진은 첫 실전의 정상 피로 프레임으로만 제시됨. 새 시각 증상 없음 — 이것이 EP5 몸살 기준선의 전제"
+    prohibited_reveal_now: "계통·탐색파·상쇄·면역거부·생체 기원 설명"
+    last_progressed: 2
+    next_window: "EP5 전투 후 몸살 기준선"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin"]
+  FS-C2-TITAN-ORIGIN:
+    name: "수리점 지하의 거인과 영진의 비밀"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "괴수를 맨손으로 격파하고 사라진 정체불명의 검은 거인 / 가족에게는 영진이 빼돌린 군 시제기"
+    truth: "현서와 영진이 배양한 2차 거체 블랙 타이탄과 두 자매의 신경기원"
+    reveal_window: "EP5 영진의 확장 설명(위장 프레임 유지), 실제 기원은 가을"
+    allowed_reveal_now: "격파력·주황빛 안광·무등록의 공개 관측. 가족 내부에는 EP5에서 위장 프레임의 확장 설명 예정"
+    prohibited_reveal_now: "생체 거인·우회 신경동조·두 자매의 출생·신경기원"
+    last_progressed: 4
+    next_window: "EP5 영진의 설명"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "괴수의 실제 탐색·회수 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "도시를 위협하다 검은 거인에게 격파당해 붉게 녹아 사라진 침략자"
+    truth: "첫 거체 계통 신호를 탐색하던 회수개체 — 사망으로 신호 소실이 인큐베이터에 전달됨(작가용)"
+    reveal_window: "행동 복선 누적, EP12 제한 기록"
+    allowed_reveal_now: "개체 사망과 붉은 용해의 관측. 잔해가 남지 않아 분석 불가라는 사실"
+    prohibited_reveal_now: "인큐베이터·계통·회수 명령·용해 원인(역장 붕괴)·다음 개체"
+    last_progressed: 4
+    next_window: "EP12 제한 기록"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin"]
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 걱정과 단아의 첫 거짓말"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "재난 통에 연락이 안 됐던 친구의 어색한 변명"
+    truth: "혜정은 거짓말임을 짐작했고, 처음이라 유예했다. 접어 둔 질문이 부채로 쌓인다"
+    reveal_window: "봄 누적, 본격 추궁·조사는 여름"
+    allowed_reveal_now: "첫 거짓말 성립과 혜정의 침묵·짧은 대꾸·화제 접기. 단아는 통했다고 오해"
+    prohibited_reveal_now: "혜정의 조사·미행·물증 확보(여름), 고명준 친족 관계"
+    last_progressed: 4
+    next_window: "EP6"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 조종 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "두 자매가 같은 훈련을 받았지만 현재 보정값은 단아에게만 맞음"
+    truth: "수아는 블랙 타이탄과 같은 2차 계통이며 우회 필터가 약하게 작동함"
+    reveal_window: "봄에는 관찰력만, 실제 적합성과 첫 출격은 여름"
+    allowed_reveal_now: "수아가 첫 전투 전 과정을 관제 화면으로 지켜봤다는 사실"
+    prohibited_reveal_now: "수아의 2차 계통, 짧은 지연, 동조, 파일럿 적합성, 대체출격"
+    last_progressed: 2
+    next_window: "S3의 생활·관찰 역할, S7의 한 문장 관찰"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana"]
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면 — 조종석의 신체 위험 상상"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전에서 스친 아이다운 공포의 상상"
+    truth: "여름 마지막 전투의 관통 사고(수아 요추 관통·기체 순환액 노출)와 공명하는 선행 이미지"
+    reveal_window: "여름 마지막 전투에서 회수"
+    allowed_reveal_now: "공포의 상상으로만. 반복 사용하지 않는다"
+    prohibited_reveal_now: "실제 관통·부상 예고로의 승격, 서술자의 의미 부여"
+    last_progressed: 4
+    next_window: "여름 마지막 전투"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4에서 괴수 격파·용해로 종결. 아크의 여파(비용·설명·목격담)는 EP5~6이 담당"
+    resolved_at: 4
+retired: {}

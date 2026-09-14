@@ -1,0 +1,165 @@
+schema_version: 1
+as_of_episode: 38
+last_updated_by: "EP038 「꽃이 눈이야」 v1.0 Gate D 승인·상태 반영 (S7 3/5 — B3 지불 완료·C4 EP39 잠금·B1 EP40 발신 예고)"
+active:
+  FS-001-DANA-VISION:
+    name: "시력 저하·VR·두통·손끝 둔함"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "이력 1회가 기록된 장부"
+    truth: "1차 신경계통과 2차 거체 접속 부담"
+    reveal_window: "봄 = 부인 가능 수준, 재검 6월, **여름 중반 = 출격 불가(자신감 궤적 꺾임 창구)**"
+    allowed_reveal_now: "EP39 = 증상 설계 없음. **EP40 = 봄 증상선(개요 C1): 피곤하지만 저림 재발 0·악력/보행/시야 정상·영진 = 기록 유지·후보 열어 두기·확정 진단 0**"
+    prohibited_reveal_now: "새 증상, 진단, 반복 사용"
+    last_progressed: 35
+    next_window: "EP40 봄 증상선 → 재검 6월"
+    status: "SIMMERING_DENIABLE"
+    related_character_ids: ["dana", "youngjin", "sua"]
+  FS-C2-TITAN-ORIGIN:
+    name: "거인의 기원과 부녀의 준비"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "가족 내부: 시제기 반출+부녀 개수. 외부: 무등록 검은 거인"
+    truth: "현서·영진이 배양한 2차 거체와 두 자매의 신경기원"
+    reveal_window: "후반 봄까지 확정 폭로 금지·진실은 가을"
+    allowed_reveal_now: "위장 유지 상시"
+    prohibited_reveal_now: "생체·배양·우회동조·VR 실목적·현서의 현재"
+    last_progressed: 18
+    next_window: "가을"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin", "hyunseo"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "그것들의 실제 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "눈 없는 큰 놈 + 눈인 꽃(단아·수아 도달) — 계통·이유는 미공개"
+    truth: "고지 지정자+저지 운반자의 역할 협동(작가용) — EP40 실패 후 **재분류 심의**(상쇄 방해원 = 제거 대상 전환)"
+    reveal_window: "EP39 기능정지 1호 → EP40 결착·심의(해설 0)"
+    allowed_reveal_now: "**EP39 잠금(개요 v1.2):** 꽃 재개화·원반 회전 → **마지막 순간 완전 은신 → 잘못 닿은 지정**(젖은 기초 표면의 짧은 광택·꽃잎 재정렬 접힘) → **군부형 = 기초로 미끄러져 포박·외해 끌기 → 안 움직이는 구조물에 자기 흡착발·갑판으로 묶임(자승자박)** → **갱신 공백의 등반**(기초+등판 발판·꽃 펴지기 전 접근 — 경로·시점 = 단아) → **기능정지 1호**(도망·반격 0 — 꽃잎 다발 모아 쥐고 원반 반대 방향 비틀기 → 배열 붕괴) → C4: 군부형 = 기초 잡은 채 마지막 운반동작 반복(**기능 유지 — EP40 보존**)"
+    prohibited_reveal_now: "계통·상쇄 이유, 군부형 기능정지(EP40), 바다나리형 직접 공격, 수아 추가 조언, 앵커·사슬·케이블·군 공격, 작가용 명칭"
+    last_progressed: 38
+    next_window: "EP39"
+    status: "CRITICAL"
+    related_character_ids: ["dana", "youngjin", "myeongjun"]
+    author_notes:
+      - "EP39 훅(개요): 꽃 접힌 뒤에도 부두가 한 번씩 울림(기초 끌기 반복 — 뒤쪽 갑판 한 장 들었다 붙임) — 단아, 찌그러진 원반에서 손 놓고 아래를 내려다봄"
+      - "EP40 잠금 예고: 갑판 주기 관찰→뒤집기→운반막 양방향 벌리기(수축고리·이동기관 파열)→용해 / B2 봄 결산 / **B4 = 티볼 마지막 타석(원문 `표적 던지기` 정정)** / B1 `끝났어` / C1 봄 증상선 / 초여름 훅(세 자릿수 속도)"
+  FS-003-BIO-SEEP:
+    name: "닦이지 않는 흔적"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: "세척해도 남는 것들"
+    truth: "기체 생체 순환액(본체) / 개체 점액의 생체 조직성(인접)"
+    reveal_window: "확정은 가을"
+    allowed_reveal_now: "사실 관찰만·본체 연결 금지 유지. EP40 후처리 = 용해 2건(재접속 후보)"
+    prohibited_reveal_now: "출처 암시 어휘, 명명·해설, 생체기원 증거화"
+    last_progressed: 33
+    next_window: "S7 후처리"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["youngjin", "sua"]
+  C3-MYEONGJUN-YOUNGJIN:
+    name: "서랍 속 동반 사진 + 어머니의 부재"
+    line: "C3"
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: "공개되는 통지들"
+    truth: "군 실험장 인연·현서의 미국행과 거래(전면 봉인)"
+    reveal_window: "서랍 사진 = 별도 결정, 전모는 여름 말~가을"
+    allowed_reveal_now: "여운 동결·간접 지원 현재형"
+    prohibited_reveal_now: "현서 정보 일체, 구판 소품, 영진 설명, 질문 재개"
+    last_progressed: 33
+    next_window: "별도 결정"
+    status: "SIMMERING"
+    related_character_ids: ["myeongjun", "youngjin", "hyunseo", "dana", "sua"]
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 유예와 부채"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "세 자리를 만들어 준 절친(연락·건강·귀환)"
+    truth: "오독 위의 부채"
+    reveal_window: "EP40 실전 발신·봄 결산, 물증은 여름"
+    allowed_reveal_now: "**썼다 지움 이행(38 — `아직이지` 미전송·세워 둔 휴대폰).** **EP40 잠금(개요 B1): 귀환 후 `끝났어` 발신 → 혜정 = 어디였는지 안 묻고 필기 사진 + `내일 와. 성호가 마지막 한 판 안 끝났다고 난리야`**"
+    prohibited_reveal_now: "추궁·미행·수리점 방문·물증, 지운 문장 공개"
+    last_progressed: 38
+    next_window: "EP40"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+    author_notes:
+      - "미회수: 동그라미(여름)·컵볶이. 봄 결산 = `보내지 않은 메시지` 보강분(해당 화 개요 정독). 재배치로 소멸한 학교 비트(귀가 준비) = 대체 검토"
+  B4-SEONGHO-SCHOOL:
+    name: "성호의 숭배와 교실의 검은 거인"
+    line: "B4"
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: "마지막 타석을 저금한 앙숙"
+    truth: "숭배 대상이 옆자리(비대칭 유지)"
+    reveal_window: "**EP40 = 마지막 타석 회수(개요 B4 — `표적 던지기` 원문은 티볼 정정 필요)**, 여름 스케일업"
+    allowed_reveal_now: "EP40: 마지막 한 판 요구·점수판 시비·쌍방 앙숙 기본값 완전 복귀(개요 durable change)"
+    prohibited_reveal_now: "전력질주, 정체 단서, 연애 계열 전면(상시)"
+    last_progressed: 36
+    next_window: "EP40"
+    status: "WARM_STEADY"
+    related_character_ids: ["seongho", "dana"]
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "봄 내내 쌓은 기록 습관으로 승패를 바꾼 확인자"
+    truth: "수아의 2차 계통과 약한 우회 필터"
+    reveal_window: "파일럿 계열 재개 = 여름 별도 창구"
+    allowed_reveal_now: "**결정적 관찰 지불 완료(38 — `언니, 큰 건 눈이 없어. 꽃이 눈이야.` 한 문장·이후 침묵).** EP39~40 = 추가 조언 0(개요 고정). EP40 durable change = 승패 바꾼 관찰 제공·**파일럿 가능성 증명 0**"
+    prohibited_reveal_now: "추가 지시, 적합성·동조·원격감각·미래 출격 증명, 채널 상주"
+    last_progressed: 38
+    next_window: "여름"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana"]
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전의 공포 상상"
+    truth: "여름 마지막 전투와 공명"
+    reveal_window: "여름 마지막 전투"
+    allowed_reveal_now: "반복 사용 금지"
+    prohibited_reveal_now: "실제 부상 예고화"
+    last_progressed: 4
+    next_window: "여름"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4 격파·용해"
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: "첫 침공 소아크"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: "구래항 봉쇄 소아크"
+    resolution: "EP10 격퇴, EP12 마감"
+    resolved_at: 10
+  A-S3-HIGHGROUND:
+    name: "고지선점 소아크"
+    resolution: "EP16 격퇴·용해, EP18 마감"
+    resolved_at: 18
+  A-S4-BINDING:
+    name: "포박 소아크"
+    resolution: "EP23 기능 정지, EP24 마감"
+    resolved_at: 24
+  A-S5-QUIET-DAYS:
+    name: "괴수 없는 날들 소아크"
+    resolution: "EP29 아크 마감"
+    resolved_at: 29
+  A-S6-STILL-SEA:
+    name: "멈춰야 사는 바다 소아크"
+    resolution: "EP35 아크 마감"
+    resolved_at: 35
+retired: {}

@@ -1,0 +1,401 @@
+schema_version: 2
+snapshot_id: "SNAP-016"
+status: "APPROVED_CURRENT_STATE"
+approved_by_user: "2026-08-05"
+approval_note: "EP016 「오를 곳을 없애는 법」 v1.0 Gate D 승인·델타 적용. S3 클라이맥스 — 몰이 승리, 벽 압박 제압, 새벽 비 용해, 순환정전표."
+canon_version: "통합설정집 v2.3(+v2.4 증보) / 전체 플롯 v2.2 / 봄 Level 3 v3.2 / S3 화별 개요 v3.3"
+through_chapter: 16
+arc_note: "**S3 「영웅의 시간표」 진행 중(EP13~18).** 4단계 클라이맥스 완료 — A 전투 국면 종결. 남은 것 = EP17~18 여파(생활 비용·도수)"
+story_time:
+  date: "2050년 4월 둘째 주 토요일 — 비 내리는 아침"
+  time_of_day: "아침 — 귀환 중(수몰역 노선)"
+  elapsed_since_previous_chapter: "EP15에서 연속(같은 밤 → 동틀 무렵)"
+  author_note: "연도 2050년. 확정 요일: EP14 낮 = 금요일, 전투 밤 = 금→토. 체육대회 4월 27일 수요일"
+
+characters:
+  dana:
+    display_name: "도단아"
+    location: "귀환 중 — 수몰역 노선(격납고 → 취침 예정)"
+    physical:
+      condition: "밤샘 전투 후 — 부상 없음. 피로 누적(자연 범위)"
+      symptoms:
+        - "시력 저하·둥근 안경(기준선). C1은 EP14 복도 1회 이후 침묵 — 전투 이틀 무증상(인물·서술 모두 미의식)"
+      injuries: []
+      treatment: []
+    emotional:
+      baseline: "밝고 활달하며 경쟁심이 강하고 생각보다 행동이 앞섬"
+      pressure_level: 3
+      pressures:
+        - "이기고도 다 켜지지 않는 불 — 승리 비용의 첫 체감"
+        - "월요일부터의 정전표 생활(학교·구래동 포함)"
+    relationships:
+      sua: "보호하려는 마음이 강한 친밀한 자매"
+      youngjin: "실전 무전 신뢰 — `잘했다. 들어와서 자라`"
+      hyejeong: "절친(미등장 — EP17 재개)"
+      seongho: "라이벌(미등장)"
+    knowledge:
+      knows:
+        - "SNAP-015의 지식 전체"
+        - "**회피 사실의 역이용법** — 몰이(피구 감각). 이유는 끝내 모름(`왜 맞는지 모르는 열쇠`)"
+        - "조종석 기록(블랙박스)의 존재·용도"
+        - "이겨도 도시 피해가 남는다는 것(보조 구획 손상·순환정전)"
+      suspects: []
+      misunderstands:
+        - "확장 위장 설명을 사실로 믿음"
+      hides:
+        - "탑승 사실(가족 외 전원)"
+        - "열교환탑 상부 변형에 자신이 관여했다는 사실(EP17 부채감의 씨앗)"
+    commitments:
+      - "귀환 → 정비 목록 → 취침. 월요일 등교(정전표 생활)"
+    state_notes:
+      - "지형 3연속(탑·바닥·벽)으로 이긴 첫 전투 — 힘이 아니라 자리의 승리"
+
+  sua:
+    display_name: "도수아"
+    location: "격납고 모니터 앞(밤샘)"
+    physical: { condition: "밤샘 — 건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "말수가 적고 사려 깊음"
+      pressure_level: 2
+      pressures: []
+    relationships:
+      dana: "언니를 신뢰하고 관찰"
+      youngjin: "같은 방의 침묵 분업"
+      harang: "방과후 친구(휴지 중)"
+    knowledge:
+      knows:
+        - "SNAP-015의 지식 전체(관찰 기록 3건 보유)"
+        - "몰이 전투의 화면 목격(발화·기록 확대 없음)"
+      suspects: ["달아나는 것도 싸우는 것도 아닌 무엇(낱말 미보유 유지)"]
+      misunderstands: ["확장 위장 설명을 사실로 믿음"]
+      hides: ["공책의 시각 기록(비공개 유지)"]
+    commitments: ["비밀 규칙 준수"]
+    state_notes:
+      - "EP16 발화 0·지면 등장 0(단아의 추측 언급만) — B3 잠금 준수"
+
+  youngjin:
+    display_name: "도영진"
+    location: "격납고 — 무전 운용"
+    physical:
+      condition: "밤샘 — 고령이지만 작업능력 유지"
+      symptoms: []
+      injuries: ["왼팔 결손"]
+      treatment: []
+    emotional:
+      baseline: "최악을 먼저 상정하고 대비하는 보호자"
+      pressure_level: 3
+      pressures:
+        - "귀환 정비 + 며칠 순환정전 속 가게 운영"
+    relationships:
+      dana: "복기 동반자 — `몰 데가 필요하다` / `잘했다. 들어와서 자라`"
+      sua: "같은 방 침묵 분업"
+    knowledge:
+      knows:
+        - "SNAP-015의 지식 전체"
+        - "몰이 전투 전 과정(무전·화면)"
+      suspects:
+        - "높은 데서 뭘 찾는다(미해결 유지) — 회피 이유도 미해결"
+      misunderstands: []
+      hides:
+        - "생체 기원·신경기원·VR 인과·현서 관련 일체"
+        - "출격 노선(가족 외)"
+        - "균열 안쪽 액체의 목격 사실(FS-003)"
+    commitments:
+      - "귀환 정비, 정전표 생활 대비"
+    state_notes:
+      - "조종석 기록 기능 = 영진의 정비용 설계(EP16 확립)"
+
+  hyunseo:
+    display_name: "도현서"
+    location: "불명 — `오래전에 떠남`"
+    physical: { condition: "회상 한정", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "회상 한정", pressure_level: 0, pressures: [] }
+    relationships:
+      youngjin: "18년 전 방문·공동 개수(위장 프레임)"
+      dana: "얼굴이 기억나지 않는 어머니"
+      sua: "동일"
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+    state_notes: ["본편 미등장 유지"]
+
+  myeongjun:
+    display_name: "고명준"
+    location: "남해방위사령부"
+    physical: { condition: "이틀 밤샘", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "공적 언어의 지휘관, 건조한 자조"
+      pressure_level: 3
+      pressures: ["복구 국면 전환 — 정전표 운용"]
+    relationships: {}
+    knowledge:
+      knows:
+        - "SNAP-015의 지식 전체"
+        - "몰이 유도전 전 과정(관측) — 공개방송이 도구로 쓰였다는 사실"
+        - "세 번째 개체 소멸(수거물 없음 — 세 번째 등재)"
+      suspects: []
+      misunderstands: []
+      hides: ["서랍 속 동반 사진", "송출 유지 결정의 함의(`저쪽이 쓰고 있다`)"]
+    commitments:
+      - "복구 지원·정전표 공지 운용. `적대할 이유 없다` 기조 유지"
+    state_notes: ["EP16 미등장(군 무전 음성은 무명 처리)"]
+
+  seojin:
+    display_name: "윤서진"
+    location: "남해방위사령부"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "건조한 실무자", pressure_level: 3, pressures: [] }
+    relationships: { myeongjun: "전속부관" }
+    knowledge: { knows: ["군 보유 정보와 동일"], suspects: [], misunderstands: [], hides: [] }
+    commitments: ["기록 정리(방어 협조 관측 항목)"]
+    state_notes: ["EP15~16 미등장"]
+
+  hyejeong:
+    display_name: "고혜정"
+    location: "구래동(주말)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "직선적이고 의리 강함"
+      pressure_level: 3
+      pressures: ["지켜보기 국면 지속"]
+    relationships: { dana: "실무로 돕는 절친", yejin: "함께 다니는 친구" }
+    knowledge:
+      knows: ["SNAP-015의 지식 전체"]
+      suspects: ["왼손 부상 은폐(오독 지속)"]
+      misunderstands: ["단아가 시간에 쫓기는 실제 이유"]
+      hides: ["짐작과 목록, 지켜보기 결의"]
+    commitments: ["묻지 않고 지켜보기"]
+    state_notes: ["**EP17 진전 예정** — 정전 교실 필기 공유·진료 권유·단아의 수용"]
+
+  yejin:
+    display_name: "하예진"
+    location: "구래동(주말)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "완충재형 다정함", pressure_level: 1, pressures: [] }
+    relationships: { dana: "절친", hyejeong: "함께 다니는 친구" }
+    knowledge:
+      knows: ["카레 예언 적중 여부 미확정(작가용 — EP17 개그 회수 가능)"]
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments: []
+
+  seongho:
+    display_name: "이성호"
+    location: "구래동(주말)"
+    physical: { condition: "건강 — 미부상 유지", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "경쟁심과 과장", pressure_level: 2, pressures: [] }
+    relationships: { dana: "운동 라이벌·앙숙" }
+    knowledge:
+      knows: ["정전 원인 오답 3종(갱신 필요 — 월요일에 새 소문 유입 예정)"]
+      suspects: []
+      misunderstands: ["파일럿 = 성인 특수요원"]
+      hides: []
+    commitments: ["**EP17 예정** — 정전 책임 논쟁에서 거인 옹호"]
+
+  juho:
+    display_name: "김주호"
+    location: "미등장"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "담백한 현실형 담임교사", pressure_level: 2, pressures: [] }
+    relationships: { dana: "담임과 학생" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: ["**EP17** — 정전 수업 운용·시력검사 안내장(말미)"]
+
+  harang:
+    display_name: "이하랑"
+    location: "미등장"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "밝고 평범한 9세", pressure_level: 1, pressures: [] }
+    relationships: { sua: "방과후 친구(휴지)" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  gitae:
+    display_name: "박기태"
+    location: "구래항 인양장(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "퉁명한 말, 보호하는 행동", pressure_level: 2, pressures: [] }
+    relationships: { youngjin: "조달 관계 가동 중" }
+    knowledge: { knows: [], suspects: [], misunderstands: ["산업기계 보수용 위장 수용"], hides: [] }
+    commitments: ["조달 계속 — `되는 대로`"]
+
+  miran:
+    display_name: "오미란"
+    location: "구래수산시장(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "실무자", pressure_level: 2, pressures: ["시장 구역 정전표"] }
+    relationships: { youngjin: "수리 거래처" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  jeongho:
+    display_name: "배정호"
+    location: "구래항(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "말수 적음", pressure_level: 1, pressures: [] }
+    relationships: { youngjin: "수리 거래처" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+assets:
+  black_titan:
+    location: "귀환 중 → 지하 격납고"
+    status: "가동 정상 — 밤샘 전투 후 정비 목록 예정"
+    equipment:
+      - "세미다이렉트모션 조종계"
+      - "감쇠 포스 피드백"
+      - "단아 반응값 보정"
+      - "**조종석 상시 기록(블랙박스) — 영진의 정비용(EP16 확립)**"
+    damage: []
+    repair_needs: ["전투 후 점검(받치기·밀기·벽 압박 부하 부위)", "조달품 가공 잔량 지속"]
+    maintenance_log:
+      - "EP15: 출격 — 수직전·받치기"
+      - "EP16: 몰이·넘어뜨리기·벽 압박 제압. 귀환 후 정비 예정"
+  sortie_line:
+    location: "격납고 → 옛 노선 → 수몰역(무명)"
+    status: "정상 — 이틀 밤 연속 실사용. 비공개 유지"
+    equipment: ["레일 운반대차", "수밀격벽"]
+    damage: []
+    repair_needs: []
+  youngjin_repair_shop:
+    location: "구래동 언덕길"
+    status: "주말 — 정전표 생활 대비"
+    equipment: ["수리 공구·부품", "지하 연결통로", "발전기"]
+    damage: []
+    repair_needs: []
+    stored_items:
+      - "동진호 어탐(보관 중)"
+      - "성게형 가시 조각(선반 아래 통)"
+      - "조달 1차 물량 세 무더기(가공 대기)"
+
+inventory:
+  black_titan_weapons: { status: "없음", note: "봄에는 맨손. 아이언 앵커 금지." }
+  sua_notebook: { status: "보유", note: "바이올린 공책 — 시각 기록 3건(비공개)" }
+
+living_conditions:
+  family:
+    - "주말 — 밤샘 후 회복. 월요일부터 정전표 생활"
+  school:
+    - "**월요일부터 순환정전표 적용**(청해남초 포함) — EP17의 무대"
+    - "체육대회(4/27 수) 준비 지속 — 정전 속 연습"
+  neighborhood:
+    - "구래동 정전표 적용. 수리점 정전 특수 지속 예상"
+  city:
+    - "**복구 국면** — 핵심 발전 계통 정상, 보조 열교환·변전 구획 손상, 며칠 순환정전 시행"
+    - "열교환 2호탑 지지대 존치, 폐쇄 정비탑 붕괴(계획 낙하), 빈 수조 비어 있음(용해 후)"
+
+external_conditions:
+  network:
+    - "**인터넷 소실 — 청해 내부망만.** 서술·대사 `인터넷` 금지"
+  public:
+    - "공개주파수: 전투 방송 → **순환정전표 낭독으로 전환**(같은 목소리)"
+    - "검은 거인의 유도전·탑 받치기 목격담 유통 예상(작가용 — EP17 소문 재료)"
+  sea:
+    - "항로 정상"
+  military:
+    - "`수거물 없음` 3회째 등재. `방어 협조 관측` 운용"
+    - "공개방송 유지 결정(`저쪽이 쓰고 있다`) — 협조 공식화 없음"
+  enemy:
+    - "**세 번째 개체 소멸**(기능 정지 → 새벽 비 용해 — 잔존물 0)"
+    - "작가용: 시도 03 실패. 다음 = 포박형(문어형) — EP18 훅에서 배양낭 동작 예고, 행동은 S4"
+
+active_threads:
+  - id: "FS-001-DANA-VISION"
+    question: "시력·VR·두통은 어떻게 이어지는가"
+    introduced_chapter: 0
+    last_advanced_chapter: 14
+    current_holder: ["단아", "영진"]
+    urgency: "LOW_DENIABLE"
+    expected_window: "**EP17 칠판 찡그림·필기 공유 → EP18 도수 변경·재검**"
+    allowed_interpretations: ["전투 이틀 무증상 — 기준 유지. EP17부터 생활 신호 재개"]
+  - id: "B1-HYEJEONG-CONCERN"
+    question: "혜정은 걱정의 장부를 어디까지 쌓는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 13
+    current_holder: ["단아", "혜정", "예진"]
+    urgency: "SIMMERING_UP"
+    expected_window: "**EP17 — 필기 공유·진료 권유, 단아의 첫 수용**"
+    allowed_interpretations: ["직접 질문 예산 소진 유지. 미회수: 동그라미"]
+  - id: "B4-SEONGHO-SCHOOL"
+    question: "학교·도시의 검은 거인 신화와 단아의 정체는 어떻게 스치는가"
+    introduced_chapter: 6
+    last_advanced_chapter: 14
+    current_holder: ["성호", "학교", "단아"]
+    urgency: "ACTIVE_COMEDY"
+    expected_window: "**EP17 — 정전 책임 논쟁 거인 옹호**(단아는 탑 손상 관여를 말할 수 없음)"
+    allowed_interpretations: ["미회수: 계주 마지막 주자 시합(EP17 배경 회수 권장)"]
+  - id: "C2-TITAN-ORIGIN"
+    question: "거인은 무엇이며 누가 왜 만들었는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 9
+    current_holder: ["영진"]
+    urgency: "HIDDEN"
+    expected_window: "후반 봄 직접 진전, 진실은 가을"
+    allowed_interpretations: ["위장 유지"]
+  - id: "C4-ENEMY-PURPOSE"
+    question: "그것들은 무엇을 하러 오는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 16
+    current_holder: ["인큐베이터"]
+    urgency: "HIDDEN_TICKING"
+    expected_window: "**EP18 훅 — 배양낭 속 유연한 팔들의 포박 동작 예고**"
+    allowed_interpretations:
+      - "세 개체 연속 실패의 누적까지. 다음 방식 전환은 훅의 동작만"
+  - id: "B3-SUA-POSITION"
+    question: "왜 현재는 단아만 조종자인가"
+    introduced_chapter: 2
+    last_advanced_chapter: 15
+    current_holder: ["수아", "영진"]
+    urgency: "LOW_HIDDEN"
+    expected_window: "S5 가능성에 대한 호기심, 결정적 조언 S7"
+    allowed_interpretations: ["관찰 기록 3건 비공개 보유 — 확대 금지"]
+  - id: "FS-004-PIERCING-FEAR"
+    question: "조종석의 아이는 몸의 위험을 어떻게 상상하는가"
+    introduced_chapter: 4
+    last_advanced_chapter: 4
+    current_holder: ["단아"]
+    urgency: "DORMANT"
+    expected_window: "여름 마지막 전투 회수"
+    allowed_interpretations: ["반복 사용 금지 유지"]
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    question: "고명준과 영진은 어떤 과거로 묶여 있는가"
+    introduced_chapter: 12
+    last_advanced_chapter: 12
+    current_holder: ["고명준"]
+    urgency: "HIDDEN"
+    expected_window: "봄 짧은 인지 장면, 전모는 가을"
+    allowed_interpretations: ["동반 사진 한 장 — 사실만"]
+
+resolved_threads:
+  - id: "A-S1-FIRST-INVASION"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  - id: "A-S2-HARBOR-BLOCKADE"
+    resolution: "EP10 격퇴·항로 재개"
+    resolved_at: 10
+  - id: "A-S3-HIGHGROUND"
+    resolution: "EP16 몰이 유도·정비탑 낙하·벽 압박 제압·새벽 비 용해 — 전투 국면 종결(여파는 EP17~18)"
+    resolved_at: 16
+
+relations:
+  dana_sua: { pair: ["dana","sua"], stage: "STABLE_FAMILY", trust_level: 5, current_issue: "없음" }
+  dana_youngjin:
+    pair: ["dana","youngjin"]
+    stage: "STRAINED_BY_REVEALED_DECEPTION"
+    trust_level: 3
+    current_issue: "보류 지속 — 실전 협업은 복기·몰이 설계까지 확장(최고 수준 작동)"
+  dana_hyejeong: { pair: ["dana","hyejeong"], stage: "STABLE_LONGTIME_FRIENDS", trust_level: 5, current_issue: "외상 장부 — EP17 수용 국면 예정" }
+  dana_yejin: { pair: ["dana","yejin"], stage: "STABLE_FRIENDS", trust_level: 4, current_issue: "없음" }
+  dana_seongho: { pair: ["dana","seongho"], stage: "RECIPROCAL_RIVALRY", trust_level: 2, current_issue: "계주 시합 대기" }
+  sua_harang: { pair: ["sua","harang"], stage: "NEW_FRIENDS", trust_level: 2, current_issue: "방과후 휴지" }
+
+relation_scale:
+  trust_level: "0=신뢰 없음, 5=매우 높은 개인적 신뢰. 호감·연애 수치가 아님."
+
+last_approved_delta: "Black_Titan_EP016_회차델타_v1.0.yaml"
+provenance:
+  - "SNAP-015 v1.0의 provenance 전체"
+  - "EP016 회차브리프 v0.1 GATE_C_PASS(새벽 비 용해)"
+  - "EP016 Level 6 v1.0 LEVEL6_APPROVED"
+  - "EP016 오를 곳을 없애는 법 v1.0 GATE_D_PASS 2026-08-05"
+  - "EP016 회차델타 v1.0"

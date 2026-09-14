@@ -1,0 +1,119 @@
+schema_version: 2
+chapter: 26
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-10"
+  approval_note: "v0.1 → 타 세션 첨삭 v0.2 → 추가 수정 2건 → `좋아 승인`. S5 관계 회복 표준 화."
+based_on_snapshot: "SNAP-025 v1.0"
+produces_snapshot: "SNAP-026 v1.0"
+changes:
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**연락 규칙 성립(B1 핵심):** `못 오는 것보다, 아무 말 없이 기다리게 하는 게 싫은 거야` → 단아 `다음엔 먼저 말할게` — 해답 대신 먼저 연락하기의 최소 신뢰 규칙"
+      - "단아의 통신 전환: `갑자기 일이 생겼다`(두 달 관성)를 지우고 `가게 짐 받고 있어. 20분 늦어`(이유+시간, 공개 상한 `가게 짐`)"
+      - "신뢰의 소품: 도착 시간 맞춰 다시 산 따뜻한 꼬치 셋, `ㅇㅋ` 두 글자 접수"
+    evidence:
+      scene: [2, 3]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "제한된 사실을 말해도 가족 비밀과 친구 약속을 동시에 지킬 수 있음(발견)"
+      - "**오독 강화: `앞으로도 미리 알리면 모든 이중생활을 관리할 수 있음`**(개요 잠금 — 여름 반증)"
+    evidence:
+      scene: [2, 3]
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "**앙숙 기본값 완전 복귀:** 바람·카레 보정 궤변 감점 → 기록표 탈환·정정 → `깁스만 풀리면 전부 다시 잰다`(부상 배려는 반 동선 안에만 — 둘 사이 언급 0)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "characters.gitae.state"
+    operation: "advance"
+    after:
+      - "**얼굴 있는 동네 관계로 회수:** 수리점 단골 안면(자매와 구면 — 피하던 무서운 아저씨), 호통=보호 방향(위험선 두 걸음 바깥·그늘 자리), `기태야` 한마디 차렷"
+      - "영진 호칭 `박사님` 재사용(EP12 기존 — 동네 `도박사님` 설정 계열, 신규 아님)"
+      - "영진의 평 정사화: `항구에서 제일 시끄럽고 제일 사고 안 나는 자리가 저 녀석 자리`"
+    evidence:
+      scene: 1
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "merge"
+    after:
+      - "품목표 실무 지속(크기순 재번호·7번 상자 확인·언니 몫 화살표 이관) — B3 생활 역할 안착"
+    evidence:
+      scene: [1, 2]
+
+  - category: "emotional"
+    field_path: "characters.dana.state"
+    operation: "advance"
+    after:
+      - "**활동지의 멈춘 연필(C3 창구 개시):** 첫 칸 `할아버지` 반 박자 / 둘째 칸 — `쓸 사람이 없어서 멈춘 것이 아니었다`·`쓴 적이 없어서 지울 것도 없는 칸`(어머니 명시 0)"
+    evidence:
+      scene: 5
+
+foreshadow_updates:
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 25
+        after: 26
+    note: "연락 규칙 성립 이행. 다음 EP29"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 24
+        after: 26
+    note: "평소 온도 완전 복귀 이행. 다음 EP29"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 12
+        after: 26
+    note: "어머니 부재 라인 활성 개시(활동지 멈춘 연필). **다음 EP27 「빈자리」 — 직접 질문·카네이션 둘·영진의 침묵**"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "품목표 실무(안착 비트 — 진전 아님). 다음 EP28"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "공개 상한 `가게 짐` 이행, 부품=소모품 잠금 유지"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "기태 무지 잠금(고유명·용도 0)·주역화 0·조폭 결 0"
+  - "혜정 캐묻기·미행·수리점 방문 0, 예진 화해 선언 0"
+  - "어머니/엄마 단어 0(훅), 연애 0, C1 0, `인터넷` 0"
+
+canon_additions:
+  - "연락 규칙: 늦으면 이유(말할 수 있는 범위)+시간을 먼저 — `늦는다고 말한 시간 안에 오면 말한 대로 온 것`"
+  - "기태-자매 구면 관계(수리점 단골), 기태의 그늘 자리 습관"
+  - "어버이날 관례(단아네): 고등어구이·미숫가루의 조용한 기념 — 활동지는 주간 활동(수요일 제출)"
+  - "혜정의 장바구니(반찬거리·세제·동생 준비물 — 어른 물건 많은 열두 살 장바구니)"
+
+provenance:
+  chapter_text: "Black_Titan_EP026_26화_늦는다는말_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP026_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP026_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP026_Gate-D_검증서_v1.0.md"
+notes:
+  - "S5 2/5 완료. 다음 EP27 「빈자리」 — **중요 화**(어머니 부재 활성·영진의 침묵·카네이션 둘)."
+  - "EP27 시간 구조 브리프에서 확정: 활동지 제출 수요일(5/11) 전 — 5/10 화~11 수 제안. 카네이션 = 어버이날 주간 활동 산물(당일 아님 — EP26에서 5/8은 조용히 지나감)."

@@ -1,0 +1,100 @@
+schema_version: 2
+chapter: 27
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-10"
+  approval_note: "v0.1 → 정정 2건(5/9 연속·LOC-05 정합) v0.2 → `좋아 승인`. S5 중요 화 — 부재의 활성."
+based_on_snapshot: "SNAP-026 v1.0"
+produces_snapshot: "SNAP-027 v1.0"
+changes:
+  - category: "emotional"
+    field_path: "living_conditions.family"
+    operation: "advance"
+    after:
+      - "**어머니의 부재 = 활성 감정선으로 전환(새 진실·물증 0):** 두 아이의 첫 직접 질문(수아 `어떤 사람이었어요` / 단아 `왜 혼자 키웠어` — 십삼 년 만의 첫 발화) → 영진 `내가 대신 끝내 줄 이야기는 아니다`(빈손 반 박자·설명 불가)"
+      - "**공백의 명명:** `우리 상이 원래 이렇게 넓었나` — 네 자리째의 성립(`이름이 생긴 빈자리는 그냥 빈 것과는 달랐다`)"
+      - "온기 병존: 구겨진 채 잘 때까지 단 카네이션, 최악 셈법 문답(`그러니까 다행인 거다`), 공평 잔소리"
+    evidence:
+      scene: [3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "수아도 빈자리를 오래 생각해 왔다는 것(두 번째 꽃), 영진은 아직 설명할 준비가 없다는 것"
+      - "오독 형성: 숨기는 이유 = 가족 갈등/어른들의 사정일 것(개요 잠금)"
+      - "활동지 첫 질문 확정: `왜 우리를 혼자 키웠느냐`(제출은 수요일 — 실제 제출 지면 밖 가능)"
+    evidence:
+      scene: [1, 2, 3]
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "advance"
+    after:
+      - "**두 번째 카네이션(공개 행동):** `엄마 것도 있어야 하는 것 같아서` — 창틀에 세워 둠(받는 사람 올 방향), 치우지 않음"
+      - "오독 형성: `언젠가 물으면 평범한 가족 설명을 들을 수 있을 것`(개요 잠금)"
+      - "**주도성 동기 발생(B3 훅):** 기다리는 사람으로만 남지 않겠다는 동기(행동화는 EP28)"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "advance"
+    after:
+      - "**영진의 침묵 = 관계의 빚으로 전환**(해답 아님). 반쯤 돈 몸·빈손의 목격 공유 — 아이들은 더 밀지 않되 잊지 않음"
+    evidence:
+      scene: 3
+
+foreshadow_updates:
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 26
+        after: 27
+    note: "부재 활성 완료(EP27 목표 완주 — 새 진실 0). 다음: 서랍 사진 1컷(S5 잔여 별도 창구), 어머니 전모 = 여름 말~가을"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 25
+        after: 27
+    note: "주도성 동기 발생(훅). **다음 EP28 「확인자」 — 행동화(점검표 확인자 역할)**"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "절제 관찰 이행(카드만 접기·발화 0 — `알고도 묻지 않는 것까지가`)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "현서-기체 암시 0 이행"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "미등장"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "현서 정보 0(이름·미국·소포·연구·흔적), 구판 소품 0, 서랍 사진 0"
+  - "울음 0·연설 0, 연애 0, C1 0, 전투·정비 0"
+  - "학교 조연 무명, 혜정 발화 0"
+
+canon_additions:
+  - "시간: EP26~27 = 5/9 월 하루 연속(활동지는 당일 집에서 작성)"
+  - "**LOC-05 정합 확립:** 단층 촌집 — 마루(우는 마룻장), 미닫이문 불빛 규칙(밤 역방향), 안쪽 방 방석"
+  - "카네이션 2점: 영진 가슴(구겨짐)·가게 창틀(무수신 — 존속 소품, EP28+ 배경 유지 가능)"
+  - "영진 셈법 문답: `최악부터 접어 두면 나머지는 전부 다행이다`"
+
+provenance:
+  chapter_text: "Black_Titan_EP027_27화_빈자리_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP027_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP027_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP027_Gate-D_검증서_v1.0.md"
+notes:
+  - "S5 3/5 완료. 다음 EP28 「확인자」 — **중요 화**(수아 주도성·확인자 칸). **임유정·배유림·문재호 첫 초출(§6-6)**."
+  - "EP28 시간: 5/10 화~ 제안(브리프 확정). 하랑 등장 예정(바이올린 — 앵커 필수·간격 11)."

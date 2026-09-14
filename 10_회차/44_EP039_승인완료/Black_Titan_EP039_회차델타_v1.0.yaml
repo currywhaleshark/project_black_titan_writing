@@ -1,0 +1,96 @@
+schema_version: 2
+chapter: 39
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-11"
+  approval_note: "v0.1 → 구조 지시(v0.2 등반→크레인 전도·수심 정본) → 시간 지시어 정정(v0.3) → `좋아`. S7 4/5 — 첫 결착."
+based_on_snapshot: "SNAP-038 v1.0"
+produces_snapshot: "SNAP-039 v1.0"
+changes:
+  - category: "situational"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**오지정 성공:** 마지막 순간 은신 → 지정이 크레인 기초에 낙착(기초 표면 광택 — 단아 최초 목격) → 군부형 = 기초 포박·외해 끌기 → **자승자박**(끌수록 흡착발·갑판이 스스로 묶임)"
+      - "**기능정지 1호:** 크레인 전도(정렬 직전 승부) → 쓰러진 꽃 = 원반 역방향 비틀림 → 배열 붕괴·탐색/지정 정지(격파 아님 — 잔해 존속)"
+      - "**협동 회수 절단:** 군부형 = 새 지시 없이 마지막 운반동작 반복(갑판 한 장 들었다 붙임 — **기능 유지·EP40 결착 보존**)"
+    evidence:
+      scene: [1, 2, 4, 5]
+
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "무손상 유지. 현재 위치 = 쓰러진 크레인 곁(찌그러진 원반에서 손 뗀 직후 — 전투 지속 중)"
+    evidence:
+      scene: 5
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**획득:** 오지정 유도 성공 체험(숨는 타이밍 = 지정을 빗나가게 하는 수단), 광택 = 지정 낙착 표식 목격(원리 미보유 — `그 번들거림` 수준), 군부형 = 지시 없이는 마지막 동작 반복(끝이 있는지 의문)"
+      - "**수심 체득:** 부두 물 = 가슴께 — 몸을 다 숨길 곳 없음(잠수 기각 셈)"
+    evidence:
+      scene: [1, 3, 5]
+
+  - category: "emotional"
+    field_path: "characters.dana.emotional"
+    operation: "advance"
+    after:
+      - "**자신감 실행 국면 완료:** 재해석을 제 손으로 증명(길 그리기·타이밍·전도 — 전부 자기 선택). `되게 만든다`의 성공 체험 — 단 `이긴 것 같지는 않은` 낯선 손맛(격파 아닌 정지)"
+    evidence:
+      scene: [3, 4]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 38
+        after: 39
+    note: "**기능정지 1호(지정자) 완료·협동 절단.** 다음: EP40 — 갑판 주기 관찰→뒤집기→운반막 양방향 벌리기→용해 2건, 재분류 심의(작가용·해설 0), 초여름 훅(세 자릿수)"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "침묵 유지 이행(무언 반 박자 — 모아 쥐었던 손). EP40 durable change = 승패 바꾼 관찰·파일럿 증명 0"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "발신 예약 유지(미등장). EP40 = `끝났어` 실전 발신 + 혜정 답 문면"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "증상 0 이행(피로 = 근육·숨 층위만). EP40 = 봄 증상선"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "EP40 = 마지막 타석 회수(티볼 정정 반영해 잠금)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+    note: "EP40 후처리 = 용해 2건(재접속 후보)"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "수아 발화 0, C1 증상 0, 사격·앵커·사슬·케이블 0, 계통·상쇄 해설 0"
+  - "바다나리형 직접 공격·도망 0(기능정지만), 군부형 기능정지 0(EP40 보존), 작가용 명칭 0"
+
+canon_additions:
+  - "시간: EP39 = 5/17 화 밤 연속(시간 경과 0). **전투 미종결 — EP40 = 시간 경과 0 진입(위기 지속 5호)**"
+  - "**수몰 화물부두 수심 정본(사용자):** 블랙 타이탄 기준 가슴께 — 하반신 침수·상체 노출(밤에도 꽃이 추적 가능한 근거. 몸을 다 숨길 곳 없음)"
+  - "**결착 정본(사용자 — 개요 이탈 승인):** 등반 아님 — 사각 징검다리 접근 → 맨 구간 노출 돌파 → **크레인 전도**(어깨→씨름 박자·정렬 직전) → 쓰러진 꽃에서 원반 역방향 비틀기"
+  - "**꽃 근접 물성(첫 노출):** 꽃잎 팔 1개 = 블랙 타이탄 팔 길이·중앙 판 = 두 아름·매끈(`눈이라고 부르기로 한 게 미안해질 만큼 아무것도 없었다`)·접힌 채 상시 잔떨림"
+  - "격언 계보: `나무를 흔들면 감이 떨어진다`(단아) / `서 있는 것은 넘어질 수 있다` / `처음 만들어 보는 손맛`(정지 결착)"
+  - "**시간 지시어 원칙(정정 계기):** 연속 밤 국면에서 `어제` 금지 — 아까/밤새/조금 전 사용(EP38 소급 2곳 포함)"
+provenance:
+  chapter_text: "Black_Titan_EP039_39화_본다간다_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP039_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP039_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP039_Gate-D_검증서_v1.0.md"
+notes:
+  - "S7 4/5 완료. 다음 **EP40 「마지막 회수」(중요 화 — 두 번째 결착/봄 결산/초여름 인계. 시간 경과 0 진입 후 귀환·다음 날까지). 봄 시즌 마감 화 — S7 종료장부 대조서+아크캡슐 S7+봄 마감 절차.**"
+  - "EP40 고정선(개요 v1.2): **지시를 잃은 운반자**(기초 끌기 반복 — 흡착발 뗐다 붙일 때마다 중첩 갑판이 순서대로 벌어짐 → **단아 = 무작정 안 때리고 한 주기 끝까지 관찰**) → **뒤집는 맨손**(수축 때 뒤쪽 갑판 들리는 순간 손가락 넣고 몸 낮춤 → 당기는 힘 vs 버티는 힘 사이 → 갑판 손잡이 세우고 다리로 바닥 밀어 **옆으로 뒤집기**) → **운반기관 파괴**(드러난 아래쪽 — 흡착발·운반막 재폐합 시도 → 한쪽 막 발로 밟고 반대쪽 두 손 — 양방향 벌리기 → 중앙 수축고리·이동기관 파열 → 기능정지·**기초 옆에 뒤집힌 채 용해 개시**) → B2 봄 결산(순차 행동기록·정체 미확인·`미식별 검은 거인`만) → **B1 `끝났어` 발신** → 혜정 답(필기 사진 + `내일 보자. 성호가 내일 기어코 마지막 한 판 한대`) → **B4 다음 날**(마지막 한 판 요구·점수판 시비 — **개요 `표적 던지기` = 티볼 마지막 타석으로 정정**·쌍방 앙숙 완전 복귀) → C1 봄 증상선(피곤하지만 저림 재발 0·악력/보행/시야 정상·영진 기록 유지·후보 열어 두기·확정 진단 0) → C4 재분류 심의(작가용·해설 0) → **초여름 훅: 외해 감시화면 낮고 빠른 수중 실루엣 1프레임 — 형상 분석 공란·예상 속도 칸만 세 자릿수**"
+  - "EP40 금지(개요): 재분류 = `심의 시작`까지(확정·전투형 해설 0), 속도형 형상·공격·아이언 앵커 비공개, 수아 탑승·적합성 0, 학교 파손 0, 새 급성 C1·통증성 피드백 누출·확정 진단 0, 외부/군 기록 `블랙 타이탄` 0"
+  - "**S7 종료장부 대조 예고:** B1 항목의 `예진·한결과 귀가 준비` = 사용자 1안 재배치로 소멸 — 대조서에 사용자 승인 이탈로 기록(봄 결산 보강분 검토)"

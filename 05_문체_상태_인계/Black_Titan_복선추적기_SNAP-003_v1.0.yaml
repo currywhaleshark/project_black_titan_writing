@@ -1,0 +1,62 @@
+schema_version: 1
+as_of_episode: 3
+last_updated_by: "EP003 「52미터」 v1.0 Gate D 승인·상태 반영"
+active:
+  FS-001-DANA-VISION:
+    name: "지난가을 시력 저하·5개월 전 VR·짧은 두통"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "성장기 시력 변화, 화면 피로, 이른 더위, 멀미성 컨디션 난조"
+    truth: "단아의 1차 신경계통과 2차 거체 접속 부담, 첫 계통 탐색파 공명"
+    reveal_window: "단계적 누적, 원인 정답은 가을"
+    allowed_reveal_now: "EP2에서 5개월 전 VR이 조종 보정 시험이었다는 사실을 처음 공개했고 시기만 병치. EP3에서는 진전 없음 — 첫 실전에서도 새 시각 증상 없음"
+    prohibited_reveal_now: "계통·탐색파·상쇄·면역거부·생체 기원 설명"
+    last_progressed: 2
+    next_window: "EP5 전투 후 몸살 기준선"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin"]
+  FS-C2-TITAN-ORIGIN:
+    name: "수리점 지하의 거인과 영진의 비밀"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "블랙 타이탄은 영진이 폐기 명령을 어기고 빼돌린 대수몰 이전 군 재난대응 시제기"
+    truth: "현서와 영진이 배양한 2차 거체 블랙 타이탄과 두 자매의 신경기원"
+    reveal_window: "실제 기원은 가을"
+    allowed_reveal_now: "공개 목격된 검은 거인의 존재와 주황빛 안광, 군의 무등록 확인. 가족 내부에서는 위장 설명 유지. 출격 노선·수몰역은 가족 외 비공개"
+    prohibited_reveal_now: "생체 거인·현서 연구·두 자매의 출생·우회 신경동조. 군·시민의 기지·파일럿 특정"
+    last_progressed: 3
+    next_window: "S2 이후 생체성의 제한 복선, 실제 기원은 가을"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "괴수의 실제 탐색·회수 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "도시를 위협하는 거대 침략자 — 다만 무작정 앞으로만 가는 것처럼 보임"
+    truth: "첫 거체 계통 신호를 탐색하고 회수하려는 바닷가재형 개체"
+    reveal_window: "행동 복선 누적, EP12 제한 기록"
+    allowed_reveal_now: "파괴·추격보다 특정 방향 이동을 우선하는 행동. 진로가 막히자 방재벽을 직접 오르는 방향 집착. 단아를 쓰러뜨릴 기회를 쓰지 않고 지나침"
+    prohibited_reveal_now: "단아가 실제 신호원임, 인큐베이터·계통·회수 명령, 탑승 중 상쇄"
+    last_progressed: 3
+    next_window: "EP4 전투 행동, EP12 제한 기록"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin"]
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 조종 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "두 자매가 같은 수면학습·놀이형 훈련을 받았지만 현재 보정값은 단아에게만 맞음"
+    truth: "수아는 블랙 타이탄과 같은 2차 계통이며 우회 필터가 약하게 작동해 더 직접적인 연결 가능성이 있음"
+    reveal_window: "봄에는 관찰력만, 실제 적합성과 첫 출격은 여름"
+    allowed_reveal_now: "수아도 같은 훈련을 받았다는 사실과 현재 단아만 즉시 조종할 수 있다는 영진의 표면 설명. EP3에서는 진전 없음"
+    prohibited_reveal_now: "수아의 2차 계통, 짧은 지연, 동조, 파일럿 적합성, 대체출격"
+    last_progressed: 2
+    next_window: "S3의 생활·관찰 역할, S7의 한 문장 관찰"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana"]
+resolved: {}
+retired: {}

@@ -1,0 +1,163 @@
+schema_version: 1
+as_of_episode: 29
+last_updated_by: "EP029 「아무 일도 없는 날」 v1.0 Gate D 승인·상태 반영 (**S5 완결** — C4 실체화 개시·B1 완성형·B4 복구 확정)"
+active:
+  FS-001-DANA-VISION:
+    name: "지난가을 시력 저하·5개월 전 VR·짧은 두통"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "새 안경의 평범한 나날 — 13초 1을 뛰는 몸"
+    truth: "1차 신경계통과 2차 거체 접속 부담"
+    reveal_window: "재검 6월(생활), S6 부인 가능 1회(개요: EP35 뒤 오른손 검지·중지 저림 수십 초)"
+    allowed_reveal_now: "S6 전투 전 침묵. 개요 지정 창구 외 사용 금지"
+    prohibited_reveal_now: "순간 흐림·손 저림(개요 창구 외)·실신·객관 진단"
+    last_progressed: 24
+    next_window: "S6(EP35 뒤)"
+    status: "ACTIVE_BASELINE"
+    related_character_ids: ["dana", "youngjin"]
+  FS-C2-TITAN-ORIGIN:
+    name: "거인의 기원과 부녀의 준비"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "가족 내부: 시제기 반출+부녀 개수. 외부: 무등록 검은 거인"
+    truth: "현서·영진이 배양한 2차 거체와 두 자매의 신경기원"
+    reveal_window: "진실은 가을"
+    allowed_reveal_now: "위장 유지. 인터페이스·동조·적합성 공개 금지 상시(S5 완주 확인)"
+    prohibited_reveal_now: "생체·배양·우회동조·VR 실목적·현서의 현재"
+    last_progressed: 18
+    next_window: "가을"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin", "hyunseo"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "그것들의 실제 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "스콜 중 부표가 잠깐 끊겼다 돌아온 밤"
+    truth: "회수형 개체의 접근 — 수몰 구도심 관망 잠복(EP30 접촉 예정)"
+    reveal_window: "S6 2연전(접촉→퇴각→개선→재접촉)"
+    allowed_reveal_now: "**EP29 실체화 개시:** 관측 사실만(부표 7→5→2 순차 두절·수면변위 산·방재벽 앞 끊긴 선). 영진 단독 인지·아이들 모름"
+    prohibited_reveal_now: "개체 형상·계통·회수·개선·내부 판단, 접촉 전 개체 관측"
+    last_progressed: 29
+    next_window: "EP30"
+    status: "ACTIVE"
+    related_character_ids: ["youngjin", "dana", "myeongjun"]
+  FS-003-BIO-SEEP:
+    name: "덜 씻긴 얼룩"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: "정비 중 덜 씻긴 얼룩"
+    truth: "기체 생체 순환액"
+    reveal_window: "확정은 가을"
+    allowed_reveal_now: "S5 소진(EP28). S6 점액 후처리 국면(개요 EP35 — 수아 누락 발견)과 접속 가능 — 관찰 사실만"
+    prohibited_reveal_now: "출처 암시 어휘, 명명·해설, 영진 심리"
+    last_progressed: 28
+    next_window: "S6 후처리(EP35 전후)"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["youngjin", "sua"]
+  C3-MYEONGJUN-YOUNGJIN:
+    name: "서랍 속 동반 사진 + 어머니의 부재"
+    line: "C3"
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: "치워지지 않은 창틀의 카네이션(동결)"
+    truth: "군 실험장 인연·현서의 미국행과 거래(전면 봉인)"
+    reveal_window: "서랍 사진 1컷 = S6 이후 별도 결정, 전모는 여름 말~가을"
+    allowed_reveal_now: "**S5 이월 확정(개요 B2 휴지 잠금 우선 — 사용자 승인).** 여운 동결"
+    prohibited_reveal_now: "현서 정보 일체, 구판 소품, 영진 설명, 질문 재개"
+    last_progressed: 27
+    next_window: "S6 이후"
+    status: "SIMMERING"
+    related_character_ids: ["myeongjun", "youngjin", "hyunseo", "dana", "sua"]
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 유예와 부채"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "준비물 사진을 보내고 통화로 하루를 복기하는 절친"
+    truth: "오독 위의 부채 — 걱정은 깊어지되 조사하지 않음"
+    reveal_window: "S6 실전 시험, 물증은 여름"
+    allowed_reveal_now: "**연락 규칙 완성형(EP29).** S6: EP30 예약 문면 `오늘은 약속 못 지킬 수도 있어. 기다리지 마` — 실제 경보에서 규칙 작동 확인"
+    prohibited_reveal_now: "추궁·미행·물증"
+    last_progressed: 29
+    next_window: "EP30"
+    status: "WARM_STEADY"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+    author_notes:
+      - "미회수: 두 번째 봉지의 동그라미(여름)"
+      - "수다 가드 정본: 단답 금지 — 어디·왜만 안 묻기(소급 8편 완료)"
+  B4-SEONGHO-SCHOOL:
+    name: "성호의 숭배와 교실의 검은 거인"
+    line: "B4"
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: "초시계를 쥔 기록원 라이벌"
+    truth: "숭배 대상이 옆자리(비대칭 유지)"
+    reveal_window: "S6 안전지도 과제(개요), 여름 스케일업"
+    allowed_reveal_now: "**앙숙 완전 복구 확정(EP29 — 유지 모드).** 새 문면 자산: 초시계 시비·기록원 입으로 일하기"
+    prohibited_reveal_now: "정체 단서, 연애(상시)"
+    last_progressed: 29
+    next_window: "S6"
+    status: "WARM_STEADY"
+    related_character_ids: ["seongho", "dana"]
+    author_notes:
+      - "미지불: 4차 유예 재대결(깁스 해제 창구)·깁스 첫 줄"
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "확인자 칸에 이름이 있는 아이 — 가게에서는 접수표를 정리하는 아이"
+    truth: "수아의 2차 계통과 약한 우회 필터"
+    reveal_window: "S6 후처리 기여(EP35 예정), S7 결정적 관찰"
+    allowed_reveal_now: "확인자 역할의 일상 이행만(EP29 가게 층위 이행 확인). S6: 점액·광물 잔류 확인 누락 발견 예약(개요)"
+    prohibited_reveal_now: "수치 해석 진단·전투법 제안, `나도 탈 수 있는데`, 조종석 착석·모의전, 영진의 적합성 인정, 인터페이스·동조 공개"
+    last_progressed: 28
+    next_window: "S6(EP35)"
+    status: "SIMMERING"
+    related_character_ids: ["sua", "youngjin", "dana", "harang"]
+    author_notes:
+      - "존속 소품: 확인자 칸 두 필적·순서 종이. 소지불: 바이올린 발표"
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전의 공포 상상"
+    truth: "여름 마지막 전투와 공명"
+    reveal_window: "여름 마지막 전투"
+    allowed_reveal_now: "반복 사용 금지"
+    prohibited_reveal_now: "실제 부상 예고화"
+    last_progressed: 4
+    next_window: "여름"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4 격파·용해"
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: "첫 침공 소아크"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: "구래항 봉쇄 소아크"
+    resolution: "EP10 격퇴, EP12 마감"
+    resolved_at: 10
+  A-S3-HIGHGROUND:
+    name: "고지선점 소아크"
+    resolution: "EP16 격퇴·용해, EP18 마감"
+    resolved_at: 18
+  A-S4-BINDING:
+    name: "포박 소아크"
+    resolution: "EP23 기능 정지, EP24 마감"
+    resolved_at: 24
+  A-S5-QUIET-DAYS:
+    name: "괴수 없는 날들 소아크"
+    resolution: "EP29 아크 마감 — 연락 규칙·확인자·부재 활성·앙숙 복구·부표 이상 훅"
+    resolved_at: 29
+retired: {}

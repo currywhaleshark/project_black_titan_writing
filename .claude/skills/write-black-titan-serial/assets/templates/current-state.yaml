@@ -1,0 +1,53 @@
+schema_version: 2
+canon_version: ""
+through_chapter: 0
+story_time:
+  date: ""
+  time_of_day: ""
+  elapsed_since_previous_chapter: ""
+characters:
+  character_id:
+    display_name: ""
+    location: ""
+    physical:
+      condition: ""
+      symptoms: []
+      injuries: []
+      treatment: []
+    emotional:
+      baseline: ""
+      pressure_level: 0
+      pressures: []
+    relationships: {}
+    knowledge:
+      knows: []
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments: []
+assets:
+  asset_id:
+    location: ""
+    status: ""
+    equipment: []
+    damage: []
+    repair_needs: []
+inventory: {}
+living_conditions:
+  family: []
+  school: []
+  neighborhood: []
+  city: []
+external_conditions:
+  public: []
+  military: []
+  enemy: []
+active_threads: []
+relations:
+  relation_id:
+    pair: []
+    stage: "STABLE"
+    trust_level: 0
+    current_issue: ""
+last_approved_delta: ""
+provenance: []

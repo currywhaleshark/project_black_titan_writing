@@ -1,0 +1,107 @@
+schema_version: 2
+chapter: 12
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-04"
+  approval_note: "초고 v0.1 → 첨삭(6건+원칙 2건) → v0.2 → 2차 첨삭(수아 완화) → `좋아, 승인`. S2 마감 화."
+based_on_snapshot: "SNAP-011 v1.0"
+produces_snapshot: "SNAP-012 v1.0"
+changes:
+  - category: "informational"
+    field_path: "characters.dana.state"
+    operation: "merge"
+    after:
+      - "3월 글짓기 `우리 동네 거인` 제출 — 주어를 지웠다 다시 쓰는 선택. 사실만 골라 쓴 글의 완성"
+      - "비밀의 일상화 완성 — 서른 장 더미 속의 한 장으로 남는 것의 수용"
+    evidence:
+      scene: 1
+
+  - category: "resource"
+    field_path: "supply_line.gitae"
+    operation: "open"
+    after:
+      - "**영진→기태 첫 비공식 조달 의뢰** — 품목서 1장(강판·실런트·릴레이, 산업 규격 표기), `대형 산업기계 보수용` 위장"
+      - "기태의 프로 불문(질문은 `언제까지요` 하나), 폐허 수역 인양물 경로"
+      - "30년 만에 처음 바깥 손이 들어옴 — 장부 지출 예정란 신설"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.myeongjun.state"
+    operation: "merge"
+    after:
+      - "3월 결산: 민간 대피 우선·추적 보류·소속 확인은 수단 확보 시 재개(서진 정리)"
+      - "`우리 동네 거인` 간판 소식 인지 — `명물 소리 듣는 무력` 문답"
+      - "**C3 심기: 서랍 속 동반 사진**(젊은 고명준+젊은 도영진, 나란한 간격) — 인주 꺼내다 눈길, 응시 1문장. 거인과의 연결 없음"
+    evidence:
+      scene: 3
+
+  - category: "external"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**C4 첫 직접 기록(무주어)**: `고정 탐색: 좌표 미확정 / 접근 배제: 외부 개입으로 중단 / 시도 02: 실패` — 감정·평가 없는 실패 누적"
+      - "심해의 얇은 막 안에서 여덟 다리가 펼쳐짐 — 다음 개체 배양 훅(명명 0)"
+    evidence:
+      scene: 5
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "open"
+    after:
+      id: "C3-MYEONGJUN-YOUNGJIN"
+      question: "고명준과 영진은 어떤 과거로 묶여 있는가"
+      introduced_chapter: 12
+    evidence:
+      scene: 3
+
+foreshadow_updates:
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "PLANT"
+    note: "신규 등재 — 동반 사진(인연 사실만). 촬영 장소·군 실험장 사고·왼팔·생명의 빚·현재 연관 전면 봉인. 봄에는 짧은 인지 장면만 허용, 전모는 가을"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 10
+        after: 12
+    note: "첫 내부 기록 공개(3행+배양 훅). 독자 획득: 실패 누적·다음 준비의 존재. 1차 계통·상쇄·방해개체 분류는 작가 전용 유지. 다음 진전 EP14 행동"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "rest — 위장 유지(`시제기 보수용` 한 줄). 조달 위장은 C2의 생활 확장"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 11
+        after: 12
+    note: "프로필 문서화(글짓기 보고서) + 간판 소식이 군까지 도달(도시 애정의 공식 인지). 다음 S3"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "`인큐베이터`·연구 명사 지면 0, 기록은 무주어"
+  - "사진 관련 발화·회상·심리 0, 팔 정보 0"
+  - "조달 품목 무장 연상 0, 아이언 앵커 부품 아님"
+  - "B1 휴지, FS-003 침묵, 전투 0, 인터넷 0"
+
+style_updates:
+  - "**§6-8 후보(사용자 원칙): 시점 인물 기준 호칭** — 3인칭이되 호칭은 시점 인물을 따른다(단아 시점 `기태 아저씨`·`선생님` / 영진 시점 `기태` / 군 시점 계급 호칭). Gate E에서 문체카드 v0.9 등재"
+
+provenance:
+  chapter_text: "Black_Titan_EP012_12화_기록되는것들_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP012_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP012_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP012_Gate-D_검증서_v1.0.md"
+notes:
+  - "S2 「우리 동네 거인」 마감 화 — 마감 절차(종료 장부 대조·아크 캡슐)는 Gate E와 함께."
+  - "학급 규모 정합(사용자): 글짓기 서른 장 가까이 = EP11 `눈 스물몇 쌍`과 일치."

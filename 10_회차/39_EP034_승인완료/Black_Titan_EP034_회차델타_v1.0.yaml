@@ -1,0 +1,100 @@
+schema_version: 2
+chapter: 34
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-11"
+  approval_note: "무첨삭 승인(`좋아`). 개선 재등장/동적 실패→정지 — **정지 통찰 해금.** 회차 간 위기 지속(EP35 = 시간 경과 0)."
+based_on_snapshot: "SNAP-033 v1.0"
+produces_snapshot: "SNAP-034 v1.0"
+changes:
+  - category: "positional"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**전신 부분 경화·정지 상태(위기 지속):** 왼팔 거의 봉쇄(손목→팔꿈치→어깨 — 움찔 불가), 회전 반 바퀴 불가·보행 반 보 한정, 오른팔 = 짧은 직선 하나(방금 반 치 소모·손목 자갈 3개)"
+      - "왼팔 봉쇄 = **기체 관절의 경화**(조종사 신체 무손상 — 명시 서술 완료)"
+    evidence:
+      scene: [3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**정지 통찰 획득(해금):** `나를 붙잡는 건 점액만이 아니다. 점액 속에서 움직이는 나 자신이다` — 움직임 = 경화의 재료. 답 = 마지막 움직임 하나를 쓸 때까지 안 쓰는 것"
+      - "**늦은 깨달음(C4 제한 공개):** 난동 = 연막이 아니라 전장 사전 작업. 저쪽도 학습한다(`이쪽이 이긴 방법을 저쪽이 제일 열심히 공부했다`)"
+      - "가짜 접근의 존재(1회 경험 — 압력파가 몸 앞에서 사라짐. 진짜/가짜 구분법은 미보유)"
+      - "오판의 대가 체득: 승리 공식(`턱만 찾으면`)이 미끼였다는 것"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**깨진 컵볶이 약속(신규 미지불):** 일요일 3시 분식집(예진 주선) — `오늘도 약속 못 지킬 수도 있어` / `어. 컵볶이는 도망 안 가`(가볍게 받아 주는 답의 무게)"
+    evidence:
+      scene: 1
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "advance"
+    after:
+      - "중계 교신 이행(조류 0.3·관구 위치·잔해 밀도 — 군 수치 전달, 전술 명령 0)"
+      - "**해금 인정 문법:** `그래. 그게 맞다. ……잘 찾았다`(밖에서 해 줄 수 있는 게 없었던 사람의 조용함)"
+    evidence:
+      scene: [3, 4, 5]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 33
+        after: 34
+    note: "**광역 포획 발동·제한 공개 완료**(고정 기능의 전장 확장 — 4자 공유). 개체 완전 미노출 유지. 다음: EP35 정적 결착(진짜 접근 구분 감각·비우세손 카운터)"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 32
+        after: 34
+    note: "규칙 실전 2회(`오늘도`) + **깨진 컵볶이 약속 = 신규 미지불**(사후 회수 창구: EP35 이후 생활 복귀)"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "C1 방화벽 이행(기체 관절 명시·저림 계열 0). **다음: EP35 귀환 직후 오른손 검지·중지 저림 1회(수십 초 — 개요 창구)**"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "배웅 1문장만. EP35: 손 감각 항목·점액 잔류 수치 받아 적기(누락 확인만 — 개요)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "간접 지원 이행(수치 전달)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+    note: "혼용 금지 이행"
+
+no_change_checks:
+  - "C1 어휘 0(전투 중), 개체 노출 0, 살상 타격 0, EP35 결착 논리 선공개 0"
+  - "군 포격·전술명령 0, 수아 조언 0, 아이언 앵커 0, 연애 0"
+
+canon_additions:
+  - "시간: EP34 = 5/15 일 낮~오후(전투 — **EP35 = 시간 경과 0 연속**)"
+  - "**깨진 컵볶이 약속 정본:** 5/15 일 3시 분식집(예진 주선·EP32 무단 편입 건) — S6 마감 후 회수 소재(신규 미지불)"
+  - "**점액 전장 물성 정본:** 부유 잔해(가라앉지 않는 조각), 움직임 반응 경화(즉응·실 따라 몰림), 정지 시 둔화(조류 침전만), 가짜 접근 = 압력파(주변 잔해 바깥으로 밀림 — 소멸)"
+  - "왼손잡이 정본 강화: 젓가락·연필·주먹 전부 왼손 먼저. 오른손 = 서툰 손(공 반만·글씨 삐뚤)"
+  - "영진 교신 문법 추가: `잘 찾았다`(해금 인정 — 칭찬 최소형)"
+provenance:
+  chapter_text: "Black_Titan_EP034_34화_움직일수록굳는다_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP034_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP034_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP034_Gate-D_검증서_v1.0.md"
+notes:
+  - "S6 5/6 완료. 다음 **EP35 「한 번만 움직인다」(중요 화 — 정적 카운터/결과/S7 인계. S6 마감 화: 종료장부+아크캡슐 S6).** **진입 = SNAP-034 위기 그대로(시간 경과 0)**"
+  - "EP35 고정선(개요): 기다림(가짜 접근 번갈아·움찔마다 가동범위 소모·조류 침전 — 정지 = 오른손 한 번을 남기는 행위) / 흥분 가라앉히기(초조·불안·충동·경보음을 하나씩 흘려보냄) / **구분 감각: 가짜 = 잔해가 바깥으로 밀림, 진짜 직전 = 관 안쪽으로 물·가루가 빨려 들어감** / **결착(2-6 잠금): 양턱 완전 개방·달려드는 순간 — 오른주먹 한 번 곧게 → 뻗은 위치에서 정지 → 돌진 관성이 스스로 깊이 밀림 → 턱뿌리·점액 공급낭·전방 운동기관 파괴 → 오른팔에 걸린 채 기능 정지(주먹 끝까지 안 뺌)** / B2: 한 묶음 기록·잔류 제거 우선 / **C1 창구: 귀환 직후 오른손 검지·중지 수십 초 저림 → 곧 정상(원인 후보 전부 열어 둠·조종간 압박 제외)** / B3: 손 감각 항목·잔류 수치 받아 적기 / **훅: 손 감각 기록 옆에 시간 적는 영진 — 외해 두 방위에서 두 수면변위 동시 시작·나란히 청해 쪽으로(S7 예고)**"
+  - "EP35 금지(개요): 군 공격 0, 저림 = 1회·수십 초·실신/보행장애/시야결손/확정 진단 0, 포스 피드백 통증 누출과 동일시 금지, 조종간 직접조작 묘사 금지(근전도·운동의도), 두 흔적 역할·계통 비공개, S7 결정적 관찰 보존"

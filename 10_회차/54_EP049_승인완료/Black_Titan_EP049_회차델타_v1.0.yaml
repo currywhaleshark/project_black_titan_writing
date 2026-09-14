@@ -1,0 +1,141 @@
+schema_version: 2
+chapter: 49
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "브리프(장면 추가 + 방송 축 회수) → 초고 → v0.2(정비 스케일 전면 재작성) → v0.3(첨삭 3건) → `좋아`. S8 9/10."
+based_on_snapshot: "SNAP-048 v1.0"
+produces_snapshot: "SNAP-049 v1.0"
+changes:
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**귀환·부분 세척 완료(6/15 밤).** 발·정강이까지만 — 발목 하나에 반나절이라 나머지는 다음 날로"
+      - "**발바닥 이물 처리 완료(EP46 미지불 회수):** 홈에 박힌 **콘크리트 덩어리 세 개 + 철근 하나**(수몰 아파트 잔해). `디딜 때마다 어긋났을 거다`. 빼내면서 검은 표면에 줄이 하나 더 생김"
+      - "**왼팔 팔꿈치 안쪽 눌린 자국 두 줄**(넓은 쪽이 사람 키보다 길다). 어깨 자국 여덟 → 아홉. 관통 0 유지"
+    evidence:
+      scene: [2, 3]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**남의 화면으로 자기를 보는 자리:** 내부망 게시판에 어제 교전 영상이 올라옴. `화면 속의 그것은 느리고 둔하고 자주 미끄러졌다. 안에서 겪을 때는 하나도 느리지 않았는데`"
+      - "**보는 게 아는 것과 같지 않다:** 다 같은 걸 봤는데 해석이 갈린다(이겼다 / 죽는 줄 알았다 / 몸부림이다 / `안에 사람이 있긴 해?`)"
+      - "**통제선 밖의 그것 = 중계차**(EP47 회수). 봄의 드론·게시판 사진 기억과 연결 — `낮에 그렇게 크게 싸웠으니 안 찍힐 리가 없었다`"
+      - "**말하지 않는 이유:** `할 수 있는 말이 없어서가 아니라, 하면 안 되는 말밖에 없어서였다`"
+      - "왼팔의 어긋남이 **힘을 줄 때마다** 지나감(여운·증상 아님)"
+    evidence:
+      scene: [3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_sua"
+    operation: "advance"
+    after:
+      - "**값의 비대칭 성립:** 단아가 수아 머리를 두어 번 두드리며 `네 덕분이야`. **수아는 무슨 말인지 모른다**(지형도는 어제 것·교신 미참여·물때는 표를 옮긴 것). **그래도 묻지 않는다** — `물어보면 언니가 대답해야 한다. 대답하려면 뭔가를 다시 떠올려야 하고, 오늘 있었던 일 중에 떠올려서 좋을 게 몇이나 될지는 알 수 없었다`"
+      - "※ EP40 역상 — 그때는 수아가 준 값이었고 수아도 알았다. **이번엔 수아가 모르는 값.** 이유(유년의 몸싸움)는 지면에서 한 번도 말해지지 않음"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "**점검표 갱신:** 어깨 자국 여덟→아홉, 신규 항목 `왼팔 팔꿈치 안쪽 눌린 자국 두 줄`. 발바닥 이물 계수·처리"
+      - "**적었다 지운 자리:** `…아직 확실하지 않은 거.` — 확실해지면 적고 아니면 안 적는다. `저 공책에는 틀린 게 하나도 없었다. 대신 빈 데가 많았다`"
+      - "밥상에서 단아의 팔 이야기를 듣고 따로 적음(내용 비공개)"
+    evidence:
+      scene: [3, 4]
+
+  - category: "situational"
+    field_path: "living_conditions.city"
+    operation: "advance"
+    after:
+      - "**방송 축 재가동(EP9 정본 승계):** 6/15 주간 교전이 촬영됨 → **내부망 게시판에 영상 게시.** 통제선 밖 중계차. 화질 나쁘고 거리 멂·소리 없음 — **기체만 찍힘**(조종석·조종자 0)"
+      - "**여론 3단계:** EP46 = 못 봐서 걱정 → EP49 = **다 같은 걸 봤는데 말이 다르다.** 도시의 판단은 여전히 유예"
+    evidence:
+      scene: 5
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "advance"
+    after:
+      - "**무서움 창구의 확장:** 팔 이야기(`아프지는 않은데 이상했어`) → **`안 아픈 게 늘 좋은 건 아니다`**(안심도 겁도 주지 않는 응답)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "**재대결 재청구:** `동점이 어떻게 끝나. 100미터 시합해.` — 달리기 허가를 근거로. 무거워진 교실 공기를 눌러 주는 기능(적대 0)"
+    evidence:
+      scene: 5
+
+  - category: "situational"
+    field_path: "assets.youngjin_repair_shop"
+    operation: "advance"
+    after:
+      - "**여름 장부에 간격 기재:** 두 출현 사이의 일수를 적고, 봄 장부를 꺼내 나란히 놓음 → **봄보다 짧다.** `한 번이면 우연이고 두 번이면 그냥 그럴 수도 있는데, 장부는 두 번까지만 적혀 있었다`(해석·발화 0)"
+    evidence:
+      scene: 6
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 48
+        after: 49
+    note: "**출현 간격 단축이 기록으로 확인됨**(봄보다 짧다). 다음: EP50 = 아크 마감·조달 목록·**투구게 신호**"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 47
+        after: 49
+    note: "**여론 3단계**(못 봄 → 봤는데 말이 다름) + 재대결 재청구. 판단은 S10 이후"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 45
+        after: 49
+    note: "점검·계수의 실무 정착 + **모르면서 받는 값**. 공책의 빈칸 원칙 명문화. 다음 = S11 첫 대체출격"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+  - id: "FS-C5-WHITE-SENTINEL"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "놀이터 설명 0, 앵커 명명·조달 목록 0(EP50), 센티널 0, 새 증상 0, 혜정 눈금 0, 추적 0"
+
+canon_additions:
+  - "시간: EP49 = 6/15(수) 늦은 오후~밤 + 6/11(목) 학교·저녁"
+  - "**정비 척도 상시화(EP33 정본):** 공업 규모 세척 — 고압세척기 총대(단아 몫)·비계·안전선 밖 진행표·손 들어 신호·발목 하나에 반나절. 관절 틈 = 팔뚝이 들어가는 틈 / 발바닥 홈 = 두 팔로 안는 콘크리트 덩어리. **손걸레·조각 몇 개 계열 금지**"
+  - "**정비 갑판의 용도:** 기체 상부 손상은 갑판에서 눈으로 본다(발치 손전등으로는 안 보인다)"
+  - "**방송 축 정본(EP9 승계):** 주간·개활지 교전은 찍힌다. 내부망 게시판에 영상이 오른다. **기체만 찍히고 조종석·조종자는 0**"
+  - "**여론 3단계 정본:** 소문(무서움) → 걱정(못 봄) → **해석의 분열**(봤는데 말이 다름). 판단은 S10 이후"
+  - "**수아의 기록 원칙:** 확실해지면 적고 아니면 안 적는다 — `틀린 게 하나도 없었다. 대신 빈 데가 많았다`"
+  - "격언 계보: `나올 때는 이걸 잃으면서 나왔다. 들어갈 때는 되찾으면서 들어갔다` / `안 아픈 게 늘 좋은 건 아니다` / `할 수 있는 말이 없어서가 아니라, 하면 안 되는 말밖에 없어서였다` / `숫자를 쓰는 데는 일 초도 안 걸렸다. 쓰고 나서 보는 데 오래 걸렸다`"
+provenance:
+  chapter_text: "Black_Titan_EP049_49화_여름의셈_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP049_회차브리프_v0.1.md"
+  content_lock: "Black_Titan_EP049_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP049_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 9/10 완료. 다음 **EP50 「간격」 — 아크 마감.**"
+  - "EP50 고정선(S8 개요): 생활과 관측의 교차(도시의 여름·폭염 초입·수산시장 결) / 군 = 공세 전환 판단 기록(내부 층위) / **각자의 준비**(영진 = **조달 목록을 적기 시작**〔앵커의 씨앗·명명 0〕, 수아 = 기록 체계 확장, 단아 = 몸 만들기) / **훅 = 외해의 크고 느린 질량**(투구게형 예고) — `들어오는 것들의 간격이, 확실히, 좁아지고 있다`"
+  - "EP50 = S8 마감 화. **종료장부 대조서 + 아크캡슐 S8** 필요"

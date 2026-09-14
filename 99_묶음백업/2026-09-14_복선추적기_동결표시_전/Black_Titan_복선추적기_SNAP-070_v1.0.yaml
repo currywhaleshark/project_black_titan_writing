@@ -1,0 +1,381 @@
+# Project Black Titan — 복선 추적기 SNAP-070
+# 재작성 2026-08-16(전수감사 3批) — SNAP-062~067이 SNAP-061과
+# 바이트 동일하게 동결돼 있던 것을 각 회차 Gate-E 근거로 복원했다.
+# ★ 2026-08-21 감사: 이 파일은 SNAP-067과 본문 바이트 동일한 **동결본**이다.
+# (마감 스크립트가 없는 키 `approval_note:`를 치환하려다 조용히 실패)
+# 이 구간의 복선 진행은 **SNAP-102 현행본**과 각 회차 Gate-E 상태반영서를 볼 것.
+schema_version: 1
+as_of_episode: 67
+last_updated_by: EP067 「표」 v1.0 Gate D 승인·상태 반영 (**혜정 인지 개시**·몸살 정리 완성·간격 다음 칸 공백)
+active:
+  C4-OBSERVATION-GAP:
+    name: 관측 체계의 공백
+    line: C4
+    secret_layer: 2
+    planted_at: 55
+    surface_reading: 부표에도 장부에도 수아의 표에도 안 걸린 것이 있었다
+    truth: 조용히 움직이는 것은 이 도시의 관측 체계가 못 잡는다(작가용)
+    reveal_window: S9 = 사실만 놓기 → S10 이후 대책·제도 층위
+    allowed_reveal_now: '**사실 나열까지.** `배는 잡히고 저건 안 잡혔다` / 장부 여백의 `이건 관측에 안 걸렸다.` **정리 문장·체계 비판 0**'
+    prohibited_reveal_now: '`관측이 놓쳤다`·`체계의 구멍` 같은 서술, 대책 논의, 제도 비판, 군의 개입'
+    last_progressed: 67
+    next_window: S10 — 대책 없음이 드러나는 국면
+    status: SEEDED
+    related_character_ids:
+    - youngjin
+    - sua
+    ep_note: EP67 — **간격표의 다음 칸이 비어 있다.** 수열은 5에서 멈췄고 아무도 다음 숫자를 모른다. 관측이 놓친 것인지 아직 안 온 것인지도 구분이 안 된다. 정리 문장 0
+  FS-C5-WHITE-SENTINEL:
+    name: 먼 데서 준비되는 것
+    line: C5
+    secret_layer: 4
+    planted_at: 46
+    surface_reading: 무관해 보이는 해외 단신 — 부두 하나가 사흘째 통제
+    truth: 화이트 센티널의 이송·준비(작가용)
+    reveal_window: 사다리 = S8 한 줄 → S9~S10 누적 → 관통상 회차 데뷔(그레이트 마징가 결)
+    allowed_reveal_now: '**한 줄 암시까지**(제목 + 두어 문장·목록 구석·주목 0). **S8 배정분 1회 소진(46) — EP47~50 추가 0**'
+    prohibited_reveal_now: 이름, 사진, 기체 묘사, 국가 특정, 소속, 등장인물의 해석, 루시
+    last_progressed: 57
+    next_window: '**S9 누적 — 회수·결 미정(S9 Level 4에서 확정)**'
+    status: SEEDED
+    related_character_ids: []
+    ep_note: EP57 — **2단.** 학교 게시판 스크랩 구석의 두 줄(어느 나라 부두가 몇 주째 통제 중·밑에 아무것도 안 적힘). 이름·사진·기체·국가·소속·인물 반응 전부 0
+  FS-001-DANA-VISION:
+    name: 시력 저하·VR·두통·손끝 둔함
+    line: C1
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: 이력 1회가 기록된 장부
+    truth: 1차 신경계통과 2차 거체 접속 부담
+    reveal_window: 봄 = 부인 가능 수준, 재검 6월, **여름 중반 = 출격 불가(자신감 궤적 꺾임 창구)**
+    allowed_reveal_now: '**재검 지불(41): 이상 없음 — 안심 확정**(기원 = EP18·4월 정본). S8~S9 = 새 증상 0 구간. **S8 전 화 이행 완료** — EP48 왼팔 어긋남·EP50 뻐근함은 증상 아님(위화감·운동 후 근육)'
+    prohibited_reveal_now: 새 증상, 진단, 저림·흐림(해금 = S10 국면 결정), 반복 사용
+    last_progressed: 67
+    next_window: S10 몸살 전조 → S11 꺾임
+    status: SIMMERING_DENIABLE
+    related_character_ids:
+    - dana
+    - youngjin
+    - sua
+    ep_note: EP67 — **정리가 완성됐다.** 열이 내렸고 증상 0. `이틀 자고 나으면 감기다` — **지나가면 없던 일이 된다. 산발의 함정이 여기서 닫힌다**
+  FS-C2-TITAN-ORIGIN:
+    name: 거인의 기원과 부녀의 준비
+    line: C2
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: '가족 내부: 시제기 반출+부녀 개수. 외부: 무등록 검은 거인'
+    truth: 현서·영진이 배양한 2차 거체와 두 자매의 신경기원
+    reveal_window: 후반 봄까지 확정 폭로 금지·진실은 가을
+    allowed_reveal_now: 위장 유지 상시
+    prohibited_reveal_now: '생체·배양·우회동조·VR 실목적·현서의 현재. **신규(50): 세포기원 소재·현서가 남긴 장비·닻 표면 배양 = 작가용 전면 봉인**(허용 한계 = 표면 질감이 달라졌다는 암시 정도 — 사용자 확정). **신규(51): 앞마당 = 옛 차량기지 자재 반입구**(LOC-02 §2.2-B) — 정본이되 지면 노출 0'
+    seal_compliance:
+    - '**EP51 이행 확인:** 닻은 더미 나열 속 한 단어로만 지나갔다(`도르래가 크기별로. 그리고 닻이 하나.`). 손 얹기 0·시선 정지 0·의문 0·`제일 큰` 계열 수식 0. **그날 트럭에 실리지도 않았다**(목요일 대형 트럭 별건)'
+    - '**은폐 기준:** 나중에 그것이 핵심이었다고 밝혀져도 **그 화를 다시 읽으면 단서가 없어야 한다**'
+    - '**EP57 이행 확인(봉인 재독 검사 3항목):** ① 닻 = 전편 1회·나열 셋째 자리·수식 0·문단 끝자리 아님, 직후 대화가 **도르래**로 붙어 무게가 그쪽으로 실린다 ② 봉투 = `발신` 지면 0·단아가 뒤집을 이유가 없어 안 뒤집음·두께/무게 관찰 0 ③ 센티널 = 앞뒤 스크랩으로 균질화, 지시대명사 `그걸`→`게시판을` 정정'
+    - '**행선지 생략의 문법:** `긁힌 자국은 마당 안쪽으로 갔다가 거기서 끊겼다` — 되짚으면 **앞마당 크레인**(LOC-05 v3.1)이 답이지만 그 화에서는 단서가 아니다'
+    - '**EP58 이행 확인:** 시제품은 **학교 갔다 오니 놓여 있었다** — 주말 작업 회상 0·도면 0·부품 내력 0. 조작은 스위치 셋으로만 열었고 **왜 두 번에 나눠 나가는지는 아무도 설명하지 않는다**. 지면 지칭 `닻`은 생김새이고 이름은 여전히 없다'
+    last_progressed: 62
+    next_window: 가을
+    status: ACTIVE
+    related_character_ids:
+    - dana
+    - sua
+    - youngjin
+    - hyunseo
+    ep_note: EP62 — **이름의 값은 평범해지는 것이었다.** `아이언 앵커`가 나흘 만에 `앵커`로 줄었다. **재질·유래·제작 과정은 여전히 0.** 봉인 유지
+  FS-C4-ENEMY-PURPOSE:
+    name: 그것들의 실제 목적
+    line: C4
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: 봄의 위협 종결 — 일곱 밤이 남긴 물음표들(정체·이유 미공개)
+    truth: 고지 지정자+저지 운반자의 역할 협동(작가용) — **최종 회수 프로토콜 실패 → 재분류 심의 개시(상쇄 방해원 = 제거 대상 전환 검토)**
+    reveal_window: '**S9 = 등각류(속도형) 데뷔.** 훅 = 외해의 크고 느린 질량(투구게형)'
+    allowed_reveal_now: '**EP44 이행 완료:** 원거리 사격·연사·거리 유지, 개수 흔적(재정렬·두터운 기부·작살형 끝), 첫 피격(관통 0·밀림 다수 — **버팀의 불안 구조 유지·무효 확정 0**), **의도의 공포**(`저건 나를 부수려고 왔다`), 맨손 한계, 훅 = `간격이 있다`. **EP45 잠금:** 간격을 셈에 넣은 재접근 성공 → 손에 닿는 대로 가시 부러뜨리기 → 몸통 노출 → **부서질 때까지 내려치기**(정권 아님) → 귀환 후 `봄에 그놈이에요. 근데 가시가 달라요` → 수아 대조 결론. **EP47~48 이행:** 불리한 지형(이족은 박히고 다족은 뜬다)·집게의 치기/막기/밀기·**첫 육탄전**(눈자루 → 작은 집게 → 큰 집게 → 박치기). **EP49~50 이행:** 간격 줄 **세 번째 = 단축 확정**(`한 번은 우연이고 두 번은 그럴 수도 있는데, 세 번이면 그건 다른 이름으로 불러야 한다`) + **외해 파형**(넓고 완만·느린데 큼·부표 7번). 형체·명명·해석 발화 0'
+    prohibited_reveal_now: 재분류 확정·전투형 해설, 속도형 형상·공격·세 자릿수, 아이언 앵커, 작가용 명칭, **투구게형 형체·명명**
+    last_progressed: 66
+    next_window: '**EP55 따개비형** — 조용한 굴착 시험. **경보가 아니라 소문으로 시작한다**'
+    status: ACTIVE
+    related_character_ids:
+    - youngjin
+    - myeongjun
+    author_notes:
+    - '**보류함(S9 기획 자료):** 속도형 등각류·세 자릿수 속도·재분류 심의 — 미노출 상태로 이월. **아이언 앵커 필요성은 EP50에서 조달 목록으로 물질화**(명명 0)'
+    - '**S8 결산(작가용):** 공격 의도 2회 실증 — 원거리 사격형(EP44~45·격파) / 육탄 집게형(EP47~48·격파). 여름 전적 2승. 용해·수거물 0'
+    - '**★ 두 목적의 우선순위 정식화(2026-08-13 사용자 확정·작가용):** ① 1목적 = **동족 탐색**(첫 거인 계통) ② 2목적 = **방해물 파괴**(블랙 타이탄) — 1목적을 막는 것이 있을 때만 발동. 여기서 나오는 것 = 탐색을 방재벽 안쪽으로 넓히려면 벽을 넘어야 하는데 **요란하게 움직이면 2목적이 발동한다**(타이탄이 나온다) → **조용히 넘는 방법을 시험한다** = S9 따개비형'
+    - '**따개비형 = 조용한 굴착 시험(S9).** 적이 학습했다는 증거지만 지능이 올라간 건 아니다 — 시행착오 수준이고, **이번 시험은 실패한다**(결국 타이탄이 나온다). 저쪽은 그 결과를 또 가져간다 → S10 톡토기형이 **다른 방법으로 벽을 넘는다**로 접속'
+    - '**지면 노출 규칙:** 목적·학습·시험이라는 말은 0. 재료 셋만 놓는다 — ① 소리가 안 났다 ② 언제부터인지 모른다 ③ 하필 벽이다. 등장인물 중 누구도 말로 정리하지 않는다'
+    - '**S9 사다리(작가용):** 맨손 한계는 성질이 다른 셋이다 — **거리**(성게형·기성립) / **지지**(투구게형·EP52~53) / **인장**(따개비형·EP55~56). 셋을 한 물건이 푼다 = 사출·박고 버티기·걸고 당기기. **앵커는 발명이 아니라 합계다**'
+    - '**외해 개체 접근 로그:** 6/18 밤 부표 7번 → 6/19 밤 5번 → **6/20 밤 간척 방조제 안쪽**(벽 안으로 들어온 첫 사례) → **6/21 새벽 격파**'
+    - '**여름 격파 3건:** 사격형(45)·집게형(48)·**질량형(53)**. 셋 다 문법이 다르다 — 부수기 / 꺾기 / **빠뜨리기**'
+    - '**용해 확인(54):** `저것은 녹아내렸고` — 수거물 0 관례 유지'
+    - '**★ EP55의 입구(54 훅):** 방재벽 순찰 소문 — `본 사람이 오늘 안 나왔어요. 들은 사람이 말한 거라 확실한 건 아니고`. **출처 흐림·경보 0·관측 0.** 이것이 **관측 체계가 놓친 첫 사건**의 문이다(지면에서는 아직 그렇게 말하지 않는다)'
+    - '**★ 2목적 이행이 지면에 처음 보인다(52):** 도시로 가던 것이 **타이탄을 보고 표적을 바꾼다.** 해설 0 — 방향이 바뀌는 것만 보이고, 단아의 감각은 `바꿀 수 있다는 게 무서웠다`까지'
+    - '봄 전적(작가용): S1~S7 회수 시도 전부 실패·수거물 0. 잔존물 = 폐건물 1·전도 크레인 1(안전점검 대상)'
+    ep_note: EP66 — **★ 계통 재파견이 첫 지면에 올랐다.** 봄에 부러뜨린 **왼쪽 턱이 성한** 같은 얼굴. `같은 얼굴에 성한 턱을 달고, 하는 짓만 달라져서 왔다` — 그때는 걸어서 끌고 가려 했고 오늘은 **밑을 파서 빠뜨리려** 했다. 해설 0
+  FS-003-BIO-SEEP:
+    name: 닦이지 않는 흔적
+    line: C2
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: 세척해도 남는 것들
+    truth: 기체 생체 순환액(본체) / 개체 점액의 생체 조직성(인접)
+    reveal_window: 확정은 가을
+    allowed_reveal_now: 사실 관찰만·본체 연결 금지 유지. EP40 후처리 = 용해 2건(재접속 후보)
+    prohibited_reveal_now: 출처 암시 어휘, 명명·해설, 생체기원 증거화
+    last_progressed: 33
+    next_window: S7 후처리
+    status: ACTIVE_BURIED
+    related_character_ids:
+    - youngjin
+    - sua
+  C3-MYEONGJUN-YOUNGJIN:
+    name: 서랍 속 동반 사진 + 어머니의 부재
+    line: C3
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: 공개되는 통지들
+    truth: 군 실험장 인연·현서의 미국행과 거래(전면 봉인)
+    reveal_window: 서랍 사진 = 별도 결정, 전모는 여름 말~가을
+    allowed_reveal_now: 여운 동결·간접 지원 현재형
+    prohibited_reveal_now: 현서 정보 일체, 구판 소품, 영진 설명, 질문 재개
+    last_progressed: 65
+    next_window: 별도 결정
+    status: SIMMERING
+    related_character_ids:
+    - myeongjun
+    - youngjin
+    - hyunseo
+    - dana
+    - sua
+    ep_note: EP65 — **군이 적기 시작했다.** 공개망 표에 새 칸(`미확인 대형체` · 좌표와 시각만). 명준의 가설은 `저게 어디 서 있느냐가—`에서 끊기고 `됐다. 적을 것만 적어.`로 봉인됐다. **서진은 그 말을 적지 않았다.** 대면 0 유지
+  B1-HYEJEONG-CONCERN:
+    name: 혜정의 유예와 부채
+    line: B1
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: 세 자리를 다 지킨 절친이자 짝(연락·건강·귀환)
+    truth: 오독 위의 부채 — 짐작 목록은 캐지 않은 채 보관
+    reveal_window: 여름 = 명백한 증상·학교 피해 뒤 보호 목적 추적·물증(기획 시)
+    allowed_reveal_now: '**반의식 1눈금 집행(43 — 통제 실무 즉시 정리〔자문 0〕·규칙 재가동 문자).** 곡선: S8 반의식 → S9 누적(짐작 목록 증가·캐지 않음) → S10 명명(v2.2 §5-2 — 집 방문·미행·기자재 목격)'
+    prohibited_reveal_now: 패턴의 명시적 인지·발화(S10 예약), 추궁·미행·물증(S10~11 몫), 혜정 심리 해설(반의식 구간)
+    last_progressed: 67
+    next_window: S9 누적 → S10 명명
+    s8_close_note: '**S8 종료 = 평온으로 닫음.** EP49~50 눈금 추가 0(`운동을 서서 해?` `이상해.` — 웃고 지나감·두 번은 안 물음). 곡선 손상 0'
+    status: WARM_STEADY
+    related_character_ids:
+    - dana
+    - hyejeong
+    - yejin
+    author_notes:
+    - '미회수: 동그라미(EP42 후보). 신규 소약속: 수박(발표회 날)'
+    ep_note: EP67 — **★ 인지 개시.** 혜정에게는 표가 없는데 **제일 먼저 사람에게 닿는다.** 성호가 거인을 세는 동안 혜정은 **`늦어짐`을 센다** — 같은 표의 다른 열이다. 사진 한 장 + `이번 주는 계속 오늘처럼 통화하자`. **직접 질문 0 유지**(어디·왜를 안 묻는다)
+  B4-SEONGHO-SCHOOL:
+    name: 성호의 숭배와 교실의 검은 거인
+    line: B4
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: 54 대 54 — 동점으로 봄을 닫은 앙숙
+    truth: 숭배 대상이 옆자리(비대칭 유지)
+    reveal_window: 여름 학교 파손·스케일업(기획 시)
+    allowed_reveal_now: '**봄 완결(40):** 마지막 타 14미터·동점·쌍방 앙숙 완전 복귀. **재청구 2회 누적(49 = 100미터 / 50 = `그럼 언제.` 무응답) — 지불은 S9~S10**'
+    prohibited_reveal_now: 전력질주, 정체 단서, 연애 계열 전면(상시)
+    last_progressed: 67
+    next_window: 학교 파손(톡토기형·S10)
+    status: RESOLVED_SPRING_DORMANT
+    related_character_ids:
+    - seongho
+    - dana
+    ep_note: EP67 — **노트를 반에 낭독했다.** 4월 27일부터 지난 토요일까지. 성호는 거인을 세고 **혜정은 늦어짐을 센다** — 두 표가 같은 데를 가리키는데 둘 다 모른다
+  B3-SUA-POSITION:
+    name: 수아의 같은 훈련과 숨겨진 가능성
+    line: B3
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: 봄 내내 쌓은 기록 습관으로 승패를 바꾼 확인자
+    truth: 수아의 2차 계통과 약한 우회 필터
+    reveal_window: 파일럿 계열 재개 = 여름 별도 창구
+    allowed_reveal_now: '**결정적 관찰 지불 완료(38 — `언니, 큰 건 눈이 없어. 꽃이 눈이야.` 한 문장·이후 침묵).** 전투 교신 배제 정본(예외 = EP38 그 한 번). **S8 = 실무의 제도화** — 하부 점검(46·동행)·귀환 점검과 계수(49)·**기록 체계 4분할과 빈 칸 예약(50)**·**관측 표 첫 실전 기입과 빈칸 원칙 명문화(51)**·**지형 종이가 전투로 넘어감(52 — 용도 자각 0)**·**수아의 기록이 전투를 바꿈(53)**·**`남은 것` 칸 가동과 명명 거부의 이유가 대사로 성립(54 — `붙이면 그렇게 부르게 돼`)**. 기록 체계가 **판단을 담기 시작**했다. **전투 교신 0 유지(EP38 예외 보존)·파일럿 가능성 증명은 여전히 0**'
+    prohibited_reveal_now: 추가 지시, 적합성·동조·원격감각·미래 출격 증명, 채널 상주
+    last_progressed: 67
+    next_window: S11 첫 대체출격
+    status: ACTIVE
+    related_character_ids:
+    - sua
+    - youngjin
+    - dana
+    ep_note: EP67 — **표가 넷이 됐다**(군의 공개 관측표 · 수아의 간격표 · 성호의 노트 · 단아의 빈 계획표). 아무도 서로의 표를 안 봤는데 **방향이 같고 그 끝에 이 집이 있다.** 전투 교신 0 유지
+  FS-004-PIERCING-FEAR:
+    name: 가슴을 꿰뚫린다면
+    line: C1
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: 첫 실전의 공포 상상
+    truth: 여름 마지막 전투와 공명
+    reveal_window: 여름 마지막 전투
+    allowed_reveal_now: '**재점화(44): 작살형 끝의 인지** — `갈라진 것은 박히면 안 빠지라고 있는 것`·콘크리트를 무는 장면. 몸의 관통 상상은 금지(현상 관찰까지). 반복 사용 금지'
+    prohibited_reveal_now: 실제 부상 예고화
+    last_progressed: 44
+    next_window: 여름 마지막 전투(갯민숭달팽이형 관통상)
+    status: DORMANT
+    related_character_ids:
+    - dana
+  FS-S10-INTERVAL:
+    name: 간격 수열
+    line: C4
+    secret_layer: 2
+    planted_at: 62
+    surface_reading: 수아의 표에 생긴 칸 하나
+    truth: 출현 간격이 줄고 있다는 것을 아무도 아직 문장으로 못 만든다(작가용)
+    reveal_window: S10 = 숫자만 쌓기 → 뜻이 붙는 것은 EP76
+    allowed_reveal_now: '**숫자와 빈칸까지.** `몰라. 지금은 안 보여.` / 따개비 줄의 물음표(발견한 날 ≠ 온 날)는 **지우지 않는다**'
+    prohibited_reveal_now: 간격이 준다는 정리 문장, 예측, 대책 논의
+    last_progressed: 67
+    next_window: EP76 — 숫자가 뜻을 갖는다
+    status: SEEDED
+    related_character_ids:
+    - sua
+    - youngjin
+    ep_note: EP67 — **다음 칸이 비어 있다.** 수열이 5에서 멈췄다
+  FS-S10-FEVER:
+    name: 몸살 산발
+    line: C1
+    secret_layer: 3
+    planted_at: 63
+    surface_reading: 더위와 여름감기
+    truth: FS-001의 하위 계열 — 여름 중반 출격 불가로 가는 전조(작가용)
+    reveal_window: S10 = 산발과 자기 정리 → S11 꺾임
+    allowed_reveal_now: '**증상 하나와 본인의 정리까지.** 매번 **다른 이름**으로 정리된다(더위 → 여름감기). **전투와 잇지 않는다** · 가족 보고 0 · 병명 0'
+    prohibited_reveal_now: 진단, 누적 인지, 전투와의 연결, `저림`·`흐림`·`마비`
+    last_progressed: 67
+    next_window: S11 — 이름이 붙는다
+    status: SIMMERING_DENIABLE
+    related_character_ids:
+    - dana
+    - seongho
+    - sua
+    ep_note: EP67 — **정리 완성.** `이틀 자고 나으면 감기다` — **지나가면 없던 일이 된다**
+  FS-S10-RIVALRY:
+    name: 호승심
+    line: C1
+    secret_layer: 3
+    planted_at: 64
+    surface_reading: 지고는 못 사는 성격
+    truth: 깊어지는 동조심도가 통증의 원인이다(작가용·전면 봉인)
+    reveal_window: 기전 공개는 여름방학 마지막 날 이후(G0-004)
+    allowed_reveal_now: '**행동과 통증만.** 더 하고 싶어 하는 것 · 더 오래 붙어 있는 것까지'
+    prohibited_reveal_now: '`동조`·`적합`·`계통` 등 조종 기전 어휘, 인과 서술, 경고'
+    last_progressed: 66
+    next_window: S11
+    status: SEEDED
+    related_character_ids:
+    - dana
+    ep_note: EP66 — **②.** 사슬을 줄로 쓰고 **팔로 섰다**
+  FS-S10-MILITARY-RECORD:
+    name: 적히기 시작한 것
+    line: C3
+    secret_layer: 3
+    planted_at: 65
+    surface_reading: 공개망 표에 늘어난 칸 하나
+    truth: 군이 거인의 위치를 항으로 세우기 시작했다(작가용)
+    reveal_window: S10 = 칸과 좌표까지 → 판단은 가을
+    allowed_reveal_now: '**좌표와 시각만.** `판단을 적으면 그게 근거가 돼. 근거로 쓸 만한 게 아직 없어.` **영진이 그 줄을 보고 반 박자 멈추는 것까지**'
+    prohibited_reveal_now: 군의 결론, 조종자 인지, 명준-영진 대면, 명준의 가설 재발화
+    last_progressed: 67
+    next_window: 가을
+    status: ACTIVE
+    related_character_ids:
+    - myeongjun
+    - seojin
+    - youngjin
+    ep_note: EP67 — 표 넷 중 하나로 겹쳐진다. **군은 이 집을 모른다**
+  FS-S10-OPINION:
+    name: 여론의 금
+    line: B4
+    secret_layer: 1
+    planted_at: 65
+    surface_reading: 벽이 저래도 되느냐는 말
+    truth: S9까지 0이던 비난이 학교 파손으로 뒤집힌다(작가용)
+    reveal_window: S10 후반 — 학교 파손 몫
+    allowed_reveal_now: '**금까지.** 불안과 웅성거림, 값이 눈에 보이는 것(도로·창고·크레인)'
+    prohibited_reveal_now: 조직된 비난, 거인 반대 여론, 조종자 지목
+    last_progressed: 67
+    next_window: EP68~ 학교 파손
+    status: SEEDED
+    related_character_ids: []
+    ep_note: EP67 — **도로의 값.** 해안도로 한쪽 침하 — 복구가 예산 이야기로 넘어간다
+  FS-S10-LINEAGE-REDEPLOY:
+    name: 계통 재파견
+    line: C4
+    secret_layer: 4
+    planted_at: 66
+    surface_reading: 봄에 본 얼굴이 다시 왔다
+    truth: 저쪽이 실패한 개체를 고쳐 다시 보낸다(작가용)
+    reveal_window: 가을
+    allowed_reveal_now: '**얼굴과 성한 턱까지.** `같은 얼굴에 성한 턱을 달고, 하는 짓만 달라져서 왔다` — **해설 0**'
+    prohibited_reveal_now: 재파견·재분류·개수 어휘, 저쪽의 의도 설명
+    last_progressed: 66
+    next_window: 가을
+    status: SEEDED
+    related_character_ids:
+    - dana
+    - youngjin
+    ep_note: EP66 — **첫 지면.** 그때는 끌고 가려 했고 오늘은 **밑을 파서 빠뜨리려** 했다
+  FS-S10-PLAN-SHEET:
+    name: 빈 계획표
+    line: C1
+    secret_layer: 1
+    planted_at: 67
+    surface_reading: 아직 안 낸 방학 생활계획표
+    truth: 앞일을 적을 수 없는 아이(작가용)
+    reveal_window: 방학식(7/22)까지
+    allowed_reveal_now: '**빈칸과 동그라미 공백까지.** 안 낸 이유는 지면에서 설명되지 않는다'
+    prohibited_reveal_now: 심리 해설, 어른의 지적, 이유 발화
+    last_progressed: 67
+    next_window: 방학식
+    status: SEEDED
+    related_character_ids:
+    - dana
+    ep_note: EP67 — **개시.** 표 넷 중 **단아 몫만 비어 있다**
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: 첫 침공의 전투 국면
+    resolution: EP4 격파·용해
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: 첫 침공 소아크
+    resolution: EP6 아크 마감
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: 구래항 봉쇄 소아크
+    resolution: EP10 격퇴, EP12 마감
+    resolved_at: 10
+  A-S3-HIGHGROUND:
+    name: 고지선점 소아크
+    resolution: EP16 격퇴·용해, EP18 마감
+    resolved_at: 18
+  A-S4-BINDING:
+    name: 포박 소아크
+    resolution: EP23 기능 정지, EP24 마감
+    resolved_at: 24
+  A-S5-QUIET-DAYS:
+    name: 괴수 없는 날들 소아크
+    resolution: EP29 아크 마감
+    resolved_at: 29
+  A-S6-STILL-SEA:
+    name: 멈춰야 사는 바다 소아크
+    resolution: EP35 아크 마감
+    resolved_at: 35
+  A-S7-LAST-RETRIEVAL:
+    name: 봄의 마지막 회수 소아크
+    resolution: '**EP40 결착 2호·용해 2건·봄 시즌 마감**(기능정지 1호 = EP39)'
+    resolved_at: 40
+  A-S8-RECHECK-RETURN:
+    name: 재검과 재래 소아크(여름 개시)
+    resolution: '**EP50 아크 마감** — 재검 이상 없음(41) → 개수 개체 격파(45) → 첫 육탄전 격파(48) → 간격 단축 확정·조달 목록 개시(50). 종료장부 8/8'
+    resolved_at: 50
+  A-S9-SCRAP-INGENUITY:
+    name: 고철의 재간 소아크
+    resolution: '**EP61 아크 마감**(11/11 — 사용자가 12화에서 11화로 압축). 맨손 한계 3단(거리·지지·인장)이 한 물건으로 모임 → **아이언 앵커 = 가족 내부 명칭**. 종료장부 대조 완료'
+    resolved_at: 61
+retired: {}

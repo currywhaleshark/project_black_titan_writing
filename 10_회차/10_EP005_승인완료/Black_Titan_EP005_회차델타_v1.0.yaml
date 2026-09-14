@@ -1,0 +1,171 @@
+schema_version: 2
+chapter: 5
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-03"
+  approval_note: "초고 v0.1~v0.2 첨삭을 거쳐 사용자가 `좋아 승인`으로 확정."
+based_on_snapshot: "SNAP-004 v1.0"
+produces_snapshot: "SNAP-005 v1.0"
+changes:
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "적은 엄마 도현서가 바다 깊은 곳에서 발견한 것들이며, 하나가 아니고, 무엇을 원하는지는 영진도 모른다는 설명"
+        - "블랙 타이탄의 확장 위장 내력 — 30년 전 군 시제기를 영진이 독단 반출, 18년 전 현서가 찾아온 뒤 부녀가 함께 개수"
+        - "도영진·도현서 부녀가 블랙 타이탄을 준비했다는 사실"
+        - "엄마가 18년 전 여름밤, 의절을 깨고 찾아왔었다는 사실"
+      misunderstands:
+        - "확장 위장 설명(시제기·반출·개수)을 사실로 믿음"
+      closed_questions:
+        - "엄마가 왜 떠났는지 — 영진이 답하지 않음"
+        - "엄마가 지금 어디 있는지 — `지금 할 이야기가 아니다`"
+        - "아빠는 누구인지, 왜 자신인지 — 끝까지 묻지 못함"
+    evidence:
+      scenes: [1, 2]
+      source_text_anchors:
+        - "우리 괴물."
+        - "그래. 도영진과 도현서가. 우리 부녀가 준비한 거다."
+
+  - category: "emotional"
+    field_path: "characters.dana.emotional"
+    operation: "merge"
+    after:
+      pressures:
+        - "분노의 방향 상실 — 화낼 대상이 할아버지에서 `그 전부`로 흩어짐"
+        - "살려 준 준비에 화를 내는 모순의 자각"
+        - "게시판 반응 앞에서 무섭다·좋다가 구분되지 않는 심장 뜀"
+    evidence:
+      scenes: [2, 3]
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "단아와 동일한 설명 전체(적의 출처, 부녀의 준비)"
+        - "엄마에게 알릴 방법이 없다는 영진의 대답"
+    evidence:
+      scene: 2
+      source_text_anchor: "엄마는 알아요? 어제 언니가 탄 거."
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "merge"
+    after:
+      - "약속한 설명을 이행함 — 단, 위장 프레임의 확장판으로. 공개 상한(부녀가 준비했다)을 지킴"
+      - "기체 정비 완료(어깨 긁힘 연마), 비축 부품 소모를 장부에 기록"
+      - "재발을 확신함 — `한 번으로 끝날 리가 없지`"
+    evidence:
+      scenes: [2, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "merge"
+    after:
+      stage: "STRAINED_BY_REVEALED_DECEPTION"
+      trust_level: 3
+      current_issue: "약속된 설명은 이뤄졌으나 단아에게 `전부가 아니다`라는 감각이 남음. 화의 방향을 잃은 채 보류"
+    evidence:
+      scene: 2
+
+  - category: "character_intro"
+    field_path: "characters.hyunseo"
+    operation: "introduce"
+    after:
+      display_name: "도현서"
+      role: "단아·수아의 어머니, 영진의 딸. 회상(18년 전) 한정 첫 등장"
+      state: "오래전에 떠남 — 자매가 아는 것은 그뿐. 현재 소재·소속은 독자에게도 봉인"
+      shown: "의절을 깨고 찾아온 밤, 떨리는 손과 반듯한 문장, 95퍼센트의 확신, `우리도, 우리 괴물을 만들어야 해요`"
+    evidence:
+      scene: 1
+
+  - category: "character_intro"
+    field_path: "characters.seojin"
+    operation: "introduce"
+    after:
+      display_name: "윤서진"
+      role: "남방사 전속부관, 30대 초반 여성 대위(G0-005). 첫 등장"
+      state: "명령과 혼잣말을 가려 태블릿에 기록하는 실무자"
+    evidence:
+      scene: 4
+
+  - category: "external"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "수거물 전무 확정 — 사체 용해 소실 공식 기록, 수질 채수는 유의미 검출 없음 예상"
+      - "검은 거인을 `소속 불명 전략무력`으로 상신, 출격 기록(출현·위치·이탈·수중 체류) 수집 개시"
+      - "추적 수단 부재 인정 — 소나망 절반 상실 상태"
+    evidence:
+      scene: 4
+
+  - category: "living_condition"
+    field_path: "living_conditions"
+    operation: "merge"
+    after:
+      family:
+        - "단아 결석 1일 — 5년 무지각 개근 종료. 몸살은 첫 실전 피로 프레임"
+        - "수리점 비축 부품 소모 발생 — 첫 정비 비용"
+      city:
+        - "방재벽 점검·통제 해제 진행, 목격 영상 제보 접수 중"
+        - "언론 관심은 정오 뉴스 다섯 번째 꼭지 수준으로 안착, 게시판 목격담은 증가"
+    evidence:
+      scenes: [3]
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "advance"
+    after:
+      chapter: 5
+      advanced:
+        - "C2-TITAN-ORIGIN"
+        - "A-S1-FIRST-INVASION"
+    evidence:
+      scenes: [1, 2]
+
+foreshadow_updates:
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 4
+        after: 5
+      - field: "surface_reading"
+        before: "괴수를 맨손으로 격파하고 사라진 정체불명의 검은 거인 / 가족에게는 영진이 빼돌린 군 시제기"
+        after: "가족 내부: 30년 전 시제기를 영진이 반출, 18년 전부터 부녀가 개수한 기체. 도현서의 예견이 시작점"
+      - field: "allowed_reveal_now"
+        before: "격파력·주황빛 안광·무등록의 공개 관측. 가족 내부에는 EP5에서 위장 프레임의 확장 설명 예정"
+        after: "부녀가 준비했다는 사실과 18년 전 방문의 회상까지. 연구 내용·생체 기원·현서의 소재는 봉인"
+    next_window: "S2 이후 생체성의 제한 복선, 실제 기원은 가을"
+  - id: "FS-001-DANA-VISION"
+    operation: "BASELINE"
+    note: "몸살이 첫 실전의 정상 피로로 서술·수용됨 — 이후 이상 신호와 비교할 기준선 확립. last_progressed 유지(2)"
+  - id: "A-S1-FIRST-INVASION"
+    operation: "ADVANCE"
+    note: "여파 국면 진행 — 비용 정산·설명 이행·군 기록. 아크 마감은 EP6"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "문자 왕복은 유예 온도 유지. 단아가 `혜정답지 않다`를 스치듯 감지한 것만 축적"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "생체 기원·신경기원·VR 책임·왼팔·고명준 인연 봉인 유지"
+  - "현서의 현재 소재·소속(미국·IRONSHORE·루시) 봉인 유지"
+  - "연구 명사(인큐베이터·엑소포밍) 미노출"
+  - "몸살은 신경손상 단서로 승격되지 않음"
+  - "군의 추적·수사 미개시"
+
+provenance:
+  chapter_text: "Black_Titan_EP005_5화_잔해와계산서_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP005_회차브리프_v0.2_GateC승인.md"
+  content_lock: "Black_Titan_EP005_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP005_Gate-D_검증서_v1.0.md"
+notes:
+  - "회상=설명 구조로 현서가 선행 등장했다. 본편 등장은 여전히 여름 이후다."
+  - "설명은 이행됐지만 종결이 아니다 — 닫힌 질문 목록이 가을 공개의 창구로 남는다."

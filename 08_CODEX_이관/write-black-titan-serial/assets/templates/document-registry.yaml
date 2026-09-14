@@ -1,0 +1,21 @@
+schema_version: 1
+updated_at: null
+documents:
+  DOCUMENT_ID:
+    title: ""
+    current_version: ""
+    status: "DRAFT"
+    authority_rank: 0
+    source: ""
+    approved_at: null
+gate_0_requests:
+  G0-000:
+    change_summary: ""
+    affected_facts: []
+    affected_artifacts:
+      - document_id: ""
+        action: "KEEP"
+        reason: ""
+    decision: "PENDING"
+    decided_at: null
+retcon_log: {}

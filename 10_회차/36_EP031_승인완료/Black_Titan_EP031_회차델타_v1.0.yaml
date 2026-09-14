@@ -1,0 +1,105 @@
+schema_version: 2
+chapter: 31
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-10"
+  approval_note: "v0.1 → 구조 첨삭 2회(정지 통찰 제거·결착 물리 재정정) → 기록 정합(v0.4) → `좋아`. 첫 탈출/자발 퇴각."
+based_on_snapshot: "SNAP-030 v1.0"
+produces_snapshot: "SNAP-031 v1.0"
+changes:
+  - category: "positional"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**탈출 완료·무손상 귀환:** 발목 장갑 멀쩡(경화 잔해 일부 잔존 — 정 제거 진행, 나머지 내일). 위기 종료"
+      - "탈출 물리 정본: 물린 채 틈새에 팔 끼우기 → 벌리기 실패 → 턱뿌리를 관 테두리에 걸쳐 팔 힘+다리 무게 짓누르기 → **개체 왼쪽 턱 뿌리 파손**"
+    evidence:
+      scene: [3, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**갈고리의 셈:** 정면으로 당기면 더 걸린다(빼는 방향 = 걸리는 방향). 지렛대는 힘이 아니라 자리. 물린 것도 하중으로 쓸 수 있다"
+      - "**첫 자발 퇴각 목격:** 상대가 살아서 제 발로 갔다 — `이건 5승인가. 무승부인가` 미결(4월의 `멎었다`와 다른 끝)"
+      - "`부수려는 게 아니다`의 소름(속말 1회 — 목적 미상 유지)"
+    evidence:
+      scene: [2, 3, 4]
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "**쟁반 목격(FS-003 인접):** 회수한 턱 끝·점액 덩어리가 갈라지며 — 점액 속 콘크리트 가루가 실 모양 조직을 따라 스스로 정렬하는 것을 봄(해석·발화 0)"
+      - "교신 문법: `당기지 마라`·`저쪽도 지금 계획대로가 아니다`·`들어가지 마라`·`철수하자`"
+    evidence:
+      scene: [1, 2, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "advance"
+    after:
+      - "**확인자 첫 실전 이행:** 귀환 확인 → 수치 전사(항목 짚는 손). `그건 항목에 없네` — 장부 여백에 작은 글씨 메모(다리 후들거림 — 항목 밖 기록의 시작)"
+    evidence:
+      scene: 5
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 30
+        after: 31
+    note: "**첫 자발 퇴각 완료.** 동일 개체 표지 성립(왼쪽 턱 파손 — EP34 비대칭 재생흔 근거). 다음: EP34~35 개선 재접촉(잔해 사전 살포·정적 결착). CRITICAL → SIMMERING"
+  - id: "FS-003-BIO-SEEP"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 28
+        after: 31
+    note: "**인접 창구 사용(쟁반 정렬 — 영진 목격·해설 0).** 기체 얼룩(본체)과 지면 연결 없음 유지. 다음: EP33 후처리·확정은 가을"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 28
+        after: 31
+    note: "확인자 첫 실전 이행(전사+여백 메모). 다음: EP33 가족 후처리 전면, EP35 잔류 누락 발견"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "이 화 미등장(전투 연속). 다음: **EP32 「아프면 아프다고」 — 잠금 문면: `늦으면 늦는다고 했으니까 됐어. 그런데 아프면 아프다고도 해.` / 훅: 지도 건네며 `아픈 건 혼자 정하지 마.`**"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "다음: EP32 안전지도(계단길 시비·`발보다 입이 먼저 도착` 맞받기)"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "고전 원인 미사용 이행(개요 고정 준수)"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "C1·출력 부족 0, 개체 전신·내부 판단·목적 명사 0, 심해 추격·수사극 0"
+  - "혜정·성호·학교 미등장(생활선 EP32 예약), 어머니·서랍 사진 0"
+  - "정지 통찰(멈추면 덜 굳음) 0 — EP34~35 예약 보존"
+
+canon_additions:
+  - "시간: EP31 = 5/12 목 밤 연속(전투)~심야 귀환"
+  - "**동일 개체 표지 정본: 왼쪽 턱 뿌리 파손**(EP34 비대칭 재생흔의 근거)"
+  - "**실물 증거 소재 정본(첨삭 확정): 부러진 턱 끝·점액 덩어리 = 영진의 쟁반(격납고)에만 존재. 군 = 무인기 판독 기록뿐, 실물 미확보**"
+  - "군 기록 문면: `검은 거인, 자력 이탈 확인.`(한 줄 — 붙일 말이 있어도 붙이지 않는 문법)"
+  - "점액 잔류물 성질(지면 노출): 마른 뒤 갈라짐, 내부 실 조직, 가루 자기 정렬(원인 미공개)"
+  - "수아 확인자 실무 확장: 항목 밖 관찰의 여백 메모(작은 글씨)"
+provenance:
+  chapter_text: "Black_Titan_EP031_31화_부러진턱_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP031_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP031_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP031_Gate-D_검증서_v1.0.md"
+notes:
+  - "S6 2/6 완료. 다음 **EP32 「아프면 아프다고」(표준 화 — 생활 간주 1/관계 시험).** 시점: 5/13 금 예상(정상수업 재개)"
+  - "EP32 고정선(개요): 안전지도 마무리(계단길 시비→경사로 수정), B1 문면 2개(본문+훅), 소문 = `괴수가 거인을 보고 달아났다` 승리담 — 단아만 위화감. 금지: 출결 대조·미행·연애 계열·새 C1·전투"
+  - "**2차전 예약 보존 지속: 정지 통찰(EP34~35) — EP32~33에서도 금지**"

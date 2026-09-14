@@ -1,0 +1,127 @@
+schema_version: 2
+chapter: 18
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-05"
+  approval_note: "초고 v0.1 무첨삭 승인(`이번에 좋다. 바로 승인`) + 요일 교열 1건. S3 마감 화."
+based_on_snapshot: "SNAP-017 v1.0"
+produces_snapshot: "SNAP-018 v1.0"
+changes:
+  - category: "physical"
+    field_path: "characters.dana.treatment"
+    operation: "merge"
+    after:
+      - "**안과 진료 완료(토 4/23):** 근시·초점 조절 진행 소견 — 성장기·피로·오래된 처방으로 설명 가능, 위험 병변 없음"
+      - "**같은 둥근 테, 새 렌즈**(토 저녁 수령). 월 4/25 첫 등교 — 도수 바뀐 세상의 실감(계단 깊이·당겨지는 글자)"
+      - "**재검 6월 확정** — 수첩 네 번째 기입(`안과 재검. 6월.`)"
+    evidence:
+      scene: [1, 3, 4]
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "advance"
+    after:
+      - "**첫 책임 진술(거짓 프레임 내):** `보정 시험이 무리를 줬을 수 있다. 내 계산이 짧았다.` — `미안` 없이 2문장. 단아는 추궁 없이 수용(`다음엔 계산 길게 해`/`그러마`)"
+      - "보류 관계의 표면 미세 해빙 — 맞아지는 보폭(해소 아님). `모른다`의 산에서 나온 첫 `내 탓`"
+      - "병원 동행 — 보호자 칸 `조부`의 공식성(서류 물성)"
+    evidence:
+      scene: [1, 2]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "확인 1교환(`이제 칠판 보여?`→`잘 보여`→`그럼 됐어`) 후 준비표 전환 — **물을 것과 묻지 않을 것의 경계를 자로 잰 듯 지키는 국면**(경계선 위에서 전보다 편함)"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "characters.dana.state"
+    operation: "merge"
+    after:
+      - "S3 학습의 언어화: 시간표는 지켜도 늘어난다 / 이긴 다음 날에도 지켜야 할 것이 남는다 / 칸은 만들 생각이 없어도 생긴다"
+      - "수첩을 덮는 손은 4월 초와 같고, 수첩은 한 칸 무거움(수미상관)"
+    evidence:
+      scene: 4
+
+  - category: "external"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**포박형 예고(훅):** 지난번보다 큰 막 — 마디 없는 유연한 팔들(여덟 이상), 움직이는 검은 모형을 따라가 **허리·팔다리를 한 번에 감싸고 정지**"
+      - "독자 획득 상한: 다음 개체가 검은 거인을 붙잡으려 한다는 것까지(회수/제거 구분·시기·명명 0)"
+    evidence:
+      scene: 5
+
+  - category: "living_condition"
+    field_path: "living_conditions"
+    operation: "merge"
+    after:
+      - "체육대회 D-2(수 4/27). 응원 도구 완성품 사물함에, 계주 작전표 3차 최종판"
+      - "수아 방과후 정상화 — 외워서 켜는 버릇 잔존(조명 복귀 후에도)"
+      - "장기 항목: 조달 가공 잔량, 열교환탑 지지대(여름까지)"
+    evidence:
+      scene: [3, 4]
+
+foreshadow_updates:
+  - id: "FS-001-DANA-VISION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 17
+        after: 18
+    note: "**S3분 완결:** 도수 변경·재검 6월. 표면 = 성장기 근시·피로·오래된 처방(부인 가능선 유지). 작가용 분리 유지 — EP14 공명과 도수(VR·반복 접속)는 별도 선, 병합 금지 준수됨. 다음 명시 진전 S6(순간 흐림·손 저림)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 9
+        after: 18
+    note: "위장 프레임 내 진전 — 영진의 책임 진술(가족용 설명의 유지·강화). 진실 공개 수위 변동 0. 다음 직접 진전 후반 봄(FS-003 창구)"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 16
+        after: 18
+    note: "포박형 동작 예고 — 훈련 완료 상태의 정지로 마감. 다음 S4 행동(문어형)"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 17
+        after: 18
+    note: "경계 확립 — 확인과 전환의 문법 완성. 다음 S4 결석·피로 걱정. 미회수: 동그라미"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "배경(작전표 3차·구간 콩트). 다음 S4 첫 개인 대가"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "생활 정상화만. 다음 S5"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "과적재 금지 준수 — 군 미등장"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "객관적 신경손상 진단 0, 타이탄 생체성 0, 수아 적합성 0"
+  - "VR 실제 목적 0, EP14 흐림 병합 0"
+  - "`미안` 0, C3 0, 군 0, `인터넷` 0"
+
+canon_additions:
+  - "안과 재검 = 6월(두 달 뒤)"
+  - "요일 확정 연쇄: 안과 토 4/23, 새 렌즈 등교 월 4/25, 체육대회 수 4/27(D-2)"
+  - "조종석 기록·수아의 외워 켜기 등 생활 버릇의 잔존 명시"
+
+provenance:
+  chapter_text: "Black_Titan_EP018_18화_도수_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP018_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP018_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP018_Gate-D_검증서_v1.0.md"
+notes:
+  - "**S3 「영웅의 시간표」 마감 화.** Gate E 동반: S3 종료장부 대조서 v1.0 + 아크캡슐 S3 v1.0"
+  - "다음: S4(EP19~24) — S4 화별개요 v3.5 GATE_B_PASS 기준, EP19 브리프부터. 예고 축: 문어형 포박전, 성호 첫 개인 대가(부상·깁스), B1 결석·피로 걱정, 체육대회"

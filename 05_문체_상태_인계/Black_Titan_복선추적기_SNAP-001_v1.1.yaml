@@ -1,0 +1,48 @@
+schema_version: 1
+as_of_episode: 1
+last_updated_by: "G0-006 EP1·2 VR 공개수위·수면학습 정정"
+active:
+  FS-001-DANA-VISION:
+    name: "지난가을 시력 저하·5개월 전 VR·짧은 두통"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "성장기 시력 변화, 화면 피로, 이른 더위, 멀미성 컨디션 난조"
+    truth: "단아의 1차 신경계통과 2차 거체 접속 부담, 첫 계통 탐색파 공명"
+    reveal_window: "단계적 누적, 원인 정답은 가을"
+    allowed_reveal_now: "EP1은 지난가을 시력 저하와 짧고 회복된 두통만 공개. EP2에서 5개월 전 VR을 처음 공개하되 안경을 밀어 올리는 행동 외에 시력과 직접 연결하지 않음"
+    prohibited_reveal_now: "계통·탐색파·상쇄·면역거부·생체 기원 설명"
+    last_progressed: 1
+    next_window: "EP2 시기 병치, 이후 EP5 전투 후 몸살 기준선"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin"]
+  FS-C2-TITAN-ORIGIN:
+    name: "수리점 지하의 거인과 영진의 비밀"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "영진이 수리점 아래 오래된 군용 시설을 숨김"
+    truth: "현서와 영진이 배양한 2차 거체 블랙 타이탄과 두 자매의 신경기원"
+    reveal_window: "EP2 가족용 위장 설명, 실제 기원은 가을"
+    allowed_reveal_now: "방폭문과 비밀 통로의 존재"
+    prohibited_reveal_now: "생체 거인·현서 연구·두 자매의 출생·우회 신경동조"
+    last_progressed: 1
+    next_window: "EP2 블랙 타이탄 공개와 거짓 출처"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "괴수의 실제 탐색·회수 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "연구단지를 파괴하려는 거대 침략자"
+    truth: "첫 거체 계통 신호를 탐색하고 회수하려는 바닷가재형 개체"
+    reveal_window: "행동 복선 누적, EP12 제한 기록"
+    allowed_reveal_now: "괴수가 연구단지 방향으로 이동함"
+    prohibited_reveal_now: "단아가 실제 신호원임, 인큐베이터·계통·회수 명령"
+    last_progressed: 1
+    next_window: "EP2~4 이동 진로와 전투 행동"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin"]
+resolved: {}
+retired: {}

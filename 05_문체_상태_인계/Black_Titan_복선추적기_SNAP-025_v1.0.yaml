@@ -1,0 +1,156 @@
+schema_version: 1
+as_of_episode: 25
+last_updated_by: "EP025 「어린이날」 v1.0 Gate D 승인·상태 반영 (S5 도입 — B3 첫 인정·약속 훅·수아 톤 가드 신설)"
+active:
+  FS-001-DANA-VISION:
+    name: "지난가을 시력 저하·5개월 전 VR·짧은 두통"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "새 안경의 평범한 나날"
+    truth: "1차 신경계통과 2차 거체 접속 부담"
+    reveal_window: "재검 6월(생활), 명시 진전 S6"
+    allowed_reveal_now: "S5 침묵 유지"
+    prohibited_reveal_now: "순간 흐림·손 저림·실신·객관 진단, 병합 해석"
+    last_progressed: 24
+    next_window: "S6"
+    status: "ACTIVE_BASELINE"
+    related_character_ids: ["dana", "youngjin"]
+  FS-C2-TITAN-ORIGIN:
+    name: "거인의 기원과 부녀의 준비"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "가족 내부: 시제기 반출+부녀 개수. 외부: 무등록 검은 거인"
+    truth: "현서·영진이 배양한 2차 거체와 두 자매의 신경기원"
+    reveal_window: "S5 FS-003 창구, 진실은 가을"
+    allowed_reveal_now: "위장 유지. **EP26 잠금: 인양 부품 = 소모품(무장·앵커 아님), 단아 공개 상한 = `가게 짐`, 기태 = 내부 고유명·용도 모름**"
+    prohibited_reveal_now: "생체·배양·우회동조·VR 실목적·현서의 현재"
+    last_progressed: 18
+    next_window: "S5(FS-003 경유)"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin", "hyunseo"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "그것들의 실제 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "며칠째 조용한 경보"
+    truth: "인큐베이터의 다음 수 = S6 회수형 2연전"
+    reveal_window: "S6"
+    allowed_reveal_now: "공백 배경만 — 이유 서술 금지(EP25 이행: `조용해서 살 만하다` 절제)"
+    prohibited_reveal_now: "금지 문구 일체, 다음 개체 예고"
+    last_progressed: 23
+    next_window: "S6"
+    status: "SIMMERING"
+    related_character_ids: ["dana", "youngjin", "myeongjun"]
+  FS-003-BIO-SEEP:
+    name: "덜 닦인 얼룩"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: "정비 중 덜 닦인 얼룩"
+    truth: "기체 생체 순환액"
+    reveal_window: "S5 창구 활성(정비 장면), 확정은 가을"
+    allowed_reveal_now: "사실 관찰만 — EP26 부품 정비 국면이 후보 창구"
+    prohibited_reveal_now: "출처 암시 어휘, 명명·해설, 영진 심리"
+    last_progressed: 9
+    next_window: "S5"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["youngjin"]
+  C3-MYEONGJUN-YOUNGJIN:
+    name: "서랍 속 동반 사진 (+어머니 부재 라인)"
+    line: "C3"
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: "지휘관 서랍의 사진 / 묻지 않고 넘겨 온 가족 이야기"
+    truth: "군 실험장 인연·현서의 부재(전면 봉인)"
+    reveal_window: "S5 인지 1컷 소화 권장, 전모는 가을"
+    allowed_reveal_now: "**EP26 훅 잠금: 어버이날 활동지(`내가 고마운 어른에게 묻고 싶은 것`) — 첫 줄 `할아버지`, 두 번째 칸에서 연필 멈춤까지**(질문 내용·어머니 명시 0)"
+    prohibited_reveal_now: "장소·시기·사고·왼팔·빚·기체 연결, 현서 정보"
+    last_progressed: 12
+    next_window: "EP26 훅 → S5 인지 1컷"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["myeongjun", "youngjin", "hyunseo", "dana"]
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 유예와 부채"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "`늦으면 늦는다고는 해` — 연락을 요구하는 친구"
+    truth: "오독 위의 부채 — 폭로가 아니라 무사 확인을 원함"
+    reveal_window: "EP26 규칙 성립, 물증은 여름"
+    allowed_reveal_now: "**EP26 잠금:** 늦는 이유 안 캐물음·수리점 안 따라감 / `못 오는 것보다 아무 말 없이 기다리게 하는 게 싫다` / 단아 `가게 짐 받고 20분 늦는다`(구체 시간 — `가게 짐`까지만 공개) / 예진 = 먹을 것으로 평범한 오후 복원"
+    prohibited_reveal_now: "최후통첩·폭발·미행·수리점 방문(개요 잠금), 추궁"
+    last_progressed: 25
+    next_window: "EP26 → EP29"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+    author_notes:
+      - "미회수: 두 번째 봉지의 동그라미(여름)"
+  B4-SEONGHO-SCHOOL:
+    name: "성호의 숭배와 교실의 검은 거인"
+    line: "B4"
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: "목발을 세워 놓고 남의 기록을 감점하는 앙숙"
+    truth: "숭배 대상이 옆자리(비대칭 유지)"
+    reveal_window: "S5 기본값, 여름 스케일업"
+    allowed_reveal_now: "**EP26 잠금: 체육 기록 멋대로 감점 → 단아 기록표 탈환·수치 정정 → `깁스만 풀리면 전부 다시 잰다` — 완전한 평소 온도.** 배려는 반 전체 동선 안에만"
+    prohibited_reveal_now: "정체 단서, 연애 암시(잠금), 죄책감 재부상 장문"
+    last_progressed: 24
+    next_window: "EP26 → EP29"
+    status: "WARM_STEADY"
+    related_character_ids: ["seongho", "dana"]
+    author_notes:
+      - "계주 재대결 4차 유예 유지. 깁스 첫 줄 = 미지불 소품"
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "접수표를 위임받은 3학년 — 이번엔 품목표"
+    truth: "수아의 2차 계통과 약한 우회 필터"
+    reveal_window: "EP28 호기심, 결정적 조언 S7"
+    allowed_reveal_now: "**EP25 이행(첫 인정).** EP26: 품목표 확인 실무까지(연락선 부품 대조). 적합성 0"
+    prohibited_reveal_now: "신경기원·적합성·조종 가능성 언급"
+    last_progressed: 25
+    next_window: "EP26 실무 → EP28"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana", "harang"]
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전의 공포 상상"
+    truth: "여름 마지막 전투와 공명"
+    reveal_window: "여름 마지막 전투"
+    allowed_reveal_now: "반복 사용 금지"
+    prohibited_reveal_now: "실제 부상 예고화"
+    last_progressed: 4
+    next_window: "여름"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4 격파·용해"
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: "첫 침공 소아크"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: "구래항 봉쇄 소아크"
+    resolution: "EP10 격퇴, EP12 마감"
+    resolved_at: 10
+  A-S3-HIGHGROUND:
+    name: "고지선점 소아크"
+    resolution: "EP16 격퇴·용해, EP18 마감"
+    resolved_at: 18
+  A-S4-BINDING:
+    name: "포박 소아크"
+    resolution: "EP23 기능 정지, EP24 마감"
+    resolved_at: 24
+retired: {}

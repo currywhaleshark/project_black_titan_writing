@@ -1,0 +1,155 @@
+schema_version: 2
+chapter: 59
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-14"
+  approval_note: "브리프 v0.2 → Level 6 v1.1 → 초고 → 코멘트 2건(**적 행동 명료화**·EP9 회상) → `좋아`. **S9 9/11 · ⚠ 교전 미종결.**"
+based_on_snapshot: "SNAP-058 v1.0"
+produces_snapshot: "SNAP-059 v1.0"
+notes_on_shape:
+  - "**⚠ 이 델타는 종결된 사건의 기록이 아니다.** 회차가 교전 도중에 끊기므로 상태 변화의 상당수가 **미확정·진행 중**이다. EP60이 시간 경과 0으로 이어받아 종결한다"
+changes:
+  - category: "situational"
+    field_path: "engagement.open"
+    operation: "create"
+    after:
+      - "**⚠ 교전 미종결.** 퇴각도 격파도 없다"
+      - "**진행 상태:** 저것은 도시 쪽으로 곧게 가는 중 / 거리 계속 벌어짐 / 이쪽은 **사슬 반쯤 나간 채 닻을 끌며** 쫓는 중"
+      - "**기체:** 관통 0·대파 0. **스친 자국 누적** — 어깨·허리·왼쪽 종아리"
+      - "**장비:** 통 밴드 **덜 조여짐**(급조 장착), 등판이 어제보다 낮게 앉음"
+      - "**위치:** 외곽 수몰 시가지. 앞은 아직 물, 그 너머가 방재벽"
+    evidence:
+      scene: [2, 4, 5, 6]
+
+  - category: "informational"
+    field_path: "creatures.isopod"
+    operation: "create"
+    after:
+      - "**★ 첫 지면 노출.** 마디 갑각·다리 여럿·길고 낮다. **기체 절반 — 사람 기준으로는 5층짜리가 옆으로 누워 달리는 크기**"
+      - "**★ 질량 있는 속도:** 지나가면 물이 갈라지고 **한참 뒤에 파도가 밀려온다.** 급선회하면 **물이 벽처럼 서고, 드러난 바닥이 활처럼 파이고, 소리가 뒤늦게 터진다.** `가벼워서 빠른 게 아니었다`"
+      - "**★ 행동 패턴:** 일대를 안 떠나고 **지나갔다가 크게 돌아 다시 온다.** 그래서 앞을 막을 수는 있다"
+      - "**★ 싸움 방식:** 정면으로 안 온다. **틀어서 정면을 피하고 옆으로 붙어 치고 나간다.** 스치면서 긁는 것이 공격이다. **멈추면 지는 걸 저것도 안다**"
+      - "**★ 여섯 번째에 원을 안 닫고 떠났다** — 못 잡을 상대로 판단한 것. **적이 계산해서 물러난 첫 사례**"
+      - "**다리가 여럿이라 걸음을 안 고른다.** 부서진 걸 밟으면 부수고 지나간다"
+      - "지면 지칭 = `빠른 놈`·`작은 것`. **작가용 명칭 0**"
+    evidence:
+      scene: [3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**★ 미완성을 들고 나갔다.** 급조 장착·**덜 조인 채로**"
+      - "**★ 여섯 번 막아서고 여섯 번 다 지나갔다.** 세 발 전부 빈 물 — **2단 발사의 정적 구간에 저것이 이미 딴 데 있다**"
+      - "**★ 소리 순서가 뒤집혔다** — `본 게 늘 지나간 것이었다`"
+      - "**★ 밀린 적도 크게 맞은 적도 없는데 자국만 늘었다.** `힘이 남았는데 쓸 데가 없었다`"
+      - "**갯벌의 역전을 알아봤다** — 봄에는 하중이 한 점에 모이는 게 이겼는데 **단단한 데서는 많은 게 이긴다**"
+      - "**EP9 회상:** 물 빠진 옛 도로·웅덩이·놀라 날아오르던 새. **오늘은 새가 없다**(이유 불명)"
+      - "**끌고 가는 쪽을 골랐다** — `둘 다 나쁜데 그중에 덜 나쁜 걸 고르는 거였다`"
+      - "※ **새 증상 0** / 원인 정리 0(EP60 몫)"
+    evidence:
+      scene: [2, 3, 4, 5, 6]
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "**관측 지원만.** `이백` → `삼백` → `오백. 더 벌어진다`. **전술 0**"
+      - "**판단 한 줄:** `맨손으로 잡을 수 있는 놈이면 놓고 가`"
+      - "**마지막에 교신이 조용해졌다** — 할 말이 없었다"
+    evidence:
+      scene: [2, 5, 6]
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "부표 시각 세 개와 물때(**아홉 시까지 빠지고 그다음엔 찬다**). **전투 교신 0**"
+    evidence:
+      scene: 2
+
+  - category: "situational"
+    field_path: "living_conditions.observation"
+    operation: "advance"
+    after:
+      - "**★ 부표가 순서를 반대로 잡았다** — 2번 → 5번 → 7번. **안쪽이 먼저 튀면 들어와서 지나간 것.** `들어와서 지나갔다는 거지`"
+      - "**부표 간격이 봄 것들보다 훨씬 짧다.** 3월에는 그 사이에 준비를 했다"
+      - "**대책 0**"
+    evidence:
+      scene: 1
+
+  - category: "situational"
+    field_path: "living_conditions.city"
+    operation: "no_change"
+    after:
+      - "**목격 0.** 새벽 다섯 시·외곽. 배도 안 나갔고 시장도 안 열었다. **여론 변화 0**"
+    evidence:
+      scene: 2
+
+foreshadow_updates:
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 58
+        after: 59
+    note: "**시제품 실전 투입.** 세 발 전부 빈 물. 형태·조작만 열린 상태 유지 — **재질·유래 0·이름 0**"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 56
+        after: 59
+    note: "**2목적 이행의 새 형태.** 막아서면 **틀어서 옆으로 치고 나간다**(공격은 한다·붙어서는 안 한다). 그리고 **여섯 번째에 판단하고 떠났다** — 이쪽을 못 잡을 상대로 계산한 첫 사례"
+  - id: "C4-OBSERVATION-GAP"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 55
+        after: 59
+    note: "**부표가 순서를 반대로 잡았다**(2→5→7). 들어와서 지나간 뒤에야 알았다. 대책 0"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "성호 미등장. **100미터는 여전히 미결.** ※ 학교 결석은 **지면에 안 나왔다** — 브리프의 `학교는 못 간다 한 줄`이 초고에서 빠졌고 그대로 승인됐다. EP61에서 쓸 때 **6/28 하루**로만 쓴다"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "출격 전 기록만"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "새 증상 0"
+  - id: "FS-C5-WHITE-SENTINEL"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "**`앵커`·`클로`·`로켓`·`추진`·`사출기`·`점화`·`노즐` 0** / 반입구 0 / 배양·소재 0 / 현서 0 / 센티널 0 / 새 증상 0 / **작가용 개체 명칭 0** / 목격·여론 0 / **퇴각 0 · 결의 0 · 원인 정리 0**"
+
+canon_additions:
+  - "시간: EP59 = 6/28(화) 05시 전 ~ 아침. **EP58에서 여섯 시간쯤**"
+  - "**★ 등각류형 행동 정본:** 돌아온다 / 정면을 피하고 옆으로 치고 나간다 / 멈추면 지는 걸 안다 / **못 잡을 상대로 판단되면 떠난다**"
+  - "**★ 질량 있는 속도의 서술 규격:** 지나가면 뒤늦은 파도 / 급선회 = 물이 벽처럼 섬 + 바닥이 활처럼 파임 + 뒤늦은 소리"
+  - "**★ 부표가 순서를 반대로 잡는다** — 안쪽이 먼저 튀면 들어와서 지나간 것"
+  - "**★ 갯벌의 역전:** 단단한 바닥에서는 **많은 다리가 이긴다**(EP4의 반대면)"
+  - "**★ 미완결 회차의 상태 기록 방식:** SNAP에 `engagement_open` 블록 — 적 위치·기체 자국·장비 상태를 진행형으로 남긴다"
+  - "**도구:** `check_draft`에 `집게형` 추가 / **머리말 표를 본문 검사에서 제외**(`strip_front_matter`) — 분량 측정이 약 230자 정확해짐"
+  - "격언: `오는 게 아니라 벌써 왔어` / `눈으로 따라가는데 눈이 뒤에 있었다` / `본 게 늘 지나간 것이었다` / `가벼워서 빠른 게 아니었다` / `값을 치르는 쪽이 값을 안 치르는 쪽보다 빨랐다` / `힘이 남았는데 쓸 데가 없었다` / `보이는데 못 간다` / `둘 다 나쁜데 그중에 덜 나쁜 걸 고르는 거였다`"
+provenance:
+  chapter_text: "Black_Titan_EP059_59화_보이지않는다_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP059_회차브리프_v0.2.md"
+  content_lock: "Black_Titan_EP059_Level6_내용잠금-문체검색_v1.1.md"
+  validation: "Black_Titan_EP059_Gate-D_검증서_v1.0.md"
+  arc_outline: "02_여름편_기획/Black_Titan_S9_EP051-061_화별개요_v1.12_승인.md"
+  rig_spec: "21_시각바이블/기체시트/BT-01_black_titan/BT-01A_anchor_rig_spec_v0.3.md"
+notes:
+  - "**S9 9/11 완료.** 다음 = **EP60 「길목」 — 같은 교전을 시간 경과 0으로 이어받는다**"
+  - "**EP60 잠금 예고:** 코칭(`무기를 쏜다고 생각하지 마라. 왼팔이 길어진다고 생각해`)이 **교신으로** 온다 → 쫓지 않고 **건물 사이 길목에 먼저 가서** 닻을 걸어 둔다 → 걸리고 → 버티고 → 당긴다 → **세 부족함이 한 동작에** → **신체 낯섦**(이겼는데 안 웃는다) → 훅 `아직 이름이 없다`"
+  - "**★ EP60 물리 근거:** 좁은 데서는 **꺾는 값이 더 커진다.** 건물 사이에서는 직선밖에 못 간다"
+  - "**미수령 잔여:** 수아 공책 · 서랍 사진 · **성호 100미터**(3차 청구 미결) · 가위값"

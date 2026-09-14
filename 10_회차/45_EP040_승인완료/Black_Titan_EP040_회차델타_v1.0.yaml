@@ -1,0 +1,126 @@
+schema_version: 2
+chapter: 40
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-11"
+  approval_note: "v0.1 → 지시 2건(v0.2 짝 필기·훅 삭제) → `좋아`. S7 5/5 — 봄 시즌 마감(시즌 1 종료)."
+based_on_snapshot: "SNAP-039 v1.0"
+produces_snapshot: "SNAP-040 v1.0"
+changes:
+  - category: "situational"
+    field_path: "external_conditions.enemy"
+    operation: "resolve"
+    after:
+      - "**결착 2호 완료:** 주기 관찰(2회) → 손가락 삽입 → 배지기 뒤집기 → 배면 노출 → 운반막 양방향 벌리기 → 수축고리·이동기관 파열 → 기능 정지"
+      - "**용해 2건(운반자+지정자)·수거물 없음.** 수몰 화물부두 위협 종결 — 잔존물 = 무너진 폐건물 1·전도 크레인 1"
+      - "**작가용(지면 0):** 역할 분리 최종 프로토콜 실패 — 재분류 심의 개시(상쇄 방해원 = 제거 대상 전환 검토). **초여름 훅 = 지면 미노출(사용자 삭제 — 속도형·세 자릿수 자료는 작가용 보류함)**"
+    evidence:
+      scene: [1, 2, 3]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "resolve"
+    after:
+      - "**규칙 3호 실전 완결:** `끝났어` 발신 → 필기 석 장 + `아까 보니까 니 공책 반이 백지더라. 보고 베껴 놔. 내일 보자. 성호가 내일 기어코 마지막 한 판 한대`(어디였는지 0)"
+      - "**신규 정본: 혜정 = 단아 짝(옆자리).** `옆자리는 못 속이는 자리` — 낮에 보고 그 자리에선 말 안 하고 밤에 챙기는 문법"
+      - "**세 자리 완성:** 늦으면 늦는다고·아프면 아프다고·끝나면 끝났다고 — 봄 감정선 완결(컵볶이 지불 포함)"
+    evidence:
+      scene: [3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "resolve"
+    after:
+      - "**재대결 종결: 54 대 54 동점**(성호 마지막 타 14미터 — 줄자 3회 확정). `재대결의 재대결` 예약(+성호의 달리기 추가 요구 — `다 낫고 나서 말해`)"
+      - "**쌍방 앙숙 기본값 완전 복귀**(`봄에 부러졌던 것들이 다 붙은 운동장`)"
+    evidence:
+      scene: 4
+
+  - category: "physical"
+    field_path: "characters.dana.physical"
+    operation: "advance"
+    after:
+      - "**C1 봄 증상선 확정:** 전투 후 피곤(근육·숨 층위)·열 손가락 정상·악력/보행/시야 정상 — **저림 재발 0.** 영진 기록 `이상 없음`+여백(후보 열어 둠·확정 진단 0)"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "characters.myeongjun.knowledge"
+    operation: "advance"
+    after:
+      - "봄 결산 보고: 순차 행동기록(높은 것 먼저·낮은 것 한 박자 뒤 — 관측 기간 일관) 확보. 정체·발원지·조종 주체 미확인. `미식별 검은 거인`만 사용. 민간 복귀·안전점검 우선"
+    evidence:
+      scene: 3
+
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "무손상 귀환·격납고 대기. 봄 시즌 전적: 7전 6승 1자발퇴각(작가용 셈 — 지면은 `다섯 번 부수고 두 번 멎게 함` 결)"
+    evidence:
+      scene: [2, 3]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 39
+        after: 40
+    note: "**S7 위협 종결·협동 프로토콜 실패(작가용).** 재분류 심의 = 작가용 개시(지면 0). **여름 흐름 = 미정(사용자) — 속도형·아이언 앵커·세 자릿수 = 보류함.** 여름 기획 시 재개"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 38
+        after: 40
+    note: "**봄 감정선 완결**(실전 발신·짝 필기·컵볶이 지불·세 자리 완성). 종료장부 `귀가 준비` = 재배치 소멸(승인 이탈). 다음: 여름(명백한 증상·학교 피해 뒤 추적·물증 — 여름 기획 시 재확정)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 36
+        after: 40
+    note: "**재대결 종결(동점)·앙숙 완전 복귀.** 미지불 전환: `재대결의 재대결`(+달리기 요구 — 성호 완쾌 후). 여름 스케일업 대기"
+  - id: "FS-001-DANA-VISION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 35
+        after: 40
+    note: "**봄 증상선 확정**(부인 가능 기록 2건 유지·S7 급성 0·이상 없음+여백). 다음: 재검 6월 → 여름 악화·출격 불가(자신감 꺾임 창구)"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "durable change 이행(승패 바꾼 관찰 제공·파일럿 증명 0 — 머리에 얹는 손으로 수수). 다음: 여름 중반 첫 대체출격(여름 기획 시)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "위장 유지 이행. 다음: 여름 말 관통상·순환액(여름 기획 시)"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+    note: "용해 2건 = 재접속 후보 소진(수거물 없음 유지)"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "수아 탑승·적합성·동조·원격감각 0, 학교 파손 0, 새 급성 C1·확정 진단 0"
+  - "심의·속도형·앵커 지면 0, 외부/군 `블랙 타이탄` 0, 성호 전력질주 0"
+
+canon_additions:
+  - "시간: EP40 = 5/17 화 밤(결착) → 5/18 수(학교·컵볶이) → 수요일 밤(장부 덮음). **봄 시즌 종료**"
+  - "**혜정 = 단아 짝(옆자리) 정본**(사용자 — 낮에 보고 밤에 챙기는 짝 문법)"
+  - "**결착 2호 정본:** 주기 관찰→손가락→배지기→양방향 벌리기(격언: `저 틈은 저놈이 직접 벌려 준다`)"
+  - "**동점 정본: 54 대 54**(성호 마지막 타 14미터·줄자 3회). 미지불: 재대결의 재대결(+달리기)"
+  - "**시즌 1 엔딩 정본(사용자):** 적 예고 없이 마감 — 장부 한 권(3월 말~5/18)·`내일 적어도 되는 날짜`·`봄이 그렇게 끝났다`"
+  - "**여름 = 미정(사용자):** 개요의 초여름 훅·속도형·아이언 앵커·재분류 확정 = 전부 보류함(여름 기획 게이트에서 재결정)"
+  - "격언 계보: `옆자리는 못 속이는 자리` / `화낼 데가 없으면 화가 웃음이 된다` / `잔잔한 그래프를 잔잔하다고 믿기까지`"
+provenance:
+  chapter_text: "Black_Titan_EP040_40화_마지막회수_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP040_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP040_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP040_Gate-D_검증서_v1.0.md"
+notes:
+  - "**S7 5/5 완료 — 봄 시즌(EP1~40) 종료.** 마감 절차: S7 종료장부 대조서(승인 이탈 2건 기록: B1 귀가 준비 재배치 소멸·초여름 훅 삭제)+아크캡슐 S7 v1.0+여름 인계 메모"
+  - "다음 작업 = **여름 시즌 기획(Level 3~4 게이트)** — 사용자와 흐름 결정부터. 보류함: 속도형 전투개체·아이언 앵커·재분류 확정·C1 악화 곡선·수아 대체출격·혜정 추적 개시·B4 스케일업·바이올린 발표·서랍 사진·재검 6월"

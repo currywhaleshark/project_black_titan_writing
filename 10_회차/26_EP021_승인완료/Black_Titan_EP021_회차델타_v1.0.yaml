@@ -1,0 +1,128 @@
+schema_version: 2
+chapter: 21
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-05"
+  approval_note: "초고 v0.1 무첨삭 승인(`좋네 바로 가도 되겠다`). S4 실패 화(중요 화) — 봄 최초의 거의 패배."
+based_on_snapshot: "SNAP-020 v1.0"
+produces_snapshot: "SNAP-021 v1.0"
+changes:
+  - category: "combat"
+    field_path: "characters.dana.state"
+    operation: "advance"
+    after:
+      - "**오답 실행과 실패:** 되감기로 왼팔 해방(성공 1회) → 재포박(팔꿈치 안쪽·목) → 속도 재계산 루프 실패 → 분산 견인에 자세 상실"
+      - "**봄 최초의 거의 패배:** 주먹 0회 적중, 방재벽 밖으로 밀림(등 뒤 하중 소실로 인지), 수몰 구도심 진입"
+      - "마지막 저항(온 힘)의 대답 = 목의 팔이 자리를 고쳐 잡았을 뿐 — 오답 소진"
+      - "**도달점 = 질문:** `이 팔들이 힘겨루기를 하러 온 것이 아니라면, 내 힘은 어디에 쓰이고 있는 것인가`(정답 미도달 — EP22 창구)"
+    evidence:
+      scene: [1, 2, 4]
+
+  - category: "threat"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**운반 진행:** 방재벽 밖 → 침수구역 → 깊은 수로. 물속 교대 흡착(놓는 소리만 늦게 도착)"
+      - "재포박 우선 행동 2차 전시 — 목을 잡고 조이지 않음, 온 힘의 저항에도 자리 고침만(살상 회피의 관찰 누적)"
+      - "훅 시점: 수평계 지면 표시 소실, 수심 증가 중 — 완전 부유(발바닥 접지 상실)"
+    evidence:
+      scene: [2, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "감각 불일치 최초 경험 — 기울기·물소리·발바닥이 서로 다른 세계를 보고(`어느 세계가 진짜인지 정할 눈이 없었다`)"
+      - "이상함의 목록: 조를 수 있는데 조르지 않음, 때릴 수 있는데 때리지 않음, 풀면 다시 감김"
+      - "힘의 행방 의문 성립(질문 단계 — 해법 없음)"
+    evidence:
+      scene: [2, 4]
+
+  - category: "relational"
+    field_path: "characters.sua.state"
+    operation: "advance"
+    after:
+      - "**정비실 첫 실전 합류(B3 비전투 이행):** 검은 화면·재난방송 교차 관찰, 예비전원 손잡이 확인(눈으로 세 번), 밀봉재 작업대 배치, 마른 수건 세 장"
+      - "목록 이름 = `언니가 돌아올 때 필요한 것들`(돌아오면 아님 — 조사 선택의 신중함)"
+      - "영진의 혼잣말(`부수려는 놈이 아니야`)을 적지 않고 기억함 — 답 유예의 방식 유지"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "**살상 아님 감지(상한 문면):** `부수려는 놈이 아니야. ……모르겠다. 뭐가 다른지.` — 느낌+무지, 이유 미도달(EP23 추정 창구 보존)"
+      - "단아와 같은 셈에서 같은 자리에 막힘(감각 불일치 문답의 침묵)"
+    evidence:
+      scene: [3, 4]
+
+  - category: "living_condition"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "학생 대피 완료·주민 구래동 소개 완료·고지대 수용 진행"
+      - "**추적 상실 국면:** 수상·수중 진입 장비 없음 — `보고만 계속해`. 위험구역 선 확장 1칸"
+      - "침수구역 도면 = 오 년 전 정지(수몰 구도심 정보 공백의 정사화)"
+    evidence:
+      scene: 3
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 20
+        after: 21
+    note: "EP21 상한 이행(운반·상실·재포박 2차). 다음 EP22 교대 흡착의 틈 발견 → EP23 추정 도달"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 17
+        after: 21
+    note: "정비실 첫 실전 합류 — 비전투 상한 완전 준수(관찰·준비·기억만). 다음 의미 진전 S5"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "신규 정보 0 이행(성호·학교·경상자 언급 전무 — 군 집계도 대피 완료만). 다음 EP22 무명 경상자 문구"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "혜정 미등장"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "시야 상실 물리 유지 — 신경 어휘 0(잠금 이행)"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+    note: "관통·꿰뚫 0 확인(포박전 특별 감시 이행). 목 감김도 압박 사실만"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "생체성 확증 0(표면 물성 관찰 한도)"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "고명준 등장 — 서랍·사진 언급 0"
+
+no_change_checks:
+  - "성호·학교·경상자 언급 0(B4), 혜정·학교 인물 미등장"
+  - "`데려가려 한다`·`다른 방향` 계열 0 — EP22·23 창구 보존"
+  - "`문어`·`촉수`·`인큐베이터` 지면 0(기록명 `다완 흡착체`만)"
+  - "수아 전술·위치·팔 설명 발화 0"
+  - "군 수중전 지휘 0, 교전 명령 0"
+  - "내부 고유명 0(어둠 밀착 서술)"
+
+canon_additions:
+  - "타이탄 조종석 계기: 전원 눈금·압력 바늘·수평계(지면 금 + 수심 숫자) — 화면 사멸 후에도 독립 동작"
+  - "물속 개체 소리: 붙는 소리 무음·놓는 소리만 지연 도착(교대 흡착의 감각 단서 — EP22 재료)"
+  - "침수구역 군 도면 = 오 년 전 갱신 중단"
+  - "정비실 실전 배치: 예비전원함(수동 손잡이)·밀봉재·수건 — 수아 관리"
+
+provenance:
+  chapter_text: "Black_Titan_EP021_21화_붙잡힌거인_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP021_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP021_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP021_Gate-D_검증서_v1.0.md"
+notes:
+  - "S4 3단계(실패) 완료. 다음 EP22 「끌리는 쪽」 — 중요 화(전환 — 당김 안으로·1차 생환·부상 소식 인지)."
+  - "EP22 진입: 깊은 수로 운반 연속 — 교대 흡착의 틈을 몸으로 세는 것부터."

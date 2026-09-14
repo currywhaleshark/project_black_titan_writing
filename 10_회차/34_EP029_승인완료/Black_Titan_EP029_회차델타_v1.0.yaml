@@ -1,0 +1,106 @@
+schema_version: 2
+chapter: 29
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-10"
+  approval_note: "v0.1 → 첨삭 22건(숫자 표기) v0.2 → 혜정 수다 복원 v0.3 → `좋아`. **S5 마감 화(아크 완결)**."
+based_on_snapshot: "SNAP-028 v1.0"
+produces_snapshot: "SNAP-029 v1.0"
+changes:
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "**앙숙 복구 확정(전시 완료):** 초시계 시비(`한 박자 늦게 눌러 준 기록`) → 13초 1로 기록 제압 → 반 아이들 앞 시끄러운 싸움. 재대결 = 깁스 해제 후 유지"
+      - "단아 왕복달리기 13초 1(겨울 이후 최고 — 학년 기록 아님·개인 갱신), 공 던지기 학년 자기 최고"
+    evidence:
+      scene: 1
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**연락 규칙 완성형:** 먼저 말하기(하굣길) → 약속 시간 답장(여섯 시 십 분 전) → 귀가 보고 → 통화. 혜정 답 = 내일 준비물 사진 1장(말 없는 신뢰)"
+      - "화자 정리 문장: `그 두 가지(어디·왜)만 빼고 다른 건 다 말하는 애` — 절제와 수다의 병존 확립"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "informational"
+    field_path: "characters.juho.state"
+    operation: "advance"
+    after:
+      - "**임시 조정 축소:** `이번 주부터 너도 금요일까지`(설명 0) — 평범하게 대할 수 있을 때 평범하게 대하는 보호의 완결"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "**관측 이상 인지(단독):** 부표 3개(7→5→2번) 바다→육지 순차 통신 두절·복귀 + 수면변위 그래프의 좁고 매끈한 산 3개 + 지워지지 않는 선(방재벽 앞 도중 끊김)"
+      - "판단: 고장이라기엔 이동 흔적에 가까움(발화 0 — 아이들 모름). 행동: 닫던 셔터를 다시 올림"
+    evidence:
+      scene: [4, 5]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 23
+        after: 29
+    note: "S6 접촉 예고 실체화(부표 이상·수면변위·끊긴 선). 개체 미관측 유지 — 다음 EP30 「폐허 아래의 관」 접촉"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 26
+        after: 29
+    note: "연락 규칙 완성형 이행(사진 1장·통화). 다음 시험 = S6 실제 출격(EP30 `기다리지 마` 문면 예약). 물증·추궁은 여름"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 26
+        after: 29
+    note: "앙숙 기본값 완전 복구 확정(초시계·기록원 경쟁). 깁스 첫 줄 = 미지불 유지(깁스 해제 창구), 재대결 4차 유예 지속"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "확인자 역할 일상 이행만(가게 접수·확인표 — 지하 언급 0). 다음 = S6 후처리 기여(EP35 예정), 결정적 관찰 S7"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "**서랍 사진 1컷 = S5 미사용 확정(개요 B2 휴지 잠금 우선 — 사용자 승인 이월).** 다음 창구 = S6 이후 별도 결정"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+    note: "EP28 소진 — S5 내 재사용 금지 이행"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "S5 전체 침묵 완주. S6에 부인 가능 1회 예정(개요)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "개체 실체·형상·임무 0, 위협 예감 형용 0(관측 사실만)"
+  - "어머니·카네이션·현서 0, 활동지 질문 재인용 0(제출만 반 컷)"
+  - "지하·기체·점검 언급 0(가게 층위만), 수아 새 제안 0"
+  - "성호 깁스 첫 줄 0, 명준·군 장면 0"
+
+canon_additions:
+  - "시간: EP29 = 5/11 수 하루(활동지 제출일 — 아침 제출 반 컷). **S5 = 5/5 목~5/11 수**"
+  - "체육대회 잔여 종목 = 정규 체육시간 소화(반별 왕복달리기·공 던지기). 단아 13초 1"
+  - "**관측 단말 정본:** 수리점 가게 선반의 부표 수신 단말(파고·수온·통신·수면변위 — 어부들의 동네 게시판. 기태·정호 이용 이력). 부표 번호 체계: 7번=먼바다·5번=중간·2번=방재벽 앞"
+  - "**첫 스콜(5/11 저녁):** 조기 더위 뒤 첫 비 — 계절 경첩. 스콜 중 부표 일시 두절은 흔한 일(위장 설명 소재)"
+  - "혜정 물성: 본 것을 다 말로 옮겨야 직성이 풀리는 복기벽, 준비물 사진 문법, `안 챙긴 게 이번 학년만 세 번` 놀림"
+  - "주호 조정 이력: 단아만 과제 월요일 기한 → 금요일 통일(복구 완료 표지)"
+provenance:
+  chapter_text: "Black_Titan_EP029_29화_아무일도없는날_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP029_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP029_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP029_Gate-D_검증서_v1.0.md"
+notes:
+  - "**S5 「괴수 없는 날들」 완결(5/5).** 아크 마감 산출물: S5 종료장부 대조서 + 아크캡슐 S5(동봉)."
+  - "다음 = **S6 「회수 2연전」 개시, EP30 「폐허 아래의 관」(중요 화 — 접촉/기습).** S6 개요 v1.4 기준. B1 예약 문면: `오늘은 약속 못 지킬 수도 있어. 기다리지 마`"
+  - "미지불 이월: 동그라미, 수아 공책, **서랍 사진(S6 이후)**, 가시 조각, 재검 6월, 계주 재대결(4차), 깁스 첫 줄, 바이올린 발표"

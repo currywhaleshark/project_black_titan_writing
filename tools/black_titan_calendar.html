@@ -1,0 +1,185 @@
+<title>블랙 타이탄 작중 달력</title>
+<style>
+:root{
+  --bg:#E7EBEC; --panel:#FBFCFC; --sunk:#DDE3E4; --ink:#151E25; --dim:#5D6E78;
+  --faint:#8A9AA3; --line:#C6D0D3; --line2:#E0E6E7;
+  --spring:#1C5F63; --spring-bg:#D4E5E4; --summer:#A8451E; --summer-bg:#F2DED4;
+  --key:#7A3E8F; --hol:#9A5B33; --plan:#EFE7D9;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1418; --panel:#182026; --sunk:#131A1F; --ink:#DEE7EA; --dim:#8DA0AA;
+  --faint:#5F717C; --line:#27343B; --line2:#1F2A31;
+  --spring:#5DB3B4; --spring-bg:#12333B; --summer:#E08355; --summer-bg:#3A231A;
+  --key:#C08FD4; --hol:#C79463; --plan:#2A2519;
+}}
+:root[data-theme="dark"]{
+  --bg:#0E1418; --panel:#182026; --sunk:#131A1F; --ink:#DEE7EA; --dim:#8DA0AA;
+  --faint:#5F717C; --line:#27343B; --line2:#1F2A31;
+  --spring:#5DB3B4; --spring-bg:#12333B; --summer:#E08355; --summer-bg:#3A231A;
+  --key:#C08FD4; --hol:#C79463; --plan:#2A2519;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  font-size:15px; line-height:1.6; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:1180px; margin:0 auto; padding:40px 20px 80px;
+  display:flex; flex-direction:column; gap:34px}
+header.top{display:flex; flex-direction:column; gap:10px;
+  border-bottom:2px solid var(--ink); padding-bottom:20px}
+.eyebrow{font-family:ui-monospace,Consolas,monospace; font-size:11px; letter-spacing:.22em;
+  text-transform:uppercase; color:var(--dim)}
+h1{margin:0; font-size:clamp(28px,5vw,42px); line-height:1.12; letter-spacing:-.02em;
+  text-wrap:balance}
+.sub{margin:0; color:var(--dim); max-width:62ch}
+.sub b{color:var(--ink)}
+.facts{display:flex; flex-wrap:wrap; gap:8px 26px; margin-top:6px}
+.facts div{display:flex; flex-direction:column}
+.facts b{font-family:ui-monospace,Consolas,monospace; font-variant-numeric:tabular-nums;
+  font-size:17px}
+.facts span{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint)}
+h2{margin:0 0 8px; font-size:13px; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--dim); font-weight:600}
+.arcs{display:flex; flex-wrap:wrap; gap:8px}
+.ab{display:flex; flex-direction:column; align-items:flex-start; gap:1px; cursor:pointer;
+  background:var(--panel); border:1px solid var(--line); border-radius:3px; padding:7px 11px;
+  color:var(--ink); font:inherit; text-align:left; transition:border-color .12s,background .12s}
+.ab b{font-family:ui-monospace,Consolas,monospace; font-size:13px}
+.ab span{font-size:12px; color:var(--dim)}
+.ab i{font-style:normal; font-size:10px; letter-spacing:.1em; color:var(--faint);
+  font-family:ui-monospace,Consolas,monospace}
+.ab.spring b{color:var(--spring)}
+.ab.summer b{color:var(--summer)}
+.ab:hover{border-color:var(--dim)}
+.ab:focus-visible{outline:2px solid var(--ink); outline-offset:2px}
+.ab[aria-pressed="true"]{background:var(--ink); border-color:var(--ink)}
+.ab[aria-pressed="true"] b,
+.ab[aria-pressed="true"] span,
+.ab[aria-pressed="true"] i{color:var(--bg)}
+.cals{display:grid; grid-template-columns:repeat(auto-fill,minmax(292px,1fr)); gap:18px}
+.mo{background:var(--panel); border:1px solid var(--line); border-radius:4px;
+  padding:13px 13px 15px; display:flex; flex-direction:column; gap:9px}
+.moh{display:flex; align-items:baseline; justify-content:space-between; gap:8px;
+  border-bottom:1px solid var(--line2); padding-bottom:7px}
+.moh h3{margin:0; font-size:15px; letter-spacing:-.01em}
+.mn{font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint)}
+.grid{display:grid; grid-template-columns:repeat(7,1fr); gap:2px}
+.wd{font-size:10px; text-align:center; color:var(--faint); padding-bottom:3px; letter-spacing:.06em}
+.wd.we{color:var(--dim)}
+.d{min-height:50px; border-radius:2px; background:var(--sunk); padding:3px 3px 4px;
+  display:flex; flex-direction:column; gap:2px; overflow:hidden}
+.d.out{background:transparent}
+.dn{font-family:ui-monospace,Consolas,monospace; font-variant-numeric:tabular-nums;
+  font-size:11px; color:var(--dim); line-height:1}
+.d.we .dn{color:var(--faint)}
+.d.hol .dn{color:var(--hol); font-weight:700}
+.d.plan{background:var(--plan)}
+.ev{font-size:9px; line-height:1.25; letter-spacing:-.01em}
+.ev.key{color:var(--key); font-weight:700}
+.ev.hol-l{color:var(--hol)}
+.chs{display:flex; flex-wrap:wrap; gap:2px; margin-top:auto}
+.ch{font-family:ui-monospace,Consolas,monospace; font-size:10px; font-weight:700;
+  padding:1px 4px; border-radius:2px; cursor:help; transition:opacity .12s}
+.ch.spring{background:var(--spring-bg); color:var(--spring)}
+.ch.summer{background:var(--summer-bg); color:var(--summer)}
+body.filt .ch{opacity:.16}
+body.filt .ch.on{opacity:1; box-shadow:0 0 0 1px currentColor}
+.legend{display:flex; flex-wrap:wrap; gap:6px 20px; font-size:12px; color:var(--dim)}
+.legend i{font-style:normal; display:inline-flex; align-items:center; gap:6px}
+.sw{width:11px; height:11px; border-radius:2px; display:inline-block}
+.tbl{width:100%; overflow-x:auto}
+table{border-collapse:collapse; width:100%; min-width:430px; font-size:13px}
+th,td{text-align:left; padding:7px 10px; border-bottom:1px solid var(--line2)}
+th{font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint);
+  font-weight:600}
+td.a{font-family:ui-monospace,Consolas,monospace; font-weight:700; width:44px}
+td.a.spring{color:var(--spring)}
+td.a.summer{color:var(--summer)}
+td.nu{font-family:ui-monospace,Consolas,monospace; font-variant-numeric:tabular-nums;
+  color:var(--dim)}
+body.filt tr[data-arc]{opacity:.28}
+body.filt tr.on{opacity:1}
+.note{background:var(--panel); border-left:3px solid var(--summer); border-radius:0 3px 3px 0;
+  padding:13px 16px; display:flex; flex-direction:column; gap:7px}
+.note p{margin:0; font-size:13px; color:var(--dim)}
+.note p b{color:var(--ink)}
+footer{border-top:1px solid var(--line); padding-top:16px; font-size:12px; color:var(--faint)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (max-width:560px){.wrap{padding:26px 13px 56px} .cals{grid-template-columns:1fr}}
+</style>
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Project Black Titan &middot; Calendar v1.0</div>
+  <h1>작중 달력 2050</h1>
+  <p class="sub">정본은 <b>실제 2050년 그레고리력</b>이다. 새 회차의 날짜를 정하기 전에
+  여기서 요일을 확인하고, 그 날짜를 브리프 &rarr; Level 6 &rarr; 초고 &rarr; SNAP까지
+  그대로 옮긴다.</p>
+  <div class="facts">
+    <div><b>61화</b><span>승인 완료</span></div>
+    <div><b>45화</b><span>날짜 확정</span></div>
+    <div><b>3/초 &ndash; 6/28</b><span>기록된 구간</span></div>
+    <div><b>7/22 금</b><span>방학식</span></div>
+    <div><b>24일</b><span>S10 몫</span></div>
+  </div>
+</header>
+
+<div>
+  <h2>아크 &mdash; 눌러서 짚어 보기</h2>
+  <div class="arcs"><button class="ab spring" data-arc="S1"><b>S1</b><span>물속의 것</span><i>1–6화</i></button><button class="ab spring" data-arc="S2"><b>S2</b><span>기록되는 것들</span><i>7–12화</i></button><button class="ab spring" data-arc="S3"><b>S3</b><span>사월의 시간</span><i>13–18화</i></button><button class="ab spring" data-arc="S4"><b>S4</b><span>체육대회와 포박</span><i>19–24화</i></button><button class="ab spring" data-arc="S5"><b>S5</b><span>오월의 물때</span><i>25–29화</i></button><button class="ab spring" data-arc="S6"><b>S6</b><span>멈춰야 사는 바다</span><i>30–35화</i></button><button class="ab spring" data-arc="S7"><b>S7</b><span>봄의 매조지</span><i>36–40화</i></button><button class="ab summer" data-arc="S8"><b>S8</b><span>재검과 재래</span><i>41–50화</i></button><button class="ab summer" data-arc="S9"><b>S9</b><span>고철의 재간</span><i>51–61화</i></button></div>
+</div>
+
+<div class="legend">
+  <i><span class="sw" style="background:var(--spring-bg);border:1px solid var(--spring)"></span>봄편 EP1&ndash;40</i>
+  <i><span class="sw" style="background:var(--summer-bg);border:1px solid var(--summer)"></span>여름편 EP41&ndash;61</i>
+  <i><span class="sw" style="background:var(--plan)"></span>S10 집필 예정 (6/29&ndash;7/22)</i>
+  <i><span class="sw" style="background:var(--key)"></span>학사 고정점</i>
+  <i>화수에 마우스를 올리면 제목이 나온다</i>
+</div>
+
+<div class="cals"><section class="mo"><header class="moh"><h3>2050년 3월</h3><span class="mn">봄편 개시</span></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d hol"><span class="dn">1</span><span class="ev hol-l">삼일절</span></div><div class="d"><span class="dn">2</span></div><div class="d"><span class="dn">3</span></div><div class="d"><span class="dn">4</span></div><div class="d we"><span class="dn">5</span></div><div class="d we"><span class="dn">6</span></div><div class="d"><span class="dn">7</span></div><div class="d"><span class="dn">8</span></div><div class="d"><span class="dn">9</span></div><div class="d"><span class="dn">10</span></div><div class="d"><span class="dn">11</span></div><div class="d we"><span class="dn">12</span></div><div class="d we"><span class="dn">13</span></div><div class="d"><span class="dn">14</span></div><div class="d"><span class="dn">15</span></div><div class="d"><span class="dn">16</span></div><div class="d"><span class="dn">17</span></div><div class="d"><span class="dn">18</span></div><div class="d we"><span class="dn">19</span></div><div class="d we"><span class="dn">20</span></div><div class="d"><span class="dn">21</span></div><div class="d"><span class="dn">22</span></div><div class="d"><span class="dn">23</span></div><div class="d"><span class="dn">24</span></div><div class="d"><span class="dn">25</span></div><div class="d we"><span class="dn">26</span></div><div class="d we"><span class="dn">27</span></div><div class="d"><span class="dn">28</span></div><div class="d"><span class="dn">29</span></div><div class="d"><span class="dn">30</span></div><div class="d"><span class="dn">31</span><span class="chs"><span class="ch spring" data-arc="S2" title="12화 기록되는것들">12</span></span></div><div class="d out"></div><div class="d out"></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2050년 4월</h3><span class="mn">체육대회·포박전</span></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d"><span class="dn">1</span></div><div class="d we"><span class="dn">2</span></div><div class="d we"><span class="dn">3</span></div><div class="d"><span class="dn">4</span></div><div class="d"><span class="dn">5</span></div><div class="d"><span class="dn">6</span></div><div class="d"><span class="dn">7</span></div><div class="d"><span class="dn">8</span></div><div class="d we"><span class="dn">9</span></div><div class="d we"><span class="dn">10</span></div><div class="d"><span class="dn">11</span></div><div class="d"><span class="dn">12</span></div><div class="d"><span class="dn">13</span></div><div class="d"><span class="dn">14</span></div><div class="d"><span class="dn">15</span></div><div class="d we"><span class="dn">16</span></div><div class="d we"><span class="dn">17</span></div><div class="d"><span class="dn">18</span></div><div class="d"><span class="dn">19</span></div><div class="d"><span class="dn">20</span></div><div class="d"><span class="dn">21</span></div><div class="d"><span class="dn">22</span></div><div class="d we"><span class="dn">23</span></div><div class="d we"><span class="dn">24</span></div><div class="d"><span class="dn">25</span><span class="chs"><span class="ch spring" data-arc="S3" title="18화 도수">18</span></span></div><div class="d"><span class="dn">26</span></div><div class="d"><span class="dn">27</span><span class="ev key">체육대회</span><span class="chs"><span class="ch spring" data-arc="S4" title="19화 운동장의선 / 20화 여덟개의팔 / 21화 붙잡힌거인 / 22화 끌리는쪽 / 23화 끌려가지않는법">19–23</span></span></div><div class="d"><span class="dn">28</span></div><div class="d"><span class="dn">29</span></div><div class="d we"><span class="dn">30</span></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2050년 5월</h3><span class="mn">봄편 종료</span></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d we"><span class="dn">1</span></div><div class="d"><span class="dn">2</span><span class="chs"><span class="ch spring" data-arc="S4" title="24화 깁스">24</span></span></div><div class="d"><span class="dn">3</span></div><div class="d"><span class="dn">4</span></div><div class="d hol"><span class="dn">5</span><span class="ev hol-l">어린이날</span><span class="chs"><span class="ch spring" data-arc="S5" title="25화 어린이날">25</span></span></div><div class="d"><span class="dn">6</span></div><div class="d we"><span class="dn">7</span></div><div class="d we"><span class="dn">8</span></div><div class="d"><span class="dn">9</span><span class="chs"><span class="ch spring" data-arc="S5" title="26화 늦는다는말 / 27화 빈자리">26–27</span></span></div><div class="d"><span class="dn">10</span><span class="chs"><span class="ch spring" data-arc="S5" title="28화 확인자">28</span></span></div><div class="d"><span class="dn">11</span><span class="chs"><span class="ch spring" data-arc="S5" title="29화 아무일도없는날">29</span></span></div><div class="d"><span class="dn">12</span><span class="chs"><span class="ch spring" data-arc="S6" title="30화 폐허아래의관 / 31화 부러진턱">30–31</span></span></div><div class="d"><span class="dn">13</span><span class="chs"><span class="ch spring" data-arc="S6" title="32화 아프면아프다고">32</span></span></div><div class="d we"><span class="dn">14</span><span class="chs"><span class="ch spring" data-arc="S6" title="33화 닦이지않는흔적">33</span></span></div><div class="d we"><span class="dn">15</span><span class="chs"><span class="ch spring" data-arc="S6" title="34화 움직일수록굳는다 / 35화 한번만움직인다">34–35</span></span></div><div class="d"><span class="dn">16</span><span class="chs"><span class="ch spring" data-arc="S7" title="36화 깁스를벗은날">36</span></span></div><div class="d"><span class="dn">17</span><span class="chs"><span class="ch spring" data-arc="S7" title="37화 꽃이먼저돈다 / 38화 꽃이눈이야 / 39화 본다간다">37–39</span></span></div><div class="d"><span class="dn">18</span><span class="chs"><span class="ch spring" data-arc="S7" title="40화 마지막회수">40</span></span></div><div class="d"><span class="dn">19</span></div><div class="d"><span class="dn">20</span></div><div class="d we"><span class="dn">21</span></div><div class="d we"><span class="dn">22</span></div><div class="d"><span class="dn">23</span></div><div class="d"><span class="dn">24</span></div><div class="d"><span class="dn">25</span></div><div class="d"><span class="dn">26</span></div><div class="d"><span class="dn">27</span></div><div class="d we"><span class="dn">28</span></div><div class="d we"><span class="dn">29</span></div><div class="d"><span class="dn">30</span></div><div class="d"><span class="dn">31</span></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2050년 6월</h3><span class="mn">여름편 개시</span></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d"><span class="dn">1</span></div><div class="d"><span class="dn">2</span></div><div class="d"><span class="dn">3</span></div><div class="d we"><span class="dn">4</span></div><div class="d we"><span class="dn">5</span></div><div class="d hol"><span class="dn">6</span><span class="ev hol-l">현충일</span></div><div class="d"><span class="dn">7</span><span class="chs"><span class="ch summer" data-arc="S8" title="41화 재검">41</span></span></div><div class="d"><span class="dn">8</span></div><div class="d"><span class="dn">9</span></div><div class="d"><span class="dn">10</span><span class="chs"><span class="ch summer" data-arc="S8" title="42화 발표주간">42</span></span></div><div class="d we"><span class="dn">11</span></div><div class="d we"><span class="dn">12</span></div><div class="d"><span class="dn">13</span><span class="chs"><span class="ch summer" data-arc="S8" title="43화 낯익은신호 / 44화 다른여름 / 45화 빗속을걷는법">43–45</span></span></div><div class="d"><span class="dn">14</span><span class="chs"><span class="ch summer" data-arc="S8" title="46화 기록의온도">46</span></span></div><div class="d"><span class="dn">15</span><span class="chs"><span class="ch summer" data-arc="S8" title="47화 집게 / 48화 꺾이지않는방향">47–48</span></span></div><div class="d"><span class="dn">16</span><span class="chs"><span class="ch summer" data-arc="S8" title="49화 여름의셈">49</span></span></div><div class="d"><span class="dn">17</span></div><div class="d we"><span class="dn">18</span><span class="chs"><span class="ch summer" data-arc="S8" title="50화 간격">50</span></span></div><div class="d we"><span class="dn">19</span><span class="chs"><span class="ch summer" data-arc="S9" title="51화 인양장">51</span></span></div><div class="d"><span class="dn">20</span><span class="chs"><span class="ch summer" data-arc="S9" title="52화 밀려오는것">52</span></span></div><div class="d"><span class="dn">21</span><span class="chs"><span class="ch summer" data-arc="S9" title="53화 버틸데 / 54화 값">53–54</span></span></div><div class="d"><span class="dn">22</span><span class="chs"><span class="ch summer" data-arc="S9" title="55화 모르는것">55</span></span></div><div class="d"><span class="dn">23</span><span class="chs"><span class="ch summer" data-arc="S9" title="56화 붙은것들">56</span></span></div><div class="d"><span class="dn">24</span><span class="chs"><span class="ch summer" data-arc="S9" title="57화 우편물">57</span></span></div><div class="d we"><span class="dn">25</span></div><div class="d we"><span class="dn">26</span></div><div class="d"><span class="dn">27</span><span class="chs"><span class="ch summer" data-arc="S9" title="58화 안맞는다">58</span></span></div><div class="d"><span class="dn">28</span><span class="chs"><span class="ch summer" data-arc="S9" title="59화 보이지않는다 / 60화 길목 / 61화 고철의값">59–61</span></span></div><div class="d plan"><span class="dn">29</span></div><div class="d plan"><span class="dn">30</span></div><div class="d out"></div><div class="d out"></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2050년 7월</h3><span class="mn">방학식</span></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d plan"><span class="dn">1</span></div><div class="d we plan"><span class="dn">2</span></div><div class="d we plan"><span class="dn">3</span></div><div class="d plan"><span class="dn">4</span></div><div class="d plan"><span class="dn">5</span></div><div class="d plan"><span class="dn">6</span></div><div class="d plan"><span class="dn">7</span></div><div class="d plan"><span class="dn">8</span></div><div class="d we plan"><span class="dn">9</span></div><div class="d we plan"><span class="dn">10</span></div><div class="d plan"><span class="dn">11</span></div><div class="d plan"><span class="dn">12</span></div><div class="d plan"><span class="dn">13</span></div><div class="d plan"><span class="dn">14</span></div><div class="d plan"><span class="dn">15</span></div><div class="d we plan"><span class="dn">16</span></div><div class="d we plan"><span class="dn">17</span></div><div class="d plan"><span class="dn">18</span></div><div class="d plan"><span class="dn">19</span></div><div class="d plan"><span class="dn">20</span></div><div class="d plan"><span class="dn">21</span></div><div class="d plan"><span class="dn">22</span><span class="ev key">방학식</span></div><div class="d we"><span class="dn">23</span></div><div class="d we"><span class="dn">24</span></div><div class="d"><span class="dn">25</span></div><div class="d"><span class="dn">26</span></div><div class="d"><span class="dn">27</span></div><div class="d"><span class="dn">28</span></div><div class="d"><span class="dn">29</span></div><div class="d we"><span class="dn">30</span></div><div class="d we"><span class="dn">31</span></div></div></section><section class="mo"><header class="moh"><h3>2050년 8월</h3><span class="mn">미집필</span></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d"><span class="dn">1</span></div><div class="d"><span class="dn">2</span></div><div class="d"><span class="dn">3</span></div><div class="d"><span class="dn">4</span></div><div class="d"><span class="dn">5</span></div><div class="d we"><span class="dn">6</span></div><div class="d we"><span class="dn">7</span></div><div class="d"><span class="dn">8</span></div><div class="d"><span class="dn">9</span></div><div class="d"><span class="dn">10</span></div><div class="d"><span class="dn">11</span></div><div class="d"><span class="dn">12</span></div><div class="d we"><span class="dn">13</span></div><div class="d we"><span class="dn">14</span></div><div class="d hol"><span class="dn">15</span><span class="ev hol-l">광복절</span></div><div class="d"><span class="dn">16</span></div><div class="d"><span class="dn">17</span></div><div class="d"><span class="dn">18</span></div><div class="d"><span class="dn">19</span></div><div class="d we"><span class="dn">20</span></div><div class="d we"><span class="dn">21</span></div><div class="d"><span class="dn">22</span></div><div class="d"><span class="dn">23</span></div><div class="d"><span class="dn">24</span></div><div class="d"><span class="dn">25</span></div><div class="d"><span class="dn">26</span></div><div class="d we"><span class="dn">27</span></div><div class="d we"><span class="dn">28</span></div><div class="d"><span class="dn">29</span></div><div class="d"><span class="dn">30</span></div><div class="d"><span class="dn">31</span></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2050년 9월</h3></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d"><span class="dn">1</span></div><div class="d"><span class="dn">2</span></div><div class="d we"><span class="dn">3</span></div><div class="d we"><span class="dn">4</span></div><div class="d"><span class="dn">5</span></div><div class="d"><span class="dn">6</span></div><div class="d"><span class="dn">7</span></div><div class="d"><span class="dn">8</span></div><div class="d"><span class="dn">9</span></div><div class="d we"><span class="dn">10</span></div><div class="d we"><span class="dn">11</span></div><div class="d"><span class="dn">12</span></div><div class="d"><span class="dn">13</span></div><div class="d"><span class="dn">14</span></div><div class="d"><span class="dn">15</span></div><div class="d"><span class="dn">16</span></div><div class="d we"><span class="dn">17</span></div><div class="d we"><span class="dn">18</span></div><div class="d"><span class="dn">19</span></div><div class="d"><span class="dn">20</span></div><div class="d"><span class="dn">21</span></div><div class="d"><span class="dn">22</span></div><div class="d"><span class="dn">23</span></div><div class="d we"><span class="dn">24</span></div><div class="d we"><span class="dn">25</span></div><div class="d"><span class="dn">26</span></div><div class="d"><span class="dn">27</span></div><div class="d"><span class="dn">28</span></div><div class="d"><span class="dn">29</span></div><div class="d"><span class="dn">30</span></div><div class="d out"></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2050년 10월</h3></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d we"><span class="dn">1</span></div><div class="d we"><span class="dn">2</span></div><div class="d hol"><span class="dn">3</span><span class="ev hol-l">개천절</span></div><div class="d"><span class="dn">4</span></div><div class="d"><span class="dn">5</span></div><div class="d"><span class="dn">6</span></div><div class="d"><span class="dn">7</span></div><div class="d we"><span class="dn">8</span></div><div class="d we hol"><span class="dn">9</span><span class="ev hol-l">한글날</span></div><div class="d"><span class="dn">10</span></div><div class="d"><span class="dn">11</span></div><div class="d"><span class="dn">12</span></div><div class="d"><span class="dn">13</span></div><div class="d"><span class="dn">14</span></div><div class="d we"><span class="dn">15</span></div><div class="d we"><span class="dn">16</span></div><div class="d"><span class="dn">17</span></div><div class="d"><span class="dn">18</span></div><div class="d"><span class="dn">19</span></div><div class="d"><span class="dn">20</span></div><div class="d"><span class="dn">21</span></div><div class="d we"><span class="dn">22</span></div><div class="d we"><span class="dn">23</span></div><div class="d"><span class="dn">24</span></div><div class="d"><span class="dn">25</span></div><div class="d"><span class="dn">26</span></div><div class="d"><span class="dn">27</span></div><div class="d"><span class="dn">28</span></div><div class="d we"><span class="dn">29</span></div><div class="d we"><span class="dn">30</span></div><div class="d"><span class="dn">31</span></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2050년 11월</h3></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d"><span class="dn">1</span></div><div class="d"><span class="dn">2</span></div><div class="d"><span class="dn">3</span></div><div class="d"><span class="dn">4</span></div><div class="d we"><span class="dn">5</span></div><div class="d we"><span class="dn">6</span></div><div class="d"><span class="dn">7</span></div><div class="d"><span class="dn">8</span></div><div class="d"><span class="dn">9</span></div><div class="d"><span class="dn">10</span></div><div class="d"><span class="dn">11</span></div><div class="d we"><span class="dn">12</span></div><div class="d we"><span class="dn">13</span></div><div class="d"><span class="dn">14</span></div><div class="d"><span class="dn">15</span></div><div class="d"><span class="dn">16</span></div><div class="d"><span class="dn">17</span></div><div class="d"><span class="dn">18</span></div><div class="d we"><span class="dn">19</span></div><div class="d we"><span class="dn">20</span></div><div class="d"><span class="dn">21</span></div><div class="d"><span class="dn">22</span></div><div class="d"><span class="dn">23</span></div><div class="d"><span class="dn">24</span></div><div class="d"><span class="dn">25</span></div><div class="d we"><span class="dn">26</span></div><div class="d we"><span class="dn">27</span></div><div class="d"><span class="dn">28</span></div><div class="d"><span class="dn">29</span></div><div class="d"><span class="dn">30</span></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2050년 12월</h3></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d"><span class="dn">1</span></div><div class="d"><span class="dn">2</span></div><div class="d we"><span class="dn">3</span></div><div class="d we"><span class="dn">4</span></div><div class="d"><span class="dn">5</span></div><div class="d"><span class="dn">6</span></div><div class="d"><span class="dn">7</span></div><div class="d"><span class="dn">8</span></div><div class="d"><span class="dn">9</span></div><div class="d we"><span class="dn">10</span></div><div class="d we"><span class="dn">11</span></div><div class="d"><span class="dn">12</span></div><div class="d"><span class="dn">13</span></div><div class="d"><span class="dn">14</span></div><div class="d"><span class="dn">15</span></div><div class="d"><span class="dn">16</span></div><div class="d we"><span class="dn">17</span></div><div class="d we"><span class="dn">18</span></div><div class="d"><span class="dn">19</span></div><div class="d"><span class="dn">20</span></div><div class="d"><span class="dn">21</span></div><div class="d"><span class="dn">22</span></div><div class="d"><span class="dn">23</span></div><div class="d we"><span class="dn">24</span></div><div class="d we hol"><span class="dn">25</span><span class="ev hol-l">성탄절</span></div><div class="d"><span class="dn">26</span></div><div class="d"><span class="dn">27</span></div><div class="d"><span class="dn">28</span></div><div class="d"><span class="dn">29</span></div><div class="d"><span class="dn">30</span></div><div class="d we"><span class="dn">31</span></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2051년 1월</h3></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d we hol"><span class="dn">1</span><span class="ev hol-l">신정</span></div><div class="d"><span class="dn">2</span></div><div class="d"><span class="dn">3</span></div><div class="d"><span class="dn">4</span></div><div class="d"><span class="dn">5</span></div><div class="d"><span class="dn">6</span></div><div class="d we"><span class="dn">7</span></div><div class="d we"><span class="dn">8</span></div><div class="d"><span class="dn">9</span></div><div class="d"><span class="dn">10</span></div><div class="d"><span class="dn">11</span></div><div class="d"><span class="dn">12</span></div><div class="d"><span class="dn">13</span></div><div class="d we"><span class="dn">14</span></div><div class="d we"><span class="dn">15</span></div><div class="d"><span class="dn">16</span></div><div class="d"><span class="dn">17</span></div><div class="d"><span class="dn">18</span></div><div class="d"><span class="dn">19</span></div><div class="d"><span class="dn">20</span></div><div class="d we"><span class="dn">21</span></div><div class="d we"><span class="dn">22</span></div><div class="d"><span class="dn">23</span></div><div class="d"><span class="dn">24</span></div><div class="d"><span class="dn">25</span></div><div class="d"><span class="dn">26</span></div><div class="d"><span class="dn">27</span></div><div class="d we"><span class="dn">28</span></div><div class="d we"><span class="dn">29</span></div><div class="d"><span class="dn">30</span></div><div class="d"><span class="dn">31</span></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div></div></section><section class="mo"><header class="moh"><h3>2051년 2월</h3></header><div class="grid"><div class="wd">월</div><div class="wd">화</div><div class="wd">수</div><div class="wd">목</div><div class="wd">금</div><div class="wd we">토</div><div class="wd we">일</div><div class="d out"></div><div class="d out"></div><div class="d"><span class="dn">1</span></div><div class="d"><span class="dn">2</span></div><div class="d"><span class="dn">3</span></div><div class="d we"><span class="dn">4</span></div><div class="d we"><span class="dn">5</span></div><div class="d"><span class="dn">6</span></div><div class="d"><span class="dn">7</span></div><div class="d"><span class="dn">8</span></div><div class="d"><span class="dn">9</span></div><div class="d"><span class="dn">10</span></div><div class="d we"><span class="dn">11</span></div><div class="d we"><span class="dn">12</span></div><div class="d"><span class="dn">13</span></div><div class="d"><span class="dn">14</span></div><div class="d"><span class="dn">15</span></div><div class="d"><span class="dn">16</span></div><div class="d"><span class="dn">17</span></div><div class="d we"><span class="dn">18</span></div><div class="d we"><span class="dn">19</span></div><div class="d"><span class="dn">20</span></div><div class="d"><span class="dn">21</span></div><div class="d"><span class="dn">22</span></div><div class="d"><span class="dn">23</span></div><div class="d"><span class="dn">24</span></div><div class="d we"><span class="dn">25</span></div><div class="d we"><span class="dn">26</span></div><div class="d"><span class="dn">27</span></div><div class="d"><span class="dn">28</span></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div><div class="d out"></div></div></section></div>
+
+<div>
+  <h2>아크 &harr; 기간</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>아크</th><th>이름</th><th>화</th><th>기간</th></tr></thead>
+    <tbody><tr data-arc="S1"><td class="a spring">S1</td><td>물속의 것</td><td class="nu">1–6화</td><td class="nu">3월 (구간만)</td></tr><tr data-arc="S2"><td class="a spring">S2</td><td>기록되는 것들</td><td class="nu">7–12화</td><td class="nu">3/31 – 3/31</td></tr><tr data-arc="S3"><td class="a spring">S3</td><td>사월의 시간</td><td class="nu">13–18화</td><td class="nu">4/25 – 4/25</td></tr><tr data-arc="S4"><td class="a spring">S4</td><td>체육대회와 포박</td><td class="nu">19–24화</td><td class="nu">4/27 – 5/2</td></tr><tr data-arc="S5"><td class="a spring">S5</td><td>오월의 물때</td><td class="nu">25–29화</td><td class="nu">5/5 – 5/11</td></tr><tr data-arc="S6"><td class="a spring">S6</td><td>멈춰야 사는 바다</td><td class="nu">30–35화</td><td class="nu">5/12 – 5/15</td></tr><tr data-arc="S7"><td class="a spring">S7</td><td>봄의 매조지</td><td class="nu">36–40화</td><td class="nu">5/16 – 5/18</td></tr><tr data-arc="S8"><td class="a summer">S8</td><td>재검과 재래</td><td class="nu">41–50화</td><td class="nu">6/7 – 6/18</td></tr><tr data-arc="S9"><td class="a summer">S9</td><td>고철의 재간</td><td class="nu">51–61화</td><td class="nu">6/19 – 6/28</td></tr></tbody>
+  </table></div>
+</div>
+
+<div class="note">
+  <p><b>EP1&ndash;17은 일부러 날짜를 안 박았다.</b> 3월은 3월 초&middot;중순&middot;하순으로,
+  4월 초중반은 주차로만 잡혀 있다. 확정된 것은 EP12(3/31)와 EP18(4/25)부터다.
+  SNAP-017이 체육대회를 <b>다음 주</b>라고 적어 둔 덕에 EP17 = 4/20(수)까지는
+  역산되지만, 지면에 박힌 적은 없으므로 추정으로 둔다.</p>
+  <p><b>음력 명절은 아직 없다.</b> 설&middot;추석&middot;부처님오신날은 정하지 않았다 &mdash;
+  가을편에서 추석이 걸릴 수 있다. 양력 공휴일만 표시했고, 7월에는 하나도 없어서
+  방학 전 3주가 통으로 등교 주간이다.</p>
+  <p><b>여름편 21화는 한때 2일씩 어긋나 있었다.</b> 브리프와 초고가 다른 날을
+  가리킨 채 승인된 것이 EP41에서 시작됐고, EP61 뒤 감사에서 발견해 +5일로 일괄
+  정정했다(요일 라벨은 그대로). 그때 방학식도 7/15에서 7/22로 옮겼다.</p>
+</div>
+
+<footer>Black_Titan_작중달력_v1.0.md &middot; 달력 정정 v1.0 반영 &middot; 2026-08-15</footer>
+</div>
+<script>
+(function(){
+  var cur=null;
+  var btns=[].slice.call(document.querySelectorAll('.ab'));
+  function apply(a){
+    cur=a;
+    document.body.classList.toggle('filt', !!a);
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.arc===a)); });
+    [].forEach.call(document.querySelectorAll('.ch'), function(c){
+      c.classList.toggle('on', c.dataset.arc===a);
+    });
+    [].forEach.call(document.querySelectorAll('tr[data-arc]'), function(r){
+      r.classList.toggle('on', r.dataset.arc===a);
+    });
+  }
+  btns.forEach(function(b){
+    b.setAttribute('aria-pressed','false');
+    b.addEventListener('click', function(){ apply(cur===b.dataset.arc?null:b.dataset.arc); });
+  });
+})();
+</script>

@@ -1,0 +1,116 @@
+schema_version: 2
+chapter: 35
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-11"
+  approval_note: "v0.1 → 용해 정정 v0.2 → `좋아`. **S6 마감 화** — 정적 결착·C1 첫 창구·S7 인계."
+based_on_snapshot: "SNAP-034 v1.0"
+produces_snapshot: "SNAP-035 v1.0"
+changes:
+  - category: "positional"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**위기 종료·귀환 완료:** 개체 기능 정지·용해(오른팔에 걸린 채 멎음 → 겉에서부터 흐려져 소멸). 기체 = 전신 경화 외피 잔존(해체 = 며칠 규모 — S7 초입 후처리 소재)"
+      - "**5승 정본:** 다섯 승 중 가장 조용한 승리 — 비우세손 맨손 카운터 한 번 + 돌진 관성 역이용"
+    evidence:
+      scene: [3, 4]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**구분 감각 획득:** 밀면 가짜·당기면 진짜(EP30 오독의 회수 — `틀린 답을 제일 비싸게 산 사람이 그 답을 제일 잘 기억한다`)"
+      - "**가만히의 승리 체득:** 정지 = 오른손 한 번을 남기는 저축, 반사를 이기는 싸움, `모든 이기는 법이 빠른 쪽에 있었는데 오늘 이기는 법은 반대편 끝` — 성장 정본(행동 먼저인 아이가 안 움직여서 이긴 첫 판)"
+      - "서툰 오른손의 재발견: `하루 종일 한 자리에 두는 것으로 조준을 미리 다 해 놓는` 방식"
+    evidence:
+      scene: [1, 2, 3]
+
+  - category: "physical"
+    field_path: "characters.dana.physical"
+    operation: "advance"
+    after:
+      - "**C1 첫 창구 사용:** 귀환 직후 오른손 검지·중지 끝 감각 둔함 수십 초 → 회복(정상). 자진 신고(`둔했어요` — 약속이 입보다 먼저 움직임). 원인 미확정(충격·과긴장·반복 접속 개방 — 조종간 압박 제외)"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "advance"
+    after:
+      - "장부 신규 줄: 손 감각 항목(둔함·수십 초·회복) + 점액 잔류 수치 칸. 질문 0·반 박자 느린 연필(걱정의 수아식 형태)"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "손 감각 기록 + **시간 기입**(발생·소실 추정 시각 — `무엇인지 모르는 것일수록 언제였는지라도 정확해야`)"
+      - "**외해 두 선 목격(단독):** 서로 다른 방위·반대편·만나지 않은 채 나란히 청해 쪽으로(S7 인계 — 아이들 모름)"
+    evidence:
+      scene: 5
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 34
+        after: 35
+    note: "**S6 결착 완료 — 원형 포획 재실패(작가용). 지면 = 기능 정지·용해·수거물 없음 5차.** 다음: S7 두 개체 협동(탐색·지정 + 포박·운반 — 두 흔적 실체화는 EP36부터)"
+  - id: "FS-001-DANA-VISION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 24
+        after: 35
+    note: "**첫 창구 사용 완료(개요 조건 전체 이행).** 봄 잔여 = 부인 가능 수준 유지(재검 6월 생활 창구), 명백한 악화 = 여름부터"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 33
+        after: 35
+    note: "후처리 기록 이행(손 감각·잔류 수치 — 누락 확인만). 다음: **S7 결정적 관찰(두 역할의 관계를 한 번 읽음)**"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "이 화 미등장(§6-⑥ 이월). 다음: S7 봄 결산 + EP36 문면(`대신 끝나면 끝났다고 보내`) + 컵볶이 회수"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "다음: EP36 「깁스를 벗은 날」 — 소프트볼 표적 던지기 재대결(전력질주 미허가)"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "S6 종료 확인: 새 연락·소포·물증 0 완주"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "S6 휴지 완주(점액 ≠ 생체성 증거 이행)"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+    note: "잔류 수치 기록만(사실 층위)"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+    note: "혼용 금지 이행"
+
+no_change_checks:
+  - "군 공격 0, 조종간·모션 복제 묘사 0, 두 선 해설 0"
+  - "저림 계열 어휘 0(신고 = 둔했어요), 실신·보행장애·시야결손·진단 0"
+  - "환호 0, 연타 0, 개체 전신 상세 0(아가리·질량감), 학교 무파손"
+
+canon_additions:
+  - "시간: EP35 = 5/15 일 오후~밤(연속·귀환). **S6 = 5/12 목~5/15 일(나흘)**"
+  - "**격파체 용해 정본 재확인:** 기능 정지체는 물속에서 형태를 오래 지키지 않음 — 겉에서부터 흐려져 소멸, 잔해·경화 조각만 침전. **군 수거물 없음 5차**"
+  - "**정적 승리 정본:** 비우세손 맨손 카운터 1회 + 관성 역이용 — `기다린다→한 번 밀어 넣는다→다시 멈춘다→관성이 스스로 부순다`"
+  - "구분 감각 정본: 가짜 압력파 = 잔해 바깥 밀림 / 진짜 돌진 전조 = 관 안쪽 흡입"
+  - "C1 기록 관행: 손 감각 항목 = 장부 등재 + 발생·소실 시각 기입(영진)"
+  - "잔여 관망: 주인 잃은 관들 = 수몰 구도심 잔존 구조물(후처리·S7 소재 가능)"
+provenance:
+  chapter_text: "Black_Titan_EP035_35화_한번만움직인다_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP035_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP035_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP035_Gate-D_검증서_v1.0.md"
+notes:
+  - "**S6 「멈춰야 사는 바다」 완결(6/6).** 아크 마감 산출물: S6 종료장부 대조서 + 아크캡슐 S6(동봉)"
+  - "다음 = **S7 「두 개의 흔적」(가칭 — S7 개요 v1.3 확인) 개시, EP36 「깁스를 벗은 날」(표준 화 — 생활 진입/두 갈래 식별).** 고정선: 소프트볼 표적 던지기 재대결(마지막 한 번 남기고 종료)·B1 문면(`오늘은 또 먼저 갈 수도 있어`/`대신 끝나면 끝났다고 보내`)·수아 기록 겹치기(해석 0)·군 갈라진 경로(화물부두 바닥/크레인 기초 이탈)·훅(크레인 꼭대기의 접힌 검은 덩어리·바람 없는데 들리는 끝)"
+  - "S7 이후 미지불 창구: 컵볶이 회수(생활 화), 깁스 첫 줄(재대결 국면), 서랍 사진(별도 결정)"

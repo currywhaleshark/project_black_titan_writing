@@ -1,0 +1,153 @@
+schema_version: 2
+chapter: 46
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "v0.1 → v0.2(첨삭 5건 + EP28 조건 1 반영 + 단아 반말 소급정정) → v0.3(뒷마당·미완 작업·성호 논거) → `오케이`. S8 6/10 — 생활(후처리)."
+based_on_snapshot: "SNAP-045 v1.0"
+produces_snapshot: "SNAP-046 v1.0"
+changes:
+  - category: "situational"
+    field_path: "living_conditions.city"
+    operation: "advance"
+    after:
+      - "**6/14 아침 통제 해제**(EP43 재개 → 해제). **통제의 개폐 = 시민이 승패를 읽는 유일한 공개 지표**로 기능하기 시작(성호의 논거)"
+      - "**소문의 결 전환:** 무서움 → **걱정.** `그 거인 안 오면 어떡해` — 검은 거인 편들기 첫 눈금(우리 편 단정 0). `무섭다는 건 재미있다는 뜻이기도 해서 애들은 늘 조금씩 웃었다` → 오늘은 웃는 애가 없음"
+      - "**소문의 출처 정본(§1-D):** 방재벽 통제 근무자 + 방재벽 인접 고층 주민의 **불빛·소리 목격**뿐(형체 0·비). 통제 방송·아침의 잔해가 방증. **야간 조업은 없음**(통제 중)"
+    evidence:
+      scene: 3
+
+  - category: "situational"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "**행동 양상 변화 첫 기재:** 봄 내내 `접촉 시도`였던 항목이 **`원거리 공격 확인`** 으로 바뀜. 설명은 두 번 축소되어 사출 정황 관측까지만 남음(`판단은 문서의 일이 아니었다`)"
+      - "`미식별 검은 거인` 표기 유지·발원지/정체/조종 주체 미확인 유지. **`민간 목격 신고 다수 — 발광 및 소음. 형체 확인 없음.`** 기재(명준 지시: `신고가 있었다는 건 확인된 사실이다`)"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "external_conditions.public"
+    operation: "advance"
+    after:
+      - "**외신 한 줄(화이트 센티널 사다리 1단):** 내부망 뉴스 목록 구석 — 먼 항만 도시의 부두 하나가 사흘째 통제, 이유 비공개, 현지 당국은 정기 점검이라고만. **두 문장·주목 0**(서진이 5초 만에 읽고 넘김). 이름·사진·기체·국가 특정 0"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**듣는 자리의 자각:** 자기가 한 일이 남의 입으로 소문이 되어 돌아오는 것을 처음 경험. `할 말이 없어서가 아니라, 할 수 있는 말이 없어서` — 승리의 값 = 침묵"
+      - "도시가 검은 거인을 **걱정하기 시작했다는 것**을 교실에서 확인(`안 오면 어떡해`)"
+      - "**실감의 지연:** 부순 것은 어젯밤인데 아침에는 감각만 남음(`그런 일을 한 손치고는 평범하게 생겼다`)"
+    evidence:
+      scene: [1, 3]
+
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**하부 점검 완료(둘이 — EP28 조건 1 이행):** 물에 오래 있었으나 이상 없음. **발바닥 쪽 이물 — 아직 긁어내지 않음**(처리 예정·미완 작업)"
+    evidence:
+      scene: 1
+
+  - category: "situational"
+    field_path: "assets.youngjin_repair_shop"
+    operation: "advance"
+    after:
+      - "**여름 장부의 두께:** 6월 초~6/14에 벌써 여섯 쪽(봄에는 3주 분량). `봄 장부는 여백이 있었는데 여름 장부는 여백이 없다 — 쓰다 만 자리에 바로 다음 것을 쓰는 식`"
+      - "가시 조각 = 통으로 복귀 + **수아의 대조 그림 한 장이 통 옆에 배치**(공책 본문은 여전히 비공개)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "advance"
+    after:
+      - "**무서움의 발화 창구 성립:** `어제. 무서웠어.` → **`무서운 게 정상이다.`** 안심시키지 않고 닫지도 않는 응답. 질문에도 동일 — `모른다. 다만 달라지면 그건 적는다.`"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**혜정 반의식 2눈금:** 어제 늦은 것·오늘 피곤한 것을 **묻지 않고 처리**(짝 공책이 또 백지일 것을 아는 손놀림) + **잠깐 멈춤**(본인도 딱히 모름 — `요즘 이런 날이 좀 잦다는 것이 확인할 것도 없이 손에 익어 있을 뿐`). 명명·추궁 0"
+    evidence:
+      scene: 3
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "**성호의 쓸모 있는 이론 1호:** 무서움의 계수(여덟 번)에서 **관찰 가능한 증거**로 이동 — `통제 오늘 아침에 풀렸잖아. 안 끝나면 안 풀어.` → 교실 공기 전환. 앙숙 구도에 미세한 균열(적대 0)"
+    evidence:
+      scene: 3
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 45
+        after: 46
+    note: "**행동 양상 변화가 공적 기록에 최초 기재.** 다음: EP47~48 농게형(첫 육탄전·EP48 중요 화)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 40
+        after: 46
+    note: "**도시 여론의 전환 첫 눈금(무서움 → 걱정).** 성호 = 소문의 이론가에서 **증거의 이론가**로 한 칸. 다음 = 학교 파손(톡토기형·S10)"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 43
+        after: 46
+    note: "**반의식 2눈금**(묻지 않고 처리 + 잠깐 멈춤·명명 0). 곡선: S8 반의식 → S9 누적 → S10 명명"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+new_threads:
+  - id: "FS-C5-WHITE-SENTINEL"
+    question: "먼 데서 준비되고 있는 것은 무엇인가"
+    introduced_chapter: 46
+    current_holder: ["작가용"]
+    urgency: "SEEDED"
+    expected_window: "사다리 = S8 외신 한 줄 → S9~S10 누적 → 관통상 회차 데뷔(그레이트 마징가 결)"
+    allowed_interpretations: ["지면 = 무관해 보이는 해외 단신. 이름·사진·기체·국가 특정 0·인물의 해석 0"]
+
+no_change_checks:
+  - "앵커 명명 0, 센티널·루시 실체 0, 정체 확정 0, 새 증상 0, 출격 0"
+
+canon_additions:
+  - "시간: EP46 = 6/14(화) 아침~저녁. 통제는 이날 아침 해제"
+  - "**가족 화계 정본(사용자 2026-08-12): 단아 → 영진 = 반말**(교신·보고 국면 포함). 수아 → 영진 = 존댓말, 수아 → 단아 = 반말. ※ 소급정정: EP44 4건·EP45 2건"
+  - "**수아 단독 작업 금지 상시화(EP28 조건 1):** `혼자서는 안 한다` — 점검 장면에는 동행이 문면에 있어야 한다"
+  - "**소문 출처 정본:** 밤·비·방재벽 밖 교전은 **불빛과 소리로만 목격된다.** 형체 목격·영상·개체 잔존물 0. 통제의 개폐가 시민의 유일한 승패 지표"
+  - "**뒷마당 빨랫줄**(LOC-05 부속)"
+  - "**군 기록 문법 확장:** 판단은 적지 않고 정황만 적는다(`판단은 문서의 일이 아니었다`)"
+  - "격언 계보: `무섭다는 건 재미있다는 뜻이기도 해서, 애들은 늘 조금씩 웃었다` / `할 말이 없어서가 아니라, 할 수 있는 말이 없어서` / `모른다. 다만 달라지면 그건 적는다` / `무서운 게 정상이다` / `가는 게 아니라 훑는 것처럼 보였다`"
+provenance:
+  chapter_text: "Black_Titan_EP046_46화_기록의온도_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP046_회차브리프_v0.1.md"
+  content_lock: "Black_Titan_EP046_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP046_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 6/10 완료. 다음 **EP47 「집게」 — 전환·전투 진입.**"
+  - "EP47 고정선(S8 개요): 농게형 출현 — **상륙 국면**(방재벽 근접·거대 비대칭 집게의 첫 실루엣) → 출격. 얕은 물을 따라온 결(EP46 훅)의 정체가 드러남"
+  - "EP47~48 = **첫 육탄전 2부작**(EP48 = 중요 화·관절 역방향 꺾기). 전장 구조 선확정 필수 — **수몰 구시가지 아파트 단지는 EP45에서 엄폐 전량 소진**, 이번엔 다른 전장(방재벽 근접·얕은 물·상륙)"
+  - "EP47 금지: 앵커 명명·설계(S9)·센티널 실체·정체 확정·새 증상"

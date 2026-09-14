@@ -1,0 +1,126 @@
+schema_version: 2
+chapter: 10
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-04"
+  approval_note: "초고 v0.1 → 첨삭 6건 → v0.2 → `좋아, 승인`."
+based_on_snapshot: "SNAP-009 v1.0"
+produces_snapshot: "SNAP-010 v1.0"
+changes:
+  - category: "action"
+    field_path: "events.urchin_removal"
+    operation: "record"
+    after:
+      - "군의 간조 지반 교란(바다 쪽 빈 해저만, 절박감 입안·기대치 낮음) — 단독 효과는 `기울었다 도로 앉는` 일시 현상"
+      - "비접촉 편승: 영진이 민간 공지에서 시각을 읽음. 거인 등장은 군에게도 서프라이즈"
+      - "굴리기 격퇴 — 드럼통 박자, 방파제 무접촉(회전 이탈), 뒤집힘(점광이 하늘을 봄)"
+      - "옛 수문 골짜기(정호 지식)로 굴러 깊은 수역 퇴장 — 격파·사망·용해 미서술"
+      - "항만 통제 해제, 조업 전면 재개"
+    evidence:
+      scenes: [2, 3, 4]
+
+  - category: "public"
+    field_path: "external_conditions.public"
+    operation: "advance"
+    after:
+      - "**`우리 동네 거인` 애칭 탄생** — 미란의 손글씨 간판(`우리 동네 거인 덕분에 오늘 장사합니다`)이 기원. 비공식 생활권 애칭, 모방 종이 확산 시작"
+      - "방송사 드론 영상(발파~굴리기 전 과정) 공개 — 고화질. 아이들의 굴리기 놀이 유행"
+      - "성호의 왼손잡이설 공개 발화 — `손이 언제나 왼쪽부터 나간다`(첫 적중 분석, 결론은 성인 특수요원으로 빗나감)"
+    evidence:
+      scenes: [4, 5]
+
+  - category: "external"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "기록 갱신: `아군 작전 시각에 맞춰 출현, 개체 생활권 밖 배출, 민간 피해 0`"
+      - "**`현재로서는 적대할 이유가 없다` — 군 문서 첫 등재**(서진 입안, 고명준 승인)"
+      - "추격 보류 유지(수단 부재 + 적대 이유 없음)"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "굴리기 해법의 성립 — 발파의 몇 초 창 + 박자 유지. EP6 정정 원리의 실전 적용"
+        - "왼손잡이설이 자신을 아직 가리키지 않지만, 왼손이 `오늘부터 조금 문제`가 됐다는 것"
+      emotional_note:
+        - "승리관의 갱신 — `이겼다`가 아니라 `치웠다`. 철거가 끝난 자리에서는 아무도 환호하지 않는다"
+    evidence:
+      scenes: [3, 5]
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "merge"
+    after:
+      - "편승 계획 수립·성공(공지 해독 + 배 선장의 물길 지식 조합)"
+      - "팔 장갑 보수 완료 — 밀봉재 1통 소진(빈 통 보관 = 재조달 의지)"
+    evidence:
+      scenes: [1]
+
+  - category: "informational"
+    field_path: "characters.seongho.state"
+    operation: "advance"
+    after:
+      - "첫 적중 분석(왼손 선행) — 신뢰도 상승, 결론은 여전히 오답(왼손잡이 특수요원 프로필)"
+    evidence:
+      scene: 5
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "resolve"
+    after:
+      id: "A-S2-HARBOR-BLOCKADE"
+      resolution: "EP10 굴리기 격퇴·항로 재개로 종결. 잔여 후처리(왼손 소동·기록 정리)는 EP11~12"
+    evidence:
+      scenes: [3, 4]
+
+foreshadow_updates:
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 8
+        after: 10
+    note: "우리 동네 거인 탄생(도시 애정 구체화) + 왼손잡이설 발화(훅 확정 문구 `손이 언제나 왼쪽부터 나간다`). EP11 은폐 소동의 방아쇠 장전"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 9
+        after: 10
+    note: "성게형 퇴장(자리 상실 = 기능 상실 — 작가용). 지면은 퇴장 사실까지. 내부 기록(시도 02 실패·다음 배양)은 EP12"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "학교 씬에 혜정·예진 미등장 — 휴지 유지, EP11 재점화 예정"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+    note: "완전 침묵 확인(배어·스밈 계열 0)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "무기·케이블·앵커 0, 역장 어휘 0"
+  - "성게형 사망·용해·회수 서술 0 — 재등장 없음(작가용 확정)"
+  - "간판 애칭의 공식 승격 0(주민 모방 수준까지)"
+  - "군-가족 접촉·교신 0"
+  - "단아 신경 신호 0, FS-004 0"
+
+provenance:
+  chapter_text: "Black_Titan_EP010_10화_간조_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP010_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP010_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP010_Gate-D_검증서_v1.0.md"
+notes:
+  - "훅 최종 문구는 사용자 수정 반영: `손이 언제나 왼쪽부터 나간다`(주먹→손)."
+  - "영진의 정호 호칭 확정: `배 선장`(사용자 수정)."
+  - "S2 잔여: EP11 「오른손의 급식」(왼손 은폐 소동·B1 재점화), EP12 「기록되는 것들」(장부 교차·C3 사진·C4 첫 내부 기록·기태 조달)."

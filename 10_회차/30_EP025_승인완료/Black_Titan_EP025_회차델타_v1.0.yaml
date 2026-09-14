@@ -1,0 +1,106 @@
+schema_version: 2
+chapter: 25
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-10"
+  approval_note: "v0.1 → 수아 톤 정정(반복 지적 → 상시 가드) v0.2 → 첨삭 3건 v0.3 → `좋아 승인`. S5 도입 표준 화."
+based_on_snapshot: "SNAP-024 v1.0"
+produces_snapshot: "SNAP-025 v1.0"
+changes:
+  - category: "living_condition"
+    field_path: "living_conditions.neighborhood"
+    operation: "advance"
+    after:
+      - "**첫 더위·냉방기 대목:** 어린이날 반나절 수리(정오 마감선 — 노인 가구·작은 식당 우선). 실외기 넷·선풍기 여섯·냉장고 둘 처리, 내일 순서 셔터 안쪽 게시"
+      - "골목 답례 셈법 정사화(값과 별개의 답례 — 사양하면 서운해하는)"
+    evidence:
+      scene: [1, 2, 3]
+
+  - category: "relational"
+    field_path: "characters.sua.state"
+    operation: "advance"
+    after:
+      - "**B3 생활 역할 첫 인정:** 접수표 제작(중복 1건·빈 연락처 1건 발견) → 영진의 마지막 확인 위임(`가져오지 말고. 네가 봐라.`) — 표를 자기 주머니에"
+      - "수아식 고맙다 확립: 상대의 수고를 읽어 조용히 말해 주기(`할아버지 어제 늦게 잤어요?`)"
+    evidence:
+      scene: [2, 3, 4]
+
+  - category: "emotional"
+    field_path: "characters.dana.state"
+    operation: "advance"
+    after:
+      - "**안 싸우는 날의 지킴 확인:** `아무것도 쓰러뜨리지 않았는데 뭔가를 지킨 날`(몸으로 배움 — 실외기 넷의 셈)"
+      - "경보 공백의 낯섦 자각(`기다릴 것이 없어진 자리는 허전했다`) — 이유 추측 없음"
+    evidence:
+      scene: [1, 4]
+
+  - category: "relational"
+    field_path: "living_conditions.family"
+    operation: "advance"
+    after:
+      - "**어린이날 온기 저장:** 달력의 동그라미, 방재벽 그늘 늦은 점심(김밥 꼬투리 경쟁), **수제 휴대폰 정비 선물**(새 배터리·주황/하늘색 케이스·손질 자국 — 설명 없는 사랑의 문법)"
+      - "단아의 드문 패배 1건(`……나보다 낫네` — 수아의 수고 읽기 앞에서)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**약속 성립(훅):** `내일 열 시. 예진이랑 먼저 기다린다.` / `늦으면 늦는다고는 해.` — 답장 작성 시작(내용 미공개)"
+    evidence:
+      scene: 5
+
+foreshadow_updates:
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 22
+        after: 25
+    note: "생활 역할 첫 인정 이행(EP25 창구 소화). 다음 EP28 호기심"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 24
+        after: 25
+    note: "약속 메시지 훅 이행. 다음 EP26 — 연락 규칙 성립(`못 오는 것보다 아무 말 없이 기다리게 하는 게 싫다`)"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "NO_CHANGE"
+    note: "공백 배경만(미란 `조용해서 살 만하다` 절제 비트) — 이유 서술 0 이행"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "성호 언급 0(생활 화). 다음 EP26 기록 감점 시비"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "지하 비밀 0 — 수제 휴대폰 생활설정만 사용"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "전투·출격·경보 0(휴일 유지), 내부 고유명 0"
+  - "어머니 소포 0, 수아 적합성 0, C1 0, 연애 0"
+  - "카드 5인 초출 보류(무명 단골만)"
+
+canon_additions:
+  - "휴대폰 신상: 단아 = 주황 케이스, 수아 = 하늘색(모서리 수공 자국·새 배터리·새 일련번호 — 수아 기록 보유)"
+  - "구래동 생활 지리: 삼층 할머니 집, 대성슈퍼(부부), 방앗간(노끈 매듭), 반찬가게, 언덕 중간 독거 할아버지"
+  - "가게 관례: 못 받은 접수는 순서 매겨 셔터 안쪽 게시(잊지 않는다는 뜻)"
+  - "가족 관례: 달력 동그라미(드묾), 김밥 꼬투리 경쟁"
+
+provenance:
+  chapter_text: "Black_Titan_EP025_25화_어린이날_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP025_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP025_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP025_Gate-D_검증서_v1.0.md"
+notes:
+  - "S5 1/5 완료. 다음 EP26 「늦는다는 말」(표준 화 — 연락 규칙·기태 회수·앙숙 기본값)."
+  - "EP26 날짜 산정 필요: 약속 `내일 열 시` = 5/6 금(재량휴업 제안?) — 학교 B4 장면·어버이날 활동지 훅과의 배치를 브리프에서 확정."

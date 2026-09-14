@@ -1,0 +1,110 @@
+schema_version: 2
+chapter: 30
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-10"
+  approval_note: "v0.1 → 첨삭 4건+외팔 정합 v0.2 → `좋아`. **S6 개시 화(접촉/기습)** — 시리즈 첫 기습 피격."
+based_on_snapshot: "SNAP-029 v1.0"
+produces_snapshot: "SNAP-030 v1.0"
+changes:
+  - category: "positional"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**오른발목 포획 상태(진행 중):** 수몰 구도심 해저 도로 — 관 입구의 한 쌍 턱이 오른발목 이음매를 물고 견인 중. 전도(어깨부터 낙하), 잡을 것 없는 폐허(가로등 뽑힘·정류장 붕괴)"
+      - "**경화 개시:** 점액 실을 따라 콘크리트 조각이 발목→종아리로 엉겨붙음 — 움직일수록 가속(`관의 입구처럼 다리 둘레에 이어 붙는다` — EP31 진입 상태)"
+    evidence:
+      scene: 5
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "수몰 구도심 첫 진입(가라앉은 생활 잔해의 물성 체험). `미상 구조물` = 두드려도 폐허와 구분 불가라는 것"
+      - "**기습의 감각:** 맞은 게 아니라 잡혔다 — 지형이 물었다(EP20 팔과의 차이 체득). 당기는 힘 = 서두르지 않는 꾸준함"
+      - "몸의 배신 2종: 아무 일 없음에 풀리는 어깨, 잡히면 몸부림치게 되는 몸(움직일수록 붙는데 멈추지 못함)"
+    evidence:
+      scene: [4, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**연락 규칙 실전 첫 가동:** `오늘은 약속 못 지킬 수도 있어. 기다리지 마` → `어. 말해 줘서 고마워`(한 줄 — 위치·이유 질문 0)"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "advance"
+    after:
+      - "부표 기록 가족 공유(사실 순서대로 — 아이들 눈높이). 출격 결정: `접촉 전에 경로 확인` — 확인 위주·무리 금지 조건"
+      - "출격일 문법: 밥 한 공기 더 푸기, 당부 = `발 딛는 데를 믿지 마라`"
+    evidence:
+      scene: [2, 3]
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "advance"
+    after:
+      - "출격 배웅의 확인자 문법: 점검 장부 미리 펴 놓기 + `돌아오면 내가 먼저 볼게`. 부표 시각 전사·간격 확인(`간격이 같아요`)"
+    evidence:
+      scene: [2, 3]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 29
+        after: 30
+    note: "**접촉 실체화 완료** — 관망 매복·턱 포획·견인·경화 개시. 지면 공개 = 행동까지만(끌고 간다는 추정도 아직 미발화 — EP31). 다음: EP31 탈출·왼쪽 턱 파손·자발 퇴각"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 29
+        after: 30
+    note: "실전 첫 가동 완료(문면 그대로). 다음: EP32 「아프면 아프다고」 관계 시험"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "침묵 이행(EP35 뒤 창구까지)"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "배웅·전사만(조언 0 이행). EP35 후처리 창구 대기"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "낮 훈수 반 컷(지면 상태 보정 이론)만"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "명준 = 공적 통지만(앵커 이행). 서랍 사진 동결 유지"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+    note: "EP31 훅(쟁반 위 점액·가루 정렬)이 인접 창구 — 이번 화 접촉 0"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "개체 전신·내부 판단·목적 명사 0(`미상 구조물` 호칭), C1 0"
+  - "수아 동행·조언 0, 군 확장 0(공개망 통지 2건만), 학교 무피해"
+  - "아이언 앵커·사슬·케이블 0, 어머니·카네이션·서랍 사진 0"
+
+canon_additions:
+  - "시간: EP30 = 5/12 목(낮 일상 → 저녁 공유 → 밤 출격·접촉)"
+  - "**수몰 구도심 정본(첫 승인 물성):** 방재벽 이전 바다에 내준 옛 시가지 — 해저 도로, 기울어진 가로등, 삭은 간판, 정류장 지붕, 2층 없는 건물. 탁도 = 전조등 몇 걸음. 발밑 = 무너진 것들 위(잡을 것 없음)"
+  - "**군 통신 = 공개망 경유**(수리점 수신 채널 정본). 통지 문법 = 공적 문장·지원하되 관여하지 않는 거리"
+  - "출격 복장 = 체육복. 출격일 밥 한 공기 문법"
+  - "**영진 한 팔 몸짓 정본(첨삭 계기):** 팔짱·양손 동작 금지 — 한 손 기반(무릎에 얹기·짚기)"
+  - "실전 공백 = 17일(4/25 전후~5/12 — 단아 체감 기준)"
+provenance:
+  chapter_text: "Black_Titan_EP030_30화_폐허아래의관_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP030_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP030_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP030_Gate-D_검증서_v1.0.md"
+notes:
+  - "S6 1/6 완료. 다음 **EP31 「부러진 턱」(중요 화 — 첫 탈출/자발 퇴각).** 진입 = 포획·견인·경화 진행 중(이 화 훅 그대로)"
+  - "EP31 고정선(개요): 똑바로 당기면 더 굳는다는 깨달음 → 왼발·양손으로 철근·기둥 짚고 버티기 → 턱 벌어지는 순간 한쪽 턱뿌리를 관 테두리에 눌러 비틀기 → **왼쪽 턱 파손·탈출** → 개체 자발 퇴각(관망 깊숙이— 몸체 미노출 유지) → 군 = 동일 개체 표지 기록(부러진 왼쪽 턱·점액 조성) → **훅: 격납고 쟁반 위 턱 끝·점액 — 콘크리트 가루가 실 조직 따라 정렬(영진 목격 — FS-003 인접)**"
+  - "EP31 금지: C1(실패 원인 = 출력·신경 아님), 심해 추격·수사극, 퇴각 데이터·판단 서술"

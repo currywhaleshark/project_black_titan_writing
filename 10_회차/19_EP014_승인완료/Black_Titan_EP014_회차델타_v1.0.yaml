@@ -1,0 +1,130 @@
+schema_version: 2
+chapter: 14
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-04"
+  approval_note: "초고 v0.1 → 로컬 첨삭툴 2건(맨손수업, 모른다 누적) → `좋아, 승인`. S3 압박 화 — C1 첫 발현."
+based_on_snapshot: "SNAP-013 v1.0"
+produces_snapshot: "SNAP-014 v1.0"
+changes:
+  - category: "physical"
+    field_path: "characters.dana.symptoms"
+    operation: "merge"
+    after:
+      - "**C1 첫 발현(S1 이후 처음):** 복도 이동 중 조명 복귀 순간, 초점이 한 박자 늦게 맞고 관자놀이 안쪽을 짧게 찌름 — 1회, 수 초"
+      - "본인 해석: 정전 때문에 눈이 놀람(속말) — 이후 잊음. 재발 없음. 목격자 0"
+    evidence:
+      scene: 1
+
+  - category: "threat"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**고지선점 개체 지면 노출** — 방재벽·외곽 구조물을 건너 연구단지 열교환탑 점거. 여덟 보행지를 서로 다른 높이·방향으로 전개, 각도 전환 시마다 센서 교란"
+      - "눈 초록 점등(G0-009). 군 기록명 **`다각 보행체`**(작가용 명칭 `거미게형`은 지면 미사용)"
+      - "자정 무렵 다리 각도를 구래동 방향으로 재전개(훅 — 의도 서술 0)"
+    evidence:
+      scene: [2, 4]
+
+  - category: "living_condition"
+    field_path: "living_conditions.city"
+    operation: "advance"
+    after:
+      - "**순환정전 개시** — 안전계통이 전력·냉각 구획을 차례로 분리(발전소 무손상, `없음 세 개` 소거로 공식 확인)"
+      - "구역별 정전 순번표 배포(내부망 공지 — 구래동 20~22시 등). 도시가 켜진 조각과 꺼진 조각으로 나뉨"
+      - "학교: 방과후 연습 30분→15분, 급식 가열 조리 오전 몰아서, 수아 방과후 다음 주까지 중단"
+      - "수리점: 정전 특수(손전등·라디오·발전기) — 안 쓰던 물건들의 시험대"
+    evidence:
+      scene: [1, 2, 3]
+
+  - category: "informational"
+    field_path: "characters.myeongjun.state"
+    operation: "merge"
+    after:
+      - "결정: 기술진 대피·전력구획 분리 위임·낙하 예상 구역 통제 우선. 직접 타격 보류(구조물 붕괴 위험). 정체 추적 확대 0"
+      - "**공개 비상주파수 송출 지시**(구조물 하중·접근금지 반복) — `잡히라고 트는 거다. 듣는 쪽이 있으면 좋겠군`(기록 미등재)"
+      - "대피 능숙화에 대한 미기록 소감 — 두 달 사이 도시가 대피에 능숙해짐"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.youngjin.state"
+    operation: "merge"
+    after:
+      - "추정 발화(상한 준수): `전기를 먹는 게 아니다. 높은 데서 뭘 찾는 거다.` + `그건 모른다`"
+      - "격납고 점검 목록 작성 — 접어서 가슴 주머니에(출격 대비 동작, 선언 0)"
+    evidence:
+      scene: 3
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "merge"
+    after:
+      - "**단아 측 인지(사용자 첨삭):** `모른다`가 요 한 달간 계속 듣게 된 말이라는 자각 — 할아버지의 한계 감지(C2 보류 정서의 새 결)"
+    evidence:
+      scene: 3
+
+  - category: "living_condition"
+    field_path: "characters.dana.state"
+    operation: "merge"
+    after:
+      - "15분으로 준 연습에 처음으로 끝까지 남음 — 시간표를 깎아 준 것이 정전이라는 아이러니"
+      - "준비해 간 `먼저 가겠다`는 말을 쓰지 않음(혜정 옆에서 구호)"
+    evidence:
+      scene: 1
+
+foreshadow_updates:
+  - id: "FS-001-DANA-VISION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 2
+        after: 14
+    note: "**첫 부인 가능 신호 발현.** 공개 수위 = 초점 지연+관자놀이 찌름 1회, 정전·피로 자기 해석, 재발 0. 작가용 = 탐색파 공명(탑승 전 기체 밖). 괴수 씬과 분리 유지됨. 다음 진전 EP18 도수 변경(전투 중 재발 금지 — EP16 C1 rest)"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 13
+        after: 14
+    note: "고지 유지·방향 전환 행동 공개(다각 보행체). 독자·인물 획득 상한 = `높은 데서 뭘 찾는 것 같다`(영진 추정). 탐색 대상·타이탄 회피는 미공개. 다음 EP15 회피 패턴 노출"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 13
+        after: 14
+    note: "정전 원인 오답 3연발(변압기·군 절전·태양풍) — 검은 거인 연동설 없음 유지. 구호의 검은 거인 대목 최대 성량"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "rest — 연습 장면 배경 ●만. 실무·질문 0. 다음 EP17"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "생활 정보만(방과후 중단·하랑 언급). 관찰 메모는 EP15 예약"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "단, 단아의 `모른다 누적` 자각(사용자 첨삭)이 보류 정서에 결 추가 — 공개 수위 변동은 없음"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "고명준 등장했으나 사진·서랍 관련 0(잠금 준수)"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "전투 0 — 위협 공개와 생활 압박만. 출격은 EP15(격납고 조명까지만)"
+  - "C1-괴수 씬 분리, 인과 연결 0, 수아 비교 0"
+  - "군 씬 내부 고유명 0, C3 사진 0, 추적 확대 0"
+  - "계통·상쇄·역장·탐색파 0(안전계통은 개요 공식 어휘)"
+  - "`인터넷` 0(내부망 공지), 아이언 앵커·케이블 0"
+
+provenance:
+  chapter_text: "Black_Titan_EP014_14화_정전파도_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP014_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP014_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP014_Gate-D_검증서_v1.0.md"
+notes:
+  - "S3 2단계(압박) 완료. 다음 EP15 「수직의 싸움」 — 중요 화, 첫 실패(수직전·열교환탑 받치기·회피 패턴 노출)."
+  - "EP15 진입 상태: 격납고 조명 점등 = 출격 직전. 순환정전·고지선점 지속."

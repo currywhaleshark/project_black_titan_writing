@@ -1,0 +1,135 @@
+schema_version: 2
+chapter: 47
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "브리프 교정 3건 → v0.2(첫 경보·출격 동선·타격) → v0.3(수아 전투 교신 배제) → `좋아 이렇게 정리`. S8 7/10 — 전환·전투 진입."
+based_on_snapshot: "SNAP-046 v1.0"
+produces_snapshot: "SNAP-047 v1.0"
+changes:
+  - category: "situational"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**신규 개체 출현(6/15 오후) — 상륙 국면.** 넓적하고 낮은 몸통(키 = 기체 허리께), **한쪽 집게가 몸통만 함**, 반대쪽은 작음(접힌 채 **한 번도 움직이지 않음**), 다리 여덟"
+      - "**행동:** 옆으로 이동하며 **갯벌에서 안 빠진다**(하중 분산). 큰 집게로 **치고·막고·밀고·휘두르고·찌른다** — 다만 **크고 무거워 느리다**(궤도가 다 보임)"
+      - "**숨지 않는다:** 개활지 한가운데서 기다림. 접근해도 물러나지 않음(여기서는 저쪽이 빠르므로 물러날 이유가 없음)"
+    evidence:
+      scene: [3, 4]
+
+  - category: "situational"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "**신규 전장 정본 — 방재벽 바깥 갯벌·모래톱(상륙 접근로).** 수심 = **무릎 아래**(마른 데도 있음), **엄폐 0**, 지반 = 개펄, 변수 = **밀물**(들수록 물러짐·약 두 시간)"
+      - "**이족 하중 정본:** 52m 하중이 발 두 개에 집중되어 **박힌다.** 한 걸음마다 뽑아야 하고 뽑는 동안 묶인다. 다족은 분산되어 뜬 채로 지나간다"
+      - "**출격 동선의 물성:** 수몰역 밖은 아직 물 → 해안으로 걸어 나오며 가슴→허리→무릎으로 낮아짐 → **물이 받쳐 주던 것이 빠져나가며 몸이 무거워진다**"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**불리한 지형의 첫 경험:** 봄의 승리들(턱·갑판·크레인)이 전부 무거워서 된 일이었는데, **여기서는 그 무거움이 발을 땅에 박아 넣는다**"
+      - "**보이는데 못 피한다(원인 = 지형):** 집게는 느려서 궤도가 다 보이고 봄이었으면 피했을 속도인데, 발이 안 빠져 못 피한다"
+      - "**일어나는 데 걸리는 시간이라는 위기:** 넘어짐 자체는 EP30 선례가 있으나, 그때는 물이 받쳐 줬다. 개펄에서는 **짚는 손이 박힌다** — `힘이 모자란 게 아니었다. 힘은 남았다. 그래도 못 일어났다`"
+      - "**갯벌 대처법 두 가지(현장 습득):** ① 한 점으로 짚으면 박히니 **팔을 넓게 펴서** 짚는다 ② 발은 뽑는 게 아니라 **다리째 밀어 올리듯 끈다**"
+      - "**보이는 자리에서 싸운다는 부담:** 방재벽 위·통제선 밖의 시선. `검은 거인이 갯벌에 넘어져서 못 일어나고 있는 걸로 보일 것이다`"
+    evidence:
+      scene: [2, 3, 4, 5]
+
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**여름 두 번째 출격(주간).** 큰 집게 1격을 왼팔로 막음 — **관통 0·밀림 대**, 발이 박힌 채 상체만 밀려 **전도.** 전투 미종결(EP48 연속)"
+      - "무장 없음 유지. 발바닥 이물(EP46)은 여전히 미처리"
+    evidence:
+      scene: 4
+
+  - category: "situational"
+    field_path: "living_conditions.city"
+    operation: "advance"
+    after:
+      - "**주간 통제 경보 발령 → 하교 조치**(6/15 오후·5교시 중). 교실은 봄에 익힌 절차대로 움직임 — `설명이 필요 없어졌다는 건 익숙해졌다는 뜻`"
+      - "**주간·개활지 교전 → 관측 조건 개선.** 방재벽 위·통제선 밖에서 다수 목격(형체 층위·조종자 인지 0). ※ 형체 노출 자체는 봄에도 있었음"
+    evidence:
+      scene: [1, 4]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**혜정 반의식 3눈금:** 하교 갈림길에서 어디 가냐고 묻지 않고 보내되, **두 걸음 가다 멈춰 돌아보고** `조심해서 가`를 덧붙임 — `그 말을 왜 굳이 붙였는지는 본인도 몰랐다`. 명명·추궁 0"
+    evidence:
+      scene: 1
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "advance"
+    after:
+      - "**전투 교신의 단독 창구화:** 물때·상태·경고가 전부 영진의 입으로 나감(수아 배제 정본). `있다. 두 시간쯤 본다.` / `그 안에 끝내라.` / `아까보다 빠르다.` — **급할 때도 급하다고 말하지 않는 사람이 속도를 두 번 말함**"
+    evidence:
+      scene: [2, 4]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 46
+        after: 47
+    note: "**상륙 시도 = 새 행동 양식.** 지금까지는 물에서 왔고 이번엔 뭍으로 붙는다. 다음: EP48 = 첫 육탄전·관절 역방향 꺾기·**작은 집게의 단 한 번**"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 46
+        after: 47
+    note: "주간 경보·하교 조치가 절차로 정착. 여론 후속 반응 = EP49~50"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 46
+        after: 47
+    note: "**반의식 3눈금**(멈춤 + 굳이 붙인 한마디·본인도 모름). 곡선: S8 반의식 → S9 누적 → S10 명명"
+  - id: "FS-C5-WHITE-SENTINEL"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "결착 0, 관절 꺾기 0, 작은 집게 사용 0, 앵커 명명 0, 센티널 0, 새 증상 0, 도시 진입 0"
+
+canon_additions:
+  - "시간: EP47 = 6/15(수) 오후. EP46 저녁 신호에서 밤새 북상 → 낮에 상륙 시도"
+  - "**갯벌 전장 정본:** 방재벽 바깥 모래톱 — 무릎 아래·엄폐 0·개펄·밀물(약 두 시간)"
+  - "**이족/다족 하중 정본:** 52m 하중이 두 발에 집중되면 박힌다. 다족은 분산되어 뜬다. **아이의 셈으로만 서술**(`여덟 개로 나눠 디디니까`)"
+  - "**출격 동선의 물성 정본:** 수몰역 → 걸어 나오며 물이 빠져나가고 몸이 무거워진다"
+  - "**수아는 전투 교신에 참여하지 않는다(사용자 2026-08-12):** 출격 전후 관측·점검·지형까지. **예외 = EP38의 결정적 한 문장**"
+  - "**첫 사이렌 정합:** 3월 **체험학습 현장**(교실 아님). 인솔 교사가 먼저 당황"
+  - "**목격 서술 금지:** `처음으로 형체가 보인다` 계열 — 봄에도 낮 싸움이 있었고 형태가 드러난 적 있다"
+  - "격언 계보: `물이 받쳐 주고 있었다는 걸 물이 없어지면서 알았다` / `봄에는 그게 좋은 거였는데` / `힘이 모자란 게 아니었다. 힘은 남았다. 그래도 못 일어났다` / `무거운 것이 무거운 것을 친 충격이 몸 안쪽에서 두 번 울렸다`"
+provenance:
+  chapter_text: "Black_Titan_EP047_47화_집게_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP047_회차브리프_v0.1.md"
+  content_lock: "Black_Titan_EP047_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP047_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 7/10 완료. 다음 **EP48 — 중요 화(첫 육탄전).**"
+  - "EP48 고정선(S8 개요): **거대 집게와의 육탄전** → **관절 역방향 꺾기**로 결착. 사용자 추가: **작은 집게가 결정적 순간에 딱 한 번** 쓰인다"
+  - "EP48 = 시간 경과 0(같은 오후의 연속). 전장·밀물 승계 — 물이 더 들어와 개펄이 더 물러진 상태에서 시작"
+  - "EP48 금지: 앵커 명명·설계(S9)·센티널 실체·정체 확정·새 증상"

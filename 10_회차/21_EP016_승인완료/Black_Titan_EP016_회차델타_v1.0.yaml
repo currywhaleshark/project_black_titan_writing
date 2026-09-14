@@ -1,0 +1,115 @@
+schema_version: 2
+chapter: 16
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-05"
+  approval_note: "초고 v0.1 → 모바일 첨삭 3건 + 추가 1건 → `좋아 승인`. S3 클라이맥스 — 몰이 유도전 승리."
+based_on_snapshot: "SNAP-015 v1.0"
+produces_snapshot: "SNAP-016 v1.0"
+changes:
+  - category: "action"
+    field_path: "characters.dana.state"
+    operation: "merge"
+    after:
+      - "**몰이 유도전 승리:** 회피 사실만으로 설계(`피한다면, 피할 방향을 고를 수 있다`) — 접근 반경으로 탐색로 소거(넷→셋→둘→하나), 폐쇄 정비탑으로 유도"
+      - "정비탑을 빈 수조로 밀어 넘어뜨림(동반 낙하 없음) → 평면에서 **벽 압박 제압**(굴리기 셈·기각 후 수조 벽 활용 — 사용자 정정, 개요의 `굴려 뒤집기` 대체)"
+      - "**피구 감각 회수:** 몰이 = 수비수와 공을 주고받아 몰아넣는 몸의 기억(`코트가 연구단지, 공 대신 거인`)"
+      - "학습: 이기고도 불이 다 켜지지 않는 아침이 있다(승리 비용의 체감 — EP17 진입 정서)"
+    evidence:
+      scene: [1, 2, 3, 4, 5]
+
+  - category: "external"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**세 번째 개체 기능 정지** — 배 쪽 기관 압박, 초록 점 소등(켜짐의 역순). 사망 확정 표현 없음"
+      - "**새벽 봄비에 붉게 용해**(G0-011 발동 — 사용자 지시: 회수 복선 차단). 배수구로 유실, 잔존물 0"
+      - "작가용: 시도 03 실패 — 다음 내부 기록·포박형 예고는 EP18 훅"
+    evidence:
+      scene: [4, 5]
+
+  - category: "informational"
+    field_path: "military.record"
+    operation: "merge"
+    after:
+      - "`수거물 없음` 세 번째 등재(EP4·EP10·EP16) — 적는 손이 익숙해짐"
+      - "유도 인지: `미식별 거인, 접촉 없이 대상을 특정 방향으로 유도 중` + **`방송 끊지 마라. 저쪽이 쓰고 있다`**(공개방송의 도구화 묵인 — 협조 공식화 없음, `따지지 않는 것이 이 밤의 협정`)"
+    evidence:
+      scene: [2, 5]
+
+  - category: "living_condition"
+    field_path: "living_conditions.city"
+    operation: "advance"
+    after:
+      - "핵심 발전 계통 보존. **보조 열교환·변전 구획 손상 → 복구 기간 며칠 순환정전 시행**"
+      - "순환정전표 공개 낭독 개시 — **청해남초등학교·구래동 포함**(EP17 생활 청구서)"
+      - "열교환 2호탑: 지지대 고정으로 존치(상부 변형). 폐쇄 정비탑: 붕괴(수조 안, 계획된 낙하)"
+    evidence:
+      scene: 5
+
+  - category: "equipment"
+    field_path: "assets.black_titan"
+    operation: "merge"
+    after:
+      - "**조종석 상시 기록 기능 확립(블랙박스)** — 영진이 정비용으로 붙인 기능(사용자 첨삭·신규 사실). 전투 복기에 첫 사용"
+    evidence:
+      scene: 1
+
+  - category: "informational"
+    field_path: "story_time"
+    operation: "merge"
+    after:
+      - "**요일 확정: 전투 다음 날 아침 = 토요일**(`오늘은 토요일이다`) — 역산: EP14 낮 = 금요일(수아 방과후 중단 공지와 정합)"
+    evidence:
+      scene: 5
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 15
+        after: 16
+    note: "세 번째 개체 격퇴·용해. 독자·인물 획득: 회피 패턴의 역이용 가능성까지(이유는 끝내 미공개 — `왜 맞는지 모르는 열쇠`). 다음 진전 EP18 훅(포박형 예고)"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "전투 무증상 rest 달성 — 인물·서술 모두 차이 미의식(잠금 준수). 다음 EP17 칠판 → EP18 도수"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "다음 EP17 — 정전 교실 필기 공유·진료 권유"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "다음 EP17 — 정전 책임 논쟁 거인 옹호. 미회수: 계주 시합"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "언급 1회(단아의 추측)만 — 관찰 확대 없음(잠금 준수)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "고명준 미등장(군 무전은 무명 처리)"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+thread_resolutions:
+  - id: "A-S3-HIGHGROUND"
+    resolution: "고지선점 개체 격퇴 — 몰이 유도·정비탑 낙하·벽 압박 제압·새벽 비 용해. 전투 국면 종결(생활 여파는 EP17~18)"
+    resolved_at: 16
+
+no_change_checks:
+  - "케이블·앵커 0, 맨손과 지형만(탑·바닥·벽)"
+  - "원리 확정 대사 0, 계통·상쇄·역장 0"
+  - "사망 어휘 0, C1 서술 0, 수아 발화 0"
+  - "학교 건물 무손상, 군 협조 공식화 0"
+
+provenance:
+  chapter_text: "Black_Titan_EP016_16화_오를곳을없애는법_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP016_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP016_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP016_Gate-D_검증서_v1.0.md"
+notes:
+  - "S3 4단계(클라이맥스) 완료. 다음 EP17 「불 꺼진 교실」 — 표준 화, 여파·생활 비용."
+  - "EP17 진입: 주말 경과 후 등교일 — 순환정전표 생활, B1·B4 재가동, C1 칠판 신호."

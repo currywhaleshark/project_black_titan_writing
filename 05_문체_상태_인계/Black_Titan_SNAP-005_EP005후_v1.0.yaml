@@ -1,0 +1,376 @@
+schema_version: 2
+snapshot_id: "SNAP-005"
+status: "APPROVED_CURRENT_STATE"
+approved_by_user: "2026-08-03"
+approval_note: "EP005 「잔해와 계산서」 v1.0 Gate D 승인과 회차 델타를 적용. 영진의 위장 확장 설명과 부녀 공개, 현서·윤서진 첫 등장, 첫 승리의 생활비용을 반영."
+canon_version: "통합설정집 v2.3(+G0-007~011) / 전체 플롯 v2.2 / 봄 Level 3 v3.2 / S1 화별 개요 v3.7"
+through_chapter: 5
+story_time:
+  date: "2050년 전후 3월 초, 첫 승리 다음 날 밤"
+  time_of_day: "밤. 단아는 내일 등교를 정하고 잠들었고, 영진은 격납고 불을 껐다"
+  elapsed_since_previous_chapter: "EP4 종료(승리 당일 밤)로부터 하루"
+
+characters:
+  dana:
+    display_name: "도단아"
+    location: "구래동 집, 자기 방"
+    physical:
+      condition: "몸살 회복 중 — 첫 실전 피로 프레임. 새 부상·신경증상 없음"
+      symptoms:
+        - "지난가을부터의 시력 저하, 둥근 안경"
+        - "전신 피로(하루 결석) — 부인 가능 수위, 회복세"
+      injuries: []
+      treatment: ["시력 교정용 안경"]
+    emotional:
+      baseline: "밝고 활달하며 경쟁심이 강하고 생각보다 행동이 앞섬"
+      pressure_level: 3
+      pressures:
+        - "분노의 방향 상실 — 숨긴 할아버지와 시작한·떠난 엄마 사이"
+        - "전부가 아니라는 감각과 닫힌 질문들"
+        - "목격담 확산 앞의 구분되지 않는 심장 뜀"
+    relationships:
+      sua: "보호하려는 마음이 강한 친밀한 자매"
+      youngjin: "설명은 들었으나 전부가 아님을 느낌 — 화는 보류 상태"
+      hyejeong: "가장 오래된 절친 — 거짓말이 통했다고 믿는 중"
+      yejin: "3학년 때부터 친해진 절친"
+      seongho: "운동 라이벌·앙숙"
+    knowledge:
+      knows:
+        - "SNAP-004의 지식 전체"
+        - "적은 엄마가 바다 깊은 곳에서 발견한 것들 — 하나가 아니며 목적 불명이라는 설명"
+        - "블랙 타이탄 확장 위장 내력 — 30년 전 시제기, 영진 독단 반출, 18년 전부터 부녀 개수"
+        - "도영진·도현서 부녀가 준비했다는 사실과 18년 전 방문"
+      suspects:
+        - "영진이 아직 전부를 말하지 않았다는 감각(구체화 못 함)"
+      misunderstands:
+        - "확장 위장 설명을 사실로 믿음"
+        - "혜정에게 거짓말이 통했다고 믿음"
+      hides:
+        - "탑승 사실(가족 외 전원)"
+    commitments:
+      - "동생 수아를 지킨다"
+      - "내일 등교 — 개근은 다시 센다"
+
+  sua:
+    display_name: "도수아"
+    location: "구래동 집"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "말수가 적고 사려 깊음"
+      pressure_level: 3
+      pressures:
+        - "엄마에게 알릴 방법이 없다는 대답의 잔상"
+    relationships:
+      dana: "언니를 신뢰하고 관찰"
+      youngjin: "설명을 함께 들은 손녀"
+    knowledge:
+      knows:
+        - "SNAP-004의 지식 전체"
+        - "단아와 동일한 설명 전체"
+        - "엄마에게 알릴 방법이 없다는 것"
+      suspects: []
+      misunderstands:
+        - "확장 위장 설명을 사실로 믿음"
+      hides: []
+    commitments: []
+
+  youngjin:
+    display_name: "도영진"
+    location: "구래동 수리점"
+    physical:
+      condition: "고령이지만 작업능력 유지"
+      symptoms: []
+      injuries: ["왼팔 결손"]
+      treatment: []
+    emotional:
+      baseline: "최악을 먼저 상정하고 대비하는 보호자"
+      pressure_level: 4
+      pressures:
+        - "재발 확신 — 다음 준비의 계산"
+        - "부품·정비의 자원 관리"
+        - "말하지 않은 것들의 무게"
+    relationships:
+      dana: "설명 의무는 이행, 실제 진실은 계속 봉인"
+      sua: "동일"
+    knowledge:
+      knows:
+        - "SNAP-004의 지식 전체"
+        - "기체 경미 손상 정비 완료, 부품 소모 현황"
+      suspects:
+        - "재발 — `한 번으로 끝날 리가 없지`"
+      misunderstands:
+        - "수아의 우회 필터 약화 가능성은 여전히 예상 밖"
+      hides:
+        - "생체 기원, 두 자매의 신경기원, VR 우회 원리·누출·시신경 손상"
+        - "현서가 떠난 이유와 현재 소재"
+        - "출격 노선(가족 외)"
+    commitments:
+      - "다음 침공 대비 정비·비축 재계산"
+
+  hyunseo:
+    display_name: "도현서"
+    location: "불명 — 자매·독자 기준 `오래전에 떠남`"
+    physical: { condition: "회상(18년 전) 기준만 제시됨", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "회상 한정 — 지친 확신. 떨리는 손과 반듯한 문장"
+      pressure_level: 0
+      pressures: []
+    relationships:
+      youngjin: "의절을 깨고 찾아왔던 딸(18년 전). 이후 함께 개수 — 위장 프레임 내 사실"
+      dana: "얼굴이 기억나지 않는 어머니"
+      sua: "동일"
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+    state_notes:
+      - "본편 미등장. 회상 선행 등장만 성립. 현재 소재·소속은 전 계층 봉인"
+
+  myeongjun:
+    display_name: "고명준"
+    location: "남해방위사령부"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "공적 언어의 지휘관, 건조한 자조"
+      pressure_level: 4
+      pressures:
+        - "수거물 전무 — 종이만 남은 상황"
+        - "재발 가능성에 대한 실무적 확신"
+    relationships: {}
+    knowledge:
+      knows:
+        - "SNAP-004의 지식 전체"
+        - "사체 용해 소실 공식 기록, 수질 검출 무의미 예상"
+        - "추적 수단 부재(소나망 절반 상실)"
+      suspects:
+        - "다음이 있다 — 끝났다고 보는 쪽이 이상하다"
+      misunderstands: []
+      hides: []
+    commitments:
+      - "`소속 불명 전략무력` 기록 상신, 출격 기록 수집 유지"
+
+  seojin:
+    display_name: "윤서진"
+    location: "남해방위사령부"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "건조한 실무자 — 명령과 혼잣말을 가려 기록"
+      pressure_level: 3
+      pressures: []
+    relationships:
+      myeongjun: "전속부관"
+    knowledge:
+      knows:
+        - "군 보유 정보와 동일(무등록·용해·기록 지시)"
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments:
+      - "출격 기록 정리"
+
+  hyejeong:
+    display_name: "고혜정"
+    location: "청해 시내 자택"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "직선적이고 의리 강함"
+      pressure_level: 2
+      pressures:
+        - "접어 둔 질문 유지 — 단체방에서도 캐묻지 않음"
+    relationships:
+      dana: "짐작을 접어 둔 절친"
+      yejin: "함께 걱정한 친구"
+    knowledge:
+      knows:
+        - "SNAP-004의 지식 전체"
+        - "단아의 결석과 몸살 사유(담임 공지)"
+      suspects:
+        - "말 못 할 사정 — 나쁜 일은 아닐 것"
+      misunderstands: []
+      hides: ["짐작했다는 사실"]
+    commitments:
+      - "이번에는 묻지 않기 — 부채는 유지"
+
+  yejin:
+    display_name: "하예진"
+    location: "청해 시내 자택"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "완충재형 다정함"
+      pressure_level: 1
+      pressures: []
+    relationships:
+      dana: "병문안을 제안한 절친"
+      hyejeong: "단체방 친구"
+    knowledge:
+      knows:
+        - "단아의 몸살 결석, 수아에게 안부 전한 것"
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments: []
+
+  seongho:
+    display_name: "이성호"
+    location: "청해 시내 자택"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "경쟁심과 과장", pressure_level: 2, pressures: ["검은 거인 목격담 흥분"] }
+    relationships: { dana: "운동 라이벌·앙숙" }
+    knowledge:
+      knows: ["검은 거인의 승리와 붉은 용해 소문·영상"]
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments: ["단아 놀리기와 경쟁"]
+
+  juho:
+    display_name: "김주호"
+    location: "청해 시내 자택"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "담백한 현실형 교사", pressure_level: 2, pressures: ["재난 후 학급 운영"] }
+    relationships: { dana: "담임과 학생", seongho: "담임과 학생" }
+    knowledge:
+      knows: ["단아의 몸살 결석 접수·학급 공지"]
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments: ["학급 일상 복구"]
+
+assets:
+  black_titan:
+    location: "지하 격납고"
+    status: "정비 완료 — 어깨 긁힘 연마, 기능 정상. 대기 상태"
+    equipment:
+      - "세미다이렉트모션 조종계"
+      - "감쇠 포스 피드백"
+      - "단아 반응값 보정"
+    damage: []
+    repair_needs: []
+    maintenance_log:
+      - "EP5: 어깨 장갑 연마, 팔 장갑 점검. 비축 부품 소모 기록"
+  sortie_line:
+    location: "격납고 → 옛 노선 → 수몰역(무명)"
+    status: "정상. 비공개 유지"
+    equipment: ["레일 운반대차", "수밀격벽"]
+    damage: []
+    repair_needs: []
+  youngjin_repair_shop:
+    location: "구래동 언덕길"
+    status: "정상 영업 — 비축 부품 일부 소모"
+    equipment: ["수리 공구·부품", "지하 연결통로"]
+    damage: []
+    repair_needs: []
+
+inventory:
+  black_titan_weapons: { status: "없음", note: "봄에는 맨손. 아이언 앵커 금지." }
+  dana_phone: { status: "사용 가능", note: "3인 단체방 활동" }
+  sua_phone: { status: "사용 가능", note: "" }
+
+living_conditions:
+  family:
+    - "설명 이행 후의 소강 — 아침의 이야기는 아무도 다시 꺼내지 않음"
+    - "단아 결석 1일, 5년 무지각 개근 종료. 내일 등교 예정"
+    - "부품 소모로 첫 정비 비용 발생"
+  school:
+    - "정상 수업. 단아의 몸살 결석이 학급에 공지됨"
+  neighborhood:
+    - "방재벽 점검·통제 해제 진행. 방송차 안내 반복"
+  city:
+    - "언론 관심 안착(정오 뉴스 다섯 번째 꼭지), 게시판 목격담 증가"
+    - "목격 영상 제보 접수 중"
+
+external_conditions:
+  public:
+    - "검은 거인 목격담·사진 확산 지속. 정체·행방 불명 유지"
+  military:
+    - "수거물 전무 확정(용해 소실 기록). `소속 불명 전략무력` 상신"
+    - "출격 기록 수집 개시. 추적 수단 부재 — 소나망 절반 상실"
+  enemy:
+    - "작가용: 첫 개체 사망 이후 인큐베이터 측 동향 봉인(EP12 제한 기록)"
+
+active_threads:
+  - id: "A-S1-FIRST-INVASION"
+    question: "첫 침공이 단아의 일상을 어떻게 바꾸는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 5
+    current_holder: ["단아", "영진", "청해"]
+    urgency: "LOW"
+    expected_window: "EP6 아크 마감 — 학교 복귀와 소문 감당"
+    allowed_interpretations:
+      - "전투는 끝났고 비용 정산과 설명이 이뤄졌다. 남은 것은 일상 복귀"
+  - id: "FS-001-DANA-VISION"
+    question: "시력·VR·두통은 어떻게 이어지는가"
+    introduced_chapter: 0
+    last_advanced_chapter: 2
+    current_holder: ["단아", "영진"]
+    urgency: "LOW_DENIABLE"
+    expected_window: "기준선 확립됨(EP5 몸살=정상 피로). 다음 명시 진전 S3"
+    allowed_interpretations:
+      - "몸살은 정상 피로로 수용됨 — 이후 이상 신호의 비교 기준"
+  - id: "B1-HYEJEONG-CONCERN"
+    question: "혜정은 첫 거짓말을 어떻게 안고 가는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 4
+    current_holder: ["단아", "혜정", "예진"]
+    urgency: "LOW_SIMMERING"
+    expected_window: "EP6"
+    allowed_interpretations:
+      - "유예 유지. 단아는 `혜정답지 않다`를 스치듯 느꼈을 뿐"
+  - id: "C2-TITAN-ORIGIN"
+    question: "거인은 무엇이며 누가 왜 만들었는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 5
+    current_holder: ["영진"]
+    urgency: "HIDDEN"
+    expected_window: "생체성 제한 복선은 S2 이후, 실제 기원은 가을"
+    allowed_interpretations:
+      - "가족·독자: 부녀가 준비했다(위장 프레임). 닫힌 질문들이 다음 공개 창구"
+  - id: "C4-ENEMY-PURPOSE"
+    question: "그것들은 무엇을 하러 오는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 4
+    current_holder: ["인큐베이터"]
+    urgency: "HIDDEN"
+    expected_window: "EP12 제한 기록"
+    allowed_interpretations:
+      - "엄마가 발견한 것들이라는 출처 설명까지. 목적은 전 계층 불명"
+  - id: "B3-SUA-POSITION"
+    question: "왜 현재는 단아만 조종자인가"
+    introduced_chapter: 2
+    last_advanced_chapter: 2
+    current_holder: ["수아", "영진"]
+    urgency: "LOW_HIDDEN"
+    expected_window: "S3 결정적 관찰, 적합성은 여름"
+    allowed_interpretations: ["변동 없음"]
+  - id: "FS-004-PIERCING-FEAR"
+    question: "조종석의 아이는 몸의 위험을 어떻게 상상하는가"
+    introduced_chapter: 4
+    last_advanced_chapter: 4
+    current_holder: ["단아"]
+    urgency: "DORMANT"
+    expected_window: "여름 마지막 전투 회수"
+    allowed_interpretations: ["반복 사용 금지 유지"]
+
+relations:
+  dana_sua: { pair: ["dana","sua"], stage: "STABLE_FAMILY", trust_level: 5, current_issue: "없음" }
+  dana_youngjin:
+    pair: ["dana","youngjin"]
+    stage: "STRAINED_BY_REVEALED_DECEPTION"
+    trust_level: 3
+    current_issue: "설명 이행 후 보류 상태 — 전부가 아니라는 감각, 방향 잃은 화"
+  dana_hyejeong:
+    pair: ["dana","hyejeong"]
+    stage: "STABLE_LONGTIME_FRIENDS"
+    trust_level: 5
+    current_issue: "유예와 부채 지속(단아는 모름)"
+  dana_yejin: { pair: ["dana","yejin"], stage: "STABLE_FRIENDS", trust_level: 4, current_issue: "없음" }
+  dana_seongho: { pair: ["dana","seongho"], stage: "RECIPROCAL_RIVALRY", trust_level: 2, current_issue: "상시 경쟁" }
+
+relation_scale:
+  trust_level: "0=신뢰 없음, 5=매우 높은 개인적 신뢰. 호감·연애 수치가 아님."
+
+last_approved_delta: "Black_Titan_EP005_회차델타_v1.0.yaml"
+provenance:
+  - "SNAP-004 v1.0의 provenance 전체"
+  - "EP005 회차브리프 v0.2 GATE_C_PASS"
+  - "EP005 Level 6 v1.0 LEVEL6_APPROVED"
+  - "EP005 잔해와 계산서 v1.0 GATE_D_PASS 2026-08-03"
+  - "EP005 회차델타 v1.0"

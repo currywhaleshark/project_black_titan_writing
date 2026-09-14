@@ -1,0 +1,116 @@
+schema_version: 2
+chapter: 43
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "v0.1 + 첨삭 3건(v0.2) → `좋아`. S8 3/10 — 전환 화."
+based_on_snapshot: "SNAP-042 v1.0"
+produces_snapshot: "SNAP-043 v1.0"
+changes:
+  - category: "situational"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "**파형 3건 누적**(금 오후·토 오전·토 저녁 — 간격 하루 미만→반나절·방위 일정·청해행 선). 봄 4월 중순 기록(`이후 기록 없음`으로 닫힌 페이지)과 결 일치"
+      - "**월요일 밤 22:30 — 방재벽 외곽 감시 화면에 반구형 실루엣.** 부표 7·5번 구역 무정지 통과 — **봄의 것들과 달리 멈추지 않고 직진 중**(영진 단독 목격·아이들 미공지)"
+    evidence:
+      scene: [1, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "파형 3건·간격 단축·청해행 선·봄 기록과 겹침(영진 공유). **`계속 이랬으면 좋겠다` 플래그 깨짐 → 각오 전환**(`온다면 받아 준다`)"
+      - "수아가 통을 꺼낸 의미를 반 박자 늦게 따라잡음(정체는 여전히 명언 0)"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "**무언 추론 성립:** 영진의 설명만으로 봄의 미확인 개체를 짚어 **가시 조각 통을 작업대에 올림**(대조 준비 — 결론·발화 0). 겹친 화면 세팅(봄 = 파랑·여름 = 빨강)"
+    evidence:
+      scene: [2, 4]
+
+  - category: "situational"
+    field_path: "living_conditions.neighborhood"
+    operation: "advance"
+    after:
+      - "**군 공개 통지 — 외곽 수로·부두 인접 구역 통제 재개**(봄 문법 재가동·명준 ○). 교실 = 학습된 반응(절차화·`또 왔나 보네`)"
+    evidence:
+      scene: 3
+
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "점검 완료 — **`보수할 데는 없다. 언제든 나갈 수 있다`**(맨몸·어깨 얼룩 존속). 조종석 예열(기동 0)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**혜정 패턴 인지 = 1단(반의식):** 통제 구역 실무를 봄의 경험으로 즉시 정리(`왜 잘하냐`를 본인도 안 물음) + **규칙 재가동 문자 `또 시작인가 보네. 알지? 늦으면 늦는다고`** → 단아 `알지`. 단아 = 그 이상의 뜻을 추적하다 중단"
+    evidence:
+      scene: [3, 4]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 42
+        after: 43
+    note: "**전환 완료(파형 3→실루엣·직진).** 다음: EP44 = 출격·**첫 가시 사격·투사체 무효(현상만)**·의도의 공포 / EP45 = 격파(가시 부러뜨리기→내려치기)·수아 대조 결론"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 42
+        after: 43
+    note: "**패턴 곡선 1단(반의식) 첫 눈금.** 다음: S9 누적(짐작 목록 증가·캐지 않음) → S10 명명"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 42
+        after: 43
+    note: "무언 추론 성립(확인자 재가동). 대조 결론 = EP45 몫"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "정체 명언 0, 출격 0, 새 증상 0, 패턴 명명 0, 가시 노출 0(실루엣까지)"
+
+canon_additions:
+  - "시간: EP43 = 6/11(토)~6/13(월 밤 22:30 실루엣)"
+  - "**여름 절차 재가동 정본:** 장부 대조(일상과 한 책상)·가족 공유(열린 미닫이)·공개 통지·규칙 문자·몸 만들기·조종석 예열"
+  - "**혜정 반의식 정본(패턴 곡선 1단):** 통제 실무를 즉시 정리하되 이유를 자문하지 않음 / 문자 `또 시작인가 보네. 알지? 늦으면 늦는다고`"
+  - "**학습된 도시 정본:** `무서워하는 법도 는다` — 소문을 절차로 소화·걱정을 오래 들고 있지 않음"
+  - "관측 문법: `잔잔한 화면을 오래 보는 법 — 눈이 아니라 귀로 보는 것`"
+  - "**금지어 신규 등재(첨삭 계기): `화`(작가용 회차 단위) 지면 사용 금지**"
+  - "격언 계보: `낯익다는 감각은 답을 주지 않는다. 어디서 봤는지를 찾아 줄 뿐이다` / `아는 척은 봄에도 없었다` / `저 얼룩 하나하나가 봄의 영수증`"
+provenance:
+  chapter_text: "Black_Titan_EP043_43화_낯익은신호_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP043_회차브리프_v0.1.md"
+  content_lock: "Black_Titan_EP043_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP043_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 3/10 완료. 다음 **EP44 「다른 여름」(중요 화 — 첫 피격·투사체 무효).**"
+  - "EP44 고정선(S8 개요): 출격·조우 → **첫 가시 사격**(이쪽을 겨냥해 쏘는 첫 동작 — 봄에 없던 것) → 첫 피격의 충격(자신감 봄 최고점에서의 첫 동요 — 균열 축) → **투사체 무효 발견**(맞는데 뚫리지 않는다 — **현상만·역장 서술 금지 유지**) → 무효인데도 무서운 이유(**의도의 공포**) → 원거리 상대에 맨손이 닿지 않는 답답함 개시 → 훅: 가시 연사 속에서 접근 각을 재는 단아(발사 간격의 리듬이 들리기 시작)"
+  - "EP44 개체 잠금: **개수 흔적 = 가시 재정렬·기부 두터움·작살형 끝**(위화감 층위·해설 0). 이동함(봄의 부동과 대비). 회수 목적 잔존(도시 아닌 기체 조준)"
+  - "EP44 금지: 격파(EP45 몫)·가시 조각 대조 결론(EP45)·역장 원리·`개수` 지면·새 증상"

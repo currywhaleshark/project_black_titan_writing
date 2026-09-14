@@ -1,0 +1,117 @@
+schema_version: 2
+chapter: 11
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-04"
+  approval_note: "초고 v0.1 → 첨삭 13건(피구 규칙·식당 급식·인트라넷) → v0.2 → `좋아, 승인`."
+based_on_snapshot: "SNAP-010 v1.0"
+produces_snapshot: "SNAP-011 v1.0"
+changes:
+  - category: "action"
+    field_path: "events.left_hand_farce"
+    operation: "record"
+    after:
+      - "단아의 이틀 오른손 작전 — 필기(지렁이 공책)·급식(명태전 낙하)·피구(성호 품 패스 후 역습 피격 패배) 전패"
+      - "승부처에서 왼손 대신 오른손을 고르는 자존심 희생(이유 무서술)"
+      - "2일차 반사 캐치(식판·왼손·카레 무사)로 작전 무산 — 아무도 연결하지 않음을 최종 확인, 왼손 복귀"
+    evidence:
+      scenes: [1, 2, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "merge"
+    after:
+      stage: "STABLE_LONGTIME_FRIENDS"
+      trust_level: 5
+      current_issue: "혜정의 독법 — `다친 손 은폐`로 오독(파일럿 방향 0). 실무 보조 축적(반찬·명태전·노트 두 장·가위·반창고). 훅 질문 2호(`너 손, 진짜 안 다친 거지?`) 사용·회피됨. 내적 결의: 지켜보다 안 나으면 그때는 묻는다(밥 두 그릇으로 못 넘어간다) — 여름 그림자"
+    evidence:
+      scenes: [2, 3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    after:
+      knows:
+        - "아무도 아이 파일럿을 상상하지 않는다 — 왼손 노출은 현재 위험이 아님(체험 확증)"
+        - "묻지 않아 주는 것의 값 — 외상 장부의 자각(갚을 방법 미정)"
+      emotional_note:
+        - "안도와 불편의 동시 획득(개요 잠금) — 혜정의 오해를 자기가 만들었다는 무게"
+    evidence:
+      scenes: [4, 5]
+
+  - category: "informational"
+    field_path: "characters.seongho.state"
+    operation: "advance"
+    after:
+      - "가상 프로필 성장 — 나이 서른둘·해외 파병 3회·코드네임 미상·신장 185(조종석 역산). 실제 단아와의 간극 = 반복 코미디 안착"
+      - "단아 라이벌십의 온도 확인 — `던져 봐`가 놀림이자 응원"
+    evidence:
+      scenes: [1, 2, 3]
+
+  - category: "living_condition"
+    field_path: "living_conditions.school"
+    operation: "merge"
+    after:
+      - "**설정 확정(사용자): 청해남초 급식은 급식실(식당) 배식** — 교실 급식 아님. 국그릇 별도 제공은 드묾"
+      - "왼손잡이설은 성인 신화로 안착 — 학생 대조 시도 전무"
+    evidence:
+      scenes: [2, 5]
+
+  - category: "informational"
+    field_path: "world.network"
+    operation: "confirm"
+    after:
+      - "**설정 리마인드(사용자): 인터넷 소실 — 청해 내부망(인트라넷)만 동작.** 서술·대사에서 `인터넷` 사용 금지(EP4 인트라넷 게시판과 정합)"
+    evidence:
+      scene: 2
+      source_text_anchor: "……인트라넷."
+
+foreshadow_updates:
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 6
+        after: 11
+      - field: "allowed_reveal_now"
+        before: "직접 질문 1회 사용됨(`너, 진짜 어디 아픈 거 아니지?`) — 봄 안에서 같은 질문 반복 금지. 관찰(짧아지는 대꾸·웃음 크기 확인)은 축적 유지"
+        after: "질문 2호 사용됨(`너 손, 진짜 안 다친 거지?` — 손 특정). 봄 내 추가 직접 질문 금지. 실무 보조와 `지켜보기` 결의까지 — 추궁·물증은 여전히 여름"
+    next_window: "S3 결석·피로 걱정"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 10
+        after: 11
+    note: "왼손 소동 종결(무산), 프로필 신화 성장. 다음 진전 S3 학교 코미디"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "실제 손 이상 0 확증(저림·통증 어휘 0) — C1과의 절연 유지"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "NO_CHANGE"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "수아·영진 미등장(순수 학교 화)"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "실제 손 이상 0 — 전부 자작극, C1 신호와 절연"
+  - "혜정 추궁·미행·물증 0, 파일럿 연상 0"
+  - "성호 왼손 대조 실행 0, 나래 미등장(기록 0)"
+  - "전투·군·괴수 서술 0"
+
+provenance:
+  chapter_text: "Black_Titan_EP011_11화_오른손의급식_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP011_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP011_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP011_Gate-D_검증서_v1.0.md"
+notes:
+  - "혜정 훅 어법의 모티프화 성립 — EP6 `너, 진짜 어디 아픈 거 아니지?` ↔ EP11 `너 손, 진짜 안 다친 거지?`"
+  - "사용자 확정 3건: 급식실 급식 / 인터넷 소실·인트라넷 가드 / 피구 규칙 정합"
+  - "다음 EP12 「기록되는 것들」 = S2 마감 화(장부 교차·C3 사진·C4 첫 내부 기록·기태 조달) → S2 종료 장부 대조·아크 캡슐"

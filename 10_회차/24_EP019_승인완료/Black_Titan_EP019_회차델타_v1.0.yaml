@@ -1,0 +1,123 @@
+schema_version: 2
+chapter: 19
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-05"
+  approval_note: "초고 v0.1 → 모바일 첨삭 1건(장애물경주 정정) → `좋아`. S4 도입 화."
+based_on_snapshot: "SNAP-018 v1.0"
+produces_snapshot: "SNAP-019 v1.0"
+changes:
+  - category: "living_condition"
+    field_path: "living_conditions.school"
+    operation: "advance"
+    after:
+      - "**체육대회 개최(4/27 수)** — 개회·피구·장애물경주까지 진행, **마지막 학년 계주 직전 해안 대피 사이렌으로 중단**"
+      - "종목 기록: 피구 반 대항(단아·성호 같은 팀 — 아웃 동점), **장애물경주는 학년 혼합 조 편성**(사용자 정정 — 뜀틀·그물·징검다리·직선 4구간, 조원 구간 선택제)"
+      - "대피 개시 — 훈련 문장이 실전 속도로, 학년별 줄, 3학년 선발 이동"
+    evidence:
+      scene: [1, 2, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "**앙숙 리듬 완전 복구 + 닮은꼴 전시:** 손가락 개수 경쟁, 튕긴 공 귀속 시비, `그건 작전이고 내 건 관종이고?`/`어. 정확해.`"
+      - "**거울 챙김 장전(S4 핵심 밑돌):** 성호 = 그물 구간 무언 자원(요란한 완수로 은폐) / 단아 = 두 구간 대타(반 박자 사이 자원). 서로만 알아보고 서로에게만 시비"
+      - "계주 승부 3차 유예(동점→계주 이월→사이렌 불발) — EP24 `깁스 풀리면` 예약의 연료"
+      - "우진 `둘이 사귀냐` → 동시 `안 사귀거든!`(비연애 경계 소화 장치)"
+    evidence:
+      scene: [2, 3, 4]
+
+  - category: "informational"
+    field_path: "characters.hangyeol.state"
+    operation: "open"
+    after:
+      - "**강한결 첫 지면 등장(EP6 언급 후 13화 만):** 본부석 기록 담당 — 아웃 집계표를 짚어 시비 종결(`동점.` 한 단어), 다시 셀 수 없게 만든 표, 조 편성표 줄 긋기 행정"
+      - "확립된 기능: 말 대신 종이로 정리하는 반장(열 걸음과 한 단어)"
+    evidence:
+      scene: [2, 3]
+
+  - category: "threat"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**해안 대피 사이렌 발령**(계주 출발 직전) + **배수로 역류**(바다→학교 방향, `방향이 틀린 물`) — 개체 형체 미노출"
+      - "작가용: 문어형 접근 — 침수구역 진입 전조. 학교·타이탄 위치 미특정 상태 유지"
+    evidence:
+      scene: 5
+
+  - category: "emotional"
+    field_path: "characters.dana.state"
+    operation: "merge"
+    after:
+      - "**시계를 보지 않은 하루** — 시각 숫자가 지면에 없는 화(EP13 반전). `방학 같기도 하고, 다른 아이들의 매일 같기도` 한 하루의 정서적 높이 확보"
+      - "훅에서 셈 전환 — 대피 행렬·수리점 길·빠질 모퉁이(`이 셈을 시작하는 순간 방학 같던 하루는 끝나 있었다`)"
+    evidence:
+      scene: [4, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "merge"
+    after:
+      - "렌즈 1문항 + **명단의 대답**(이름을 지우지도 옮기지도 않음), 결승 전 물통(`이겨` — 명령형의 온기), 반 남긴 물"
+    evidence:
+      scene: [1, 4]
+
+foreshadow_updates:
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 17
+        after: 19
+    note: "앙숙 복구+거울 챙김 장전(부상 인과의 밑돌 — 성호도 같은 상황에서 같은 선택을 할 아이라는 전시). 구호 실전·계산 콩트(장애물경주 버전 추가). 다음 EP20 부상"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 18
+        after: 19
+    note: "1문항+명단+물통 — 수용 국면의 행사 버전. 다음 EP20(단아의 이탈 둘러대기 수신)"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 18
+        after: 19
+    note: "사이렌+역류(전조만 — 형체 0). 다음 EP20 포박 행동 개시"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "수아 ○(대피 줄 추정 언급만)"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "침묵 기조 유지(S4 잠금 — 렌즈 적응 언급은 B1 소관)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "군 미등장"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "전투 0, 개체 형체 0(문어·촉수 어휘 0)"
+  - "성호 부상·전조 0, 학교 파손 0"
+  - "혜정 추궁 0, 연애 코드 0"
+  - "수아·하랑·영진·군·기태 미등장(수아 ○)"
+
+canon_additions:
+  - "체육대회 종목 확정: 오전 저학년(공굴리기 등)→피구(반 대항), 오후 장애물경주(학년 혼합 조·구간 선택제)→학년 계주(중단)"
+  - "강한결 기능 확립: 기록·행정의 반장(열 걸음과 한 단어)"
+  - "배수로: 운동장 바깥→바다 연결 콘크리트 수로(평시 무명 시설)"
+
+provenance:
+  chapter_text: "Black_Titan_EP019_19화_운동장의선_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP019_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP019_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP019_Gate-D_검증서_v1.0.md"
+notes:
+  - "S4 1단계(도입) 완료. 다음 EP20 「여덟 개의 팔」 — 중요 화(포박 개시·성호 부상)."
+  - "EP20 진입: 같은 오후 연속 — 대피 행렬 속 단아의 이탈 실행부터."

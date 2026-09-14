@@ -1,0 +1,28 @@
+schema_version: 2
+chapter: 0
+approval:
+  status: "NONCANON_EXPERIMENT"
+  approved_by_user: false
+based_on_snapshot: "SNAP-000"
+produces_snapshot: "SNAP-001"
+changes:
+  - category: "physical"
+    field_path: ""
+    operation: "replace"
+    before: null
+    after: null
+    evidence:
+      scene: 0
+      source_text_anchor: ""
+foreshadow_updates:
+  - id: "FS-000"
+    operation: "ADVANCE"
+    field_changes: []
+    allowed_reveal_after: ""
+    evidence:
+      scene: 0
+      source_text_anchor: ""
+provenance:
+  chapter_text: ""
+  approved_brief: ""
+notes: []

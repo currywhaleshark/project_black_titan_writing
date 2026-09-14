@@ -1,0 +1,124 @@
+schema_version: 2
+chapter: 44
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "v0.1 → v0.2(전장 구조·높이 질량 정합 전면 재구성) + 첨삭 3건 → `좋아 이렇게 정리하고 다음으로 가자`. S8 4/10 — 중요 화."
+based_on_snapshot: "SNAP-043 v1.0"
+produces_snapshot: "SNAP-044 v1.0"
+changes:
+  - category: "situational"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**여름 첫 교전 개시(6/13 월 밤).** 봄의 그 개체가 방재벽 외곽 수몰 구시가지에서 재출현 — **가시 재정렬·기부 두터움·작살형 끝**(위화감 층위·해설 0)"
+      - "**공격 의도의 전환:** 붙잡는 대신 **겨누고 쏜다.** 몸에서 떨어져 나온 가시를 원거리에서 발사·연사. 이쪽이 접근하면 물러나 거리를 벌림(거리 유지 전술)"
+      - "봄과 달리 **스스로 이동·자리를 잡음**(부동 → 기동)"
+    evidence:
+      scene: [2, 3, 4]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**낯익은 개체의 개수 확인(현상 층위):** 가시가 고르게 재정렬되고 끝이 작살처럼 갈라졌다는 것 — `갈라진 것은 박히면 안 빠지라고 있는 것`. 정체·원리 명언 0"
+      - "**피격 체험:** 맞아도 뚫리지 않았다(장갑이 버텨 줌). **다만 몇 번까지 버티는지는 모른다** — 확정 0·불안 존속. 손상 표시 0 확인"
+      - "**물리량 인지:** 피해가 없어도 **밀리고 흔들린다.** `맞은 자리는 멀쩡한데 몸이 밀려 있었다`(아픈 것과 흔들리는 것이 따로 노는 감각 — 처음)"
+      - "**의도의 공포:** `저건 나를 부수려고 왔다`. 봄 = 데려가려 함 ↔ 오늘 = 온전한 채로는 필요 없음. `봄이 끝났다는 걸 통지문이 아니라 어깨로 알았다`"
+      - "**맨손의 한계:** 붙으면 이기는데 붙을 수가 없다 — `팔이 짧아서가 아니라 거리가 멀어서 지는 싸움`. 팔보다 긴 것을 한 번 바람(명명 0·투정으로 접어 치움)"
+      - "**발사 간격 발견(훅):** 쏘고, 쉬고, 쏘고 — 쉬는 구간의 길이가 매번 비슷. `간격이 있다`. 걸음 수를 그 셈에 맞춰 보기 시작(돌파 0)"
+    evidence:
+      scene: [2, 3, 4, 5]
+
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**여름 첫 출격.** 다수 피탄(어깨·가슴·옆구리·다리·등) — **관통 0·손상 표시 0.** 밀림 다수·자세 흐트러짐 다수"
+      - "무장 없음(맨손) 상태에서 **원거리 상대에 유효타 0** — 접근 3회 시도·3회 모두 중간에서 저지"
+    evidence:
+      scene: [3, 4]
+
+  - category: "situational"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "**전장 정본 신설 — 방재벽 외곽 수몰 구시가지(옛 아파트 단지).** 수심 = 기체 허벅지(상반신 노출·수중전 아님). 아래 대여섯 층 침수 + 물 위로 열몇~스물몇 층 노출. 무인"
+      - "**교전으로 아파트 동 파손** — 위층부터 뜯겨 나가 낮아짐(엄폐물 = 소모 자원). 동 하나가 허리께까지 낮아짐"
+    evidence:
+      scene: [2, 4]
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "출격 전 **방재벽 바깥 지형도 제공**(물 위로 남은 층수를 숫자로 표기 — 열여덟·스물둘·아홉). 말없이 화면만 돌려 놓음(조언 0·발화 0)"
+      - "봄/여름 겹친 화면 유지(파랑·빨강). 가시 조각 통 = 작업대 위 대기 존속"
+    evidence:
+      scene: 1
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "advance"
+    after:
+      - "**교신 = 상태 보고의 정직화.** `안 뚫렸어요. 근데 밀려요. 맞을 때마다 뒤로 가요.` → 영진 반 박자 침묵(지시할 것이 없음) → `무리하지 마라`"
+    evidence:
+      scene: 4
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 43
+        after: 44
+    note: "**파괴 대상 전환의 첫 지면 증거(의도의 공포).** 원거리 사격·거리 유지·개수 흔적. 다음: EP45 = 격파(가시 부러뜨리기→내려치기)·수아 대조 결론 / EP46 = 후처리·외신 한 줄"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 4
+        after: 44
+    note: "**작살형 끝의 인지로 재점화**(`박히면 안 빠지라고 있는 것`·콘크리트를 무는 장면). 회수는 여전히 여름 마지막 전투(관통상) — 반복 사용 금지 유지"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 43
+        after: 44
+    note: "지형도 제공 = 관찰자 역할의 실무화(발화 0). 대조 결론 = EP45"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "격파 0, 가시 조각 대조 결론 0, 앵커 명명 0, 정체 명언 0, 새 증상 0, 역장 원리 0, 무효 확정 0"
+
+canon_additions:
+  - "시간: EP44 = 6/13(월) 밤 — EP43 실루엣에서 즉시 연결(경과 0)"
+  - "**전장 구조 선확정 절차 신설(사용자 2026-08-12):** 전투 화는 집필 전 Level 6에서 수심·엄폐물 내구·시야·기동·적 노출·**높이 질량 정합**을 확정한다"
+  - "**전장 정본:** 방재벽 외곽 수몰 구시가지 = 허벅지 수심 + 물 위 열몇 층 아파트 동. 엄폐물은 사라지지 않고 **낮아진다**(머리 위→어깨→가슴→허리)"
+  - "**높이·질량 정본:** 기체 52m ≈ 아파트 17층. 구르기·몸 날리기·잽싼 회피 금지 — 벽 밀며 빠지기·어깨 틀기·무겁게 뛰기. 동 사이 = 네 걸음"
+  - "**피격 물성 정본:** 피해 0이어도 밀림·자세 흐트러짐·조종석 진동·등받이 충격은 반드시 전달. `끄떡없다` 계열 금지"
+  - "**LOC-05 동선 정본(첨삭 계기):** 단층 촌집이므로 호출은 `내려가자`(지하로), 생활공간→가게는 `미닫이를 열어 보니`. `내려와/계단` 계열 사용 금지"
+  - "봄 성게형 회상 정본: `방파제에서 마주쳤고, 뽑으려다 실패했고, 가시 하나를 부러뜨렸고, 결국 밀어서 밖으로 내보냈던 그놈`"
+  - "격언 계보: `낯익은 얼굴이 낯설게 구는 것은, 처음 보는 얼굴보다 무서웠다` / `뾰족한 것은 찌르라고 있는 것이고, 갈라진 것은 박히면 안 빠지라고 있는 것이다` / `봄이 끝났다는 걸, 단아는 통지문이 아니라 어깨로 알았다` / `머리가 놓으면 몸이 대신 센다`"
+provenance:
+  chapter_text: "Black_Titan_EP044_44화_다른여름_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP044_회차브리프_v0.1.md"
+  content_lock: "Black_Titan_EP044_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP044_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 4/10 완료. 다음 **EP45 「부러뜨리는 법」(가제) — 격파 화.**"
+  - "EP45 고정선(S8 개요): 발사 간격을 셈에 넣고 접근 성공 → **손에 닿는 대로 가시를 부러뜨림** → 몸통 노출 → **부서질 때까지 내려치기**(정권 아님 — 격투 성장 곡선의 출발점) → 귀환 후 **`봄에 그놈이에요. 근데 가시가 달라요`** → 수아의 가시 조각 대조 결론"
+  - "EP45 금지: 앵커 명명·역장 원리·정체 확정·새 증상. 전장 구조는 EP44 정본 승계(허벅지 수심·낮아지는 아파트 동)"

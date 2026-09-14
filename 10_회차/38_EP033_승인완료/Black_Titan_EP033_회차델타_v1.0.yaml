@@ -1,0 +1,105 @@
+schema_version: 2
+chapter: 33
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-10"
+  approval_note: "v0.1 → 첨삭 5건 v0.2 → `오케이`. 생활 간주 2/후처리·귀환 훅."
+based_on_snapshot: "SNAP-032 v1.0"
+produces_snapshot: "SNAP-033 v1.0"
+changes:
+  - category: "positional"
+    field_path: "characters.sua.role"
+    operation: "advance"
+    after:
+      - "**확인자 첫 실전 성과:** 구동저항 재측정 공란 발견 → 재검 유도 → 이음매 안쪽 광물성 점액 띠 제거·수치 기입"
+      - "**절차 승격:** `다음부터 이 칸은 네가 불러라` — 세척 후 재측정 호출 = 수아 담당 칸(확인자 나흘 만의 두 번째 칸)"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**후처리 완료:** 공업 규모 세척(비계·정 2인 1조·그라인더·고압세척기 — 반나절) + 이음매 안쪽 점액 띠 제거 + 구동저항 재측정(정상 복귀)"
+    evidence:
+      scene: [2, 3]
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "**동일 개체 귀환 확인(단독):** 무인기 영상 — 새 관구·비대칭 왼쪽 턱 재생흔(쟁반 턱 끝과 대조)·여러 관구 동시 점액 분출·`돌아와서 무언가를 하고 있다`(기능 모름)"
+      - "가루 정렬 재확인(`어제보다 조금 더 가지런한 것 같기도` — 발화 0)"
+    evidence:
+      scene: [2, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_sua"
+    operation: "advance"
+    after:
+      - "삼분법 상호 인지 문답: `칸이 비어 있으면 그냥 보여` / `언니는 무거운 게 보이잖아` — 보이는 것이 서로 다른 자매의 명문화"
+    evidence:
+      scene: 3
+
+foreshadow_updates:
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 31
+        after: 33
+    note: "**첫 실전 성과 완료(개요 목표 완주 — 순서 누락 발견, 전술 분석 0).** 절차 승격 2호. 다음: EP35 잔류 누락 재발견, S7 결정적 관찰"
+  - id: "FS-003-BIO-SEEP"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 31
+        after: 33
+    note: "제목 창구 사용(점액 띠·가루 정렬 재확인 — 사실만). 본체(기체 얼룩) 연결 0 유지. 확정은 가을"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 32
+        after: 33
+    note: "**귀환 포착 완료(훅 — 재생흔·광역 분출·부풂).** 기능 미공개 유지. 다음: EP34 재접촉(난동·오판·왼팔 봉쇄·**정지 통찰 해금**)"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "규칙 반 컷 이행(사진 답·`통화하기로 한 시간`·리코더 확인 잔소리)"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "**군 자료 살포 정본(첨삭):** 거인의 자료 사용 인지 → 의도적 간접 지원 — B2 암묵 협조 명문화(명준 문법과 정합)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "점액 ≠ 생체기원 증거 이행"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "정지 통찰 0, 광역 점액 기능 설명 0, 개체 의도 해석 0"
+  - "수아 채널·조종석 접근 0, 혜정 방문·발화 0, 군 수사 0"
+  - "C1 0(저릴→뻐근 사전 교체), 연애 0"
+
+canon_additions:
+  - "시간: EP33 = 5/14 토 하루(가게 아침 → 오후 격납고 공사 → 저녁 → 밤 훅)"
+  - "**군 자료 살포 정본(첨삭):** 군은 거인이 공개망 자료를 쓴다는 것을 눈치채고 매번 판독 자료를 뿌림 — 의도적 간접 지원(B2 암묵 협조. 직접 접촉·지휘는 없음)"
+  - "**후처리 공사 정본:** 52미터 세척 = 비계+이동 조명+정·망치(2인 1조)+그라인더(한 손+거치대)+고압세척기(총대 반동). 발목 하나 반나절"
+  - "**점검 절차 추가:** `점액 제거 뒤 구동저항 재측정` 칸 = 수아 호출 담당(세척 완료 후)"
+  - "**용어 정본: 광물성 점액 띠**(고리 사용 금지)"
+  - "굳은 잔해 물성: 돌보다 조개껍데기(금이 결을 따라 넓게 떨어짐)"
+  - "기태 어록: `물 먹은 기계한테는 요일이 없다`(영진)·조수 호칭(단아)"
+provenance:
+  chapter_text: "Black_Titan_EP033_33화_닦이지않는흔적_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP033_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP033_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP033_Gate-D_검증서_v1.0.md"
+notes:
+  - "S6 4/6 완료. 다음 **EP34 「움직일수록 굳는다」(중요 화 — 개선 재등장/동적 실패→정지).** **정지 통찰 해금 화.**"
+  - "EP34 고정선(개요): 난동 = 잔해 사전 살포(직접 타격 0) → 단아 오판(눈속임/도주 연막 — `머리만 찾으면 끝` 호기) → 탁한 구역 돌진 → 움직일수록 손목·무릎·허리 경화 → 퇴로도 잔해 구역 → **왼팔부터 봉쇄**(왼손잡이의 습관 — 손목·팔꿈치·어깨) → **규칙 발견: 멈추면 새 경화가 느려진다·손가락 시험에 철편 즉시 몰림 → `자신을 붙잡는 것은 점액 속에서 움직이는 자기 자신`** → 오른주먹 남긴 채 정지"
+  - "EP34 훅(개요): 멈춘 수몰 도로의 고요 → 왼쪽 관구에서 달려오는 압력파 → 오른주먹 반사적 반 치 → 손목에 자갈 3개 → 압력파는 몸 앞에서 사라짐 — **첫 번째 가짜 접근**(비우세손 가동범위만 소모)"
+  - "EP34 금지(개요): 전투 중 흐림·저림·감각차단 0(왼팔 봉쇄 = 기체 관절 문제, 신경증상 아님 — 명시), 군 포격·전술명령 0, 원형 목적 공개 0"

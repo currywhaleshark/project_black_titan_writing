@@ -1,0 +1,399 @@
+schema_version: 2
+snapshot_id: "SNAP-003"
+status: "APPROVED_CURRENT_STATE"
+approved_by_user: "2026-08-03"
+approval_note: "EP003 「52미터」 v1.0 Gate D 승인과 회차 델타를 적용. 첫 출격, 선행 입력 학습, 검은 거인의 첫 공개 목격, 진로 전환과 방재벽 등반을 반영."
+canon_version: "통합설정집 v2.3(+G0-007~010) / 전체 플롯 v2.2 / 봄 Level 3 v3.2 / S1 화별 개요 v3.7"
+through_chapter: 3
+story_time:
+  date: "2050년 전후 3월 초, 새 학기 현장체험학습일(정확한 날짜 미정)"
+  time_of_day: "오후, 첫 전투 전반 종료 직후. 괴수가 구래동 쪽 방재벽을 오르기 시작한 시점"
+  elapsed_since_previous_chapter: "EP2 종료 직후부터 연속 — 출격과 첫 교전까지 수십 분"
+
+characters:
+  dana:
+    display_name: "도단아"
+    location: "수몰지구 드러난 고지대 전장, 블랙 타이탄 조종석 내부. 방재벽 방향으로 이동 중"
+    physical:
+      condition: "새 부상·통증성 피드백·급성 신경증상 없음"
+      symptoms:
+        - "지난가을부터 급격히 나빠진 시력"
+        - "둥근 안경 착용"
+      injuries: []
+      treatment:
+        - "시력 교정용 안경"
+    emotional:
+      baseline: "밝고 활달하며 경쟁심이 강하고 생각보다 행동이 앞섬"
+      pressure_level: 5
+      pressures:
+        - "방재벽을 오르는 괴수와 그 너머의 구래동"
+        - "첫 실전의 공포를 행동으로 누르는 중"
+        - "영진에 대한 분노는 출격 뒤로 미뤄 둠"
+    relationships:
+      sua: "보호하려는 마음이 강한 친밀한 자매"
+      youngjin: "조종 훈련을 숨긴 데 분노하나 지금은 스피커 너머의 관제자"
+      hyejeong: "유치원 때부터 함께한 가장 오래된 절친"
+      yejin: "3학년 때부터 친해진 절친"
+      seongho: "서로 먼저 시비를 걸고 반드시 받아치는 운동 라이벌·앙숙"
+    knowledge:
+      knows:
+        - "SNAP-002의 지식 전체"
+        - "격납고가 옛 지하철 노선과 이어져 있고 출격이 레일 운반·수몰역 상륙으로 이루어짐"
+        - "운동의도 입력과 기동 사이의 지연 — 무겁고 굼뜬 몸으로 체감"
+        - "수면학습은 절차 순서만 앞당길 뿐 전투 해법을 주지 않음"
+        - "집게 끝이 아니라 뿌리·몸통 회전·여덟 다리의 체중 이동을 먼저 보고 입력해야 함"
+        - "정면 힘겨루기는 질량에서 지며, 전진력을 흘려 진로를 바꿀 수 있음"
+        - "방재벽 바깥에서 본 청해의 공간 구조"
+      suspects: []
+      misunderstands:
+        - "시력 저하를 성장기 변화나 화면 피로 같은 평범한 문제로 여김"
+        - "블랙 타이탄을 정상적인 로봇 조종기술로 움직이는 군 시제기라고 믿음"
+        - "괴수가 무작정 앞으로만 가는 것처럼 보인다고 이해함"
+      hides: []
+    commitments:
+      - "동생 수아를 자신이 지켜야 한다고 여김"
+      - "괴수가 방재벽을 넘어 구래동에 닿기 전에 막아야 함"
+      - "돌아오면 영진에게 숨긴 사실을 하나도 빼지 않고 들을 것을 요구함"
+
+  sua:
+    display_name: "도수아"
+    location: "지하 격납고, 영진 곁에서 대기"
+    physical:
+      condition: "건강"
+      symptoms: []
+      injuries: []
+      treatment: []
+    emotional:
+      baseline: "말수가 적고 사려 깊으며 언니의 행동력을 부끄러워하면서도 부러워함"
+      pressure_level: 4
+      pressures:
+        - "언니가 혼자 전장에 있음"
+    relationships:
+      dana: "언니를 신뢰하고 관찰하며 필요할 때 돕고 싶어 함"
+      youngjin: "훈련 목적과 블랙 타이탄을 숨겨 온 외할아버지"
+    knowledge:
+      knows:
+        - "SNAP-002의 지식 전체"
+        - "단아의 첫 출격이 지하 노선을 통해 이루어짐"
+        - "기동 순간 블랙 타이탄의 주황빛 안광이 켜지는 것을 목격함"
+      suspects: []
+      misunderstands:
+        - "자신에게도 같은 훈련을 시킨 이유를 모르며 현재는 단아만 조종할 수 있다고 믿음"
+      hides: []
+    commitments: []
+
+  youngjin:
+    display_name: "도영진"
+    location: "지하 격납고 관제 위치"
+    physical:
+      condition: "고령이지만 곧은 자세와 일상 작업능력을 유지"
+      symptoms: []
+      injuries:
+        - "왼팔 결손"
+      treatment: []
+    emotional:
+      baseline: "최악을 먼저 상정하고 대비하는 엄격한 보호자"
+      pressure_level: 5
+      pressures:
+        - "단아의 첫 실전이 진행 중"
+        - "검은 거인이 공개 목격되어 은닉이 부분적으로 끝남"
+        - "출격 뒤 전부 말하라는 단아의 요구"
+    relationships:
+      dana: "관제자로서 절차·안전 안내만 수행. 실제 기원과 책임은 계속 숨김"
+      sua: "수아 자신의 적합성·기원은 숨김"
+    knowledge:
+      knows:
+        - "SNAP-002의 지식 전체"
+        - "출격 노선·수몰역 설비의 전모 — 자신이 홀로 정비·은닉함"
+        - "단아가 첫 교전에서 진로 전환에 성공했고 신체 이상 없이 전투 중임"
+      suspects:
+        - "누출 신호가 외계 측의 탐색을 부를 수 있음"
+      misunderstands:
+        - "수아에게 우회 필터가 약하게 작동할 가능성은 예상하지 못함"
+      hides:
+        - "블랙 타이탄의 생체 기원과 군 시제기 설명이 거짓이라는 사실"
+        - "두 자매의 출생과 신경기원"
+        - "VR 시험의 신경동조 우회 원리, 외계 신경파 누출, 단아의 시신경 손상"
+        - "출격 노선·수몰역의 존재(가족 외)"
+    commitments:
+      - "단아의 안전을 관제하며 필요 절차만 전달"
+
+  myeongjun:
+    display_name: "고명준"
+    location: "남해방위사령부 지휘소"
+    physical:
+      condition: "건강"
+      symptoms: []
+      injuries: []
+      treatment: []
+    emotional:
+      baseline: "공적 언어의 지휘관. 무력감을 낮은 목소리와 건조한 한마디로 방어"
+      pressure_level: 5
+      pressures:
+        - "화력이 통하지 않는 괴수"
+        - "소속 불명의 검은 거인이라는 두 번째 변수"
+        - "시민 대피와 생활권 방어"
+    relationships: {}
+    knowledge:
+      knows:
+        - "괴수에게 재래식 화력이 결정적 손상을 주지 못함 — 원인은 모름"
+        - "미식별 검은 거인이 물에서 솟아올라 괴수의 진로를 가로막음"
+        - "검은 거인은 현 식별신호·장비 목록과 일치하지 않음"
+        - "괴수는 녹색, 검은 거인은 주황색 안광 — 색차만 확인, 의미는 모름"
+        - "검은 거인이 자리를 지키고 받아낸다는 행동 관찰 — `가로막으려 한다` 판정"
+      suspects:
+        - "해외·비인가·기록 유실 전략무력 가능성(막연한 수준)"
+      misunderstands: []
+      hides: []
+    commitments:
+      - "검은 거인이 막는 동안 사격 보류. 대피·봉쇄·진로 통제 우선"
+      - "정체 추궁은 길을 비운 뒤로 미룸. 별도 추적·수사는 시작하지 않음"
+
+  hyejeong:
+    display_name: "고혜정"
+    location: "보호자 인계 뒤 대피 동선"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "당당하고 직선적이며 친구에게 의리가 강함"
+      pressure_level: 3
+      pressures:
+        - "재난경보와 대피 상황"
+    relationships:
+      dana: "유치원 때부터 함께해 말투·거짓말 버릇·몸 상태를 잘 아는 절친"
+      yejin: "단아와 함께 어울리는 친구"
+    knowledge:
+      knows:
+        - "단아의 평소 말투·반응·컨디션"
+        - "단아가 두통 직후 난간을 강하게 잡고 반응이 잠깐 늦었음"
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments: []
+
+  yejin:
+    display_name: "하예진"
+    location: "보호자 인계 뒤 대피 동선"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "현실적이고 조심스럽지만 사람을 쉽게 의심하지 않음"
+      pressure_level: 3
+      pressures:
+        - "재난경보와 대피 상황"
+    relationships:
+      dana: "3학년 때부터 친해진 절친"
+      hyejeong: "단아와 함께 어울리는 친구"
+    knowledge:
+      knows:
+        - "단아와 혜정의 평소 관계와 성격"
+        - "단아가 두통 직후 평소처럼 연필을 바로 받지 못했음"
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments: []
+
+  seongho:
+    display_name: "이성호"
+    location: "보호자 인계 뒤 대피 동선"
+    physical: { condition: "건강하고 운동능력이 좋음", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "경쟁심이 강하고 과장과 도발을 즐김"
+      pressure_level: 3
+      pressures:
+        - "수몰 구도심에서 직접 본 거대 괴수"
+    relationships:
+      dana: "서로 닮은 성질 때문에 자주 충돌하는 운동 라이벌·앙숙"
+    knowledge:
+      knows:
+        - "단아가 운동에 강하고 도발을 그냥 넘기지 않는다는 사실"
+        - "청해에 실제 거대 괴수가 상륙함"
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments:
+      - "단아를 '도릴라'라고 놀리고 경쟁에서 이기려 함"
+
+  juho:
+    display_name: "김주호"
+    location: "청해남초, 미인계 학생 보호 중"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "툴툴거리지만 학생을 세심하게 관찰하는 현실형 교사"
+      pressure_level: 4
+      pressures:
+        - "미인계 학생들의 안전"
+        - "괴수 접근 경보"
+    relationships:
+      dana: "담임교사와 학생"
+      seongho: "담임교사와 학생"
+    knowledge:
+      knows:
+        - "단아와 성호의 평소 경쟁·말싸움"
+      suspects: []
+      misunderstands: []
+      hides: []
+    commitments:
+      - "마지막 학생까지 보호자 인계 완료"
+
+assets:
+  black_titan:
+    location: "수몰지구 드러난 고지대, 구래동 쪽 방재벽 인접"
+    status: "첫 출격·첫 교전 수행 중. 손상 없음. 진로 전환 1회 성공"
+    equipment:
+      - "근전도·운동의도 기반 세미다이렉트모션 조종계"
+      - "감쇠 포스 피드백"
+      - "단아 반응값 기준 보정"
+    damage: []
+    repair_needs: []
+  sortie_line:
+    location: "격납고 → 옛 지하철 노선 → 수몰역(무명)"
+    status: "첫 사용 완료. 수밀격벽 개방 이력. 군·시민에게 비공개"
+    equipment:
+      - "레일 운반대차"
+      - "수몰역 수밀격벽"
+    damage: []
+    repair_needs: []
+  youngjin_repair_shop:
+    location: "구래동 언덕길"
+    status: "셔터 폐쇄, 격납고 관제 가동 중"
+    equipment:
+      - "가전·차량·통신·배터리 수리 공구와 부품"
+      - "지하 방폭문과 옛 차량기지 연결통로"
+    damage: []
+    repair_needs: []
+
+inventory:
+  black_titan_weapons:
+    status: "없음"
+    note: "봄에는 맨손. 아이언 앵커 언급·등장 금지."
+  dana_phone:
+    status: "사용 가능(휴대하지 않음 — 조종석)"
+    note: "영진이 만든 휴대폰"
+  sua_phone:
+    status: "사용 가능"
+    note: "영진이 만든 휴대폰"
+
+living_conditions:
+  family:
+    - "단아는 수몰지구 전장, 수아와 영진은 격납고에서 관제·대기"
+    - "단아·수아·영진만 내부 고유명 `블랙 타이탄`과 출격 경로를 공유함"
+    - "영진의 스피커 안내는 절차·안전에 한정 — 불신은 해소되지 않은 채 유예됨"
+  school:
+    - "미인계 학생들이 교사 보호 아래 학교에 남아 있음"
+  neighborhood:
+    - "구래동 큰길에서 바다 쪽 전투가 내려다보임 — 시민 목격·촬영 발생"
+  city:
+    - "청해 전역 해안 재난경보 지속"
+    - "괴수의 진로가 방재벽 안쪽 방향에서 구래동 쪽 방재벽으로 꺾임"
+    - "소속 불명 검은 거인의 존재가 처음 공개 목격됨"
+
+external_conditions:
+  public:
+    - "시민 다수가 바다에서 솟은 검은 거인과 괴수의 교전을 목격·촬영함"
+    - "검은 거인의 정체·파일럿·출현 경로는 알려지지 않음"
+  military:
+    - "남방사가 미식별 검은 거인을 임시 관찰 대상으로 지정 — 사격 보류"
+    - "식별신호·장비 목록 불일치와 안광 색차(녹/주황)만 확인"
+    - "대피·봉쇄·진로 통제 지속. 별도 추적·수사 없음"
+  enemy:
+    - "작가용: 회수개체는 탐색 반응 재획득을 위해 이동을 우선하며 방재벽을 오르는 중"
+    - "작가용: 실제 반응원은 인간형 단아이지만 인큐베이터는 이를 모름"
+    - "등장인물·독자에게는 방향에 집착하는 괴수의 행동만 보임"
+
+active_threads:
+  - id: "A-S1-FIRST-INVASION"
+    question: "첫 회수개체의 상륙이 단아의 평범한 일상을 어떻게 전장으로 바꾸는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 3
+    current_holder: ["단아", "영진", "청해"]
+    urgency: "IMMEDIATE"
+    expected_window: "EP1~4"
+    allowed_interpretations:
+      - "첫 전투 전반이 끝나고 괴수가 방재벽을 오르는 중 — EP4에서 맨손 첫 승리로 종결 예정"
+  - id: "FS-001-DANA-VISION"
+    question: "지난가을 시력 저하와 5개월 전 VR, EP1의 두통은 어떻게 이어지는가"
+    introduced_chapter: 0
+    last_advanced_chapter: 2
+    current_holder: ["단아", "영진"]
+    urgency: "LOW_DENIABLE"
+    expected_window: "EP5 다음 진전"
+    allowed_interpretations:
+      - "EP3에서는 진전 없음. 새 시각 증상·직접 인과 없음"
+  - id: "B1-HYEJEONG-CONCERN"
+    question: "혜정은 단아의 변화와 첫 거짓말을 어떻게 받아들이는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 1
+    current_holder: ["단아", "혜정", "예진"]
+    urgency: "LOW"
+    expected_window: "EP4 첫 거짓말"
+    allowed_interpretations:
+      - "EP1에서는 단순한 친구의 걱정이며 의심·추궁이 아님"
+  - id: "C2-TITAN-ORIGIN"
+    question: "수리점 지하의 거인은 무엇이며 왜 숨겨졌는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 3
+    current_holder: ["영진"]
+    urgency: "HIDDEN"
+    expected_window: "실제 진실은 가을"
+    allowed_interpretations:
+      - "공개된 것은 검은 거인의 외형·주황빛 안광·무등록 사실뿐"
+      - "가족은 군 시제기 위장 설명을 믿음. 생체 기원·신경기원은 계속 봉인"
+  - id: "C4-ENEMY-PURPOSE"
+    question: "괴수는 무엇을 찾고 있으며 왜 그 방향으로 향하는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 3
+    current_holder: ["인큐베이터"]
+    urgency: "HIDDEN"
+    expected_window: "행동 복선 누적, EP12 제한 기록"
+    allowed_interpretations:
+      - "파괴·추격보다 방향 이동을 우선하고 벽에 막히자 직접 오르는 집착 행동까지만 공개"
+  - id: "B3-SUA-POSITION"
+    question: "수아도 같은 훈련을 받았는데 왜 현재 단아만 조종자로 지목되는가"
+    introduced_chapter: 2
+    last_advanced_chapter: 2
+    current_holder: ["수아", "영진"]
+    urgency: "LOW_HIDDEN"
+    expected_window: "S3 결정적 관찰, 실제 적합성과 첫 출격은 여름"
+    allowed_interpretations:
+      - "EP3에서는 진전 없음. 수아는 발화하지 않음"
+
+relations:
+  dana_sua:
+    pair: ["dana", "sua"]
+    stage: "STABLE_FAMILY"
+    trust_level: 5
+    current_issue: "없음"
+  dana_youngjin:
+    pair: ["dana", "youngjin"]
+    stage: "STRAINED_BY_REVEALED_DECEPTION"
+    trust_level: 3
+    current_issue: "불신은 유예 상태 — 출격 뒤 전부 말하라는 요구가 걸려 있음"
+  dana_hyejeong:
+    pair: ["dana", "hyejeong"]
+    stage: "STABLE_LONGTIME_FRIENDS"
+    trust_level: 5
+    current_issue: "없음"
+  dana_yejin:
+    pair: ["dana", "yejin"]
+    stage: "STABLE_FRIENDS"
+    trust_level: 4
+    current_issue: "없음"
+  dana_seongho:
+    pair: ["dana", "seongho"]
+    stage: "RECIPROCAL_RIVALRY"
+    trust_level: 2
+    current_issue: "서로 지기 싫어 먼저 도발하고 즉시 받아침"
+
+relation_scale:
+  trust_level: "0=신뢰 없음, 5=매우 높은 개인적 신뢰. 호감·연애 수치가 아님."
+
+last_approved_delta: "Black_Titan_EP003_회차델타_v1.0.yaml"
+provenance:
+  - "SNAP-002 v1.0의 provenance 전체"
+  - "G0-007 지하 출격 노선·수몰역 상륙 APPROVED 2026-08-02"
+  - "G0-008 바닷가재형 회수개체 외형 확정 APPROVED 2026-08-02"
+  - "G0-009 안광 체계 확정 APPROVED 2026-08-02"
+  - "G0-010 역장 비가시·음향 설계 APPROVED 2026-08-02"
+  - "EP003 회차브리프 v1.5 GATE_C_PASS"
+  - "EP003 Level 6 v1.1 LEVEL6_APPROVED"
+  - "EP003 52미터 v1.0 GATE_D_PASS 2026-08-03"
+  - "EP003 회차델타 v1.0"

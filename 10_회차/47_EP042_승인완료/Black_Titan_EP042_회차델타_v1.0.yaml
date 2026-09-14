@@ -1,0 +1,96 @@
+schema_version: 2
+chapter: 42
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "v0.1 + 정정 1건(봉지 = 응원 도구 준비물) → `좋아`. S8 2/10 — 수아 라인 생활 화."
+based_on_snapshot: "SNAP-041 v1.0"
+produces_snapshot: "SNAP-042 v1.0"
+changes:
+  - category: "relational"
+    field_path: "relations.sua_harang"
+    operation: "advance"
+    after:
+      - "**첫 무대 성공(6/10 금):** 한 곡 반씩(하랑 앞·수아 뒤·마지막 같이) — 하랑 헛디딤 1회를 수아 뒷반이 받아 폄. `우리 안 틀렸지?`/`한 번 틀렸어. 근데 괜찮았어`"
+    evidence:
+      scene: 3
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "resolve"
+    after:
+      - "**동그라미 지불(EP13 미지불 소멸):** 봉지 = 응원 도구 준비물(색지·가위) — 동그라미 = `네 몫 챙겼다는 표시`(또 챙겼다는 자기 확인). 신규 소채권: 가위값(이자 개그)"
+    evidence:
+      scene: 4
+
+  - category: "situational"
+    field_path: "living_conditions.family"
+    operation: "advance"
+    after:
+      - "**수박 소약속 지불**(발표회 날 — 세 통 두들기기·씨 뱉기 대회·영진 비공식 최고 기록 근접)"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.youngjin.knowledge"
+    operation: "advance"
+    after:
+      - "**낯익은 파형 1건 감지**(6/10 오후 세 시께·부표 2번) — 확대·시각 확인 후 **봄 장부 대조 개시**(단독·발화 0)"
+    evidence:
+      scene: 5
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 40
+        after: 42
+    note: "**낯익은 결 신호 1건(훅 이행 — 명언 0).** 다음: EP43 전환(대조·통지·가시 조각 준비) → EP44~45 성게형 재래전"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 41
+        after: 42
+    note: "동그라미 지불(EP13 소멸 — `말 대신 표시` 문법 완결). 신규 소채권 = 가위값(개그 층위)"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 38
+        after: 42
+    note: "생활 라인 진전(첫 무대 — 파일럿 계열 0 이행). 발표 미지불 소멸"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "새 증상 0, 위협 실체·명언·`설마` 0(파형 층위만), 파일럿 계열 0, 패턴 인지 0"
+
+canon_additions:
+  - "시간: EP42 = 6/8(수)~6/10(금 발표회·밤 훅)"
+  - "**발표회 정본:** 하랑 앞반(헛디딤 1회·웃고 계속)·수아 뒷반(받아 펴는 소리)·마지막 소절 합주. 임유정 소개 = `봄부터 같이 시작했습니다`"
+  - "**동그라미 정본(EP13 지불):** 응원 도구 준비물 봉지 — `네 몫 챙겼다는 표시`(혜정의 말 대신 표시 문법)"
+  - "수박 정본: 영진의 두들기는 귀(붉은 단면으로 증명)·씨 뱉기 대회(화분 넘기면 유효)"
+  - "격언 계보: `틀리고 웃을 수 있는 것은 아무나 되는 게 아니었다` / `지켜보는 쪽이 더 떨린다` / `시시한데 좋은 쪽으로 풀리는 것들`"
+provenance:
+  chapter_text: "Black_Titan_EP042_42화_발표주간_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP042_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP042_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP042_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 2/10 완료. 다음 **EP43 「낯익은 신호」(표준 화 — 전환).**"
+  - "EP43 고정선(S8 개요): 영진 대조 = 봄 기록과 겹치는 이동 패턴(굴러가던 놈의 결 — 명언 0 유지) / 군 공개 통지(외곽 통제 재개 — 봄 문법 재가동) / **수아 = 가시 조각(선반 아래 통)을 꺼내 오는 손**(대조 준비 — 확인자 재가동) / 학교 = 통제 소문 온도"
+  - "EP43 훅(개요): **방재벽 밖 수면 — 물을 가르며 접근하는 반구형 실루엣. 봄과 달리, 멈추지 않고 곧장 온다**"
+  - "EP43 금지: 실체 확정 명언 0(실루엣·패턴 층위), 가시 조각 대조 결론 0(EP45 몫), 새 증상 0"

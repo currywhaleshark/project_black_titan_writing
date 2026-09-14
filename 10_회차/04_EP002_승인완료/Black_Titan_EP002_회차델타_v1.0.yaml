@@ -1,0 +1,205 @@
+schema_version: 2
+chapter: 2
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-02"
+  approval_note: "사용자가 EP002 후편집본 v0.4의 신체기억 엔딩을 확인하고 `좋아 이걸로 오케이`로 승인. 동일 본문을 v1.0 정사로 잠금."
+based_on_snapshot: "SNAP-001 v1.1"
+produces_snapshot: "SNAP-002 v1.0"
+changes:
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "merge"
+    before:
+      knows:
+        - "수리점 아래의 군용 통로와 열리기 시작한 방폭문"
+      misunderstands:
+        - "VR은 평범한 체험이고 수면학습·놀이는 일반 학습이라고 여김"
+    after:
+      knows:
+        - "수리점 지하에 52미터의 검은 거인 `블랙 타이탄`이 있음"
+        - "영진은 블랙 타이탄이 자신이 빼돌린 대수몰 이전 군 재난대응 시제기라고 주장함"
+        - "현 남방사는 블랙 타이탄의 존재를 모른다는 영진의 설명"
+        - "5개월 전 VR은 단아 반응값을 얻기 위한 세미다이렉트모션 조종 보정 시험이었음"
+        - "취침 전 학습 프로그램과 놀이형 반복 훈련이 조종 절차를 익히기 위한 준비였음"
+        - "접촉·압력·관절 부하는 약한 감각으로 돌아오며 현재 별도 무장은 없음"
+        - "괴수의 예상 진로에 연구단지·청해남초·구래동이 놓여 있고 군의 저지가 실패했음"
+      misunderstands:
+        - "블랙 타이탄을 영진이 빼돌린 군 재난대응 시제기이자 정상적인 로봇 조종기술로 움직이는 기체라고 믿음"
+    evidence:
+      scenes: [1, 2, 3, 4]
+      source_text_anchors:
+        - "블랙 타이탄."
+        - "그거 훔친 거잖아."
+        - "조종계를 네게 맞추기 위한 보정 시험이었다."
+        - "그것도 훈련이었다."
+
+  - category: "choice"
+    field_path: "characters.dana.commitments"
+    operation: "append"
+    before:
+      - "동생 수아를 자신이 지켜야 한다고 여김"
+    after:
+      - "학교와 구래동에 괴수가 닿는 것을 막기 위해 블랙 타이탄의 첫 출격을 스스로 선택함"
+      - "출격 뒤 영진에게 숨긴 사실을 하나도 빼지 않고 들을 것을 요구함"
+    evidence:
+      scene: 4
+      source_text_anchors:
+        - "근데 저게 학교에 오는 건 더 싫어."
+        - "끝나면 전부 말해. 하나도 빼지 말고."
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "merge"
+    before:
+      knows:
+        - "VR·수면학습처럼 보이는 훈련을 받은 적이 있음"
+    after:
+      knows:
+        - "수리점 지하의 `블랙 타이탄`과 단아의 첫 출격"
+        - "영진의 군 재난대응 시제기·불법 반출 설명"
+        - "두 자매의 취침 전 학습과 놀이형 반복 훈련이 조종 준비였음"
+        - "현재 보정값은 단아에게 맞춰져 있다는 영진의 설명"
+      misunderstands:
+        - "자신에게도 같은 훈련을 시킨 이유를 모르며 현재는 단아만 조종할 수 있다고 믿음"
+    evidence:
+      scene: 3
+      source_text_anchors:
+        - "언니, 자기 전에 듣던 거."
+        - "저도 같은 걸 들었는데요."
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "replace"
+    before:
+      stage: "STABLE_WITH_HIDDEN_TRUTH"
+      trust_level: 4
+      current_issue: "영진이 가족의 핵심 비밀을 숨기고 있음"
+    after:
+      stage: "STRAINED_BY_REVEALED_DECEPTION"
+      trust_level: 3
+      current_issue: "영진이 VR·수면학습의 목적을 숨기고 거짓말했으며 단아는 출격 뒤 전부 말하라고 요구함"
+    evidence:
+      scenes: [3, 4]
+      source_text_anchors:
+        - "그럼 처음부터 다 거짓말이었잖아."
+        - "끝나면 전부 말해. 하나도 빼지 말고."
+
+  - category: "informational"
+    field_path: "characters.youngjin.hides"
+    operation: "replace"
+    before:
+      - "블랙 타이탄의 존재와 생체 기원"
+      - "두 자매의 출생과 신경기원"
+      - "VR 시험의 실제 목적과 결과"
+    after:
+      - "블랙 타이탄의 생체 기원과 군 시제기 설명이 거짓이라는 사실"
+      - "두 자매의 출생과 신경기원"
+      - "VR 시험의 신경동조 우회 원리, 외계 신경파 누출, 단아의 시신경 손상"
+    evidence:
+      scenes: [2, 3]
+      source_text_anchors:
+        - "대수몰 전 국방연구소 시제기다."
+        - "그때 네 근전도와 운동의도 반응값을 받았다."
+
+  - category: "asset"
+    field_path: "assets.black_titan.status"
+    operation: "replace"
+    before: "은닉·기동 가능·미출격, 외부 방폭문 개방 시작"
+    after: "단아 탑승, 조종석 해치 폐쇄, 기동 스위치 상승, 첫 움직임·출격 직전"
+    evidence:
+      scene: 4
+      source_text_anchor: "스위치가 끝까지 올라간 뒤에야 단아는 자기 손을 내려다보았다."
+
+  - category: "living_condition"
+    field_path: "living_conditions.family"
+    operation: "replace"
+    before:
+      - "두 자매는 영진의 비밀이 방폭문 너머에 있음을 알지만 블랙 타이탄은 모름"
+    after:
+      - "단아는 블랙 타이탄 조종석 안, 수아와 영진은 닫힌 해치 바깥 정비 갑판에 있음"
+      - "단아·수아·영진만 내부 고유명 `블랙 타이탄`과 단아의 첫 출격을 공유함"
+      - "두 자매는 영진의 군 재난대응 시제기 위장 설명을 사실로 받아들이며 몰래 진행된 조종 훈련 때문에 영진을 불신함"
+    evidence:
+      scenes: [1, 2, 3, 4]
+      source_text_anchor: "해치가 닫혔다."
+
+  - category: "external"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    before:
+      - "바닷가재형 회수개체가 수몰 구도심에서 연구단지 방향으로 이동 중"
+    after:
+      - "바닷가재형 회수개체가 연구단지를 지나 청해남초·구래동을 위협할 수 있는 진로로 접근 중"
+      - "등장인물과 독자는 이를 파괴 목적의 침략 진로로 오해함"
+    evidence:
+      scene: 4
+      source_text_anchor: "선은 거기서 끝나지 않고 구래동 생활권을 가로질렀다."
+
+  - category: "thread"
+    field_path: "active_threads"
+    operation: "advance"
+    before:
+      chapter: 1
+    after:
+      chapter: 2
+      advanced:
+        - "A-S1-FIRST-INVASION"
+        - "FS-001-DANA-VISION"
+        - "C2-TITAN-ORIGIN"
+        - "C4-ENEMY-PURPOSE"
+      introduced:
+        - "B3-SUA-POSITION"
+    evidence:
+      scenes: [1, 2, 3, 4]
+      source_text_anchor: "저도 같은 걸 들었는데요."
+
+foreshadow_updates:
+  - id: "FS-001-DANA-VISION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 1
+        after: 2
+      - field: "allowed_reveal_now"
+        before: "EP1의 지난가을 시력 저하만 공개"
+        after: "5개월 전 VR 보정 첫 공개와 안경 동작의 시기 병치. 직접 인과는 봉인"
+    next_window: "EP5 전투 후 몸살 기준선"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "surface_reading"
+        before: "수리점 지하의 오래된 군용 시설"
+        after: "영진이 빼돌린 대수몰 이전 군 재난대응 시제기 블랙 타이탄"
+      - field: "last_progressed"
+        before: 1
+        after: 2
+    next_window: "S2 이후 제한적 생체 복선, 실제 기원은 가을"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 1
+        after: 2
+    next_window: "EP3~4 이동 진로와 전투 행동"
+  - id: "B3-SUA-POSITION"
+    operation: "INTRODUCE"
+    allowed_reveal_after: "같은 훈련과 현재 단아 보정값만 공개. 적합성·동조·파일럿 가능성은 봉인"
+    next_window: "S3의 생활·관찰 역할, S7의 한 문장 관찰"
+
+no_change_checks:
+  - "단아에게 새 부상·급성 신경증상은 없음"
+  - "블랙 타이탄은 아직 실제 팔다리 동작이나 지상 출격을 하지 않음"
+  - "수아의 조종 적합성·동조·미래 파일럿 가능성은 증명되지 않음"
+  - "공중·군은 블랙 타이탄의 존재·이름·파일럿을 모름"
+  - "괴수의 실제 탐색·회수 목적과 단아의 신호원 정체는 봉인"
+
+provenance:
+  chapter_text: "Black_Titan_EP002_2화_격납고_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP002_회차브리프_v1.0_GateC승인.md"
+  content_lock: "Black_Titan_EP002_Level6_내용잠금-문체검색_v0.1.md"
+notes:
+  - "영진의 군 재난대응 시제기 설명은 등장인물 내부의 거짓말이며 실제 기원으로 승격하지 않는다."
+  - "VR과 시력 저하는 시기와 안경 동작으로만 병치됐고 인과는 기록하지 않는다."
+  - "첫 기동·약 0.5초 지연·지상 출현은 EP3로 넘긴다."

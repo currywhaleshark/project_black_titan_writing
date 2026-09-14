@@ -1,0 +1,131 @@
+schema_version: 2
+chapter: 20
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-05"
+  approval_note: "초고 v0.1 → 모바일 첨삭 3건(인원 점검 커버·구래동 방면 보고·주민 피난) 반영 v0.2 → `좋아`. S4 압박 화(중요 화)."
+based_on_snapshot: "SNAP-019 v1.0"
+produces_snapshot: "SNAP-020 v1.0"
+changes:
+  - category: "threat"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**문어형 첫 지면 노출(무명 — 군 기록명 `다완 흡착체`):** 침수구역에서 구조물을 부수지 않고 짚으며 접근(구래동 방면), 타이탄 확인 즉시 여덟 팔 일제 전환"
+      - "**포박 개시:** 네 팔 신체(머리 카메라·오른 팔꿈치·왼 무릎·허리) + 네 팔 견인(옹벽·방재벽·철골·원거리) — 바다 방향 견인 중"
+      - "행동 문법 공개: 덮인 카메라는 돌아오지 않음 / 풀린 팔은 즉시 옮겨 감김(재포박 우선) / 몸의 넷과 땅의 넷이 한 몸(힘 전달)"
+      - "훅 시점: 머리 센서 완전 차단 + 두 무릎 묶음 — 외부 화면 일제 소등, 바다 쪽으로 끌리는 중"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "injury"
+    field_path: "characters.seongho.physical"
+    operation: "open"
+    after:
+      - "**발목 염좌(우발 — 부상 인과 사슬):** 단아의 첫 저항 → 옹벽 견인 팔 충격 → 대피계단 진동 → 아이를 난간 안쪽으로 밀어 넣고 물 고인 모서리를 잘못 디딤"
+      - "골절 아님(`일어서지는 것과 디뎌지는 것은 다른 문제`) — 깁스 결과는 EP22~24 창구"
+      - "혜정 부축 + 주호 등에 업혀 대피 지속. 원망 0 — `그냥 버티는 모습`을 봄"
+    evidence:
+      scene: 4
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**오답 확신 성립(EP21 연료):** `팔은 여덟. 몸에 넷, 땅에 넷. 힘으로 하나씩 풀면 된다.`"
+      - "힘 전달 관찰: 이쪽을 당기면 저쪽이 당겨진다(옹벽 소리까지 인지 — **계단·성호는 미인지**)"
+      - "`저건 도시를 보러 온 게 아니다` — 두 달 목록 밖의 개체라는 판단"
+      - "시야 전부 상실(물리 차단) — 감각 재고(무릎·허리·발바닥·스피커)로 전환 시작"
+    evidence:
+      scene: [2, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "이탈 둘러대기 수신 — `수아네 줄·할아버지` 오독 유지"
+      - "**혜정의 커버(사용자 첨삭):** `선생님께는 내가 말씀드릴게` — 인원 점검의 빈자리를 말로 미리 메움(부채 장부 1건 추가)"
+    evidence:
+      scene: 1
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "**비대칭 목격 성립:** 단아는 성호의 마지막 모습(저학년 등 밀어 보내기)을 지나치며 `아무 생각도 하지 않았다` / 성호는 포박당한 검은 거인을 보며 `괜찮아. 쟤 진 적 없어`"
+      - "성호의 무의식 챙김 확장 — 가방 대신 메기·주호 따라 하기(`생각했으면 아마 안 했을 것이다`)"
+    evidence:
+      scene: [1, 4]
+
+  - category: "living_condition"
+    field_path: "living_conditions.city"
+    operation: "advance"
+    after:
+      - "학생 대피선·전투 예상 구역 분리, 해안도로 소개 완료"
+      - "**주민 피난 병행(사용자 첨삭):** 고지대 대피소 이동 절반 경과, 구래동 우선 소개(개체 진행 방향)"
+      - "군 기록명 `다완 흡착체` 입안. 교전 명령 0(`대응할 수단이 생기면 그때 물어라`)"
+    evidence:
+      scene: 2
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 19
+        after: 20
+    note: "EP20 공개분 이행: 포박·견인 행동(형체·문법). 금지 문구 0. 다음 EP21 운반(거의 패배)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 19
+        after: 20
+    note: "부상 발생 — 잠금 문면 그대로(주호 따라 하기·젖은 계단·발목·영웅놀이 0·골절 0). 다음 EP22 무명 경상자 1명 문구 상한"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 19
+        after: 20
+    note: "둘러대기 수신 + 인원 점검 커버(첨삭 반영 — 부채 1건 추가). 성호 부축 개시. 다음 EP24 창백함 걱정"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+    note: "관통·꿰뚫 계열 0 확인(특별 감시 이행)"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "시야 상실 전부 물리 차단 서술 — 신경 신호 0(잠금 이행)"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "수아 ○(학년 줄 이동 언급만) — 발화 0"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "생체성 추가 확증 0(잡은 감촉은 재질 관찰 한도)"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "고명준 등장 — 서랍·사진 언급 0"
+
+no_change_checks:
+  - "학교 파손 0, 수아·하랑 발화 0"
+  - "`문어형`·`인큐베이터` 지면 명명 0 — 군 기록명 `다완 흡착체`만"
+  - "`회수 대상`·`상쇄 방해개체`·`운반 실패` 문구 0"
+  - "연애 코드 0, 혜정 추궁 0"
+  - "단아를 찾았다는 서술 0(타이탄 출현 즉시 전환 — 표적 특정 아님)"
+
+canon_additions:
+  - "군 기록명 `다완 흡착체`(윤서진 입안) — S4 공식 임시 식별어"
+  - "개체 이동 문법: 짚으며 오는 이동(파손 0), 부챗살 전개(회피 방향 선점)"
+  - "재질 관찰: 당기는 만큼 가늘어지면서 놓지 않음, 잡은 모양대로 눌렸다 돌아옴(생체 명명 0)"
+  - "대피 관례: 인원 점검의 빈자리는 대피 전체를 세움 — 커버 발화로 처리 가능"
+
+provenance:
+  chapter_text: "Black_Titan_EP020_20화_여덟개의팔_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP020_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP020_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP020_Gate-D_검증서_v1.0.md"
+notes:
+  - "S4 2단계(압박) 완료. 다음 EP21 「붙잡힌 거인」 — 중요 화(실패 — 봄 최초의 거의 패배·수몰 구도심 운반)."
+  - "EP21 진입: 소등 직후 연속 — 오답 확신(힘으로 하나씩)을 실행하다 더 조여지는 실패 구조."

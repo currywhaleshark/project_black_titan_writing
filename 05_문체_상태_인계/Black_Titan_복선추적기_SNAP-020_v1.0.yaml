@@ -1,0 +1,156 @@
+schema_version: 1
+as_of_episode: 20
+last_updated_by: "EP020 「여덟 개의 팔」 v1.0 Gate D 승인·상태 반영 (S4 압박 — 포박 개시·성호 부상·일제 소등)"
+active:
+  FS-001-DANA-VISION:
+    name: "지난가을 시력 저하·5개월 전 VR·짧은 두통"
+    line: "C1"
+    secret_layer: 3
+    planted_at: 0
+    surface_reading: "새 렌즈 적응 완료 — 관리되는 근시"
+    truth: "1차 신경계통과 2차 거체 접속 부담"
+    reveal_window: "재검 6월(생활), 명시 진전 S6"
+    allowed_reveal_now: "**S4 전체 침묵 잠금** — 새 신호 추가 금지. EP20의 시야 상실 = 촉수의 물리적 차단으로 서술 완료(구분 이행). EP21도 동일 구분 유지"
+    prohibited_reveal_now: "순간 흐림·손 저림·실신·객관 진단, 병합 해석"
+    last_progressed: 18
+    next_window: "S6"
+    status: "ACTIVE_BASELINE"
+    related_character_ids: ["dana", "youngjin"]
+  FS-C2-TITAN-ORIGIN:
+    name: "거인의 기원과 부녀의 준비"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "가족 내부: 시제기 반출+부녀 개수+보정 시험 책임. 외부: 무등록 검은 거인"
+    truth: "현서·영진이 배양한 2차 거체와 두 자매의 신경기원"
+    reveal_window: "실제 기원은 가을"
+    allowed_reveal_now: "위장 유지. 포박전 생체성 추가 확증 금지 — EP20 재질 관찰은 물성 한도로 통과(`당기는 만큼 가늘어지면서 놓지 않는 재질`)"
+    prohibited_reveal_now: "생체·배양·우회동조·VR 실목적·현서의 현재"
+    last_progressed: 18
+    next_window: "후반 봄(S5 FS-003 창구)"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "sua", "youngjin", "hyunseo"]
+  FS-C4-ENEMY-PURPOSE:
+    name: "그것들의 실제 목적"
+    line: "C4"
+    secret_layer: 4
+    planted_at: 1
+    surface_reading: "부수지 않고 짚으며 온 것이 검은 거인만 여덟 팔로 감아 바다로 끈다"
+    truth: "문어형 = 이동식 상쇄 방해개체(타이탄) 포박·운반. 탐색권 밖 이송이 목적"
+    reveal_window: "EP21 운반, EP23 추정 도달"
+    allowed_reveal_now: "**EP20 공개분 이행: 네 팔 신체+네 팔 견인, 재포박 우선, 파손 0 접근.** EP21 상한: 수몰 구도심 운반·시야/발판/방송 상실까지. EP23 상한: `죽이려는 게 아니라 데려가려 한다` 추정까지"
+    prohibited_reveal_now: "`회수 대상`·`상쇄 방해개체`·`운반 실패` 문구, 계통·상쇄, 단아 표적설, `문어형`·`인큐베이터` 지면 명명, 왜·어디로"
+    last_progressed: 20
+    next_window: "EP21 운반"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "youngjin", "myeongjun"]
+    author_notes:
+      - "문어형은 단아 인간 상태·수아에 무반응, 능동탐색파 미사용 — 공명 증상 없음(개요 잠금)"
+      - "군 기록명 `다완 흡착체` 정사 등재(EP20 — 윤서진 입안)"
+  FS-003-BIO-SEEP:
+    name: "덜 닦인 얼룩"
+    line: "C2"
+    secret_layer: 4
+    planted_at: 9
+    surface_reading: "정비 중 덜 닦인 얼룩"
+    truth: "기체 생체 순환액"
+    reveal_window: "후반 봄, 확정은 가을"
+    allowed_reveal_now: "사실 관찰만"
+    prohibited_reveal_now: "출처 암시 어휘, 명명·해설, 영진 심리"
+    last_progressed: 9
+    next_window: "후반 봄(S5)"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["youngjin"]
+  C3-MYEONGJUN-YOUNGJIN:
+    name: "서랍 속 동반 사진"
+    line: "C3"
+    secret_layer: 4
+    planted_at: 12
+    surface_reading: "지휘관 서랍의 빛바랜 동반 사진"
+    truth: "군 실험장 인연(전면 봉인)"
+    reveal_window: "봄 후반 인지 1컷, 전모는 가을"
+    allowed_reveal_now: "사진의 존재와 나란한 간격만(EP20 고명준 등장 — 언급 0 유지 이행)"
+    prohibited_reveal_now: "장소·시기·사고·왼팔·빚·기체 연결·발화·회상"
+    last_progressed: 12
+    next_window: "봄 후반(S4 후처리~S5) 인지 1컷"
+    status: "ACTIVE_BURIED"
+    related_character_ids: ["myeongjun", "youngjin"]
+  B1-HYEJEONG-CONCERN:
+    name: "혜정의 유예와 부채"
+    line: "B1"
+    secret_layer: 2
+    planted_at: 1
+    surface_reading: "빈자리를 말 한마디로 메워 주는 4월 짝"
+    truth: "오독 위의 부채 축적 — 커버까지 시작"
+    reveal_window: "봄 누적, 추궁은 여름"
+    allowed_reveal_now: "**EP20 이행: 둘러대기 수신+인원 점검 커버(`선생님께는 내가 말씀드릴게`) — 부채 1건 추가.** S4 잔여 상한: 성호 부상·단아 창백함을 함께 걱정하되 실종 시각 추궁·정체 조사 금지"
+    prohibited_reveal_now: "`그날도 없었지` 식 추궁, 미행, 물증, 군 접촉"
+    last_progressed: 20
+    next_window: "EP24 창백함 걱정"
+    status: "ACTIVE"
+    related_character_ids: ["dana", "hyejeong", "yejin"]
+    author_notes:
+      - "미회수: 두 번째 봉지의 동그라미(여름)"
+  B4-SEONGHO-SCHOOL:
+    name: "성호의 숭배와 교실의 검은 거인"
+    line: "B4"
+    secret_layer: 1
+    planted_at: 6
+    surface_reading: "저학년을 챙기다 발목을 다치고도 `괜찮아. 쟤 진 적 없어`라고 말하는 아이"
+    truth: "숭배 대상이 옆자리라는 아이러니. 부상의 간접 원인이 단아의 저항이라는 것(양쪽 다 모름)"
+    reveal_window: "EP22 무명 경상자, EP23 말 신원, EP24 깁스·복귀"
+    allowed_reveal_now: "**EP20 이행: 부상 발생(주호 따라 하기·젖은 계단·발목 — 영웅놀이 0·골절 0·원망 0·단아 미인지).** EP21 상한: 부상 관련 신규 정보 0(단아 시점 화). EP22 상한: `무명 경상자 1명` 문구. EP23 말: 성호 신원. EP24: `그래도 우리를 지켰다`+앙숙 복귀"
+    prohibited_reveal_now: "단아의 부상 인지 선행, 죄책감 서술 선행, 연애 전환, 부상 경위의 학교 내 공론화 선행"
+    last_progressed: 20
+    next_window: "EP22 무명 경상자 문구"
+    status: "ACTIVE_LOADED"
+    related_character_ids: ["seongho", "dana", "hyejeong", "juho"]
+    author_notes:
+      - "삼단 유예 가동: 동점(EP19)→계주 불발(EP19)→`깁스 풀리면 다시 붙자`(EP24)"
+      - "비대칭 목격 성립(EP20): 성호는 버티는 거인을 보고, 단아는 성호의 마지막 모습을 아무 생각 없이 지나침 — EP24 죄책감의 배율 장치"
+  B3-SUA-POSITION:
+    name: "수아의 같은 훈련과 숨겨진 가능성"
+    line: "B3"
+    secret_layer: 3
+    planted_at: 2
+    surface_reading: "대피소로 이동한 3학년 — 정비실 합류 대기"
+    truth: "수아의 2차 계통과 약한 우회 필터"
+    reveal_window: "S5 호기심, 결정적 조언 S7"
+    allowed_reveal_now: "**S4 상한: 정비실에서 재난방송·기체 상태 관찰, 예비전원·밀봉재 준비까지(EP21~ 창구).** 교각 위치·촉수 궤적·승리법 무전 전면 금지(개요 잠금)"
+    prohibited_reveal_now: "전투 채널 발화, 전술 조언, 적합성 단서"
+    last_progressed: 17
+    next_window: "EP21(정비실 합류 — 비전투)"
+    status: "ACTIVE"
+    related_character_ids: ["sua", "youngjin", "dana", "harang"]
+  FS-004-PIERCING-FEAR:
+    name: "가슴을 꿰뚫린다면"
+    line: "C1"
+    secret_layer: 2
+    planted_at: 4
+    surface_reading: "첫 실전의 공포 상상"
+    truth: "여름 마지막 전투와 공명"
+    reveal_window: "여름 마지막 전투"
+    allowed_reveal_now: "반복 사용 금지 — **S4 잔여 화(EP21~24) 관통·꿰뚫 계열 특별 감시 지속(EP20 통과: 0건)**"
+    prohibited_reveal_now: "실제 부상 예고화"
+    last_progressed: 4
+    next_window: "여름 마지막 전투"
+    status: "DORMANT"
+    related_character_ids: ["dana"]
+resolved:
+  A-S1-FIRST-INVASION-COMBAT:
+    name: "첫 침공의 전투 국면"
+    resolution: "EP4 격파·용해"
+    resolved_at: 4
+  A-S1-FIRST-INVASION:
+    name: "첫 침공 소아크"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  A-S2-HARBOR-BLOCKADE:
+    name: "구래항 봉쇄 소아크"
+    resolution: "EP10 격퇴, EP12 마감"
+    resolved_at: 10
+  A-S3-HIGHGROUND:
+    name: "고지선점 소아크"
+    resolution: "EP16 격퇴·용해, EP18 마감"
+    resolved_at: 18
+retired: {}

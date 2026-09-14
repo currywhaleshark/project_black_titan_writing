@@ -1,0 +1,102 @@
+schema_version: 2
+chapter: 32
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-10"
+  approval_note: "무첨삭 승인(`좋다 이대로 가자`). 브리프 단계 정정 2건(방과후 숙제·목격자 0 소문) 선반영. 생활 간주 1/관계 시험."
+based_on_snapshot: "SNAP-031 v1.0"
+produces_snapshot: "SNAP-032 v1.0"
+changes:
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**건강 규칙 성립(B1 방향 전환):** `늦으면 늦는다고 했으니까 됐어. 그런데 아프면 아프다고도 해.` → `진짜 아프면 먼저 말할게.` — 걱정이 캐묻기 대신 규칙으로 자라는 방식 확립(연락 규칙에 이은 두 번째)"
+      - "훅: 접은 지도 + `아픈 건 혼자 정하지 마.` — 단아의 대답 = 모서리 두 번 맞춰 접는 손"
+    evidence:
+      scene: [3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "계단길 시비 → 경사로 수정(시비의 순기능 — 인정은 아무도 안 함), 생색 → `다 나으면 지도보다 운동장 기록부터 고쳐`(재대결 `예약해 놨다` 상호 확인)"
+    evidence:
+      scene: [2, 4]
+
+  - category: "informational"
+    field_path: "living_conditions.city"
+    operation: "advance"
+    after:
+      - "**소문 정본(목격자 0):** `괴수가 우리 동네 거인을 보고 달아났다` — 통제 통지→해제→어른 소문→교실 창작 진화로 성립. 본 사람 0(무사함이 유일한 근거). 거인 5승 신화 편입"
+      - "단아만 아는 온도차: 도망은 맞되 보고 도망간 건 아님·본 사람 없음(속말 1회 — 발화 0)"
+    evidence:
+      scene: 1
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**안전의 기준 학습:** 자기한테 안전한 길 ≠ 남에게 안전한 길(계단길→경사로 — 발 빠른 아이 기준의 셈을 처음 교정당함). 걷는 답사의 발견(뛰면 안 보이던 턱·웅덩이)"
+    evidence:
+      scene: 2
+
+foreshadow_updates:
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 30
+        after: 32
+    note: "**관계 시험 통과 — 건강 규칙 성립(잠금 문면 전부 이행).** 걱정의 방향 전환 완료(비밀→건강). 다음: 물증은 여름, 동그라미 미회수"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 29
+        after: 32
+    note: "안전지도 시비·생색·공개 맥락 마감. 재대결 상호 예약 재확인. 미지불 유지(4차·깁스 첫 줄)"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 31
+        after: 32
+    note: "소문 창구 사용(목격자 0 승리담 — 단아 위화감 1회). 다음: **EP33 저녁 = 동일 개체 귀환 포착(비대칭 재생흔·광역 점액 분출 훅)**"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "피곤 ≠ 증상 구분 이행(C1 어휘 0)"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "지면 밖. 다음: **EP33 확인자 첫 실전 성과(구동저항 재측정 누락 발견 — 광물성 점액 고리)**"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+    note: "다음: EP33(영진 = 가루 정렬 사실만 확인 — 광역 점액·파훼법 모름 유지)"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "연애 계열 0(단둘 장면·시선 서술 포함), 새 C1 0, 전투 0, 정지 통찰 0"
+  - "혜정 출결 대조·미행·수리점·명준 0, 수아·영진 지면 밖"
+  - "소문 정정·진실 발설 0, 목격담 날조 0"
+
+canon_additions:
+  - "시간: EP32 = 5/13 금(아침 소문 → 방과후 지도 → 하교). 안전지도 제출 = 다음 주 월(단아 보관)"
+  - "**안전지도 정본:** 방과후 모둠 숙제(마을 답사형 — 4월 대피 경험 계기). 물성 = 전지·파랑 안전로/빨강 위험·대피소 2·방파제 빗금·귀퉁이 작은 해·지워진 계단길 자국"
+  - "**계단길 정본:** 학교~우체국 지름길, 계단 마흔 개쯤, 차 없음 — 지도상 경사로(두 골목 우회·넓은 골목)로 교체"
+  - "소문 생성 경로 정본: 공개망 통제 통지(어선 가정 경유)가 아이들 정보원 — 목격자 없는 승리담의 표준 형성 과정"
+  - "혜정 걱정 문법 정본: 캐묻기 대신 규칙 만들기(연락→건강 — `물을 수 있는 자리를 하나씩 만들어 두는 것`)"
+provenance:
+  chapter_text: "Black_Titan_EP032_32화_아프면아프다고_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP032_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP032_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP032_Gate-D_검증서_v1.0.md"
+notes:
+  - "S6 3/6 완료. 다음 **EP33 「닦이지 않는 흔적」(표준 화 — 생활 간주 2/후처리·귀환 훅).** 시점: 5/14 토 예상(수리점 하루)"
+  - "EP33 고정선(개요): 접수 밀림(침수 센서·무전기·펌프) / **B3 첫 실전 성과: `오른발목 하부 점액 제거 뒤 구동저항 재측정` 수치 공란 발견 → 재검 → 발목장갑 안쪽 광물성 점액 고리**(순서 누락 발견 — 전술 분석 아님) / 재점검 귀가 지연 → 혜정에게 시간 재발신 → 준비물 사진 답 / 영진 = 가루 정렬 사실만(광역 점액·파훼법 모름) / **훅: 수중무인기 — 새 관구의 머리, 비대칭 왼쪽 턱 재생흔 = 동일 개체 + 여러 관구 동시 점액 분출·`숨을 내쉬듯 부풂`·비뚤어진 턱이 화면에 걸렸다 사라짐**"
+  - "EP33 금지: 수아 전투채널·조종석·인터페이스 접근, 점액 = 생체기원 증거화, 새 협력자·군 수사·혜정 방문. **정지 통찰 금지 지속(해금은 EP34)**"

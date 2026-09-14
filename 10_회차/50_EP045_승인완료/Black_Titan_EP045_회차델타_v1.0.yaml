@@ -1,0 +1,127 @@
+schema_version: 2
+chapter: 45
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "v0.1 → v0.2(문장 6건 + 귀환 구조 재구성) → v0.3(수아 어투 정정) → `오케이`. S8 5/10 — 여름 첫 격파."
+based_on_snapshot: "SNAP-044 v1.0"
+produces_snapshot: "SNAP-045 v1.0"
+changes:
+  - category: "situational"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**여름 첫 격파(6/13 월 밤).** 개수된 개체 격파 — 가시 서너 개 부러뜨림(마지막은 여러 개를 모아 쥐고 한 번에) → 몸통 노출 → 내려치기 → 붕괴·용해"
+      - "**용해 물성 보강:** 검붉은 것이 물 위로 퍼졌다가 풀어짐. **쥐고 있던 파편도 손 안에서 흘러내려 사라짐 — 수거물 0**(정본 유지·시각적 확정)"
+      - "지면 확인 사항 추가: **던진 물체는 부수지 못하되 흔든다**(조준 교란·발사 지연). 개체도 밀림의 규칙에서 예외가 아님"
+    evidence:
+      scene: [3, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**셈의 이전:** 빗소리로 귀가 막히자 **어깨로 오는 충격의 주기**로 간격을 셈(맞은 뒤 자세가 돌아오는 만큼). `한 번은 맞아 봐야 알 수 있는 셈` — 몸으로 줍는 방식의 자각"
+      - "**던지기의 한계(핵심):** 자갈 크기는 무의미 / 큰 덩어리는 흔든다 / **손을 떠난 것은 닿는 순간 이쪽 것이 아니다 — 밀 수는 있어도 부술 수는 없다**"
+      - "**앵커 씨앗 2단:** 필요한 것 = **팔보다 긴 것 + 손에서 놓지 않아도 되는 것.** `없다는 것과 필요하다는 것은 다른 이야기`(명명·요청 0)"
+      - "**격파의 방법론(원시형):** 가시는 비틀어 꺾는다·두 번째부터 빨라진다·여러 개를 모아 쥐면 한 번에 꺾인다 / 몸통은 **부서질 때까지 내려친다**(기술 0 — `주먹을 어떻게 쥐어야 하는지도 제대로 몰랐다`)"
+      - "**개수 흔적의 촉각 확인:** 가시 배열이 `자로 잰 것 같다` — 봄에는 고르는 게 일이었는데 지금은 손 가는 데마다 있음(`편하다는 게 이상했다`)"
+      - "**밀어내기는 해결이 아니었다:** `봄에는 밀어내는 것으로 충분했다. 충분하다고 생각했었다. 지금 보니 그건 오늘로 미뤄 둔 것이었다`"
+    evidence:
+      scene: [1, 2, 3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "**대조 결론 지불(EP43 미지불 회수):** 통 뚜껑을 처음 열어 봄 가시 조각 실물 + 오늘 화면을 나란히 놓고 — **`봄 거랑 같은 데서 나온 건데요. 가시만 나중에 바뀐 거예요.`**(사실 진술·원인 0)"
+      - "**귀환 점검 실무 재확인:** 손전등·기록판으로 발목→무릎→어깨 순 점검. **여름 피탄 자국 다섯 → 여덟**으로 계수·기록. 하부 점검은 이후로 예약(`물에 오래 있었으니까`)"
+    evidence:
+      scene: 6
+
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**첫 격파 귀환·무손상(관통 0).** 여름 피탄 자국 **여덟 개**(오른쪽 어깨 계열 — 수아 계수). 조종석 안쪽 벽에 손자국"
+      - "무장 없음 유지. **투척은 유효 타격이 되지 못함이 실전으로 확인**(조준 교란까지)"
+    evidence:
+      scene: [3, 6]
+
+  - category: "situational"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "**엄폐 자원 전량 소진** — 물 위로 남아 있던 아파트 다섯 채가 교전 중 모두 낮아짐. 전장은 이후 재사용 시 엄폐 0 상태로 시작"
+      - "여름 스콜 1회(교전 중반 개시 → 격파 직후 잦아듦)"
+    evidence:
+      scene: [1, 2, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_sua"
+    operation: "advance"
+    after:
+      - "**세다가 놓친 것을 동생이 대신 세어 놓음**(피탄 여덟 개) — 관측과 전투의 분업이 감정 층위로 처음 연결됨. 위로가 아니라 계수로 하는 방식(`많이 맞았어.`)"
+    evidence:
+      scene: 6
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "advance"
+    after:
+      - "**귀환 맞이 정본:** 수건 한 장 + `오래 걸렸다` / `오래 걸릴 만한 일이었다`. 칭찬·안도 표현 0으로 수고를 전달하는 방식"
+    evidence:
+      scene: 6
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 44
+        after: 45
+    note: "**격파 + 대조 결론(같은 데서 나왔고 가시만 나중에 바뀌었다).** 개수의 사실이 물증으로 확정 — 주체·이유는 0. 다음: EP46 = 군 기록·**외신 한 줄(센티널 사다리 1단)** → EP47~48 농게형"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 44
+        after: 45
+    note: "**확인자 성과 2호(대조 결론).** 귀환 점검 실무 재확인. 다음 = S11 첫 대체출격"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "앵커 명명 0, 역장 원리 0, 정체·기원 확정 0, 새 증상 0, 군 개입 0, 학교 0"
+
+canon_additions:
+  - "시간: EP45 = 6/13(월) 깊은 밤 → 자정 무렵 귀환(EP44에서 경과 0)"
+  - "**자매 어투 정본(사용자 2026-08-12): 수아는 단아에게 존댓말을 쓰지 않는다**(존댓말은 영진에게만). 이전 회차 소급은 별도 검토"
+  - "**귀환 절차 정본:** 귀환은 **격납고에서 맞는다** — 영진 = 수건과 실용적 한마디 / **수아 = 귀환 점검 담당**(봄에 정해진 뒤 남에게 넘긴 적 없음·손전등·기록판·피탄 계수). 가게로 가려면 **계단을 올라 철문**(지하↔가게 동선 정본)"
+  - "**용해 물성 보강:** 검붉은 것이 퍼졌다가 풀어짐 + **쥐고 있던 파편도 손 안에서 흘러내려 사라짐**(수거물 0 확정)"
+  - "**투척 정본:** 던진 물체는 **부수지 못하고 흔든다**(조준 교란·발사 지연). 손을 떠난 것은 이쪽 것이 아니다 — **앵커가 손에 이어진 무기여야 하는 인과**"
+  - "**격투 성장 곡선 기점:** 기술 0의 내려치기. 이후 농게형 육탄전·합성괴수·앵커 운용이 전부 이 지점에서 출발"
+  - "격언 계보: `알아냈다고 이겨지지는 않았다. 그래도 알아내기 전보다는 나았다` / `한 번은 맞아 봐야 알 수 있는 셈이었다` / `편했다. 편하다는 게 이상했다` / `이겼는데 이긴 것 같지 않았다` / `오래 걸릴 만한 일이었다`"
+provenance:
+  chapter_text: "Black_Titan_EP045_45화_빗속을걷는법_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP045_회차브리프_v0.1.md"
+  content_lock: "Black_Titan_EP045_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP045_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 5/10 완료. 다음 **EP46 「기록의 온도」 — 생활(후처리) 화.**"
+  - "EP46 고정선(S8 개요): 군 기록 = 행동 양상 변화 첫 기재(`미식별 검은 거인` 문법 유지) / **외신 한 줄 = 화이트 센티널 사다리 1단**(내부망 뉴스 구석) / 학교 소문(공격당했다더라 — 걱정 여론) · 혜정·예진 수다 창구(수다 가드) / 영진 = 여름 장부가 두꺼워지기 시작 / 훅 = **남쪽 얕은 물의 다른 결**(집게형 접근 예고)"
+  - "EP46 금지: 앵커 명명·설계(S9) / 루시·센티널 실체 노출(한 줄 암시까지) / 정체 확정 / 새 증상"
+  - "EP46 인물: **혜정 복귀 필수**(간격 2)·예진·성호·한결 복귀 창구. 수아 = 학교 국면 가능"

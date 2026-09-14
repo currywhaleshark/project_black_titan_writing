@@ -1,0 +1,141 @@
+schema_version: 2
+chapter: 13
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-04"
+  approval_note: "초고 v0.1 → 사용자 수정 2건(체육대회 4월 27일 수요일, 수아 방과후 배경) → 모바일 첨삭 3건 → `승인처리하자`. S3 도입 화."
+based_on_snapshot: "SNAP-012 v1.0"
+produces_snapshot: "SNAP-013 v1.0"
+changes:
+  - category: "living_condition"
+    field_path: "characters.dana.commitments"
+    operation: "merge"
+    after:
+      - "**4월 시간표 성립 — 학교 / 수리점 / 훈련 세 칸.** 수첩에 직접 적음(셋째 칸은 `집안일`로 위장 표기)"
+      - "부품 가는 날 = 네 번째 부담(주말 오전, 줄질). 조달품은 바로 못 쓴다는 것을 손으로 배움"
+      - "확신 상태: `시간표만 지키면 다 지킬 수 있다`(소아크 실패의 전제 — 작가용)"
+    evidence:
+      scene: [1, 2, 3]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "**B1 국면 전환 — 질문에서 실무로.** 단아의 `집안일` 핑계에 혜정은 `어.` 한 글자. 캐묻지 않음(봄 직접 질문 예산 소진 준수)"
+      - "혜정이 단아 몫 준비물을 따로 묶어 둠(색 테이프 두 번, 이름 세 글자, 가위 동봉). 그 주에 두 번 — 두 번째 봉지에는 동그라미 하나"
+      - "단아의 외상 장부 자각 심화 — 고맙다는 말이 늦고 작게 나옴. 동그라미의 뜻은 묻지 못함(미회수)"
+    evidence:
+      scene: 1
+
+  - category: "resource"
+    field_path: "supply_line.gitae"
+    operation: "advance"
+    after:
+      - "**기태 조달 1차 물량 도착**(목요일) — 상자 3개, 전표 1장. 기태 본인은 미등장(글씨·오토바이 없음, 물건만)"
+      - "분류 결과 세 무더기: 쓸 수 있는 것 / 갈아야 맞는 것(최다) / 못 쓰는 것"
+      - "실런트 1통 폐기(뚜껑 안에서 굳음), 강판은 두께 맞으나 구멍 간격 제각각, 따개비 자국 = 갈아 낼 목록"
+      - "장부: 오른쪽 무더기는 숫자, 가운데 무더기는 별표(손이 갈 시간). 4월 칸 부족"
+    evidence:
+      scene: 2
+
+  - category: "informational"
+    field_path: "characters.sua.state"
+    operation: "merge"
+    after:
+      - "**B3 첫 생활세계 — 3학년 바이올린 방과후수업.** 사유: 3학년 하교가 1시간 빠르고 4월부터 영진이 조달·정비로 바빠져 언니와 하교를 맞춤(영진의 판단). 바이올린 선택은 수아 본인"
+      - "**이하랑과 첫 접점** — 다른 반, 방과후에서만 만나는 사이. 같은 마디에서 같이 틀리는 관계로 시작"
+      - "부품 분류에서 라벨 읽기 담당 — 셋 중 제일 말 없고 제일 안 틀림"
+      - "**조종석 응시 1컷**(계단 앞, 해치 열린 상태). 아무도 알아채지 못함 — 독자 전용. 전투 참여·분석·발화 0"
+    evidence:
+      scene: [2, 4]
+
+  - category: "external"
+    field_path: "external_conditions.city"
+    operation: "open"
+    after:
+      - "**첫 이상 징후: 3회 점멸.** 금요일 방과후, 교실 조명과 연구단지 철탑 항공등이 같은 간격으로 세 번 꺼졌다 켜짐"
+      - "반응은 짧은 웅성거림까지 — 원인 추정·불안 서술 0. 아이들은 형광등 문제로 넘김"
+      - "발전량 자체의 이상은 아직 드러나지 않음(EP14 진입선)"
+    evidence:
+      scene: 4
+
+  - category: "school"
+    field_path: "living_conditions.school"
+    operation: "merge"
+    after:
+      - "**체육대회 4월 27일 수요일 확정**(사용자 지시 — 2050년 기준 수요일)"
+      - "계주 대표 = 도단아·이성호(반대 0). 마지막 주자는 다음 체육 시간에 달려서 정하기로 — 미회수 약속"
+      - "응원 연습 수·금 방과후 30분. 단아는 두 번 다 불참"
+      - "성호의 구호 시안: `이겨라 우리 반. 검은 거인처럼.` — 애칭의 학교 내 일상 사용"
+      - "4월 초 청해: 낮은 초여름 온도, 야외수업·행사가 이 몇 주에 몰림(`날씨가 허락할 때`)"
+    evidence:
+      scene: 1
+
+foreshadow_updates:
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 11
+        after: 13
+    note: "지켜보기 국면의 첫 실행 — 질문 대신 빈자리 메우기. 직접 질문 예산 소진 유지(추가 질문 0). 미회수 소품: 두 번째 봉지의 동그라미. 다음 EP17"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 2
+        after: 13
+    note: "**S3 관찰선 개시 — 다만 이번은 생활세계 배치까지만.** 조종석 응시 1컷(적합성 단서 아님, 심리 서술 0). 첫 짧은 패턴 관찰은 EP15 예정"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 12
+        after: 13
+    note: "구호에 검은 거인 편입 — 애칭이 학교 일상어로 내려옴. 계주 마지막 주자 시비는 미회수 약속(EP17 배경 회수 가능). 습관 대조·단아 연결 0"
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 12
+        after: 13
+    note: "**3회 점멸만.** 개체·장소·의도 서술 0, 인물의 원인 추정 0. 독자는 도시 전기에 무언가 닿았다는 것까지만. 다음 EP14 고지선점 행동"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "**의도적 완전 침묵** — C1 어휘 그렙 0. 순간 초점 흐림은 EP14 예약(개요 고정). 이 화에서 앞당기지 않음"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "rest — 조달 위장 재설명 0(이미 성립한 규칙은 침묵으로 유지)"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "군 미등장 화"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "전투 0, 괴수 0, 군 미등장"
+  - "C1 어휘 0(시력·초점·흐림·두통·안경) — EP14 예약선 보존"
+  - "훈련 외부 수역 진출 0 — 군 관측 기록 생성 없음(사용자 확정)"
+  - "혜정 직접 질문 0, 추궁·미행·물증 0"
+  - "수아 조종 참여·전술 발화 0, 적합성·신경기원 언급 0"
+  - "무장·아이언 앵커·케이블 0, 역장 0, `인터넷` 0"
+
+canon_additions:
+  - "**연도 = 2050년 확정**(사용자 지시 2026-08-04). 체육대회 4월 27일이 수요일이라는 요일 계산의 근거. 지면에는 연도를 쓰지 않는다 — 작가용 기준선"
+  - "이하랑 = 수아와 **다른 반**(사용자 확정). 접점은 3학년 바이올린 방과후수업뿐"
+  - "3학년 하교는 6학년보다 1시간 빠르다"
+
+style_updates:
+  - "**§7-6 문체 드리프트 방지 첫 시행 화.** Level 6에 EP11·EP12 기능 일치 발췌 6건을 APPROVED_EXAMPLE 기준선으로 등재하고 초고에 적용 — 사건·문장 전이 0으로 통과. 규칙 유지"
+
+provenance:
+  chapter_text: "Black_Titan_EP013_13화_사월의시간표_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP013_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP013_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP013_Gate-D_검증서_v1.0.md"
+notes:
+  - "S3 「영웅의 시간표」 도입 화 — 소아크 5단계 중 1단계. 다음은 EP14 압박(거미게형 고지선점·구획정전)."
+  - "이 화의 A는 사건이 아니라 구조다. 시간표가 성립했다는 것 자체가 지속 변화이며, 그 확신이 EP15에서 깨질 준비."

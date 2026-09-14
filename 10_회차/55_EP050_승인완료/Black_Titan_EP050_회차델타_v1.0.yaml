@@ -1,0 +1,178 @@
+schema_version: 2
+chapter: 50
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-13"
+  approval_note: "Level 6(조달 목록 3층·작가용 설정 전면 비공개) → 초고 → 확장 3패스 → 첨삭 3건(`저 사람`→`할아버지` 2건·방학식 못박기) → `좋아`. **S8 10/10 — 아크 마감.**"
+based_on_snapshot: "SNAP-049 v1.0"
+produces_snapshot: "SNAP-050 v1.0"
+changes:
+  - category: "situational"
+    field_path: "living_conditions.city"
+    operation: "advance"
+    after:
+      - "**여론 4단계 — 망각의 속도:** 통제 해제 이틀 만에 거리가 원래대로. `일상이 소문보다 빨랐다`. 교실의 화제는 수→목→금에 걸쳐 소멸(EP49 해석 분열의 다음 눈금 = 관심의 소진)"
+      - "**폭염 초입 정본:** 6월 중순에 이미 아침부터 아지랑이. 수산시장 = 얼음 소비 두 배·뿌린 물이 마르는 속도로 계절을 잰다. **오미란 좌판 ○ 언급**(간격 16 완충)"
+    evidence:
+      scene: 1
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**망각의 구조를 봄:** `다음에 또 뭐가 오면, 그때도 이만큼 시끄럽다가 이만큼 조용해질 것이다. 그 사이에 저 안에서 무슨 일이 있었는지는 아무 데도 안 남고` — 생각을 끝까지 밀지 않고 접음(열세 살 착지)"
+      - "**할아버지가 준비를 시작했다는 것**(목록의 존재까지). 용도·명명 0 — `만들 걸 정하고 모으는 게 아니다`까지만 들음"
+      - "**훈련의 성질이 바뀜:** 빠른 것은 성호와 다 했다. 지금 필요한 건 **오래 버티는 것.** 이유를 설명하지 못한 채 함 — `아무것도 안 하는 것보다는 나을 것 같았고, 사실은 그 정도가 이유의 전부였다`"
+      - "**팔 들기 지구력 = 10 → 8 → 6**(줄어드는 게 눈에 보이는 층위·수치 기록 0)"
+    evidence:
+      scene: [1, 3, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_youngjin"
+    operation: "advance"
+    after:
+      - "**침묵의 질 전환:** `답을 못 들었는데 이상하게 안 불안했다` / `봄에는 못 듣는 게 무서웠다. 뭘 숨기고 있는지 몰라서 밤에 잠이 안 온 적도 있었다. 지금은 그냥, 할아버지가 뭘 준비하고 있구나 싶었다`"
+      - "※ **침묵의 빚은 해소되지 않음.** 같은 침묵이 공포가 아니라 신뢰로 읽히기 시작한 것까지. `그 차이가 언제 생겼는지는 몰랐다 — 봄 내내 조금씩`"
+    evidence:
+      scene: 3
+
+  - category: "situational"
+    field_path: "assets.youngjin_repair_shop"
+    operation: "advance"
+    after:
+      - "**조달 목록 개시(앵커의 씨앗 — 명명 0):** 여름 장부 **뒤에서부터** 넘겨 빈 면에 개시. 가로·세로 줄(왼쪽 물건·오른쪽 조건). 항목 = 쇠사슬(굵기 상관없음·길수록 좋음) / 강재 토막 / 도르래(있는 대로) / **닻(제일 큰 쇳덩이로)** / 용접봉(넉넉히) / **구명줄 발사기(인양용·줄 감기까지 붙은 걸로)**"
+      - "**`기태.` + 동그라미** — 동그라미 = 이 장부에서 `먼저 할 것`(봄 장부 계보·전부 하루 안에 처리됨). **S9 조달 아크의 발화점**"
+      - "목적 비공개 유지: `모아 두는 거다` / `만들 걸 정하고 모으는 게 아니다`"
+    evidence:
+      scene: 3
+
+  - category: "informational"
+    field_path: "characters.sua.knowledge"
+    operation: "advance"
+    after:
+      - "**기록 체계 확장:** 점검표 한 장 → **넉 장**(기체 / 개체 / 관측 / 집안일). 기체 = 자국·세척·저항값, 개체 = 생김새·행동, 관측 = 부표 번호·시각, 집안일 = 접수·수리비"
+      - "**원칙 2호:** `안 보이는 기록은 없는 기록이나 마찬가지` — 칸이 좁아 글씨가 작아지면 나눈다"
+      - "**빈 칸을 미리 만듦:** 개체 표 아래 제목만 있고 안은 빈 칸(`아직 없어.` / `생길 것 같아서.`) + 줄 두 개(여러 번 적을 자리). **무엇을 예상하는지는 말하지 않음**"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.sua_youngjin"
+    operation: "advance"
+    after:
+      - "**분업 1건 신설:** `기체 표는 세척 끝나면 네가 불러라. 내가 받아 적는다.` — 칭찬 0·수아는 끄덕임만. EP28 조건 셋과 정합(단독 작업 아님)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.dana_sua"
+    operation: "advance"
+    after:
+      - "**안 물어보는 집:** `이 집에서는 요즘 안 물어보는 게 늘었다. 나쁜 뜻으로 그런 게 아니라, 물어봤자 아직 답이 없다는 걸 서로 알아서였다`"
+      - "**셋의 준비가 한 화면에 겹침:** `종이를 나누는 사람, 목록을 적는 사람, 그리고 팔이 뻐근한 사람` / **`아무도 그걸 뭐라고 부르지 않았다`**(팀·작전 명명 0)"
+    evidence:
+      scene: 4
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "**언덕길 우연 시합 — 성호 반 발 승**(`반 발도 발이야.`). 재대결 재청구 2회차: `평지에서 제대로 한 번 하자니까. 계속 미루잖아.` → `그럼 언제.` **단아 무응답 = 미지불 유지**(`언제라고 말할 수 있는 날이 요즘 없었다`)"
+      - "성호 = 언덕 달리기 가능 상태(전력질주 허가 여부는 미확정 유지)"
+    evidence:
+      scene: 5
+
+  - category: "situational"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "**공세 전환 판단 기록(내부 층위):** 6월 기록 묶음의 결론란이 바뀜 — `출현 간격 단축 및 공격 행동 확인. 대응 방침 재검토 요함.` 고명준 결재 서명"
+      - "`관측만 적던 칸이었습니다.` / **`관측만 적을 수 있을 때는 그랬다.`** — 판단으로 넘어간 것을 두 사람만 앎"
+      - "**대상란은 여전히 공란**(발원지·정체·조종 주체 미확인 + `미식별 검은 거인`). 넉 달째 불변 — 명명 게이트 유지"
+    evidence:
+      scene: 2
+
+  - category: "situational"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "**외해 신호(투구게형 예고):** 토요일 밤, 부표 **7번**(제일 먼바다). 이번 주 신호가 전부 2·5번에서 먼저 잡힌 것과 대비"
+      - "**파형 정본:** 넓고 완만 — 완만하게 올라가 완만하게 내려옴. 화면을 축소해야 한 화면에 들어옴. **느린데 크다**(봄 = 뾰족 / 이번 주 = 좁고 빠름과 대비). 형체·명명·해석 발화 0"
+      - "`빠른 것은 지나가고 느린 것은 눌러앉는다`(영진 인식)"
+    evidence:
+      scene: 6
+
+  - category: "situational"
+    field_path: "living_conditions.school"
+    operation: "advance"
+    after:
+      - "**방학식 = 2050년 7월 22일 확정.** 학기 초 배부 종이에 기재·사물함에 부착. 남은 날 수를 두고 다투되 아무도 확인하러 가지 않음"
+    evidence:
+      scene: 1
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 49
+        after: 50
+    note: "**세 번째 간격 기재 = 단축의 확정.** `한 번은 우연이고 두 번은 그럴 수도 있는데, 세 번이면 그건 다른 이름으로 불러야 한다` + **외해의 크고 느린 질량**(투구게형 예고·명명 0). S8 종료 — 다음 = S9"
+  - id: "B3-SUA-POSITION"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 49
+        after: 50
+    note: "기록 체계 4분할 + **빈 칸을 미리 만드는 손.** 실무의 제도화 단계. 다음 = S11 첫 대체출격"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 49
+        after: 50
+    note: "재청구 2회차·**미지불 유지**(`그럼 언제.` 무응답). 지불은 S9~S10"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "**평온 유지 — 눈금 추가 0.** `운동을 서서 해?` `이상해.` 웃고 지나감·두 번은 안 물음. S9 누적 → S10 명명 곡선 보존"
+  - id: "FS-C5-WHITE-SENTINEL"
+    operation: "NO_CHANGE"
+    note: "S8 1회(EP46) 소진 — 다음 누적은 S9"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "새 증상 0 구간 유지. 팔 뻐근함 = 운동 후 근육(증상 아님)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "**작가용 설정 노출 0** — 목록의 `닻`이 왜 필요한지는 지면에서 설명되지 않음"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "앵커 명명·설계·용도 0 / 배양·장비·현서 0 / 표면 질감 암시 0 / 투구게 형체·명명 0 / 센티널 0 / 루시 0 / 새 증상 0 / 혜정 눈금 0 / 전투 0"
+
+canon_additions:
+  - "시간: EP50 = 6/17(금) 등교~6/18(토) 밤. 통제 해제 = 6/15 교전 기준 이틀 전"
+  - "**방학식 = 2050년 7월 22일(금) 확정.** 학사일정은 공개 정보 — `아무도 모른다` 연출 금지. **미지불 회수 완료**"
+  - "**여름 시계:** EP50(6월 중순) → 방학식까지 약 4주. S9 전량 + S10 전반이 이 구간"
+  - "**조달 목록의 3층 문법:** ⓐ 두루뭉술한 다수로 덮고 ⓑ 핵심은 평범한 한 줄로 묻고 ⓒ 조달처가 필요한 항목만 정확히. **정확한 줄이 시선을 가져간다**"
+  - "**장부의 동그라미 = `먼저 할 것`**(봄 장부 계보·하루 안에 처리)"
+  - "**수아의 기록 원칙 2호:** 안 보이는 기록은 없는 기록이다 → 나눈다. 빈 칸을 미리 만드는 것도 기록"
+  - "**훈련의 성질 전환:** 빠름(봄) → 오래 버팀(여름). 이유를 설명하지 못한 채 하는 것까지"
+  - "**침묵의 질 전환 정본:** 같은 침묵이 공포 → 신뢰로. **빚 자체는 해소 0**"
+  - "**여론 4단계:** 소문(무서움) → 걱정(못 봄) → 해석의 분열(봤는데 말이 다름) → **소진**(`일상이 소문보다 빨랐다`)"
+  - "격언 계보: `일상이 소문보다 빨랐다` / `관측만 적을 수 있을 때는 그랬다` / `만들 걸 정하고 모으는 게 아니다` / `안 보이는 기록은 없는 기록이나 마찬가지` / `아무도 그걸 뭐라고 부르지 않았다` / `빠른 것은 지나가고 느린 것은 눌러앉는다` / `들어오는 것들의 간격이, 확실히, 좁아지고 있다`"
+provenance:
+  chapter_text: "Black_Titan_EP050_50화_간격_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP050_회차브리프_v0.1.md"
+  content_lock: "Black_Titan_EP050_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP050_Gate-D_검증서_v1.0.md"
+  arc_close: "Black_Titan_S8_종료장부_대조서_v1.0.md / Black_Titan_아크캡슐_S8_v1.0.md"
+notes:
+  - "**S8 「재검과 재래」 10/10 완료 — 아크 마감.** 종료장부 대조서 8/8 + 아크캡슐 S8 작성"
+  - "다음 = **S9 「고철의 재간」**(EP51~). 기태 조달·앵커 개발·등각류 데뷔. 앵커 모드 구분(클로/로켓)은 S9 Level 6에서 확정"
+  - "S9 진입 시 필요: 여름 L3 골격 v1.1 §S9 → S9 화별개요(Level 4) → EP51 브리프"

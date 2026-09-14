@@ -1,0 +1,94 @@
+request:
+  id: G0-006
+  title: EP1·2 VR 공개시점과 수면학습 반영 정정
+  revision: 1.0
+  status: APPROVED
+  approved_by: user
+  approved_at: 2026-08-01
+  authority: current_user_correction
+  change_type: disclosure_timing_and_omitted_downstream_canon_restoration
+
+change_summary:
+  before:
+    - EP1 본문은 VR 설명을 삭제했으나 일부 상태·복선 문구가 `VR 뒤 시력 저하`를 이미 공개된 정보처럼 직접 연결했다.
+    - EP2 Gate C 후보는 5개월 전 VR 보정을 설명했지만, 수면학습과 놀이형 훈련으로 조종 절차를 각인했다는 현행 정사를 장면 전환에 충분히 반영하지 않았다.
+    - EP2의 마지막 신체기억이 무엇에서 비롯되었는지 상위 설계와 회차 브리프의 연결이 약했다.
+  after:
+    - EP1은 VR을 언급하지 않고 `지난가을부터 갑자기 나빠진 시력`만 공개한다.
+    - EP2에서 5개월 전 VR이 단아의 세미다이렉트모션 반응값 보정 시험이었다는 사실을 처음 설명한다.
+    - VR과 시력 저하는 대사·해설·항의·사과로 직접 연결하지 않는다.
+    - "`5개월 전 VR`이라는 설명 직후 단아가 안경을 한 번 밀어 올리는 행동과 시기의 일치만으로 독자의 의심을 허용한다."
+    - 수아가 잠들기 전 학습 프로그램과 놀이형 반복 훈련을 떠올리고, 영진이 그것도 조종 준비였다고 인정한다.
+    - 단아가 처음 보는 기동 절차를 손으로 먼저 찾아가는 EP2 엔딩은 수면학습의 효과를 재설명하지 않고 행동으로 증명한다.
+
+canon_status:
+  setting_change: false
+  note:
+    - 통합설정집 v2.3과 전체 플롯 v2.2에는 이미 수면학습·놀이형 훈련을 통한 위장조종법 각인이 존재한다.
+    - 이번 정정은 상위 정사를 바꾸지 않고 EP1·2의 독자 공개시점과 하위 산출물의 누락을 바로잡는다.
+
+disclosure_lock:
+  EP1:
+    reader_may_know:
+      - 단아의 시력이 지난가을부터 갑자기 나빠졌음
+      - 단아가 둥근 안경을 아직 불편해함
+      - 연구단지에서 짧은 두통이 있었음
+    reader_must_not_know:
+      - 5개월 전 VR 체험
+      - VR이 조종 보정 시험이었다는 사실
+      - VR과 시력 저하의 인과
+  EP2:
+    newly_revealed:
+      - 5개월 전 VR이 단아 반응값을 얻기 위한 조종 보정 시험이었음
+      - 잠들기 전 학습 프로그램과 놀이형 반복 훈련이 조종 준비였음
+      - 단아의 세미다이렉트모션 보정값 때문에 현재 즉시 움직일 수 있는 사람이 단아뿐이라는 영진의 표면 설명
+    permitted_foreshadow:
+      - "`5개월 전 VR` 설명 직후 단아가 안경을 한 번 밀어 올림"
+      - EP1의 `지난가을`과 EP2의 `5개월 전`이 시기상 맞아떨어짐
+    prohibited:
+      - "`VR을 한 뒤 눈이 나빠졌다`는 직접 대사나 서술"
+      - 단아가 VR을 시력 저하의 원인으로 항의함
+      - 영진이 시력 손상에 대해 사과하거나 죄책감을 해설함
+      - 서술자가 VR 시험의 시신경 손상을 정답으로 확인함
+      - 수면학습을 신경동조 원리로 설명함
+
+affected_artifacts:
+  - artifact: Project_Black_Titan_통합설정집_v2.3.docx
+    action: KEEP
+    reason: 수면학습·놀이형 훈련과 VR 시험의 실제 인과가 이미 정사로 존재한다.
+  - artifact: Project Black Titan 전체 플롯 v2.2.docx
+    action: KEEP
+    reason: 수면학습과 VR 실험 인과 및 장기 공개선이 이미 유지된다.
+  - artifact: Black_Titan_EP001_1화_벚꽃과사이렌_v1.0_GateD승인.md
+    action: KEEP
+    reason: 본문은 VR을 언급하지 않고 지난가을 시력 저하만 제시하므로 새 공개수위와 일치한다.
+  - artifact: Black_Titan_EP001_회차델타_v1.0.yaml
+    action: KEEP
+    reason: 사건·상태 변화는 유효하다. `allowed_reveal_now`의 표현만 새 SNAP과 복선추적기에서 G0-006으로 정밀화한다.
+  - artifact: Black_Titan_S1_EP001-006_화별개요_v3.6_GateB승인.md
+    action: REVISE
+    replacement: Black_Titan_S1_EP001-006_화별개요_v3.7_GateB승인.md
+    reason: EP1 독자 지식, EP2 최초 VR 공개, 수면학습과 신체기억 연결을 반영한다.
+  - artifact: Black_Titan_EP002_회차브리프_v0.1_GateC후보.md
+    action: RETIRE
+    replacement: Black_Titan_EP002_회차브리프_v0.2_GateC후보.md
+    reason: 수면학습 누락과 VR·시력 복선 수위를 바로잡는다.
+  - artifact: Black_Titan_EP002_Gate-C_심사서_v0.1.md
+    action: RETIRE
+    replacement: Black_Titan_EP002_Gate-C_심사서_v0.2.md
+    reason: VR 최초 공개, 시력 인과 금지, 수면학습 복원 검증항목을 추가한다.
+  - artifact: Black_Titan_SNAP-001_EP001후_v1.0.yaml
+    action: REVISE
+    replacement: Black_Titan_SNAP-001_EP001후_v1.1.yaml
+    reason: 단아의 시력 변화와 과거 VR 경험을 캐릭터 상태에서 분리하고 독자 공개수위를 명시한다.
+  - artifact: Black_Titan_복선추적기_SNAP-001_v1.0.yaml
+    action: REVISE
+    replacement: Black_Titan_복선추적기_SNAP-001_v1.1.yaml
+    reason: EP1은 시력만, EP2는 VR 최초 공개와 시기 병치만 허용하도록 갱신한다.
+
+decision:
+  status: APPLIED
+  decided_at: 2026-08-01
+  downstream_gate:
+    EP2_brief: GATE_C_CANDIDATE
+    user_approval_required_before_level_6: true

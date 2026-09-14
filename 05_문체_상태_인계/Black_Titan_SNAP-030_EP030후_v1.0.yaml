@@ -1,0 +1,426 @@
+schema_version: 2
+snapshot_id: "SNAP-030"
+status: "APPROVED_CURRENT_STATE"
+approved_by_user: "2026-08-10"
+approval_note: "EP030 「폐허 아래의 관」 v1.0 Gate D 승인·델타 적용. S6 1/6 — 시리즈 첫 기습 피격, **회차 간 위기 지속 상태(포획·견인 중)**."
+canon_version: "통합설정집 v2.3(+v2.4 증보) / 전체 플롯 v2.2 / 봄 Level 3 v3.2 / S6 화별개요 v1.4"
+through_chapter: 30
+arc_note: "**S6 「멈춰야 사는 바다」 진행 중(1/6).** 다음 = EP31 「부러진 턱」(**중요 화 — 첫 탈출/자발 퇴각.** 진입 = 이 스냅숏의 위기 그대로 — 시간 경과 0)"
+story_time:
+  date: "2050년 5월 12일 목요일 밤"
+  time_of_day: "밤 — **위기 진행 중:** 수몰 구도심 해저 도로, 오른발목 포획·견인·경화 개시 시점에서 컷"
+  elapsed_since_previous_chapter: "1일 — EP29(5/11 수 밤)에서 하루"
+  author_note: "연도 2050년. **EP31은 이 장면에서 시간 경과 없이 이어짐**(회차 간 클리프행어 — S4 EP20~23 연전 방식)"
+
+characters:
+  dana:
+    display_name: "도단아"
+    location: "**수몰 구도심 해저 도로 — 조종석(전도 상태·견인 중)**"
+    physical:
+      condition: "무부상(기체 층위 위기 — 신체 손상 0)"
+      symptoms: ["시력 저하·둥근 안경(기준선)"]
+      injuries: []
+      treatment: ["재검 6월 대기"]
+    emotional:
+      baseline: "밝고 활달하며 경쟁심이 강하고 생각보다 행동이 앞섬"
+      pressure_level: 5
+      pressures:
+        - "**포획 공포 진행 중:** 이 딱딱 부딪힘·본능 몸부림(움직일수록 붙는데 멈추지 못함)"
+        - "지형이 물었다는 이해 불능(맞은 게 아니라 잡혔다)"
+    relationships:
+      sua: "역할 합의(돌아오면 먼저 보이기 — 미이행 상태)"
+      youngjin: "침묵의 빚 유지"
+      hyejeong: "**규칙 실전 가동 완료**(`기다리지 마` 발신)"
+      seongho: "앙숙 기본값(4차 유예)"
+    knowledge:
+      knows:
+        - "SNAP-029의 지식 전체"
+        - "수몰 구도심 물성(잡을 것 없는 폐허), 관≒폐허 구분 불가"
+        - "당기는 힘 = 서두르지 않는 꾸준함, 움직일수록 다리가 굳는다는 것(체감 개시)"
+      suspects: ["여섯 번째 구조물 안에 있는 것 — 정체 불명(턱만 봄)"]
+      misunderstands: ["확장 위장 설명", "영진 은닉 이유 오독(유지)"]
+      hides: ["탑승 사실(가족 외)", "활동지 둘째 칸 공란"]
+    commitments:
+      - "확인만 하고 온다(파기됨 — 상황 강제)"
+      - "귀환 시 수아에게 먼저 보이기"
+    state_notes:
+      - "**EP31 진입 조건:** 발목~종아리 경화 진행. 깨달음(당길수록 굳는다) = EP31 서두 몫"
+
+  sua:
+    display_name: "도수아"
+    location: "집 지하 — 작업대(장부 펴 놓고 대기)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "말수가 적고 사려 깊음 — 한 발짝 뒤·타인 먼저"
+      pressure_level: 3
+      pressures: ["언니 출격 중(기다림 — 장부가 배웅의 형식)"]
+    relationships:
+      dana: "역할 합의(귀환 대기)"
+      youngjin: "확인자 위임"
+      harang: "방과후 친구"
+    knowledge:
+      knows: ["SNAP-029의 지식 전체", "부표 시각 간격이 같다는 것(자기 전사로 확인)"]
+      suspects: []
+      misunderstands: ["확장 위장 설명(유지)"]
+      hides: ["공책 기록(비공개)"]
+    commitments: ["귀환 후 수치 전사·누락 확인(대기 중)"]
+    state_notes: ["배웅 문법 확립: 돌아온 다음 할 일을 먼저 준비"]
+
+  youngjin:
+    display_name: "도영진"
+    location: "지하 격납고 — 관제(출격 감독 중)"
+    physical: { condition: "고령이지만 작업능력 유지", symptoms: [], injuries: ["왼팔 결손 — **한 팔 몸짓 정본(팔짱·양손 금지)**"], treatment: [] }
+    emotional:
+      baseline: "최악을 먼저 상정하고 대비하는 보호자"
+      pressure_level: 5
+      pressures: ["확인만 조건이 깨지는 현장(포획) — 대응 국면"]
+    relationships: { dana: "빚 유지 + 출격 감독", sua: "확인자 위임" }
+    knowledge:
+      knows:
+        - "SNAP-029의 지식 전체"
+        - "군 공개망 통지 2건(구역 소개·위치 자료), 무인기 판독(미상 구조물·구분 곤란)"
+      suspects: ["구조물 = 잔해 위장일 가능성(현실화됨)"]
+      misunderstands: ["`기록만 맡기면`(수아 오독 유지)"]
+      hides: ["생체 기원·현서 일체", "출격 노선", "FS-003"]
+    commitments: ["현 위기 대응(EP31)"]
+    state_notes: ["출격일 문법: 밥 한 공기 더·`발 딛는 데를 믿지 마라`"]
+
+  hyunseo:
+    display_name: "도현서"
+    location: "불명 — `오래전에 떠남`"
+    physical: { condition: "회상 한정", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "회상 한정", pressure_level: 0, pressures: [] }
+    relationships: { youngjin: "위장 프레임", dana: "질문이 발화된 어머니", sua: "두 번째 꽃의 수신인(부재)" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+    state_notes: ["여운 동결. 서랍 사진 = S6 이후 별도(전모 = 여름 말~가을)"]
+
+  myeongjun:
+    display_name: "고명준"
+    location: "남해방위사령부"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "공적 언어의 지휘관", pressure_level: 3, pressures: [] }
+    relationships: {}
+    knowledge:
+      knows: ["부표 이상·미상 구조물 판독(군 채널)", "검은 거인 이동 개시(관측 예상)"]
+      suspects: []
+      misunderstands: []
+      hides: ["서랍 속 동반 사진"]
+    commitments: ["구역 소개·해상통제·위치 제공 유지(확장 금지). EP31: 동일 개체 표지 기록 예정"]
+    state_notes: ["EP30 앵커 이행(직책 어구·공적 문장 2개·공개망)"]
+
+  seojin:
+    display_name: "윤서진"
+    location: "남해방위사령부(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "건조한 실무자", pressure_level: 2, pressures: [] }
+    relationships: { myeongjun: "전속부관" }
+    knowledge: { knows: ["군 보유 정보와 동일"], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  hyejeong:
+    display_name: "고혜정"
+    location: "집"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional:
+      baseline: "직선적이고 의리 강함 — 복기벽"
+      pressure_level: 3
+      pressures: ["`기다리지 마` 수신 — 걱정을 삼킨 한 줄 답장 상태"]
+    relationships:
+      dana: "규칙 실전 가동(어디·왜 안 물음 이행)"
+      yejin: "친구"
+    knowledge:
+      knows: ["SNAP-029의 지식 전체", "오늘 단아에게 무슨 일이 있다는 것(내용 불명)"]
+      suspects: ["기존 오독 유지"]
+      misunderstands: ["단아네 집안 사정 오독(유지)"]
+      hides: ["짐작과 목록", "삼킨 질문들"]
+    commitments: ["EP32 「아프면 아프다고」 관계 시험 창구"]
+
+  yejin:
+    display_name: "하예진"
+    location: "집(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "완충재형 다정함", pressure_level: 1, pressures: [] }
+    relationships: { dana: "절친", hyejeong: "친구" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  seongho:
+    display_name: "이성호"
+    location: "집(깁스 생활)"
+    physical:
+      condition: "깁스·목발(호전 중)"
+      symptoms: []
+      injuries: ["오른발목 염좌·인대 손상"]
+      treatment: ["깁스 유지"]
+    emotional: { baseline: "경쟁심과 과장 — 분석 발표체", pressure_level: 2, pressures: [] }
+    relationships: { dana: "앙숙 기본값(지면 상태 보정 이론)" }
+    knowledge:
+      knows: ["SNAP-029와 동일"]
+      suspects: []
+      misunderstands: ["파일럿 = 성인 특수요원"]
+      hides: ["깁스 첫 줄(이월)"]
+    commitments: ["EP32 창구(안전지도 과제 계열)"]
+
+  juho:
+    display_name: "김주호"
+    location: "청해남초"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "담백한 현실형 담임교사", pressure_level: 1, pressures: [] }
+    relationships: { dana: "담임과 학생(조정 축소 상태)" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  hangyeol:
+    display_name: "강한결"
+    location: "청해남초(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "규칙·기록·행동으로 조용히 정리", pressure_level: 1, pressures: [] }
+    relationships: { dana: "같은 반(반장)" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  harang:
+    display_name: "이하랑"
+    location: "청해남초(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "밝고 평범한 9세", pressure_level: 1, pressures: [] }
+    relationships: { sua: "방과후 친구(같이 시작 — 정본)" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: ["바이올린 발표(소지불)"]
+
+  yujeong:
+    display_name: "임유정"
+    location: "청해남초 3학년 교실(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "온도 평평·짧은 말", pressure_level: 1, pressures: [] }
+    relationships: { sua: "담임과 학생" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  yurim_jaeho:
+    display_name: "배유림·문재호"
+    location: "청해남초 3학년 교실(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "유림 = 역할표 / 재호 = 준비물", pressure_level: 1, pressures: [] }
+    relationships: { sua: "같은 반" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  gitae:
+    display_name: "박기태"
+    location: "구래항 인양장(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "퉁명한 말, 보호하는 행동", pressure_level: 2, pressures: [] }
+    relationships: { youngjin: "조달 관계(`박사님`)" }
+    knowledge: { knows: [], suspects: [], misunderstands: ["산업기계 위장 수용"], hides: [] }
+    commitments: []
+
+  miran:
+    display_name: "오미란"
+    location: "구래수산시장(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "실무자", pressure_level: 2, pressures: [] }
+    relationships: { youngjin: "수리 거래처(선풍기 대기)" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+  jeongho:
+    display_name: "배정호"
+    location: "구래항(미등장)"
+    physical: { condition: "건강", symptoms: [], injuries: [], treatment: [] }
+    emotional: { baseline: "말수 적음", pressure_level: 2, pressures: [] }
+    relationships: { youngjin: "수리 거래처" }
+    knowledge: { knows: [], suspects: [], misunderstands: [], hides: [] }
+    commitments: []
+
+assets:
+  black_titan:
+    location: "**수몰 구도심 해저 도로 — 전도·견인 중(위기)**"
+    status: "**오른발목 이음매 = 턱 포획. 발목~종아리 점액·잔해 경화 진행(움직일수록 가속). 신체 구조 손상 0**"
+    equipment:
+      - "세미다이렉트모션 조종계"
+      - "감쇠 포스 피드백"
+      - "단아 반응값 보정"
+      - "조종석 상시 기록(블랙박스)"
+      - "전조등(탁도에서 몇 걸음 유효)"
+    damage: []
+    repair_needs: ["귀환 후: 발목 경화 잔류물 제거(예정 — EP31 이후)"]
+    maintenance_log:
+      - "EP30: 출격(수몰 구도심 — 확인 임무). 접촉·포획 발생. 작가용: EP31 = 왼쪽 턱 파손·탈출·개체 자발 퇴각 예정"
+  sortie_line:
+    location: "격납고 → 옛 노선 → 수몰역(무명) → 수밀격벽 → 수몰 구도심"
+    status: "가동 중(귀환 대기)"
+    equipment: ["레일 운반대차", "수밀격벽"]
+    damage: []
+    repair_needs: []
+  youngjin_repair_shop:
+    location: "구래동 언덕길"
+    status: "영업 외 시간 — 지하 관제 중"
+    equipment: ["수리 공구·부품", "지하 연결통로", "발전기", "관측 단말(부표 7·5·2)"]
+    damage: []
+    repair_needs: []
+    stored_items:
+      - "동진호 어탐(보관 중)"
+      - "성게형 가시 조각(선반 아래 통)"
+      - "수아의 순서 종이(작업대)"
+      - "새 점검 장부(펴 놓음 — 귀환 대기)"
+      - "미란 선풍기(수리 대기)"
+
+inventory:
+  black_titan_weapons: { status: "없음", note: "봄에는 맨손. 아이언 앵커 금지(S6 포함)." }
+  dana_notebook: { status: "보유", note: "네 칸 시간표 + 비공개 첫 줄" }
+  sua_notebook: { status: "보유", note: "시각 기록 3건 비공개" }
+  dana_sua_phones: { status: "정비 완료", note: "단아 폰 = 집(책상에 엎어 둠 — `기다리지 마` 발신 후)" }
+  carnations: { status: "존속(동결)", note: "" }
+  inspection_ledger: { status: "가동", note: "작업대에 펴 놓음 — 귀환 대기" }
+
+living_conditions:
+  family:
+    - "**출격 중(위기 진행)** — 수아 대기·영진 관제"
+  school:
+    - "정상(5/12 목 수업 완료 — 자리 바꾸기 예측·지면 보정 이론)"
+  neighborhood:
+    - "평온(공개망 소개 통지 — 외곽 수로·잠수구역 한정)"
+  city:
+    - "**민간 인지 없음**(야간·수몰 구역 — 경보 미발령 상태)"
+
+external_conditions:
+  network:
+    - "**인터넷 소실 — 청해 내부망만.** `인터넷` 금지"
+  public:
+    - "평온(구역 소개는 실무 통지 수준)"
+  sea:
+    - "수몰 구도심 = 접촉 현장. 부표망 정상 복귀 상태"
+  military:
+    - "구역 소개·해상통제·위치 제공 이행(공개망). 추적·지휘 확장 없음"
+  enemy:
+    - "**접촉 중(작가용):** 관망 매복 개체 — 턱 고정·견인·경화 진행. EP31 = 왼쪽 턱 파손 후 자발 퇴각·표지 성립(비대칭 재생흔)"
+
+active_threads:
+  - id: "FS-001-DANA-VISION"
+    question: "시력·VR·두통은 어떻게 이어지는가"
+    introduced_chapter: 0
+    last_advanced_chapter: 24
+    current_holder: ["단아", "영진"]
+    urgency: "SIMMERING_DENIABLE"
+    expected_window: "재검 6월(생활), EP35 뒤 저림 1회(개요 창구)"
+    allowed_interpretations: ["창구 전 침묵 — 실패·위기 원인으로 쓰지 않기"]
+  - id: "B1-HYEJEONG-CONCERN"
+    question: "혜정은 걱정의 장부를 어디까지 쌓는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 30
+    current_holder: ["단아", "혜정", "예진"]
+    urgency: "WARM_STEADY"
+    expected_window: "**EP32 「아프면 아프다고」 관계 시험**, 물증은 여름"
+    allowed_interpretations: ["실전 가동 완료(한 줄 답장). 걱정 심화 가능·조사 금지"]
+  - id: "B4-SEONGHO-SCHOOL"
+    question: "학교·도시의 검은 거인 신화와 단아의 정체는 어떻게 스치는가"
+    introduced_chapter: 6
+    last_advanced_chapter: 29
+    current_holder: ["성호", "단아"]
+    urgency: "WARM_STEADY"
+    expected_window: "EP32(안전지도 과제 계열), 여름 스케일업"
+    allowed_interpretations: ["기본값 유지"]
+  - id: "C2-TITAN-ORIGIN"
+    question: "거인은 무엇이며 누가 왜 만들었는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 18
+    current_holder: ["영진"]
+    urgency: "HIDDEN"
+    expected_window: "진실은 가을"
+    allowed_interpretations: ["위장 유지 상시"]
+  - id: "C4-ENEMY-PURPOSE"
+    question: "그것들은 무엇을 하러 오는가"
+    introduced_chapter: 1
+    last_advanced_chapter: 30
+    current_holder: ["개체(현장)", "단아", "영진"]
+    urgency: "CRITICAL"
+    expected_window: "**EP31 탈출·자발 퇴각 → EP34~35 개선 재접촉(정적 결착)**"
+    allowed_interpretations:
+      - "지면 = 행동 물성만(턱·관·점액·견인·경화). `끌고 가려 한다` 추정 발화 = EP31 몫. 내부 판단·목적 명사 금지 상시"
+  - id: "B3-SUA-POSITION"
+    question: "왜 현재는 단아만 조종자인가"
+    introduced_chapter: 2
+    last_advanced_chapter: 28
+    current_holder: ["수아", "영진", "단아"]
+    urgency: "SIMMERING"
+    expected_window: "EP33(가족 후처리)·EP35(점액·광물 잔류 누락 발견), S7 결정적 관찰"
+    allowed_interpretations: ["확인자 일상 이행 + 배웅 문법. 금지 목록 상시"]
+  - id: "FS-004-PIERCING-FEAR"
+    question: "조종석의 아이는 몸의 위험을 어떻게 상상하는가"
+    introduced_chapter: 4
+    last_advanced_chapter: 4
+    current_holder: ["단아"]
+    urgency: "DORMANT"
+    expected_window: "여름 마지막 전투"
+    allowed_interpretations: ["반복 사용 금지 — 이번 포획 공포와 혼용 금지"]
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    question: "고명준·영진의 과거, 그리고 어머니의 부재"
+    introduced_chapter: 12
+    last_advanced_chapter: 27
+    current_holder: ["고명준", "영진", "단아", "수아"]
+    urgency: "SIMMERING"
+    expected_window: "서랍 사진 = S6 이후 별도, 전모 = 여름 말~가을"
+    allowed_interpretations: ["여운 동결"]
+  - id: "FS-003-BIO-SEEP"
+    question: "덜 씻긴 얼룩은 무엇인가"
+    introduced_chapter: 9
+    last_advanced_chapter: 28
+    current_holder: ["영진", "수아"]
+    urgency: "ACTIVE_BURIED"
+    expected_window: "**EP31 훅(쟁반 위 점액·가루 실 조직 정렬 — 영진 목격) = 인접 창구**, 확정은 가을"
+    allowed_interpretations: ["관찰 사실만·명명 0"]
+
+resolved_threads:
+  - id: "A-S1-FIRST-INVASION"
+    resolution: "EP6 아크 마감"
+    resolved_at: 6
+  - id: "A-S2-HARBOR-BLOCKADE"
+    resolution: "EP10 격퇴·항로 재개"
+    resolved_at: 10
+  - id: "A-S3-HIGHGROUND"
+    resolution: "EP16 격퇴·용해, EP18 아크 마감"
+    resolved_at: 18
+  - id: "A-S4-BINDING"
+    resolution: "EP23 기능 정지, EP24 아크 마감"
+    resolved_at: 24
+  - id: "A-S5-QUIET-DAYS"
+    resolution: "EP29 아크 마감"
+    resolved_at: 29
+
+relations:
+  dana_sua: { pair: ["dana","sua"], stage: "STABLE_FAMILY", trust_level: 5, current_issue: "귀환 대기(장부 펴 놓음)" }
+  dana_youngjin:
+    pair: ["dana","youngjin"]
+    stage: "STRAINED_BY_REVEALED_DECEPTION"
+    trust_level: 3
+    current_issue: "침묵의 빚 유지 — 위기 공동 대응 중"
+  dana_hyejeong:
+    pair: ["dana","hyejeong"]
+    stage: "STABLE_LONGTIME_FRIENDS"
+    trust_level: 5
+    current_issue: "**규칙 실전 가동** — EP32 시험 대기"
+  dana_yejin: { pair: ["dana","yejin"], stage: "STABLE_FRIENDS", trust_level: 4, current_issue: "없음" }
+  dana_seongho:
+    pair: ["dana","seongho"]
+    stage: "RECIPROCAL_RIVALRY"
+    trust_level: 3
+    current_issue: "기본값(4차 유예)"
+  sua_youngjin:
+    pair: ["sua","youngjin"]
+    stage: "TRUSTED_DELEGATION"
+    trust_level: 5
+    current_issue: "확인자 위임 안정"
+  sua_harang: { pair: ["sua","harang"], stage: "GROWING_FRIENDS", trust_level: 4, current_issue: "발표(소지불)" }
+
+relation_scale:
+  trust_level: "0=신뢰 없음, 5=매우 높은 개인적 신뢰. 호감·연애 수치가 아님."
+
+last_approved_delta: "Black_Titan_EP030_회차델타_v1.0.yaml"
+provenance:
+  - "SNAP-029 v1.0의 provenance 전체"
+  - "EP030 회차브리프 v0.1 GATE_C_PASS(§6 ①~⑥)"
+  - "EP030 Level 6 v1.0 LEVEL6_APPROVED"
+  - "EP030 폐허 아래의 관 v1.0 GATE_D_PASS 2026-08-10(첨삭 4건+외팔 정합)"
+  - "EP030 회차델타 v1.0"

@@ -1,0 +1,116 @@
+schema_version: 2
+chapter: 48
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-12"
+  approval_note: "브리프 v0.2(결착 4단 구조 지시) → 초고 → 리듬 패스 → 첨삭 8건 → `이렇게 마무리하자`. S8 8/10 — 중요 화·첫 육탄전."
+based_on_snapshot: "SNAP-047 v1.0"
+produces_snapshot: "SNAP-048 v1.0"
+changes:
+  - category: "situational"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**격파 완료(6/15 오후).** 큰 집게가 왼팔을 물고 **작은 집게가 관절을 잡아 함께 비트는** 협업 공격 확인 — 큰 것은 힘, 작은 것은 정확함"
+      - "**신체 구조 확인:** 몸통 앞쪽에 **녹빛 눈자루 두 개**(껍질이 아닌 유일한 부위·가까워져야 보임). 집게 관절은 **한쪽으로만 접힌다**"
+      - "**발성 확인:** 눈자루가 상하자 **쇳소리**. 단아는 그것을 `저쪽이 곤란하다`는 뜻으로 읽음 — 그간의 싸움에서 익힌 해석"
+      - "결착: 눈자루 꺾기 → 작은 집게 → 큰 집게 → **박치기**. 용해·수거물 0"
+    evidence:
+      scene: [3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**흘리기:** 정면으로 받으면 뒤로 가고 비스듬히 받으면 옆으로 간다. **옆은 넘어지는 방향이 아니다**(EP47 전도의 학습)"
+      - "**무거움의 양면:** 걸을 때 발을 박아 넣던 무거움이 **붙잡고 버티는 자리에서는 이점**이다. 다족은 뜬 채로 다니는 대신 버틸 데가 없다"
+      - "**어제의 방법이 오늘 안 통한다:** 세게 치면 다 되는 게 아니다. 부러뜨릴 가시도 드러난 속도 없는 상대가 있다"
+      - "**구속의 두 종류:** 봄의 것은 **가두려고 넓게** 감았고, 이건 **망가뜨리려고 골라서** 문다. `넓게 잡은 게 무섭다고 생각했는데, 좁게 잡는 게 더 무서웠다`. 통증 0·**어긋남**의 감각"
+      - "**관절에는 방향이 있다:** 한쪽으로는 접히고 반대쪽으로는 막힌다. **막히는 쪽이 부러지는 쪽**(촉각으로 습득)"
+      - "**박힌 발은 바닥이 될 수 있다**(불리한 지형의 첫 이용)"
+      - "**쇳소리 = 저쪽이 곤란하다는 뜻**(소리를 읽는 법)"
+    evidence:
+      scene: [1, 2, 3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.history"
+    operation: "advance"
+    after:
+      - "**유년의 몸싸움 정본(회상·신규):** 여덟아홉 살 무렵 놀이터 미끄럼틀 뒤, **수아를 울린 덩치 큰 남자애**와 흙투성이로 뒹굶 → 그 애 눈에 흙이 들어가 아무것도 못 하게 됨 → **직후에 박치기로 코피.** **이름은 기억나지 않음**"
+      - "**격투의 출처:** `어떻게 하는 건지 배운 적은 없었다. 배울 데도 없었다. 그냥 어릴 때 그렇게 해 본 적이 있었다` — 배운 적 없는 아이의 싸움이 어디서 오는지가 여기서 정해짐"
+    evidence:
+      scene: [4, 5]
+
+  - category: "situational"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**격파 후 기립 상태.** 왼팔 관절이 두 집게에 물려 비틀렸으나 **관통 0·손상 표시 0**(구속·비틀림까지). 이마 접촉 있음(박치기)"
+      - "**여운:** 팔은 멀쩡한데 **어긋나던 감각이 남아** 폈다 접을 때마다 한 번씩 지나감(증상 아님·전투 후 반응)"
+    evidence:
+      scene: [3, 6]
+
+  - category: "situational"
+    field_path: "external_conditions.sea"
+    operation: "advance"
+    after:
+      - "밀물 진행 — 정강이 → 허벅지 위. 개펄이 더 물러짐. 잔량 한 시간 반 → 한 시간"
+    evidence:
+      scene: [1, 3]
+
+  - category: "relational"
+    field_path: "relations.dana_sua"
+    operation: "advance"
+    after:
+      - "**부재한 채로 스침:** 수아는 이 회차에 등장하지 않지만, 결착의 방아쇠가 된 기억이 **수아를 지키려던 싸움**이다. 감정 서술·다짐 0 — 사실만"
+    evidence:
+      scene: 4
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 47
+        after: 48
+    note: "**골라서 무는 정밀함 = 이쪽 몸의 약한 자리를 안다는 뜻.** 회수에서 파괴로 넘어온 적이 학습하고 있다는 증거. 다음: EP49~50 후처리·앵커 씨앗 3단·투구게 예고"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+  - id: "FS-C5-WHITE-SENTINEL"
+    operation: "NO_CHANGE"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "귀환·점검·기록 0(EP49), 앵커 명명 0, 센티널 0, 정체 확정 0, 새 증상 0, 통증 0, 수아 등장 0"
+
+canon_additions:
+  - "시간: EP48 = 6/15(수) 오후, EP47에서 경과 0"
+  - "**유년의 몸싸움 정본:** 놀이터·미끄럼틀 뒤·**수아를 울린 덩치 큰 남자애**·흙·**박치기로 코피**·이름 기억 안 남. 단아 격투의 근원"
+  - "**개체 구조 정본(농게형):** 녹빛 눈자루 두 개(껍질 아닌 유일한 부위)·집게 관절은 한쪽으로만 접힘·눈자루가 상하면 힘이 느슨해짐"
+  - "**쇳소리 정본:** 개체의 유일한 발성. 단아는 그것을 저쪽이 곤란하다는 신호로 읽는다"
+  - "**격투 성장 곡선 2단:** EP45 힘(부서질 때까지 내려침) → **EP48 몸이 기억한 싸움**(눈·되돌려 꺾기·박치기)"
+  - "**서술 결정:** `꺾인 집게는 아직 검은 손이 잡고 있다` — 현재형 1문장 유지(사용자 확정). 그 순간만 시간을 멈추는 용법·남용 금지"
+  - "격언 계보: `옆은 넘어지는 방향이 아니다` / `넓게 잡은 게 무섭다고 생각했는데, 좁게 잡는 게 더 무서웠다` / `막힌다는 건, 그쪽이 부러지는 쪽이라는 뜻이었다` / `뭔가 해냈다는 뜻이다` / `놀이터에서도 아무도 안 봤다`"
+provenance:
+  chapter_text: "Black_Titan_EP048_48화_꺾이지않는방향_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP048_회차브리프_v0.1.md"
+  content_lock: "Black_Titan_EP048_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP048_Gate-D_검증서_v1.0.md"
+notes:
+  - "S8 8/10 완료. 다음 **EP49 — 후처리 화.**"
+  - "EP49 고정선(S8 개요): 귀환·점검(수아 ● 복귀)·군 기록·여론 후속(도시가 밀리는 싸움을 봤다)·**앵커 씨앗 3단**(팔보다 긴 것 + 놓지 않아도 되는 것 → 구체적 필요로) → EP50 투구게 예고"
+  - "EP49 = 시간 경과 있음(귀환부터 또는 다음 날). 밀물이 다 차기 전에 돌아가야 한다는 EP48 끝 문장과 접속"

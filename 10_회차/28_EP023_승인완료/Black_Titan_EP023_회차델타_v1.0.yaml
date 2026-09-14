@@ -1,0 +1,121 @@
+schema_version: 2
+chapter: 23
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-09"
+  approval_note: "v0.1 → 수정 2건+아이다운 균열 v0.2 → 셈 재질감 v0.3 → `좋아 이렇게 하자`. S4 해결 화(중요 화). 병행: 전투 톤 소급 9편(RETRO-TONE-20260809)."
+based_on_snapshot: "SNAP-022 v1.0"
+produces_snapshot: "SNAP-023 v1.0"
+changes:
+  - category: "combat"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**다완 흡착체 기능 정지(승리):** 얕은 감김 유지 → 교각 사이 각도 유인 → 견인선 교차·방향 잠김 → 기부 포획 → 개체가 스스로 교각 팔을 놓고 재포박 시도(닻 놓기) → 침수도로 마른 사면 위 뒤집기 → 중앙 운동기관 맨손·체중 압박 — `멎었다`"
+      - "마지막 순간까지 살상 동작 0(재포박 시도만) — 관찰 확정"
+      - "작가용: 몸체는 사면 위 방치 — 새벽 비 용해(G0-011)는 지면 밖, 군 기록은 네 번째 `수거물 없음` 예정(EP24 배경)"
+    evidence:
+      scene: [2, 3, 4]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**추정 도달(C4 상한): `싸우러 온 게 아니라, 나를 끌고 가려 했다`** — 영진 관찰 반 문장과 합작. 왜·어디로 = 미해결 질문 2"
+      - "**부상자 신원 인지: 이성호**(학교 단체연락망 문구 — 경위·인과는 모름, 옹벽 연결은 독자용 유지)"
+      - "전투 기술 확립: 감김 = 정보 줄(양쪽 끝), 습관 유도(각도만으로), 몸 먼저 인지 순서의 자각"
+    evidence:
+      scene: [1, 2, 3, 5]
+
+  - category: "emotional"
+    field_path: "characters.dana.state"
+    operation: "advance"
+    after:
+      - "승리보다 신원을 먼저 물음(보고 목록에 없는 첫 질문) — 죄책감 국면 개시(해설 없이 행동으로만)"
+      - "지연 청구서 수리: `무서움. 피로. 약 오름.` — 균열의 자기 인지"
+      - "`처음은 대개 마지막이 아니었다` — 오늘 몫이 아닌 생각으로 유예(S5~ 연료)"
+    evidence:
+      scene: [4, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_seongho"
+    operation: "advance"
+    after:
+      - "단아 쪽 앎 성립: 이름을 두 번 읽음 — EP24 죄책감·몰래 챙김·앙숙 복귀의 전제 완성"
+    evidence:
+      scene: 5
+
+  - category: "living_condition"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "고명준 기록: `빈 구역만 골라서 이동 중`(시민보호 성향 기록 — 신원 추적 작전 0)"
+      - "구조대 = 승리 확인 뒤 진입 대기. 전투구역 = 빈 침수구역 안에 묶임"
+    evidence:
+      scene: 2
+
+  - category: "living_condition"
+    field_path: "living_conditions.family"
+    operation: "merge"
+    after:
+      - "귀환 완료(저녁) — 수아의 준비물 사용(수건 2장째), 밀봉재 불용 확인 후 뚜껑 잠금"
+    evidence:
+      scene: 5
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 22
+        after: 23
+    note: "추정 도달 이행(문면 상한 준수). 작품 내 공개 한계 도달 — 다음 의미 진전 S6(작가용 전모는 가을)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 22
+        after: 23
+    note: "신원 공개 이행(연락망 문구 — 부가 정보 0). 다음 EP24 깁스 등교·`그래도 우리를 지켰다`·앙숙 복귀·`깁스 풀리면` 훅"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "NO_CHANGE"
+    note: "혜정 미등장 — EP24 창백함 걱정·재편성표 창구"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+    note: "특별 경계 이행(부정형 포함 0) — S4 통과 완료. 다음 감시 = 여름 창구까지 통상"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "S4 침묵 잠금 완주(EP20~23 물리 서술만). EP24 = C1 휴지 명시 화"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "비전투 상한 완주(수건·뚜껑 — 발화 1). 다음 S5 호기심"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+    note: "기능 정지 어휘 잠금 이행 — 생체 확증 0"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+    note: "고명준 등장 — 언급 0 유지(인지 1컷 창구는 S4 후처리~S5)"
+
+no_change_checks:
+  - "교각 무기 장착 0, 아이언 앵커 0, 수아·군 결정타 0"
+  - "단아 실표적 역설 0, 인큐베이터 기록 0, C4 금지 문구 0"
+  - "성호 부가 정보 0(문구만), 죄책감 해설 0, 연애 0"
+  - "학교 파손 0, 환호 0(작아진 목소리로 처리)"
+
+canon_additions:
+  - "견인선 교차 전법 정사화: 얕은 감김 유지 → 진행각 변경 → 팔들을 서로 다른 교각에 → 방향 잠김(상대 습관 의존 — 재사용 시 동일 조건 필요)"
+  - "개체 마지막 행동 문법: 포획당하면 견인을 전부 놓고 재포박 우선(닻 놓기)"
+  - "중앙 운동기관 = 몸통 아래 두께가 다른 자리(여덟 팔 리듬의 중심) — 소등은 눌린 자리부터 바깥으로"
+  - "학교 단체연락망 = 대피 해제·등교 안내·인계 공지 채널"
+
+provenance:
+  chapter_text: "Black_Titan_EP023_23화_끌려가지않는법_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP023_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP023_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP023_Gate-D_검증서_v1.0.md"
+notes:
+  - "S4 5단계(해결) 완료. 다음 EP24 「깁스」 — 중요 화·**아크 마감 화**(여파·앙숙 복귀. Gate E에 S4 종료장부 대조서+아크캡슐 S4)."
+  - "EP24 진입: 며칠 뒤 등교일(날짜 산정 필요 — 4/27 수 부상·며칠 결석. 브리프에서 제안: 5/2 월 등교 계열)."

@@ -1,0 +1,116 @@
+schema_version: 2
+chapter: 37
+approval:
+  status: "GATE_D_PASS"
+  approved_by_user: true
+  approved_at: "2026-08-11"
+  approval_note: "v0.1 무첨삭 승인(`좋아 다음으로 가자`). S7 2/5 — 동시 접촉/첫 오판. 자신감 궤적 개시 화."
+based_on_snapshot: "SNAP-036 v1.0"
+produces_snapshot: "SNAP-037 v1.0"
+changes:
+  - category: "situational"
+    field_path: "external_conditions.enemy"
+    operation: "advance"
+    after:
+      - "**동시 접촉 개시(5/17 화 저녁~밤):** 크레인 꼭대기 개체 = 개화(꽃잎 팔 잔떨림→일제 눕기→중앙 원반 회전 — 이동 0) / 바닥 개체 = 포박·운반(갑판 말아 올림·운반막으로 허리+오른팔·절단 0·외해로 끌기)"
+      - "**`꽃→광택→지연 선회` 순서 첫 노출(목격 2회 — 의미 미공개).** 협동 여부 지면 미확정 유지"
+      - "**군부형 첫 멈칫:** 기둥 뒤 은신 순간 — 원반과 기체 사이 굵은 철골(시야선 단서 1호 — 인물 무자각)"
+    evidence:
+      scene: [2, 3, 4, 5]
+
+  - category: "emotional"
+    field_path: "characters.dana.emotional"
+    operation: "advance"
+    after:
+      - "**자신감 궤적 개시:** `무서워하면서도 이긴다는 걸 아는` 상태로 진입(두 그릇·훈장 셈). 오판 = 승수의 경험칙(`눈앞의 큰 놈을 부수면 끝났다`)"
+      - "**첫 좌초(바닥 아님):** 정면 격파 실패 인정(`자존심이 반 줌`) — 다음 수 없이 숨 고르기 중"
+    evidence:
+      scene: [1, 3, 4, 5]
+
+  - category: "informational"
+    field_path: "characters.dana.knowledge"
+    operation: "advance"
+    after:
+      - "**획득:** 위엣 놈 = 안 내려오고 겨누기만 함(과녁 감각) / 아랫 놈 = 덮어 나르는 놈(외해행) / 순서 2회 목격(꽃 먼저·바닥 늦게) / 정면으로는 안 부서짐"
+      - "**미보유:** 순서의 의미·멈칫의 이유·두 개체의 관계(오판 유지: `납작한 걸 뒤집으면 끝`)"
+    evidence:
+      scene: [2, 3, 4, 5]
+
+  - category: "relational"
+    field_path: "relations.dana_hyejeong"
+    operation: "advance"
+    after:
+      - "규칙 3호 가동 개시(수신 측): 출격 전 `오늘도 늦어` → 혜정 `어. 뭘 보내야 되는지는 알지`. **`끝났다고` 발신 = 미완(전투 미종료 — 예약된 문자 상태)**"
+    evidence:
+      scene: [1, 3]
+
+  - category: "situational"
+    field_path: "external_conditions.military"
+    operation: "advance"
+    after:
+      - "야간 기록 두 줄(역할별 위치): 크레인 상단 개체 위치 이동 없음 / 부두 하단 개체 검은 거인 추적 선회. 사격 0·선박 추가 소개·인접 항로 2개 공백화"
+    evidence:
+      scene: 4
+
+  - category: "physical"
+    field_path: "assets.black_titan"
+    operation: "advance"
+    after:
+      - "**전신 외피 해체 완료(전날 저녁 어깨 마무리)** — 맨몸 출격. 표면 얼룩 잔존(물때 결). 현재 = 수몰 화물부두 크레인 기둥 뒤(전투 지속 중)"
+    evidence:
+      scene: [1, 5]
+
+foreshadow_updates:
+  - id: "FS-C4-ENEMY-PURPOSE"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 36
+        after: 37
+    note: "**동시 접촉·오판·1회 탈출·첫 재지정(순서 2회)·철골 훅 전부 이행.** 다음: EP38 「꽃이 눈이야」 — 수아 결정적 관찰(`언니, 큰 건 눈이 없어. 꽃이 눈이야.`)·낮은 은폐 실패·진짜 차폐 확정"
+  - id: "B3-SUA-POSITION"
+    operation: "NO_CHANGE"
+    note: "EP37 = 미등장·조언 0 이행. **다음 화 = 결정적 관찰(EP38 확정 — 개요 정독 완료. 발언은 역할관계 한 문장뿐·추가 지시 0)**"
+  - id: "B1-HYEJEONG-CONCERN"
+    operation: "ADVANCE"
+    field_changes:
+      - field: "last_progressed"
+        before: 36
+        after: 37
+    note: "규칙 3호 수신 측 가동(`뭘 보내야 되는지는 알지`)·발신 미완 상태로 클리프행어. EP38 = 두 번째 메시지 썼다 지움(전송 0)·귀가 준비 행동(개요)"
+  - id: "FS-001-DANA-VISION"
+    operation: "NO_CHANGE"
+    note: "증상 0 화 이행(광택 = 외부 물성만)"
+  - id: "B4-SEONGHO-SCHOOL"
+    operation: "NO_CHANGE"
+    note: "학교 장면 0(마지막 타석 = 대기)"
+  - id: "FS-C2-TITAN-ORIGIN"
+    operation: "NO_CHANGE"
+  - id: "C3-MYEONGJUN-YOUNGJIN"
+    operation: "NO_CHANGE"
+  - id: "FS-003-BIO-SEEP"
+    operation: "NO_CHANGE"
+  - id: "FS-004-PIERCING-FEAR"
+    operation: "NO_CHANGE"
+
+no_change_checks:
+  - "수아 등장·조언 0, C1 증상 0, 정지 통찰 재사용 0, 협동/우연 판단 0"
+  - "두 개체 공격 기능 0, 앵커·군 마무리·학교 피해 0, 작가용 명칭 0"
+
+canon_additions:
+  - "시간: EP37 = 5/17 화 저녁~밤(접촉 개시 — **전투 미종결 클리프행어. EP38 = 시간 경과 0 진입, 위기 지속 3호**)"
+  - "**개화 정본:** 잔떨림→일제 눕기→원반 회전. 원반 = 기체 이동 추적(걸음 시험 확인). 팔 끝 잔떨림 상시"
+  - "**군부형 접촉 정본:** 이불 덮이는 감각(무겁기만 함·아프지 않음), 이음매 골 = 유일한 공략점(우그러지기만 — 아래 장이 받침), 끝자락 = 잡으면 접히기만"
+  - "**단아 지칭 정본:** 위 = `꽃`·`위엣 놈` / 아래 = `넓은 놈`·`납작한 놈`(명명 아닌 생활 지칭)"
+  - "혜정 문면: `어. 뭘 보내야 되는지는 알지`(규칙 3호 수신 측 정착)"
+  - "격언 계보: `세는 동안에는 겁이 앉을 자리가 없다`(다섯 번 사이에 배운 것)"
+provenance:
+  chapter_text: "Black_Titan_EP037_37화_꽃이먼저돈다_v1.0_GateD승인.md"
+  approved_brief: "Black_Titan_EP037_회차브리프_v0.1_GateC승인.md"
+  content_lock: "Black_Titan_EP037_Level6_내용잠금-문체검색_v1.0.md"
+  validation: "Black_Titan_EP037_Gate-D_검증서_v1.0.md"
+notes:
+  - "S7 2/5 완료. 다음 **EP38 「꽃이 눈이야」(중요 화 — 협동 압박/수아의 단 한 번 관찰).**"
+  - "**⚠ EP38 시간대 충돌(브리프 결정 필요):** EP37 = 화요일 저녁~밤 확정인데 EP38 B1 개요 = 학교 재난방송·귀가 준비(주간 전제). EP38 = 시간 경과 0 진입이라 학교 장면 성립 불가 → 브리프에서 B1 처리 방안 결정(예: 혜정·예진 생활 층위 재배치 vs 개요 이탈 승인)"
+  - "EP38 고정선(개요 v1.3): 힘 분산(흡착발·중첩 갑판)·**잘못 고른 방패**(폐건물 = 낮은 각도만 차폐 — 꽃에게는 상체 노출·광택 스침 → 군부형 정면 돌파〔부수 피해 — 공격 기능 아님〕·재포박) → **진짜 차폐**(기둥+창고 벽 겹친 각도 — 원반까지 가려진 순간만 멈칫) → **수아 문면: `언니, 큰 건 눈이 없어. 꽃이 눈이야.`**(처음이자 마지막 개입 — 이후 위치·시야·타이밍 지시 0) → 단아 재해석(`본다→간다` 회로 단절로 목표 전환 — 구조물·각도 선택은 단아) → 훅: 크레인 기초 일직선 이동·꽃도 따라 돎·군부형 방향 못 받고 납작하게 멈춤"
+  - "EP38 금지(개요): 수아 발언 = 역할관계 한 문장뿐(적합성·원격감각 증명 0), 군부형 돌파 = 새 공격기관 아님, 혜정 두 번째 메시지 전송 0"
