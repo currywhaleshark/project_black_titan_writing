@@ -9334,3 +9334,231 @@ Also carried the EP141 craft finding forward: **budget char-count per beat, not 
 52 beats, and the역산 held on the first try.
 
 Next: **EP143 「그 뒤」** — present line resumes, Dana/Lucy, right after the hangar reveal.
+
+## EP143 approved (2026-09-23) — the grandfather who didn't deny it
+
+**EP143 「그 뒤」** (`149_EP143_승인완료`, **4,958 chars**, 2050/10/27 Thu night, **Dana/Lucy
+alternating**, 6 scenes) resumes the present line. Artifacts: approved text v1.0, delta v1.0,
+**SNAP-143**, **foreshadow tracker SNAP-143**, **character ledger v2.38**, Gate-DE report.
+
+### What happens
+
+The reveal lands as a fragment. Dana knows every word and can't parse the sentence; her body locks
+first (glasses slide down and her hand won't rise). Lucy logs `판단 오류 한 건` — she assumed Dana
+knew — and orders her fingers to open; they don't. **Yeongjin unhooks Lucy's wrist one-handed, says
+`가자.`, and says nothing about the reveal.** Dana reads the missing denial as confirmation (he's the
+man who cuts wrong things off on the spot). He **stops at the hangar threshold** and lets go — Dana
+leaves in the **grey military car with 윤서진** (EP133 canon; G0-025 — a suspect under 불구속 송치
+can't take her; no on-page explanation). `고칠 게 있다.` / `내일 보자.` Lucy asks 딘 for her own
+hand's grip log (`해당 시각 기록 없습니다` — de-synced), sees **the comm line was open the whole
+time**, and **doesn't open the new log line**; she's put on standby, will own the push and not
+retract it, and can't fill a reason field for the grab. At the facility: `밥은.` / a carton of milk /
+한지영's `그 너머는 나도 잘 몰라` / 다은's `왔어?`. The **「원래 그런 것」 axis** opens (grandfather's
+arm, two sisters, no mother — if one wasn't "just how it is", the others might not be). At night
+「우리」 is deferred to tomorrow (Sua) and 「저 밖」 becomes the question: **`저 밖에는 어떤 사람들이
+있어요.`** The one person to ask is the one who keeps her word (EP108 `또 올게` · EP137) — but asking
+means calling her, and calling decides it. **The two syllables stop in her throat again.**
+
+### Corrections made between draft and approval
+
+- **Canon errors: 2 caught by the user + 6 found in review** — Sua's 24 ceiling panels (Sua-POV only,
+  Dana can't know), the grandfather's truck (→ grey car/윤서진), counting attributed to Sua (it's
+  Dana's own habit, EP137), telling grandfather about facility kids (he was detained from 9/1),
+  "never been outside the wall" (she fights there in the titan), a limp for Yeongjin, an invented
+  ledger detail, and "put her name on the list" (EP137: she *arranged* it).
+- **My own misjudgment, reversed:** I removed `또 올게 / 정해지면 알린다` as "not canon" after
+  checking only EP137 — it is EP108 canon (lines 410/416). Restored. **Lesson: when a quoted line
+  isn't found, sweep every episode the brief cites before calling it invented.**
+- **Naming (user):** Dana's narration calls Lucy **「루시 언니」** (voice-cards-autumn §5) — the brief
+  and Level 6 had wrongly locked 「저 언니」, which is why it repeated 12×; both fixed. In Lucy's POV
+  her own machine is unnamed (「기체」, card §3-1) and Dana's is **「블랙 타이탄」** (§6), never
+  「흰 것/검은 기체」.
+- **Length (user):** after de-hedging the honest length was ~4.6k → **band lowered 정점 → 표준**.
+  Gaps filled only with objects/actions, never thoughts.
+
+### ★ New standing rule: §2-13 주어·목적어 착지
+
+The user: "subjects and objects are omitted so often it feels vague and floating." v0.2 had
+**deictic 7.0** and still floated — demonstrative metrics can't see this. Codified as
+narration-style-card **§2-13** (+ §2-A diagnosis, §4-⑪): if a subject/object can't be recovered from
+the previous sentence alone, write it; always name the subject at a scene's first sentence, right
+after a POV switch, and in paragraphs with two or more people; give 「아까 ~한 것」 its what/where;
+unquote cited words that land in subject position (「우리는」 → 「우리라는 말은」). Same-subject action
+chains stay elided.
+
+### State housekeeping
+
+- **SNAP-142's Yeongjin block was frozen at EP132** (「청해구치소 · 수아 못 봤다」). Restored in SNAP-143
+  from EP138 canon (불구속 송치, home, maintaining the titan at the harbour hangar, met Sua at the
+  hospital). Check other character blocks for similar freezes when next touched.
+- Tracker: L-REVELATION / L-CRACK / D7-CALLING-HER → 143; new **D-OUTSIDE-QUESTION,
+  D-ALWAYS-LIKE-THAT, YJ-NO-DENIAL, L-LOG-UNOPENED**. **L-CRACK's "no 'doesn't know why' narration"
+  ban was relaxed** by the Gate-C-approved EP143 brief §5 (up to 「설명할 수 없었다」; naming the cause
+  stays sealed until winter).
+
+Next: **EP144** — Hyeonseo comes on her own (the log reaches her · G0-028 §6) · does 「우리」 include
+Sua · `내일 데려오세요`. Then EP145 (hear it together · lineage · immune rejection) → EP146 (Sua POV).
+
+## Style rules reorganised (2026-09-23) — locks vs. defaults
+
+The user asked whether the sheer number of prohibitions was making the prose vague. Counted: in the
+style/POV/voice cards, ban-shaped clauses outnumber "write this" clauses roughly ten to one, and
+EP143 showed the balloon effect (v0.1 26% negated sentences; v0.2 hit deictic 7.0 by dropping
+subjects/objects wholesale). Approved fix, now in force:
+
+- **narration-style-card v1.0 §0** — two layers and a priority order: **① canon locks** (seals,
+  facts, speech levels/names, body canon, name rights, character signatures — stay as bans)
+  **② clarity** (outside sealed spots, beats every style rule; the blurrier a sealed spot, the
+  sharper its neighbours) **③ style defaults B1–B9** (who-did-what, body reaction + next action for
+  emotion, one seen/felt/done for thought, re-use the noun, close on image/action, positive
+  statements, name variation, fill gaps with objects/actions) **④ numeric warning bands only** —
+  the deictic ≤18 / closer ≤30 targets are **abolished**.
+- POV cards (Lucy v1.7, Sua v1.1, Hyeonseo v1.1): "금지 목록" → **「잠금과 기본값」** tables tagged
+  `[잠금]`/`[기본값]`; voice-cards-autumn gets a reading note.
+- **Brief template:** a **visible-scene list** (who / does what / where / what's seen) now comes
+  before seals and bans; a style-layer field and name-canon field added.
+- Also cleared: the spring-era 「외부 밀착 시점 = 검은 거인」 line conflicted with Lucy's card
+  (post-EP116 = 「블랙 타이탄」); §0-4 records the override.
+
+## EP144 approved (2026-09-23) — she came before she was called
+
+**EP144 「수아도 같냐고」** (`150_EP144_승인완료`, **4,705 chars**, 2050/10/28 Fri, **Dana single
+POV**) — the **first chapter written under narration-style-card v1.0 §0** (locks vs. defaults,
+visible-scene list first, no numeric targets) and it passed Gate D with **zero edits** ("훨씬
+좋아졌다 / 이대로 가자"). Artifacts: approved text, delta, Gate-DE report, **SNAP-144**, **tracker
+SNAP-144**, **ledger v2.39**.
+
+What happens: the grey car doesn't come (`오늘은 차 안 온대. 대기래.` — grandfather's `내일 보자`
+goes unkept; no reason on the page). Dana spends the day in the facility's 1층 안쪽 방 for the first
+time since the linkups began and writes `저 밖에는 어떤 사람들이 있어요` on the back of a worksheet,
+into her pocket. At 7 p.m.: `손님 오셨어.` — **the person she couldn't call is already in the
+visiting room, and this time not empty-handed: a printed copy of the hangar log.** 한지영 steps out,
+door left open (EP131). `뭐라고 들었어. 정확하게.` → **Dana says the sentence aloud herself** (Lucy's
+합니다체 and all) → `…한 글자도 안 틀렸네.` Reading upside down she sees **her own name on line three**
+and her own words (`그 밑에 사람이 살아요`). The tap stops at one. `그 말은—` / **`수아도 같아요?`** /
+**`…그래.`** / `수아가 나중에 들으면, 수아만 나중이잖아요.` (summer: Sua did the checks while Dana
+lay ill) / **`내일 데려오세요.`** / `할아버지한테 말하면 데려와요.` / `…알았어.` Hyeonseo, out of
+words, falls back to `밥 먹었어?`; Dana answers truthfully this time (`반 먹었어요. 카레요.`). 한지영
+already knows about tomorrow (`알아.`). The worksheet goes under the pillow unread; Dana plans to go
+first and move a chair so the wheelchair fits. `토요일. 수아. 그 사람.`
+
+Process note: the first draft came out at **3,038 chars** (beats compressed to ~46 chars each); it
+was filled only with objects/actions/dialogue, never thoughts. **Two more frozen SNAP blocks were
+restored before drafting** (Sua: hospital → discharged 10/20 and home; Hyeonseo: spring "unknown" →
+visits + 「닥터 도」) — three freezes total with Yeongjin. Also fixed: EP143 brief/Level 6 had
+「한지영 → 단아 = 존댓말」; canon is 반말.
+
+Tracker: L-REVELATION / D7 / D-OUTSIDE-QUESTION / L-LOG-UNOPENED → 144; new **D-SUA-TOO,
+D-NAME-IN-RECORD, OPS-STANDBY**.
+
+Next: **EP145 「같이 듣는다」** (10/29 Sat, Dana·Sua) — flashback cross-cutting, lineage, immune
+rejection, what "out there" is. The brief must settle venue (visiting room?), who brings Sua
+(Yeongjin is a 불구속 송치 suspect; Hyeonseo), and the wheelchair route.
+
+## S15 outline v1.1 (2026-09-23) — EP145 「문」 inserted
+
+User's idea, approved: **Hyeonseo fetches Sua herself**, which forces her to the 구래동 house and
+into **the first father–daughter meeting in nine years** (effectively estranged since she missed her
+mother's deathbed; he "opposed and helped" — G0-028 §6/§8). Sua's only registered 직계 is the
+grandfather (EP134) and he is her 보호자 (EP138), so the causality holds. **Sua POV** — she has never
+seen them together, counts the silences without knowing why; the reader knows from EP142. Payoff:
+**「두 손이면 오 초」 (EP132)** — folding the wheelchair into the car takes two hands; his one hand
+and hers, wordlessly. **No rapprochement** — the 기일 chapter (now EP152) owns 「부녀가 조금
+다가간다」. Seals: 「의절」 word 0, the mother's last words = later, "Yeongjin knows everything" = 0.
+
+**Renumbering: new EP145 = 「문」; old EP145–162 → EP146–163. 6-7 = 6 chapters (EP142–147), S15 =
+22 chapters.** New file `04_가을편_기획/Black_Titan_S15_EP142-163_화별개요_v1.1_승인.md` (old v1.0
+moved to `_superseded`). EP refs shifted +1 with a header note in G0-028/029/030, the Hyeonseo POV
+card, SNAP-144 and tracker SNAP-144 (e.g. Lucy's birth reveal EP152 → **EP153**; full explanation
+→ **EP146**). Older approved docs/logs keep old numbers as history.
+
+## EP145 approved (2026-09-23) — 「문」, nine years at the threshold
+
+**EP145 「문」** (`151_EP145_승인완료`, **5,050 chars**, 10/28 night–10/29 Sat morning, **Sua POV**).
+Sua hears only the grandfather's side of a night call (`어.` `…몇 시.` `…그래.`); next morning
+`…네 엄마가 온다.` — the first time she has heard him say 엄마. At 10, a double knock at the house
+door (shutter still down); `아버지.` — no answer, **eight** counted seconds, neither crosses the
+threshold; Hyeonseo looks down at the ramp and bricks (she can tell who made it) and once toward the
+workbench side (the basement, unexplained). `…데리고 가라.` — Sua reads it as the way out for her,
+not the way in for her mother. The wheelchair won't fold one-handed; Hyeonseo takes the other side:
+**five**. He stays at the door, raises one hand. In the car: seven words passed between them all
+day, `아버지` once; `밥은 반 먹었대` (secondhand now). Visiting room: **a chair pushed to the wall,
+Dana beside it — `언니.`**
+
+**User corrections → new canon:** (1) the family table was always a **low floor table** — so
+Yeongjin **built a wheelchair-height table** on 10/22 from shop plywood and four battens (the floor
+table is folded against the wall; the six-line paper moved to the new table's edge); the doorway
+**plank ramp on two bricks** dates from 10/21. Both registered in **LOC-05**. (2) **One-handed
+people can do buttons, not shoelace knots** — the grandfather buttons Sua's coat; Sua ties her laces.
+Memory file rewritten with the rule: only actions needing two points held *simultaneously* are
+impossible (knots, folding the wheelchair, folding arms); with a ledge/brace/body to anchor one
+side, it's doable.
+
+SNAP-145: Yeongjin's `hyunseo` relation was still frozen at 「영구 봉인 · 지면 0」 — now the EP145
+meeting. Tracker: new **YJ-HS-DOOR** (→ EP152 기일, where they may draw slightly closer),
+**HS-GLANCE-WORKBENCH** (→ EP146), **SUA-SEVENTH-LINE** (`6시 반`, undated → EP147),
+**SUA-TWO-UNKNOWNS**.
+
+Next: **EP146 「같이 듣는다」** — the visiting room, both sisters, flashback cross-cutting, lineage,
+immune rejection, what "out there" is, the basement, why she left.
+
+## EP146 approved (2026-09-23) — 「같이 듣는다」, the 6-7 peak
+
+**EP146** (`152_EP146_승인완료`, **5,694 chars**, 10/29 Sat, **Dana/Sua alternating**). Hyeonseo tells
+both daughters, one fragment at a time, each fragment calling up a memory from their lived time:
+out there people do live (신서울, inland) — 「괴물」 meant the mud creatures, and 「저 밖」 is the
+seabed they came from; the 대수몰 was their doing and they are turning inhabited land into sea;
+cannons don't work, only their own kind can hurt them; their cells grow into whatever you grow
+them into — she brought some back and **cultured the same thing, to stop them**, under 「그 집」;
+it began thinking for itself and wouldn't obey; she had built an **incineration device** into it
+and burned it; the **nerve cells** survived; idea → hypothesis (combine with **her egg → a
+fertilized egg**; `난자가 뭔지는 배웠니?` / `…학교에서요.`) → animals first (the hamster **호두**,
+there from Dana's first memory) → **her own body, without certainty, because there was no other
+way** → **`그렇게 단아를 낳았어. 내 몸으로. 내 딸이야.`** → seeing the fetus grow, the second
+culture → **`그 검은 거하고, 너. 너도 내가 낳았어.`** → hospital: `가면 알게 되니까` → **`왜 떠났어요.`
+→ a US intelligence agency, knowing her work: take her, leave the two girls free; she couldn't
+refuse; she went to America.** Sua catches the grandfather's two covers: not a 30-year-old military
+prototype (EP002/005), and the calibration was never "set to Dana" (EP081 — he flew Sua without
+touching it). Dana: `그런 게 어딨어요.`; Sua takes her hand first; the 8/31 line.
+
+**Craft:** first use of the **clarity guard** — every term followed by a gloss, nine must-restate
+sentences on the page, the POV character "catches" every clipped line, every 그것 landed.
+Five rounds of user notes shaped it (see Gate-DE report). **Immune rejection is not explained**
+(G0-030 — Hyeonseo herself doesn't know until 6-10); the S15 outline row was corrected, and
+SNAP-145's Hyeonseo `knows` (which wrongly listed immune rejection) was fixed in SNAP-146.
+LOC-02 now has the inner iron door by the maintenance area (gauge needle always at 0 = the culture
+room). Tracker: resolved L-REVELATION, D-SUA-TOO, D-OUTSIDE-QUESTION, HS-GLANCE-WORKBENCH; new
+YJ-COVER-EXPOSED (6-8), D-LUCY-AMERICA (`미국` → Lucy's face → EP153), D-HODU (6-9).
+
+Next: **EP147 「순서가 뒤집힌다」** (Sua POV · 8/31 · it wasn't her fault).
+
+## EP147 approved (2026-09-23) — 「순서가 뒤집힌다」, closing 6-7
+
+**EP147** (`153_EP147_승인완료`, **5,050 chars**, 10/29 Sat afternoon–night, **Sua POV**). Approved
+as drafted. Hyeonseo keeps the EP145 promise and drives Sua home. At the facility door the EP138
+positions are reversed: this time Sua leaves and Dana watches from inside the threshold (`…가.` /
+`응.`). Hyeonseo folds the wheelchair alone, two hands (three steps; that morning it took two people
+five). In the car Sua raises her legs herself for the first time (`제 다리도 그거 때문이에요?`) and,
+for the first time, says aloud the order she has carried for two months (EP106 `자기가 안다고
+생각했다`): what came in from behind passed through *her*, broke something inside that doesn't
+show on scans, and *because she was hurt* the Titan stopped and everything scattered. Hyeonseo pulls
+onto the shoulder, hazards on: **it was the Titan that was pierced, in the back of the waist** (the
+monster feigned weakness and waited for her to turn); same origin → riding links them (`그날은 그게
+아주 깊었어`; `타이탄은 너한테 따로 맞출 게 없었어` — why it fit from the first ride); **the wound
+transferred to her body** — `허리에서 다리로 가는 신경`, glossed as the path that carries "move" to
+the legs (catching EP106's "the word never reached the knee"); **scans show nothing because her
+body has no wound; her body was not hurt first** → not her fault. `…나아요?` → `…모르겠어. 이렇게
+된 사람은 너밖에 없어서` (the rehab goal stays hidden). `언니도 알아요?` `아니.` / `언니한테 말해도
+돼요?` `네가 정해.` Home: Yeongjin's hand is on the handle before the ramp tips; `…왔냐.`; Hyeonseo
+bows slightly, he nods once, no words; 된장국. At the table Sua almost writes beside the 8/31 line,
+then doesn't: the paper was right; the order in her head was wrong. Counts three: one name, one
+unknown, one decision.
+
+Seals held: 하반신·마비·걷지 못한다, 요추·척수 (신경 once, glossed), immune rejection, Sentinel
+identity, the cone-snail lineage / observation-sheet guilt. Tracker: **FS-S13-NO-INJURY resolved**
+(cause; no diagnosis name; prognosis unknown), FS-S13-NO-SEQUENCE progressed, SUA-SEVENTH-LINE
+progressed; new **SUA-TELL-DANA** (6-8). Ledger v2.42, SNAP-147.
+
+Next: **6-8 「같은 방」 EP148~157** — EP148 (10/31, both POVs): **징계** — the collar grab = assault,
+the unit collision = disobeying orders.
+

@@ -19,3 +19,6 @@ __pycache__/
 ~$*
 .DS_Store
 Thumbs.db
+
+# 개인 환경 설정
+.claude/settings.local.json
